@@ -6,11 +6,13 @@
 
       ],
       "settings": {
-        "collection": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
         "background_image": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
-        "background_image2": "",
+        "background_image2": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black_1.webp",
+        "text": "",
         "text_2": "MEN",
-        "logo": "shopify:\/\/shop_images\/logo.png"
+        "logo": "shopify:\/\/shop_images\/logo.png",
+        "link_1": "",
+        "link_2": ""
       }
     }
   },
