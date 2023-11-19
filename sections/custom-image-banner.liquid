@@ -8,7 +8,7 @@
   <div class="grid-item logo logoenter">
     <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="450" height="300"/>
   </div>
-  <div class="grid-item right fadeup" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
+  <div class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
     </div>
@@ -38,10 +38,21 @@
     opacity: 1;
   }
 }
+@keyframes fadedown {
+  0% {
+    transform: translateY(50%);
+    opacity: 0.5;
+
+    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .fadeup.left {
   animation: fadeup 0.5s linear forwards;
 }
-.fadeup.right {
+.fadedown.right {
   animation: fadeup 1s linear forwards;
 }
 main{
