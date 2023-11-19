@@ -6,9 +6,9 @@
 
       ],
       "settings": {
-        "collection": "ladies",
-        "collection_2": "gentlemen",
-        "text": "WOMAN",
+        "collection": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
+        "background_image": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
+        "background_image2": "",
         "text_2": "MEN",
         "logo": "shopify:\/\/shop_images\/logo.png"
       }
