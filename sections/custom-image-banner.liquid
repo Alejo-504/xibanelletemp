@@ -1,16 +1,16 @@
 
 <div class="grid">
-  <div class="grid-item" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+  <div class="grid-item" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
-      <p class="centered-text">{{ block.settings.text }}</p>
+      <p class="centered-text">{{ section.settings.text }}</p>
     </div>
   </div>
   <div class="grid-item">
-    <img src="{{ 'logo.png' | asset_url }}" alt="{{ 'Logo' | t }}" width="300" height="200"/>
+    <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
   </div>
-  <div class="grid-item" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+  <div class="grid-item" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
-      <p class="centered-text">{{ block.settings.text_2 }}</p>
+      <p class="centered-text">{{ section.settings.text_2 }}</p>
     </div>
   </div>
 </div>
@@ -52,20 +52,28 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "image",
-      "label": "Imagen"
+      "id": "image_left",
+      "label": "Image Left"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right",
+      "label": "Image Right"
     },
     {
       "type": "text",
       "id": "text",
-      "label": "Texto",
-      "default": "WOMAN"
+      "label": "Text"
     },
     {
-    "type": "text",
+      "type": "text",
       "id": "text_2",
-      "label": "Texto",
-      "default": "MEN"
+      "label": "Text 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
     }
   ],
   "presets": [
