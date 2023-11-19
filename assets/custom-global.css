@@ -81,13 +81,13 @@
   color: #000;
 }
 .btn-primary, .btn-secondary {
-  background-image: linear-gradient(to right, #007bff 50%, #fff 50%);
+  background-image: linear-gradient(to right, var(--color-secondary-button-text) 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: left bottom;
 }
 
 .btn-secondary {
-  background-image: linear-gradient(to right, #6c757d 50%, #fff 50%);
+  background-image: linear-gradient(to right, var(--color-button) 50%, #fff 50%);
 }
 
 .btn-primary {
