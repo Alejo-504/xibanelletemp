@@ -5,7 +5,7 @@
       <p class="centered-text font-primary">{{ section.settings.text }}</p>
     </div>
   </div>
-  <div class="grid-item">
+  <div class="grid-item logo">
     <img src="{{ section.settings.logo | img_url: 'master' }}" alt="" width="300" height="200" />
   </div>
   <div class="grid-item right" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
@@ -23,6 +23,11 @@
   align-items: center;
   justify-items: center;
 }
+  .logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 @media screen and (max-width: 768px) {
   .grid.principal{
     grid-template-columns: 1fr;
