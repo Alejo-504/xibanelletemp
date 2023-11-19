@@ -6,9 +6,23 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "6218b202-c6a3-4fb5-b927-212022abe1f5": {
+      "type": "custom-hero",
+      "settings": {
+        "heading": "Lorem Ipsum Dolor Sit Amet",
+        "subheading": "Consectetur. Tempus Mollis Nunc Mollis In",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
+        "button_1_link": "shopify:\/\/collections\/all",
+        "button_1_text": "Shop Now",
+        "button_2_link": "",
+        "button_2_text": "Learn More",
+        "promo_text": "New Collection 2023"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6218b202-c6a3-4fb5-b927-212022abe1f5"
   ]
 }

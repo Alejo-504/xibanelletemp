@@ -15,6 +15,31 @@
     },
     "27fa08b7-edfe-455c-9132-de5f1eb95a07": {
       "type": "custom-best-seller",
+      "blocks": {
+        "23002965-cef3-45a1-911f-450ffe7fbbef": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-jacket"
+          }
+        },
+        "d5cec5a9-8ce1-4143-b9b3-fdab1a6b67e4": {
+          "type": "product",
+          "settings": {
+            "product": "brown-leather-jacket"
+          }
+        },
+        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7": {
+          "type": "product",
+          "settings": {
+            "product": "italian-leather-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "23002965-cef3-45a1-911f-450ffe7fbbef",
+        "d5cec5a9-8ce1-4143-b9b3-fdab1a6b67e4",
+        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7"
+      ],
       "settings": {
       }
     }
