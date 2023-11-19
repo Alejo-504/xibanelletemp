@@ -1,12 +1,47 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Best Sellers",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Card",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Best Sellers",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
+/* Agrega aquí tus estilos CSS para custom-best-seller */
 {% endstylesheet %}
 
 {% javascript %}
+/* Agrega aquí tu JavaScript si es necesario */
 {% endjavascript %}
+
+<div class="best-sellers-section container">
+  <h2>Best Sellers Section</h2>
+  <p>Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
+  <div class="row">
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product] %}
+      <div class="col-md-3">
+        {% include 'product-card', product: product %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
