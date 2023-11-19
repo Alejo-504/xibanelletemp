@@ -1,12 +1,71 @@
+
+<div class="grid">
+  <div class="grid-item" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+    <div class="overlay">
+      <p class="centered-text">{{ block.settings.text }}</p>
+    </div>
+  </div>
+  <div class="grid-item">
+    <img src="{{ 'logo.png' | asset_url }}" alt="{{ 'Logo' | t }}" width="300" height="200"/>
+  </div>
+  <div class="grid-item" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+    <div class="overlay">
+      <p class="centered-text">{{ block.settings.text }}</p>
+    </div>
+  </div>
+</div>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-item {
+  height: 500px;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-text {
+  color: white;
+  font-size: 2em;
+}
+</style>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Banner Image",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Texto",
+      "default": "WOMAN"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Banner Image"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
