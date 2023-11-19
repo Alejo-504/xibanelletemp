@@ -1,20 +1,4 @@
 
-<div class="grid principal">
-  <a href="/woman" class="grid-item left fadeup" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
-    <div class="overlay">
-      <p class="centered-text font-primary">{{ section.settings.text }}</p>
-    </div>
-  </a>
-  <div class="grid-item logo logoenter">
-    <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
-  </div>
-  <a href="/men"
-  class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
-    <div class="overlay">
-      <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
-    </div>
-  </a>
-</div>
 
 <style>
 @keyframes logoenter {
@@ -131,6 +115,37 @@ main{
 </style>
 
 
+<div class="grid principal">
+  <a class="grid-item left fadeup"  href="{{ collections[section.settings.collection].url }}">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for product in collections[section.settings.collection].products limit:5 %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ product.featured_image | img_url: 'master' }}')"></div>
+        {% endfor %}
+      </div>
+      <div class="overlay">
+        <p class="centered-text font-primary">{{ section.settings.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid-item logo logoenter">
+    <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
+  </div>
+    <a class="grid-item right fadedown" href="{{ collections[section.settings.collection_2].url }}">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {% for product in collections[section.settings.collection_2].products limit:5 %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}" style="background-image: url('{{ product.featured_image | img_url: 'master' }}')"></div>
+            {% endfor %}
+        </div>
+        <div class="overlay">
+            <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
+        </div>
+        </div>
+    </a>
+</div>
+
+
 {% schema %}
 {
   "name": "Custom Banner Image",
@@ -141,12 +156,12 @@ main{
   },
   "settings": [
     {
-      "type": "image_picker",
+      "type": "collection",
       "id": "image_left",
       "label": "Image Left"
     },
     {
-      "type": "image_picker",
+      "type": "collection",
       "id": "image_right",
       "label": "Image Right"
     },
