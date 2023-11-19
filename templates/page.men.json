@@ -11,7 +11,8 @@
     "49f022a4-aa36-4b19-92f4-f27b9440412e": {
       "type": "custom-annoucement-bar",
       "settings": {
-        "cta_text": "Call to Action"
+        "cta_text": "Call to Action",
+        "scheme_selector": 2
       }
     },
     "b378887a-0416-465e-b8d4-981298591f1b": {
