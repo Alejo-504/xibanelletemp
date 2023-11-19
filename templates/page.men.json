@@ -2,7 +2,10 @@
   "sections": {
     "main-page-content": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "49f022a4-aa36-4b19-92f4-f27b9440412e": {
