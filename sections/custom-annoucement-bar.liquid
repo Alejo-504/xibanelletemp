@@ -7,6 +7,12 @@
       "id": "cta_text",
       "label": "Call to Action Text",
       "default": "Call to Action"
+    },
+    {
+      "type": "number",
+      "id": "scheme_selector",
+      "label": "Scheme Number",
+      "default": 1
     }
   ],
   "presets": [
@@ -17,7 +23,7 @@
   ]
 }
 {% endschema %}
-<div class="header-bar">
+<div class="header-bar color-{{ section.settings.scheme_selector }}">
   <div class="container">
     <div class="row">
       <div class="col">
