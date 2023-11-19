@@ -116,7 +116,7 @@ main{
 
 
 <div class="grid principal">
-  <a class="grid-item left fadeup"  href="{{ collections[section.settings.collection].url }}">
+  <a class="grid-item left fadeup"  href="{{collections[section.settings.collection].url}}">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         {% for product in collections[section.settings.collection].products limit:5 %}
@@ -157,12 +157,12 @@ main{
   "settings": [
     {
       "type": "collection",
-      "id": "image_left",
+      "id": "collection",
       "label": "Image Left"
     },
     {
       "type": "collection",
-      "id": "image_right",
+      "id": "collection_2",
       "label": "Image Right"
     },
     {
