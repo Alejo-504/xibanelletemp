@@ -1,5 +1,5 @@
 
-<div class="grid">
+<div class="grid principal">
   <div class="grid-item" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text">{{ section.settings.text }}</p>
@@ -15,9 +15,10 @@
   </div>
 </div>
 <style>
-.grid {
+.grid.principal{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
 }
 .grid-item {
   height: 500px;
