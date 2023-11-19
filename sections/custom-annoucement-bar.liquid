@@ -22,14 +22,14 @@
         </ul>
       </div>
       <div class="col text-right">
-        <span class="cta-text">{{ settings.cta_text }}</span>
+        <span class="cta-text">{{ section.settings.cta_text }}</span>
       </div>
     </div>
   </div>
 </div>
 {% stylesheet %}
   .header-bar {
-  background-color: #a5b1b2; /* Cambia este valor según el color exacto de tu diseño */
+  background-color: #a5b1b2; 
   color: white;
   padding: 10px 0;
 
@@ -51,7 +51,7 @@
         }
 
         i {
-          font-size: 1.2rem; // Ajustar según el diseño
+          font-size: 1.2rem; 
         }
       }
     }
@@ -59,7 +59,6 @@
 
   .cta-text {
     font-weight: bold;
-    // Añade estilos adicionales aquí si es necesario
   }
 }
 {% endstylesheet %}
