@@ -112,13 +112,14 @@ main{
 </style>
 
 
+
 <div class="grid principal">
 
     <a class="grid-item left fadeup"  href="{{collections[section.settings.collection].url}}">
         <div id="carouselvertical1" class="carousel slide h-100" data-ride="carousel">
             <div class="carousel-inner h-100">
                 {% for product in collections[section.settings.collection].products limit:5 %}
-                 <img class="d-block w-100 h-100" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide">
+                 <img class="d-block" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide" width="100%" height="auto">
                 {% endfor %}
             </div>
             <div class="overlay">
@@ -133,7 +134,7 @@ main{
         <div id="carouselvertical2" class="carousel slide h-100" data-ride="carousel">
             <div class="carousel-inner h-100">
                 {% for product in collections[section.settings.collection_2].products limit:5 %}
-                 <img class="d-block w-100 h-100" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide">
+                 <img class="d-block" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide" width="100%" height="auto">
                 {% endfor %}
             </div>
             <div class="overlay">
