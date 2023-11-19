@@ -1,5 +1,10 @@
 {
   "sections": {
+    "main-page-content": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
     "49f022a4-aa36-4b19-92f4-f27b9440412e": {
       "type": "custom-annoucement-bar",
       "settings": {
@@ -58,6 +63,7 @@
     }
   },
   "order": [
+    "main-page-content",
     "49f022a4-aa36-4b19-92f4-f27b9440412e",
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07"
