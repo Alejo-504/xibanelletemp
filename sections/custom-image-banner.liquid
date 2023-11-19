@@ -2,7 +2,7 @@
 <div class="grid principal">
   <div class="grid-item left" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
-      <p class="centered-text">{{ section.settings.text }}</p>
+      <p class="centered-text font-primary">{{ section.settings.text }}</p>
     </div>
   </div>
   <div class="grid-item">
@@ -10,7 +10,7 @@
   </div>
   <div class="grid-item right" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
-      <p class="centered-text">{{ section.settings.text_2 }}</p>
+      <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
     </div>
   </div>
 </div>
@@ -29,6 +29,9 @@
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
   }
+}
+.font-primary{
+  font-weight:900;
 }
 .grid-item {
   position: relative;
