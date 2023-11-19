@@ -80,10 +80,13 @@
   background-position: right center; 
   color: #000;
 }
-.btn-primary, .btn-secondary {
+.btn-primary {
   background-image: linear-gradient(to right, var(--color-secondary-button-text) 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: left bottom;
+}
+.btn-secondary {
+  background-image: linear-gradient(to right, var(--color-secondary) 50%, #fff 50%);
 }
 
 .btn-secondary {
