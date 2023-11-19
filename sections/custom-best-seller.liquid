@@ -40,7 +40,7 @@
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
       <div class="col-md-3">
-        {% include 'product-card', product: product %}
+        {% include 'product-custom-normal', product: product %}
       </div>
     {% endfor %}
   </div>
