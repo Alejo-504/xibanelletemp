@@ -94,7 +94,7 @@
 }
 
 .btn-primary {
-  background-color:var(--color-button);
+  background:var(--color-button);
 }
 
 .btn-secondary {
