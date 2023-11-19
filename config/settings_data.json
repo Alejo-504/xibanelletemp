@@ -214,10 +214,10 @@
           "background": "#fcfcfc",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "button": "#1773b0",
+          "button_label": "#ed1919",
+          "secondary_button_label": "#f11a1a",
+          "shadow": "#67ef00"
         }
       },
       "background-2": {
