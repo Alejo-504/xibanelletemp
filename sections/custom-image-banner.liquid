@@ -17,25 +17,23 @@
 
 <style>
 @keyframes logoenter {
-  0% {
-    transform: translateY(-100vh) rotate(0deg);
+   0% {
+    transform: translateY(-100vh) scale(0.5);
     opacity: 0;
     filter: blur(5px);
     clip-path: circle(0% at 50% 50%);
   }
   50% {
-    transform: translateY(-50vh) rotate(180deg);
     opacity: 0.5;
-    filter: blur(2.5px);
     clip-path: circle(50% at 50% 50%);
   }
   80% {
-    opacity: 0.8;
-    filter: blur(1px);
-    clip-path: circle(75% at 50% 50%);
+    transform: translateY(-10vh) scale(1.1);
+    opacity: 0.9;
+    clip-path: circle(80% at 50% 50%);
   }
   100% {
-    transform: translateY(0) rotate(360deg);
+    transform: translateY(0) scale(1);
     opacity: 1;
     filter: blur(0);
     clip-path: circle(100% at 50% 50%);
