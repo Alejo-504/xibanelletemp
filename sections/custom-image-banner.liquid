@@ -109,15 +109,6 @@ main{
     background-size: 110%;
     transition: background-size 0.5s ease-in-out;
 }
-.owl-carousel {
-  transform: rotate(90deg);
-  width: 270px;
-  margin-top: 100px;
-}
-
-.item {
-  transform: rotate(-90deg);
-}
 
 </style>
 
@@ -153,45 +144,9 @@ main{
     </a>
 
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        //crear dos carouseles verticales con owl
-        $('#carouselvertical1 .carousel-inner').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:3
-                }
-            }
-        });
-        $('#carouselvertical2 .carousel-inner').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:3
-                }
-            }
-        });
-        
-        
-    });
-</script>
+
+
+
 
 {% schema %}
 {
