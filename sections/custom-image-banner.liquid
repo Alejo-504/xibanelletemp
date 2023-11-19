@@ -14,45 +14,7 @@
     </div>
   </div>
 </div>
-<style>
-.grid.principal{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 100vh;
-  align-items: center;
-  justify-items: center;
-}
-@media screen and (max-width: 768px) {
-  .grid.principal{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh;
-  }
-}
-.grid-item {
-  height: 500px;
-  position: relative;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.centered-text {
-  color: white;
-  font-size: 2em;
-}
-.grid-item.left, .grid-item.right{
-    background-size: cover;
-    background-position: center;
-}
-</style>
+
 
 
 {% schema %}
