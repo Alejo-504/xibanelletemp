@@ -1,14 +1,14 @@
 
 <div class="grid principal">
-  <div class="grid-item" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
+  <div class="grid-item left" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text">{{ section.settings.text }}</p>
     </div>
   </div>
   <div class="grid-item">
-    <img src="{{ section.settings.logo | img_url: 'master' }}" alt="" width="300" height="200" />
+    <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
   </div>
-  <div class="grid-item" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
+  <div class="grid-item right" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text">{{ section.settings.text_2 }}</p>
     </div>
@@ -38,6 +38,10 @@
 .centered-text {
   color: white;
   font-size: 2em;
+}
+.grid-item.left, .grid-item.right{
+    background-size: cover;
+    background-position: center;
 }
 </style>
 
