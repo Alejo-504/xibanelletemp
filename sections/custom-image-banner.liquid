@@ -112,7 +112,6 @@ main{
 </style>
 
 
-
 <div class="grid principal">
 
     <a class="grid-item left fadeup"  href="{{collections[section.settings.collection].url}}">
@@ -150,7 +149,7 @@ main{
         $('#carouselvertical1 .carousel-inner').owlCarousel({
             loop:true,
             margin:10,
-            nav:true,
+            nav:false,
             autoplay:true,
             autoplayTimeout:3000,
             autoplayHoverPause:true,
@@ -158,15 +157,15 @@ main{
                 0:{
                     items:1
                 },
-                600:{
-                    items:1
+                768:{
+                    items:3
                 }
             }
         });
         $('#carouselvertical2 .carousel-inner').owlCarousel({
             loop:true,
             margin:10,
-            nav:true,
+            nav:false,
             autoplay:true,
             autoplayTimeout:3000,
             autoplayHoverPause:true,
@@ -174,8 +173,8 @@ main{
                 0:{
                     items:1
                 },
-                600:{
-                    items:1
+                768:{
+                    items:3
                 }
             }
         });
