@@ -1,19 +1,5 @@
-<div class="grid principal">
-  <!-- Carrusel para la sección Woman -->
-  <div class="grid-item carousel-container left">
-    <div class="owl-carousel owl-theme">
-      {% for product in collections.woman.products %}
-        <div class="item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
-            <p>{{ product.title }}</p>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
 
-  <!-- Contenido existente -->
+<div class="grid principal">
   <a href="/woman" class="grid-item left fadeup" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text }}</p>
@@ -22,56 +8,14 @@
   <div class="grid-item logo logoenter">
     <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
   </div>
-  <a href="/men" class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
+  <a href="/men"
+  class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
     </div>
   </a>
-
-  <!-- Carrusel para la sección Man -->
-  <div class="grid-item carousel-container right">
-    <div class="owl-carousel owl-theme">
-      {% for product in collections.man.products %}
-        <div class="item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: '800x800' }}" alt="{{ product.title }}" width="100%" height="100%">
-            <p>{{ product.title }}</p>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
 </div>
 
-<!-- Scripts de Owl Carousel -->
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      items: 1,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      autoHeight: true,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        1000: {
-          items: 1,
-        }
-      }
-    });
-  });
-</script>
 <style>
 @keyframes logoenter {
   0% {
