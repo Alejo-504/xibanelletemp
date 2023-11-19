@@ -10,7 +10,7 @@
   </div>
   <div class="grid-item" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
     <div class="overlay">
-      <p class="centered-text">{{ block.settings.text }}</p>
+      <p class="centered-text">{{ block.settings.text_2 }}</p>
     </div>
   </div>
 </div>
@@ -60,6 +60,12 @@
       "id": "text",
       "label": "Texto",
       "default": "WOMAN"
+    },
+    {
+    "type": "text",
+      "id": "text_2",
+      "label": "Texto",
+      "default": "MEN"
     }
   ],
   "presets": [
