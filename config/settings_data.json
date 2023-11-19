@@ -142,6 +142,15 @@
           "button_2_text": "Learn More",
           "promo_text": "New Collection 2023"
         }
+      },
+      "custom-annoucement-bar": {
+        "type": "custom-annoucement-bar",
+        "settings": {
+          "cta_text": "Call to Action",
+          "instagram_url": "shopify:\/\/pages\/men",
+          "facebook_url": "shopify:\/\/products\/black-leather-jacket",
+          "twitter_url": "shopify:\/\/pages\/men"
+        }
       }
     },
     "content_for_index": [
