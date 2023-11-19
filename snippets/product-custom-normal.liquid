@@ -1,0 +1,21 @@
+<!-- product-card.liquid -->
+<div class="product-card">
+  <div class="product-image">
+    <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" width="100%" height="100%"/>
+    <button class="product-image__quick-view" aria-label="Quick view">
+      <i class="fa fa-search-plus"></i>
+    </button>
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">{{ product.title }}</h3>
+    <div class="product-price">
+      <span class="current-price">{{ product.price | money }}</span>
+      <span class="original-price">{{ product.compare_at_price_max | money }}</span>
+      <span class="discount-percentage">{{ product.compare_at_price_max | minus: product.price | times: 100 | divided_by: product.compare_at_price_max }}% OFF</span>
+    </div>
+  </div>
+  <button class="product-add-to-cart" aria-label="Add to cart">
+    <i class="fa fa-shopping-cart"></i>
+  </button>
+</div>
+
