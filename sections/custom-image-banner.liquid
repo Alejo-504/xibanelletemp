@@ -109,17 +109,14 @@ main{
     background-size: 110%;
     transition: background-size 0.5s ease-in-out;
 }
-
-
-
 </style>
 
 
 <div class="grid principal">
 
     <a class="grid-item left fadeup"  href="{{collections[section.settings.collection].url}}">
-        <div id="carouselvertical1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div id="carouselvertical1" class="carousel slide h-100" data-ride="carousel">
+            <div class="carousel-inner h-100">
                 {% for product in collections[section.settings.collection].products limit:5 %}
                  sdsdsds
                 {% endfor %}
@@ -133,8 +130,8 @@ main{
         <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
     </div>
     <a class="grid-item right fadedown" href="{{ collections[section.settings.collection_2].url }}">
-        <div id="carouselvertical2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div id="carouselvertical2" class="carousel slide h-100" data-ride="carousel">
+            <div class="carousel-inner h-100">
                 {% for product in collections[section.settings.collection_2].products limit:5 %}
                 sdsdsdsdsd
                 {% endfor %}
@@ -146,7 +143,45 @@ main{
     </a>
 
 </div>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        //crear dos carouseles verticales con owl
+        $('#carouselvertical1 .carousel-inner').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                }
+            }
+        });
+        $('#carouselvertical2 .carousel-inner').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                }
+            }
+        });
+        
+        
+    });
+</script>
 
 {% schema %}
 {
