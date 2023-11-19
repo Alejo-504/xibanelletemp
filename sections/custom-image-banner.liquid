@@ -18,14 +18,17 @@
 <style>
 @keyframes logoenter {
   0% {
-    transform: translateY(-100vh) rotate(0deg);
+    transform: translateY(-100vh);
     opacity: 0;
     filter: blur(5px);
   }
-  100% {
-    transform: translateY(0) rotate(180deg);
+  80% {
     opacity: 1;
     filter: blur(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
