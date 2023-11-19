@@ -1,12 +1,129 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
 
 {% stylesheet %}
+  .hero-section {
+  background-color: #dcdcdc;
+  padding: 20px 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.promo-circle {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: -75px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.promo-circle p {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Adjustments for overlapping elements */
+.container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Custom styles for buttons */
+.btn-primary, .btn-secondary {
+  color: #fff;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
 {% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
+<header class="hero-section">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar content -->
+  </nav>
+  
+  <div class="container text-center my-5">
+    <h1 class="display-3">{{ section.settings.heading }}</h1>
+    <p class="lead">{{ section.settings.subheading }}</p>
+    <p>{{ section.settings.description }}</p>
+    <div class="my-4">
+      <a href="{{ section.settings.button_1_link }}" class="btn btn-primary mx-2">{{ section.settings.button_1_text }}</a>
+      <a href="{{ section.settings.button_2_link }}" class="btn btn-secondary mx-2">{{ section.settings.button_2_text }}</a>
+    </div>
+    <div class="promo-circle d-flex justify-content-center align-items-center">
+      <p>{{ section.settings.promo_text }}</p>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Lorem Ipsum Dolor Sit Amet"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Consectetur. Tempus Mollis Nunc Mollis In"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus."
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Button 1 Link",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Button 1 Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Button 2 Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "text",
+      "id": "promo_text",
+      "label": "Promotional Text",
+      "default": "New Collection 2023"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Default Hero",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
