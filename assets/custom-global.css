@@ -73,6 +73,9 @@
 .btn-primary{
   color: var(--color-button-text);
 }
+.btn-secondary{
+  color: var(--color-secondary-button-text);
+}
 .btn-primary:hover, .btn-secondary:hover {
   background-position: right center; 
   color: #000;
