@@ -3,7 +3,7 @@
     "4163155d-9d04-499a-a2d6-982ec592516d": {
       "type": "custom-image-banner",
       "custom_css": [
-        ".grid {display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; height:100vh;}"
+
       ],
       "settings": {
         "image_left": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
