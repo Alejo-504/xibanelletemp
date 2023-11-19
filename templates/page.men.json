@@ -1,5 +1,11 @@
 {
   "sections": {
+    "49f022a4-aa36-4b19-92f4-f27b9440412e": {
+      "type": "custom-annoucement-bar",
+      "settings": {
+        "cta_text": "Call to Action"
+      }
+    },
     "b378887a-0416-465e-b8d4-981298591f1b": {
       "type": "custom-hero",
       "settings": {
@@ -33,18 +39,26 @@
           "settings": {
             "product": "italian-leather-jacket"
           }
+        },
+        "74bd58be-b205-435f-bb5a-440f9aae8de4": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
         "23002965-cef3-45a1-911f-450ffe7fbbef",
         "d5cec5a9-8ce1-4143-b9b3-fdab1a6b67e4",
-        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7"
+        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7",
+        "74bd58be-b205-435f-bb5a-440f9aae8de4"
       ],
       "settings": {
       }
     }
   },
   "order": [
+    "49f022a4-aa36-4b19-92f4-f27b9440412e",
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07"
   ]
