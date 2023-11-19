@@ -69,7 +69,9 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   text-decoration: none;
-  color: #fff;
+}
+.btn-primary{
+  color: var(--color-button-text);
 }
 .btn-primary:hover, .btn-secondary:hover {
   background-position: right center; 
@@ -86,9 +88,17 @@
 }
 
 .btn-primary {
-  background-color: #007bff; 
+  background-color:var(--color-button);
 }
 
 .btn-secondary {
-  background-color: #6c757d; 
+  background-color: var(--color-secondary-button-text); 
+}
+.btn-secondary.outline{
+  border: solid 1px var(--color-secondary-button-text);
+  background: transparent;
+}
+.btn-primary.outline{
+  border: solid 1px var(--color-button-text);
+  background: transparent;
 }
