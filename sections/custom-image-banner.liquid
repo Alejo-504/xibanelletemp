@@ -1,192 +1,203 @@
 
 {% stylesheet %}
-@keyframes logoenter {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-
-    }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes fadeup {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0.5;
-
-    }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fadedown {
-  0% {
-    transform: translateY(50%);
-    opacity: 0.5;
-
-    }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.fadeup.left {
-  animation: fadeup 1s linear forwards;
-}
-.fadedown.right {
-  animation: fadedown 1s linear forwards;
-}
-main{
-  height:100vh;
-}
-
-.grid-item.logoenter {
-  animation: logoenter 1s ease-out forwards;
-}
-.principal{
-  background:#e3dccf;
-}
-.grid.principal{
-  display: grid;
-  grid-template-columns: 0.75fr 1.5fr 0.75fr;
-  height: 100vh;
-  align-items: center;
-  justify-items: center;
-}
-.logo{
-  height: auto;
-  overflow: hidden; /* Para manejar cualquier desbordamiento durante la animación */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .grid.principal{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh;
-  }
-   .logo img{
-    width: 100%;
-    height: auto;
-   }
-}
-.font-primary{
-  font-weight:900;
-}
-.grid-item {
-  position: relative;
-  height: 100%;
-  width:100%;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.centered-text {
-  color: white;
-  font-size: 2em;
-}
-.grid-item.left, .grid-item.right{
-    background-size: cover;
-    background-position: center;
-}
-.principal a{
-    text-decoration: none;
-}
-.principal a:hover{
-    /* zoom-in */
-    transform: scale(1.1);
-    transition: transform 0.5s;
+    @keyframes logoenter {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
     
-}
-
-{% endstylesheet %}
-
-<div class="grid principal">
-
-    <a class="grid-item left fadeup"  href="{{collections[section.settings.collection].url}}" style="background-image: url({{ section.settings.background_image | img_url: 'master' }});">
-       <!-- <div id="carouselvertical1" class="carousel slide h-100" data-ride="carousel">
-            <div class="carousel-inner h-100" style="ba"
+        }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeup {
+      0% {
+        transform: translateY(-50%);
+        opacity: 0.5;
+    
+        }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadedown {
+      0% {
+        transform: translateY(50%);
+        opacity: 0.5;
+    
+        }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .fadeup.left {
+      animation: fadeup 1s linear forwards;
+    }
+    .fadedown.right {
+      animation: fadedown 1s linear forwards;
+    }
+    main{
+      height:100vh;
+    }
+    
+    .grid-item.logoenter {
+      animation: logoenter 1s ease-out forwards;
+    }
+    .principal{
+      background:#e3dccf;
+    }
+    .grid.principal{
+      display: grid;
+      grid-template-columns: 0.75fr 1.5fr 0.75fr;
+      height: 100vh;
+      align-items: center;
+      justify-items: center;
+    }
+    .logo{
+      height: auto;
+      overflow: hidden; /* Para manejar cualquier desbordamiento durante la animación */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+      .grid.principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+      }
+       .logo img{
+        width: 100%;
+        height: auto;
+       }
+    }
+    .font-primary{
+      font-weight:900;
+    }
+    .grid-item {
+      position: relative;
+      height: 100%;
+      width:100%;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .centered-text {
+      color: white;
+      font-size: 2em;
+    }
+    .grid-item.left, .grid-item.right{
+        background-size: cover;
+        background-position: center;
+    }
+    .principal a{
+        text-decoration: none;
+    }
+    .principal a:hover{
+        /* zoom-in */
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+    
+    {% endstylesheet %}
+    
+    <div class="grid principal">
+    
+        <a class="grid-item left fadeup"  href="{{section.settings.link_1}}" style="background-image: url({{ section.settings.background_image | img_url: 'master' }});">
+           <!-- <div id="carouselvertical1" class="carousel slide h-100" data-ride="carousel">
+                <div class="carousel-inner h-100" style="ba"
+                    
+                </div>
                 
-            </div>
-            
-        </div>-->
-        <div class="overlay">
-                <p class="centered-text font-primary">{{ section.settings.text }}</p>
-            </div>
-    </a>
-    <div class="grid-item logo logoenter">
-        <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
-    </div>
-    <a class="grid-item right fadedown" href="{{ collections[section.settings.collection_2].url }}" style="background-image: url({{ section.settings.background_image2 | img_url: 'master' }});">
-       <!--<div id="carouselvertical2" class="carousel slide h-100" data-ride="carousel">
-            <div class="carousel-inner h-100">
-                {% for product in collections[section.settings.collection_2].products limit:5 %}
-                 <img class="d-block" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide" width="100%" height="auto">
-                {% endfor %}
-            </div>
-            
-        </div>-->
-        <div class="overlay">
-            <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
+            </div>-->
+            <div class="overlay">
+                    <p class="centered-text font-primary">{{ section.settings.text }}</p>
+                </div>
+        </a>
+        <div class="grid-item logo logoenter">
+            <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
         </div>
-    </a>
-
-</div>
-
-
-
-
-{% schema %}
-{
-  "name": "Custom Banner Image",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [
+        <a class="grid-item right fadedown" href="{{section.settings.link_2 }}" style="background-image: url({{ section.settings.background_image2 | img_url: 'master' }});">
+           <!--<div id="carouselvertical2" class="carousel slide h-100" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                    {% for product in collections[section.settings.collection_2].products limit:5 %}
+                     <img class="d-block" src="{{ product.featured_image | img_url: 'master' }}" alt="First slide" width="100%" height="auto">
+                    {% endfor %}
+                </div>
+                
+            </div>-->
+            <div class="overlay">
+                <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
+            </div>
+        </a>
+    
+    </div>
+    
+    
+    
+    
+    {% schema %}
     {
-      "type": "image_picker",
-      "id": "collection",
-      "label": "Image Left"
-    },
-    {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Image Right"
-    },
-    {
-      "type": "text",
-      "id": "background_image2",
-      "label": "Text"
-    },
-    {
-      "type": "text",
-      "id": "text_2",
-      "label": "Text 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo"
+      "name": "Custom Banner Image",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Image Left"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image2",
+          "label": "Image Right"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "Text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "url",
+          "id": "link_1",
+          "label": "Link 1"
+        },
+        {
+          "type": "url",
+          "id": "link_2",
+          "label": "Link 2"
+        }
+
+      ],
+      "presets": [
+        {
+          "name": "Custom Banner Image"
+        }
+      ]
     }
-  ],
-  "presets": [
-    {
-      "name": "Custom Banner Image"
-    }
-  ]
-}
-{% endschema %}
+    {% endschema %}
+    
