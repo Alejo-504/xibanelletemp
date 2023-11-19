@@ -1,11 +1,85 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+{
+  "name": "Header Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Call to Action Text",
+      "default": "Call to Action"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
 
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook URL"
+      
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Twitter URL"
+      
+    }
+  ]
+}
+{% endschema %}
+<div class="header-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="social-links">
+          <li><a href="{{ settings.instagram_url }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="{{ settings.facebook_url }}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="{{ settings.twitter_url }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="col text-right">
+        <span class="cta-text">{{ settings.cta_text }}</span>
+      </div>
+    </div>
+  </div>
+</div>
 {% stylesheet %}
+  .header-bar {
+  background-color: #a5b1b2; /* Cambia este valor según el color exacto de tu diseño */
+  color: white;
+  padding: 10px 0;
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      margin-right: 10px;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+          color: darken(white, 10%);
+        }
+
+        i {
+          font-size: 1.2rem; // Ajustar según el diseño
+        }
+      }
+    }
+  }
+
+  .cta-text {
+    font-weight: bold;
+    // Añade estilos adicionales aquí si es necesario
+  }
+}
 {% endstylesheet %}
 
 {% javascript %}
