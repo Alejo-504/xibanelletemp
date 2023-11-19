@@ -1,0 +1,62 @@
+/* Product Custom Normal */
+.product-card {
+  border: 1px solid #e1e1e1;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+
+  .product-image {
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .product-image__quick-view {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .product-info {
+    .product-title {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .product-price {
+      .current-price {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-left: 5px;
+      }
+
+      .discount-percentage {
+        font-weight: bold;
+        color: #d9534f;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .product-add-to-cart {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
