@@ -146,10 +146,62 @@
       "custom-annoucement-bar": {
         "type": "custom-annoucement-bar",
         "settings": {
-          "cta_text": "Call to Action",
-          "instagram_url": "shopify:\/\/pages\/men",
-          "facebook_url": "shopify:\/\/products\/black-leather-jacket",
-          "twitter_url": "shopify:\/\/pages\/men"
+          "cta_text": "Call to Action"
+        }
+      },
+      "custom-header": {
+        "type": "custom-header",
+        "settings": {
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "sticky_header_type": "on-scroll-up",
+          "show_line_separator": true,
+          "color_scheme": "",
+          "menu_color_scheme": "",
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
+      },
+      "custom-best-seller": {
+        "type": "custom-best-seller",
+        "blocks": {
+          "9ef7cd51-7bab-4893-a668-5d06ee56427e": {
+            "type": "product",
+            "settings": {
+              "product": "black-leather-jacket"
+            }
+          },
+          "6c9a3d26-c2d5-4735-a042-2361feb0211a": {
+            "type": "product",
+            "settings": {
+              "product": "brown-leather-jacket"
+            }
+          },
+          "c4c3cf67-01ea-42f3-a66a-e994b2f96991": {
+            "type": "product",
+            "settings": {
+              "product": "brown-leather-jacket"
+            }
+          },
+          "0188f6a7-5e89-4497-a02d-41a7a3d894bf": {
+            "type": "product",
+            "settings": {
+              "product": "italian-leather-jacket"
+            }
+          }
+        },
+        "block_order": [
+          "9ef7cd51-7bab-4893-a668-5d06ee56427e",
+          "6c9a3d26-c2d5-4735-a042-2361feb0211a",
+          "c4c3cf67-01ea-42f3-a66a-e994b2f96991",
+          "0188f6a7-5e89-4497-a02d-41a7a3d894bf"
+        ],
+        "settings": {
         }
       }
     },
