@@ -6,8 +6,8 @@
 
       ],
       "settings": {
-        "image_left": "gentlemen",
-        "image_right": "ladies",
+        "collection": "gentlemen",
+        "collection_2": "ladies",
         "text": "WOMANs",
         "text_2": "MEN",
         "logo": "shopify:\/\/shop_images\/logo.png"
