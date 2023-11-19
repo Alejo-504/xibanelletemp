@@ -1,5 +1,11 @@
 {
   "sections": {
+    "14d97bd3-f6b1-4124-a029-b6479c2b50c1": {
+      "type": "custom-annoucement-bar",
+      "settings": {
+        "cta_text": "Call to Action"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -18,12 +24,6 @@
         "button_2_link": "",
         "button_2_text": "Learn More",
         "promo_text": "New Collection 2023"
-      }
-    },
-    "14d97bd3-f6b1-4124-a029-b6479c2b50c1": {
-      "type": "custom-annoucement-bar",
-      "settings": {
-        "cta_text": "Call to Action"
       }
     },
     "5356e5ea-6c0f-4d84-867a-47621672aef6": {
@@ -58,9 +58,9 @@
     }
   },
   "order": [
+    "14d97bd3-f6b1-4124-a029-b6479c2b50c1",
     "main",
     "db25146b-9015-4ab7-9c78-3d9c16753058",
-    "14d97bd3-f6b1-4124-a029-b6479c2b50c1",
     "5356e5ea-6c0f-4d84-867a-47621672aef6"
   ]
 }
