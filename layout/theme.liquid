@@ -16,11 +16,7 @@
     {%- endunless -%}
 
    
-    {% if template == 'index' %}
-      Hello World
-    {% else %}
-      Goodbye
-    {% endif %}
+   
 
     <title>
       {{ page_title }}
@@ -303,8 +299,13 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
+  
+    
+    
+    <!-- {% sections 'footer-group' %}-->
 
-    {% sections 'footer-group' %}
+
+
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
