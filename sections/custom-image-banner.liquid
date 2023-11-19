@@ -1,6 +1,6 @@
 
 <div class="grid principal">
-  <div class="grid-item left" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
+  <div class="grid-item left fadeup" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text }}</p>
     </div>
@@ -8,7 +8,7 @@
   <div class="grid-item logo logoenter">
     <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="450" height="300"/>
   </div>
-  <div class="grid-item right" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
+  <div class="grid-item right fadeup" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
     </div>
@@ -27,6 +27,23 @@
     opacity: 1;
   }
 }
+@keyframes fadeup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+
+    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fadeup.left {
+  animation: fadeup 1s ease-out forwards;
+}
+.fadeup.right {
+  animation: fadeup 1.5s ease-out forwards;
+}
 main{
   height:100vh;
 }
@@ -34,9 +51,9 @@ main{
 .grid-item.logoenter {
   animation: logoenter 1.5s ease-out forwards;
 }
-  .principal{
-    background:#e3dccf;
-  }
+.principal{
+  background:#e3dccf;
+}
 .grid.principal{
   display: grid;
   grid-template-columns: 0.75fr 1.5fr 0.75fr;
@@ -44,20 +61,22 @@ main{
   align-items: center;
   justify-items: center;
 }
-  .logo{
-     height: auto;
-    overflow: hidden; /* Para manejar cualquier desbordamiento durante la animación */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+.logo{
+  height: auto;
+  overflow: hidden; /* Para manejar cualquier desbordamiento durante la animación */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .grid.principal{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
   }
+   .logo img{
+     
+   }
 }
 .font-primary{
   font-weight:900;
