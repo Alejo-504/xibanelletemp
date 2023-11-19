@@ -42,42 +42,6 @@
         "definition": [
           {
             "type": "color",
-            "id": "color_men_1",
-            "label": "Color Men 1",
-            "default": "#FFFFFF"
-          },
-          {
-            "type": "color",
-            "id": "color_men_2",
-            "label": "Color Men 2",
-            "default": "#121212"
-          },
-          {
-            "type": "color",
-            "id": "color_men_3",
-            "label": "Color Men 3",
-            "default": "#121212"
-          },
-          {
-            "type": "color",
-            "id": "color_woman_1",
-            "label": "Color Men 1",
-            "default": "#FFFFFF"
-          },
-          {
-            "type": "color",
-            "id": "color_woman_2",
-            "label": "Color Men 2",
-            "default": "#121212"
-          },
-          {
-            "type": "color",
-            "id": "color_woman_3",
-            "label": "Color Men 3",
-            "default": "#121212"
-          },
-          {
-            "type": "color",
             "id": "background",
             "label": "t:settings_schema.colors.settings.background.label",
             "default": "#FFFFFF"
