@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "12.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -40,6 +40,42 @@
         "type": "color_scheme_group",
         "id": "color_schemes",
         "definition": [
+          {
+            "type": "color",
+            "id": "color_men_1",
+            "label": "Color Men 1",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "color_men_2",
+            "label": "Color Men 2",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "color_men_3",
+            "label": "Color Men 3",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "color_woman_1",
+            "label": "Color Men 1",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "color_woman_2",
+            "label": "Color Men 2",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "color_woman_3",
+            "label": "Color Men 3",
+            "default": "#121212"
+          },
           {
             "type": "color",
             "id": "background",
