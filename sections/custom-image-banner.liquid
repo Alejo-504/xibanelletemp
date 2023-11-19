@@ -5,8 +5,8 @@
       <p class="centered-text font-primary">{{ section.settings.text }}</p>
     </div>
   </div>
-  <div class="grid-item logo">
-    <img src="{{ section.settings.logo | img_url: 'master' }}" alt="" width="450" height="300" />
+  <div class="grid-item logo fadeup">
+    <img src="{{ section.settings.logo | img_url: 'master' }}" alt="" width="300" height="200" />
   </div>
   <div class="grid-item right" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
@@ -16,7 +16,24 @@
 </div>
 
 <style>
-  
+@keyframes fadeup {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.fadeup {
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fadeup:nth-child(odd) {
+    animation-delay: 0.5s;
+}
   .principal{
     background:#e3dccf;
   }
@@ -33,16 +50,11 @@
     justify-content:center;
     
   }
-  
 @media screen and (max-width: 768px) {
   .grid.principal{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
-  }
-  .logo img{
-    width:250px;
-    height: 200px;
   }
 }
 .font-primary{
@@ -72,6 +84,9 @@
     background-size: cover;
     background-position: center;
 }
+
+
+
 </style>
 
 
