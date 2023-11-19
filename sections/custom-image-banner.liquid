@@ -1,18 +1,19 @@
 
 <div class="grid principal">
-  <div class="grid-item left fadeup" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
+  <a href="/woman" class="grid-item left fadeup" style="background-image: url('{{ section.settings.image_left | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text }}</p>
     </div>
-  </div>
+  </a>
   <div class="grid-item logo logoenter">
     <img src="{{ section.settings.logo | img_url: 'master' }}" alt=""  width="100%" height="auto"/>
   </div>
-  <div class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
+  <a href="/men"
+  class="grid-item right fadedown" style="background-image: url('{{ section.settings.image_right | img_url: 'master' }}')">
     <div class="overlay">
       <p class="centered-text font-primary">{{ section.settings.text_2 }}</p>
     </div>
-  </div>
+  </a>
 </div>
 
 <style>
@@ -116,6 +117,13 @@ main{
 .grid-item.left, .grid-item.right{
     background-size: cover;
     background-position: center;
+}
+.principal a{
+    text-decoration: none;
+}
+.principal a:hover{
+    background-size: 110%;
+    transition: background-size 0.5s ease-in-out;
 }
 
 
