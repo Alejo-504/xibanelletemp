@@ -214,8 +214,10 @@
       "background-1": {
         "settings": {
           "background": "#9cb0b7",
+          "background_2": "#FFFFFF",
           "background_gradient": "",
           "text": "#ffffff",
+          "text_2": "#121212",
           "button": "#9cb0b7",
           "button_label": "#ed1919",
           "secondary_button_label": "#f11a1a",
@@ -225,8 +227,10 @@
       "background-2": {
         "settings": {
           "background": "#728d82",
+          "background_2": "#327fa3",
           "background_gradient": "",
           "text": "#ffffff",
+          "text_2": "#121212",
           "button": "#121212",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
@@ -236,8 +240,10 @@
       "inverse": {
         "settings": {
           "background": "#242833",
+          "background_2": "#FFFFFF",
           "background_gradient": "",
           "text": "#ffffff",
+          "text_2": "#121212",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -247,8 +253,10 @@
       "accent-1": {
         "settings": {
           "background": "#121212",
+          "background_2": "#FFFFFF",
           "background_gradient": "",
           "text": "#ffffff",
+          "text_2": "#121212",
           "button": "#ffffff",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
@@ -258,8 +266,10 @@
       "accent-2": {
         "settings": {
           "background": "#334fb4",
+          "background_2": "#FFFFFF",
           "background_gradient": "",
           "text": "#ffffff",
+          "text_2": "#121212",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
@@ -269,8 +279,10 @@
       "scheme-0aa986c7-68aa-4f09-8a6d-a62fdc39fce6": {
         "settings": {
           "background": "#fcfcfc",
+          "background_2": "#FFFFFF",
           "background_gradient": "",
           "text": "#121212",
+          "text_2": "#121212",
           "button": "#1773b0",
           "button_label": "#ed1919",
           "secondary_button_label": "#f11a1a",
