@@ -1,0 +1,39 @@
+<div class="owl-carousel owl-theme hero-carousel">
+  {% for product in products %}
+   {% if product != blank %}
+        <div class="item">
+            <div class="hero-image-placeholder">
+              <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}" width="400" height="auto"/>
+            </div>
+        </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+        $(".hero-carousel").owlCarousel({
+          items: 1.5,
+          loop: true,
+          margin: 10,
+          autoplay: false,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: false, // Set to true if navigation buttons are needed
+          navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+          dots: false,
+          responsive: {
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+          }
+        });
+  });
+</script>
