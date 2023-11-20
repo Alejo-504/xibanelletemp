@@ -153,52 +153,46 @@
   </div>
 </div>
 {%- endif -%}
-{% stylesheet %}
+
  {% if section.settings.enabled_top_bar == true %}
-   
-    sticky-header.header-wrapper {
+   <style>
+     .sticky-header .header-wrapper {
       top: 45px;
     }
-   .header-bar {
-      background: var(--color-background-contrast); 
+    .header-bar {
+      background: var(--color-background-contrast);
       color: white;
       padding: 10px 0;
       position: fixed;
       top: 0;
       width: 100%;
       height: 45px;
-  
-    .social-links {
+    }
+    .header-bar .social-links {
       list-style: none;
       padding: 0;
       margin: 0;
-      li {
-        display: inline;
-        margin-right: 10px;
-  
-        a {
-          color: white;
-          text-decoration: none;
-  
-          &:hover {
-            text-decoration: none;
-            color: darken(white, 10%);
-          }
-  
-          i {
-            font-size: 1.7rem;
-          }
-        }
-      }
     }
-  
-    .cta-text {
+    .header-bar .social-links li {
+      display: inline;
+      margin-right: 10px;
+    }
+    .header-bar .social-links li a {
+      color: white;
+      text-decoration: none;
+    }
+    .header-bar .social-links li a:hover {
+      text-decoration: none;
+      color: #cccccc; /* Reemplaza este valor con el resultado de oscurecer el blanco en un 10% */
+    }
+    .header-bar .social-links li a i {
+      font-size: 1.7rem;
+    }
+    .header-bar .cta-text {
       font-weight: bold;
     }
-  }
-  {% endif %}}
-{% endstylesheet %}
-
+  </style>
+  {% endif %}
 
       
 {%- liquid
