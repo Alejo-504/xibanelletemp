@@ -11,7 +11,7 @@
     "0f0e7ac3-7338-4adf-aa47-dba031478f91": {
       "type": "header",
       "settings": {
-        "enabled_top_bar": true,
+        "enabled_top_bar": false,
         "cta_text": "Call to Action",
         "scheme_selector": "",
         "logo_position": "middle-center-center",
