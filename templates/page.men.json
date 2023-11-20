@@ -8,16 +8,11 @@
         "padding_bottom": 36
       }
     },
-    "49f022a4-aa36-4b19-92f4-f27b9440412e": {
-      "type": "custom-annoucement-bar",
-      "settings": {
-        "cta_text": "Call to Action",
-        "scheme_selector": "background-1"
-      }
-    },
     "0f0e7ac3-7338-4adf-aa47-dba031478f91": {
       "type": "header",
       "settings": {
+        "cta_text": "Call to Action",
+        "scheme_selector": "",
         "logo_position": "middle-center-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
@@ -106,7 +101,6 @@
   },
   "order": [
     "main-page-content",
-    "49f022a4-aa36-4b19-92f4-f27b9440412e",
     "0f0e7ac3-7338-4adf-aa47-dba031478f91",
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07"
