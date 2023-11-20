@@ -2415,7 +2415,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
     grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
-  .header--middle-center-center
+  .header--middle-center-center{
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
