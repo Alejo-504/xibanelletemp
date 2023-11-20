@@ -145,12 +145,6 @@
           "promo_text": "New Collection 2023"
         }
       },
-      "custom-annoucement-bar": {
-        "type": "custom-annoucement-bar",
-        "settings": {
-          "cta_text": "Call to Action"
-        }
-      },
       "custom-header": {
         "type": "custom-header",
         "settings": {
