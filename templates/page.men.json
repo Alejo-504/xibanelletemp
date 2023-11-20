@@ -18,7 +18,7 @@
     "0f0e7ac3-7338-4adf-aa47-dba031478f91": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "middle-center-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
