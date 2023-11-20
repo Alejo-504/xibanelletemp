@@ -12,7 +12,7 @@
       "type": "custom-annoucement-bar",
       "settings": {
         "cta_text": "Call to Action",
-        "scheme_selector": 2
+        "scheme_selector": "background-1"
       }
     },
     "0f0e7ac3-7338-4adf-aa47-dba031478f91": {
