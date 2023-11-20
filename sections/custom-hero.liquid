@@ -2,11 +2,12 @@
 {% stylesheet %}
 .section-hero {
     padding: 50px 0;
-    height: calc(100vh - 160px); /* hola */
+    max-height: calc(100vh - 160px); 
+    height: auto;
 }
   @media screen and (max-width: 768px){
     .section-hero {
-      height: auto;
+      max-height: auto;
     }
   }
 
