@@ -92,10 +92,10 @@
       {% liquid
           assign background_color_2 = scheme.settings.background_2
           
-          assign background_color_brightness = background_color_2 | color_brightness
-          if background_color_brightness <= 26
+          assign background_color_brightness_2 = background_color_2 | color_brightness
+          if background_color_brightness_2 <= 26
             assign background_color_contrast_2 = background_color_2 | color_lighten: 50
-          elsif background_color_brightness <= 65
+          elsif background_color_brightness_2 <= 65
             assign background_color_contrast_2 = background_color_2 | color_lighten: 5
           else
             assign background_color_contrast_2 = background_color_2 | color_darken: 25
