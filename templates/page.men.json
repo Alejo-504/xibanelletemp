@@ -36,6 +36,7 @@
     "b378887a-0416-465e-b8d4-981298591f1b": {
       "type": "custom-hero",
       "settings": {
+        "scheme_selector": "background-2",
         "heading": "Lorem Ipsum Dolor Sit Amet",
         "subheading": "Consectetur. Tempus Mollis Nunc Mollis In",
         "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
@@ -81,6 +82,7 @@
         "74bd58be-b205-435f-bb5a-440f9aae8de4"
       ],
       "settings": {
+        "scheme_selector": ""
       }
     }
   },
