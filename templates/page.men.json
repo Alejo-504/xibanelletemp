@@ -35,6 +35,24 @@
     },
     "b378887a-0416-465e-b8d4-981298591f1b": {
       "type": "custom-hero",
+      "blocks": {
+        "3ac5dc72-e7cb-4320-9715-44bc92b03653": {
+          "type": "product",
+          "settings": {
+            "product": "italian-leather-jacket"
+          }
+        },
+        "67c7cbbf-0c08-4172-98a5-4713937313f6": {
+          "type": "product",
+          "settings": {
+            "product": "brown-leather-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "3ac5dc72-e7cb-4320-9715-44bc92b03653",
+        "67c7cbbf-0c08-4172-98a5-4713937313f6"
+      ],
       "settings": {
         "scheme_selector": "background-2",
         "heading": "Lorem Ipsum Dolor Sit Amet",
