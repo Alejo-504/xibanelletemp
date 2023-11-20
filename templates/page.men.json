@@ -13,7 +13,6 @@
       "settings": {
         "enabled_top_bar": true,
         "cta_text": "Call to Action",
-        "scheme_selector": "",
         "logo_position": "middle-center-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
