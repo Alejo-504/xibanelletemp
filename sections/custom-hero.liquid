@@ -71,7 +71,7 @@
 }
 {% endstylesheet %}
 
-<section class="section-hero">
+<section class="section-hero  color-{{ section.settings.scheme_selector }} ">
   <div class="container">
     <div class="row">
       <div class="col-md-6 my-auto">
@@ -98,6 +98,11 @@
 {
   "name": "Custom Hero Section",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "scheme_selector",
+      "label": "Scheme Number"
+    },
     {
       "type": "text",
       "id": "heading",
