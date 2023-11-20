@@ -26,8 +26,18 @@
     height:100%;
     object-fit:cover;
   }
-
-
+  .owl-item.active {
+      z-index: 5;
+  }
+  .owl-carousel .owl-item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 7px;
+      transition: all 0.3s ease-in-out;
+  }
   @media screen and (min-width: 1140px){
       .owl-item:not(.active) {
           transform: scale(0.8) translateX(-53%);
@@ -45,18 +55,8 @@
         z-index: 1;
     }
   }
-   .owl-carousel .owl-item {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
-      padding: 7px;
-      transition: all 0.3s ease-in-out;
-  }
-  .owl-item.active {
-    z-index: 5;
-    }
+  
+  
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function(){
