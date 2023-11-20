@@ -70,6 +70,7 @@
         {%- endif %}
         .color-{{ scheme.id }} {
           --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+          --color-background-2: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
         {% if scheme.settings.background_gradient != empty %}
           --gradient-background: {{ scheme.settings.background_gradient }};
         {% else %}
@@ -89,23 +90,11 @@
           endif
         %}
 
-      {% liquid
-          assign background_color_2 = scheme.settings.background_2
-          
-          assign background_color_brightness_2 = background_color_2 | color_brightness
-          if background_color_brightness_2 <= 26
-            assign background_color_contrast_2 = background_color_2 | color_lighten: 50
-          elsif background_color_brightness_2 <= 65
-            assign background_color_contrast_2 = background_color_2 | color_lighten: 5
-          else
-            assign background_color_contrast_2 = background_color_2 | color_darken: 25
-          endif
-        %}
 
         --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --color-foreground_2: {{ scheme.settings.text_2.red }},{{ scheme.settings.text_2.green }},{{ scheme.settings.text_2.blue }};
         --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
-        --color-background-contrast_2: {{ background_color_contrast_2.red }},{{ background_color_contrast_2.green }},{{ background_color_contrast_2.blue }};
+       
         --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
         --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
         --color-button-text: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
