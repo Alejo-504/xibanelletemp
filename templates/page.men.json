@@ -15,6 +15,24 @@
         "scheme_selector": 2
       }
     },
+    "0f0e7ac3-7338-4adf-aa47-dba031478f91": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-2",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "b378887a-0416-465e-b8d4-981298591f1b": {
       "type": "custom-hero",
       "settings": {
@@ -69,6 +87,7 @@
   "order": [
     "main-page-content",
     "49f022a4-aa36-4b19-92f4-f27b9440412e",
+    "0f0e7ac3-7338-4adf-aa47-dba031478f91",
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07"
   ]
