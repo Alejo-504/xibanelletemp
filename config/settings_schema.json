@@ -47,6 +47,30 @@
             "default": "#FFFFFF"
           },
           {
+            "type": "color",
+            "id": "background_2",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "background_3",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "background_4",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "background_5",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#FFFFFF"
+          },
+          {
             "type": "color_background",
             "id": "background_gradient",
             "label": "t:settings_schema.colors.settings.background_gradient.label",
@@ -55,6 +79,12 @@
           {
             "type": "color",
             "id": "text",
+            "label": "t:settings_schema.colors.settings.text.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "text_2",
             "label": "t:settings_schema.colors.settings.text.label",
             "default": "#121212"
           },
