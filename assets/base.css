@@ -2441,7 +2441,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
     grid-template-areas: 'left-icons heading icons';
     grid-template-columns: 1fr auto 1fr;
   }
-
+  .header--middle-center-center .header__inline-menu{
+    justify-content:center;
+    display:flex;
+  }
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
     margin-top: 1.05rem;
   }
