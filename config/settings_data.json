@@ -3,7 +3,7 @@
     "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-22.png",
     "logo_width": 180,
     "favicon": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "raleway_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
@@ -215,7 +215,7 @@
         "settings": {
           "background": "#9cb0b7",
           "background_gradient": "",
-          "text": "#fff",
+          "text": "#ffffff",
           "button": "#9cb0b7",
           "button_label": "#ed1919",
           "secondary_button_label": "#f11a1a",
