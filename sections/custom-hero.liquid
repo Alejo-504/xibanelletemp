@@ -20,11 +20,7 @@
   margin-bottom: 30px;
 }
 
-.hero-image-placeholder {
-  position: relative;
-  height: 400px;
-  background-color: #C8D6CA;
-}
+
 
 .image-overlay {
   position: absolute;
@@ -87,19 +83,11 @@
         </div>
       </div>
       <div class="col-md-6 text-right ps-md-4 position-relative">
-        <!-- Owl Carousel Container -->
-        <div class="owl-carousel owl-theme hero-carousel">
-           {% for block in section.blocks %}
-            {% if block.settings.product != blank %}
-              <div class="item">
-                <div class="hero-image-placeholder">
-                  <img src="{{ block.settings.product.featured_image | img_url: 'master' }}" alt="{{ block.settings.product.title }}" width="400" height="auto"/>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
+     
+        {% assign products = section.blocks %}
+        {% render "carousel-owl-two-items" , blocks:products %}
 
-        </div>
+        
         <div class="badge-new-collection">
           <span>New Collection 2023</span>
         </div>
@@ -108,32 +96,7 @@
   </div>
 </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-        $(".hero-carousel").owlCarousel({
-          items: 1.5,
-          loop: true,
-          margin: 10,
-          autoplay: false,
-          autoplayTimeout: 3000,
-          autoplayHoverPause: true,
-          nav: false, // Set to true if navigation buttons are needed
-          navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-          dots: false,
-          responsive: {
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-          }
-        });
-  });
-</script>
+
 {% schema %}
 {
   "name": "Custom Hero Section",

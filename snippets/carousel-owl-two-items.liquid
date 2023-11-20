@@ -1,9 +1,9 @@
 <div class="owl-carousel owl-theme hero-carousel">
-  {% for product in blocks %}
-   {% if product.settings.product != blank %}
+  {% for block in blocks %}
+   {% if block.settings.product != blank %}
         <div class="item">
             <div class="hero-image-placeholder">
-              <img src="{{ product.settings.product.featured_image | img_url: 'master' }}" alt="{{ product.title }}" width="400" height="auto"/>
+              <img src="{{ block.settings.product.featured_image | img_url: 'master' }}" alt="{{ block.settings.product.title }}" width="400" height="auto"/>
             </div>
         </div>
     {% endif %}
