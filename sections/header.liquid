@@ -196,9 +196,7 @@
     {%- endif -%}
 
     {%- liquid
-       assign logo_menu = section.settings.logo-menu
-       assign logo_width = section.settings.logo-width
-       assign logo_height = section.settings.logo-height
+
   
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
@@ -529,21 +527,6 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo-menu",
-      "label": "Logo Menu"
-    },
-    {
-      "type": "number",
-      "id": "logo-width",
-      "label": "Logo Width"
-    },
-    {
-      "type": "number",
-      "id": "logo-height",
-      "label": "Logo height"
     },
     {
       "type": "link_list",
