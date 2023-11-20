@@ -1,10 +1,14 @@
 
 {% stylesheet %}
 .section-hero {
-  padding: 50px 0;
-  height: calc(100vh - 100px);
-  
+    padding: 50px 0;
+    height: calc(100vh - 160px);
 }
+  @media screen and (max-width: 768px){
+    .section-hero {
+      height: auto;
+    }
+  }
 
 .section-hero h1 {
   font-size: 3rem; /* Adjust font size as needed */
