@@ -1,7 +1,13 @@
 {% schema %}
 {
   "name": "Custom Best Sellers",
-  "settings": [],
+  "settings": [
+      {
+          "type": "color_scheme",
+          "id": "scheme_selector",
+          "label": "Scheme Number"
+        }
+  ],
   "blocks": [
     {
       "type": "product",
@@ -11,11 +17,6 @@
           "type": "product",
           "id": "product",
           "label": "Product"
-        },
-        {
-          "type": "color_scheme",
-          "id": "scheme_selector",
-          "label": "Scheme Number"
         }
       ],
       "limit": 4
