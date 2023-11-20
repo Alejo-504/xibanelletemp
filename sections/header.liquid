@@ -154,10 +154,11 @@
 </div>
 {%- endif -%}
 {% stylesheet %}
- {% if section.settings.enabled_top_bar %}
-  sticky-header.header-wrapper {
-    top: 45px;
-  }
+ {% if section.settings.enabled_top_bar == true %}
+   
+    sticky-header.header-wrapper {
+      top: 45px;
+    }
    .header-bar {
       background: var(--color-background-contrast); 
       color: white;
