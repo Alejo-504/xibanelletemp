@@ -3,6 +3,7 @@
 .section-hero {
   padding: 50px 0;
   height: calc(100vh - 100px);
+  z-index: 0;
 }
 
 .section-hero h1 {
@@ -70,7 +71,7 @@
 }
 {% endstylesheet %}
 
-<section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-center">
+<section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-center position-relative">
   <div class="container-fluid page-width">
     <div class="row">
       <div class="col-md-6 my-auto pe-md-4">
