@@ -1,34 +1,59 @@
 <div class="owl-carousel owl-theme hero-carousel">
   {% for block in blocks %}
-   {% if block.settings.product != blank %}
-        <div class="item">
-            <div class="hero-image-placeholder">
-              <img src="{{ block.settings.product.featured_image | img_url: 'master' }}" alt="{{ block.settings.product.title }}" width="400" height="auto"/>
-            </div>
+    {% if block.settings.product != blank %}
+      <div class="item">
+        <div class="hero-image-placeholder">
+          <img
+            src="{{ block.settings.product.featured_image | img_url: 'master' }}"
+            alt="{{ block.settings.product.title }}"
+            width="400"
+            height="auto"
+          >
         </div>
+      </div>
     {% endif %}
   {% endfor %}
 </div>
 <style>
-.hero-image-placeholder {
-  position: relative;
-  height: 400px;
-  background-color: #C8D6CA;
-}
+  .hero-image-placeholder {
+    position: relative;
+    height: 400px;
+    background-color: #C8D6CA;
+  }
 
-  
-@media screen and (min-width: 1140px){
+
+  @media screen and (min-width: 1140px){
+      .owl-item:not(.active) {
+          transform: scale(0.8) translateX(-83%);
+      }
+  }
+
+  @media screen and (min-width: 1140px){
     .owl-item:not(.active) {
         transform: scale(0.8) translateX(-83%);
     }
-}
-
-@media screen and (min-width: 1140px){
-  .owl-item:not(.active) {
-      transform: scale(0.8) translateX(-83%);
   }
-}
-  
+  @media screen and (min-width: 1140px){
+    .owl-carousel .owl-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 7px;
+        transition: all 0.4s linear;
+        z-index: 1;
+    }
+  }
+   .owl-carousel .owl-item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 7px;
+      transition: all 0.3s ease-in-out;
+  }
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function(){
