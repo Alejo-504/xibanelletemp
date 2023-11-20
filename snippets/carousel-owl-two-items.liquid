@@ -1,14 +1,13 @@
 <div class="owl-carousel owl-theme hero-carousel">
-  {% for product in products %}
-   {% if product != blank %}
+  {% for product in blocks %}
+   {% if product.settings.product != blank %}
         <div class="item">
             <div class="hero-image-placeholder">
-              <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}" width="400" height="auto"/>
+              <img src="{{ product.settings.product.featured_image | img_url: 'master' }}" alt="{{ product.title }}" width="400" height="auto"/>
             </div>
         </div>
     {% endif %}
   {% endfor %}
-</div>
 <style>
 .hero-image-placeholder {
   position: relative;
