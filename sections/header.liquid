@@ -153,8 +153,8 @@
   </div>
 </div>
 {%- endif -%}
-{%- stylesheet -%}
- 
+{% stylesheet %}
+ {% if section.settings.enabled_top_bar %}
   sticky-header.header-wrapper {
     top: 45px;
   }
@@ -195,7 +195,7 @@
       font-weight: bold;
     }
   }
-
+  {% endif %}}
 {% endstylesheet %}
 
 
