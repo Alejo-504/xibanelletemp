@@ -81,15 +81,19 @@
           <a href="#" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
-      <div class="col-md-6 text-right ps-md-4">
+      <div class="col-md-6 text-right ps-md-4 position-relative">
         <!-- Owl Carousel Container -->
         <div class="owl-carousel owl-theme hero-carousel">
-          <div class="item">
-            <div class="hero-image-placeholder">
-              <img src="path_to_your_image.jpg" alt="Hero Image">
-            </div>
-          </div>
-          <!-- Add more items here -->
+           {% for block in section.blocks %}
+            {% if block.settings.product != blank %}
+              <div class="item">
+                <div class="hero-image-placeholder">
+                  <img src="{{ block.settings.product.featured_image | img_url: 'master' }}" alt="{{ block.settings.product.title }}" width="400" height="auto"/>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+
         </div>
         <div class="badge-new-collection">
           <span>New Collection 2023</span>
@@ -182,7 +186,19 @@
       "default": "New Collection 2023"
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Block",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a product"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Custom Hero",
