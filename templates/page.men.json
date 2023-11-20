@@ -19,9 +19,6 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "logo-menu": "shopify:\/\/shop_images\/Xibanelle_Logo-21.png",
-        "logo-width": 150,
-        "logo-height": 80,
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
