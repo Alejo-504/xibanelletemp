@@ -185,7 +185,7 @@
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
  {%- if section.settings.enabled_top_bar == true -%}
-<div class="header-bar color-{{ section.settings.scheme_selector_topbar }} ">
+<div class="header-bar">
   <div class="container-fluid page-width">
     <div class="row">
       <div class="col">
