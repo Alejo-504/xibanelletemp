@@ -11,6 +11,11 @@
           "type": "product",
           "id": "product",
           "label": "Product"
+        },
+        {
+          "type": "color_scheme",
+          "id": "scheme_selector",
+          "label": "Scheme Number"
         }
       ],
       "limit": 4
@@ -33,7 +38,7 @@
 /* Agrega aquí tu JavaScript si es necesario */
 {% endjavascript %}
 
-<div class="best-sellers-section container">
+<div class="best-sellers-section container  color-{{ section.settings.scheme_selector }} ">
   <h2>Best Sellers Section</h2>
   <p>Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
   <div class="row">
