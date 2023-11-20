@@ -26,43 +26,7 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-  .header-bar {
-    background: var(--color-background-contrast); 
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 45px;
-
-  .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      display: inline;
-      margin-right: 10px;
-
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: none;
-          color: darken(white, 10%);
-        }
-
-        i {
-          font-size: 1.7rem;
-        }
-      }
-    }
-  }
-
-  .cta-text {
-    font-weight: bold;
-  }
-}
+   
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -123,6 +87,44 @@
 </style>
 
 {%- style -%}
+   .header-bar {
+      background: var(--color-background-contrast); 
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 45px;
+  
+    .social-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline;
+        margin-right: 10px;
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: none;
+            color: darken(white, 10%);
+          }
+  
+          i {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  
+    .cta-text {
+      font-weight: bold;
+    }
+  }
+  
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
