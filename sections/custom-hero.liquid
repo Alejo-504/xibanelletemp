@@ -70,7 +70,7 @@
 }
 {% endstylesheet %}
 
-<section class="section-hero  color-{{ section.settings.scheme_selector }} d-flex align-items-center ">
+<section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-center">
   <div class="container-fluid page-width">
     <div class="row">
       <div class="col-md-6 my-auto pe-md-4">
@@ -82,8 +82,14 @@
         </div>
       </div>
       <div class="col-md-6 text-right ps-md-4">
-        <div class="hero-image-placeholder">
-          <div class="image-overlay"></div>
+        <!-- Owl Carousel Container -->
+        <div class="owl-carousel owl-theme hero-carousel">
+          <div class="item">
+            <div class="hero-image-placeholder">
+              <img src="path_to_your_image.jpg" alt="Hero Image">
+            </div>
+          </div>
+          <!-- Add more items here -->
         </div>
         <div class="badge-new-collection">
           <span>New Collection 2023</span>
@@ -93,6 +99,32 @@
   </div>
 </section>
 
+<script>
+  $(document).ready(function(){
+    $(".hero-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      nav: true, // Set to true if navigation buttons are needed
+      navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+      dots: true,
+      responsive: {
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+      }
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Custom Hero Section",
