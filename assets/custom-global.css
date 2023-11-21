@@ -98,8 +98,9 @@
 }
 
 .btn-primary-outline:hover {
-  background-color: #6c7a89;
+  background-color: rgb(var(--color-button));
   color: #fff;
+  border:solid 1px white;
 }
 @media (max-width: 768px) {
   :root{
