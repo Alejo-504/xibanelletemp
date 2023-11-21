@@ -68,8 +68,8 @@
         <h1 class="mb-0">Lorem Ipsum Dolor Sit Amet Consectetur. Tempus Mollis Nunc Mollis In</h1>
         <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.</p>
         <div class="btn-group d-flex">
-          <a href="#" class="btn btn-primary">Shop Now</a>
-          <a href="#" class="btn btn-primary-outline">Learn More</a>
+          <a href="{{ section.setting.button_1_link }}" class="btn btn-primary">Shop Now</a>
+          <a href="{{ section.setting.button_2_link }}" class="btn btn-primary-outline">Learn More</a>
         </div>
       </div>
       <div class="col-md-6 text-right ps-md-4 position-relative pe-md-0">
@@ -77,7 +77,8 @@
         {% assign products = section.blocks %}
         {% render "carousel-owl-two-items" , blocks:products %}
 
-        
+        <div class="position-absolute">
+        </div>
     
       </div>
     </div>
