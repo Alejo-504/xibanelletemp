@@ -113,7 +113,7 @@
   overflow: hidden; 
 }
 .btn-primary:hover{
-  overflow:visible;
+  overflow:auto;
 }
 .btn-primary::after {
   content: '';
