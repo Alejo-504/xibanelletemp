@@ -99,7 +99,6 @@
     }
     .item-cart {
       background: rgb(var(--color-background-2));
-      border: 2px solid transparent; /* Se prepara para el efecto de contorno */
       border-radius: 50%;
       width: 45px;
       height: 45px;
@@ -108,19 +107,19 @@
       justify-content: center;
       color: rgb(var(--color-foreground));
       text-decoration: none;
-      transition: all 0.3s ease; /* Suaviza la transición del efecto hover */
-    }
-    
-    .item-cart i {
-      color: inherit; /* Hereda el color de .item-cart para facilitar la gestión del color */
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
     
     .item-cart:hover {
-      background: transparent; /* Hace el fondo transparente */
-      color: rgb(var(--color-background-2)); /* Cambia el color del ícono al color original del fondo */
-      border-color: rgb(var(--color-background-2)); /* El borde toma el color original del fondo */
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
-   
+    
+    .item-cart:active {
+      transform: scale(0.9); /* Reduce ligeramente el tamaño para simular presión */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más corta para dar efecto de estar presionado */
+    }
   </style>
   
   <div class="best-sellers-section section-100vh mb-5 color-{{ section.settings.scheme_selector }} ">
