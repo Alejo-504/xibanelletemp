@@ -75,7 +75,9 @@
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
         
-             <div class="grid-item">Hola</div>
+             <div class="grid-item">
+               {%  render "card-product", product:product %}
+             </div>
           
         {% endfor %}
       </div>
