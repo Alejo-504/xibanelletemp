@@ -88,33 +88,50 @@
   z-index: -1!important;
   transform: translate(-50%, -50%);
 }
+.btn-primary-outline {
+  background-color: transparent;
+  border: solid 1px rgb(var(--color-button));
+  color: rgb(var(--color-button));
+}
+.btn-primary-outline:hover {
+   color: #fff;
+  border:solid 1px white;
+}
 .btn:hover::after {
   width: 100%;
   height: 100%;
   top: 50%;
   left: 50%;
 }
-.btn-primary:hover .btn-primary-outline:hover {
-  color: #fff!important;
-}
-.btn-primary {
-  background-color: rgb(var(--color-button));
-}
-.btn-primary-outline {
-  background-color: transparent;
-  border: solid 1px rgb(var(--color-button));
-  color: rgb(var(--color-button));
-}
 .btn:hover {
   transform: translateY(-4px);
 }
-.btn-primary:hover {
-  background-color: rgb(var(--color-button)); 
+
+.btn-primary {
+  background-color: rgb(var(--color-button));
+  position: relative;
+  overflow: hidden; 
 }
-.btn-primary-outline:hover {
-  color: #fff;
-  border:solid 1px white;
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white; 
+  transition: height 0.3s ease-in-out;
+  z-index: 0;
 }
+
+.btn-primary:hover::after {
+  height: 100%;
+}
+
+
+
+
 @media (max-width: 768px) {
   :root{
     --font-body-scale: 0.7!important;
