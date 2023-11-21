@@ -127,14 +127,25 @@
   background-color: transparent; 
   transition: height 0.3s ease-in-out;
   z-index: 0;
+  border-top:0;
+  
 }
 
 .btn-primary:hover::after {
   height: 100%;
   bottom:0;
+  animation: boxshadowtop;
+  animation-delay: 1s;
 }
 
-
+@keyframes boxshadowtop{
+  from {
+    box-shadow: 0 0px 0 0 white;
+  }
+  to{
+    box-shadow: 0 -1px 0 0 white;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -142,4 +153,3 @@
     --font-body-scale: 0.7!important;
   }
 }
-
