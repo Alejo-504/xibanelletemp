@@ -43,15 +43,17 @@
    }
 </style>
 
-<div class="best-sellers-section container section-100vh mb-5 color-{{ section.settings.scheme_selector }}">
-  <h2>Best Sellers Section</h2>
-  <p class="mb-4">Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
-  <div class="row">
-    {% for block in section.blocks %}
-      {% assign product = all_products[block.settings.product] %}
-      <div class="col-md-3">
-        {% render 'product-custom-normal', product: product %}
-      </div>
-    {% endfor %}
+<div class="best-sellers-section section-100vh mb-5 color-{{ section.settings.scheme_selector }}">
+  <div class="container">
+    <h2>Best Sellers Section</h2>
+    <p class="mb-4">Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
+    <div class="row">
+      {% for block in section.blocks %}
+        {% assign product = all_products[block.settings.product] %}
+        <div class="col-md-3">
+          {% render 'product-custom-normal', product: product %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
