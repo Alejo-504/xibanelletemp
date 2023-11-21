@@ -40,17 +40,16 @@
    
   
       {%  if size=="medium" %}
-      
-      
+
          {%  render "custom-medium-product", product:product %}
-        
-        
+
       {% elsif size=="large" %}
   
          {%  render "custom-large-product", product:product %}
+        
       {% else %}
 
-       {%  render "custom-normal-product", product:product %}
+         {%  render "custom-normal-product", product:product %}
 
       {% endif %}
 
