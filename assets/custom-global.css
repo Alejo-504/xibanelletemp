@@ -113,7 +113,7 @@
   overflow: hidden; 
 }
 .btn-primary:hover{
-  overflow:auto;
+  overflow:visible;
 }
 .btn-primary::after {
   content: '';
@@ -134,7 +134,7 @@
 .btn-primary:hover::after {
   height: 100%;
   bottom:0;
-  animation: boxshadowtop;
+  animation: boxshadowtop 1s forwards;
   animation-delay: 1s;
 }
 
