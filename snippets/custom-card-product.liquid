@@ -41,10 +41,10 @@
     </div>
     <div class="body-card">
       <div class="title-card">
-        <h5>{{ product.title }}</h5>
+        <strong>{{ product.title }}</strong>
       </div>
       <div class="d-flex container-last-row-card align-items-center justify-content-between">
-        <div class="price-card">
+        <div class="price-card ">
           <p>{{ product.price | money }}</p>
         </div>
         <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fa fa-shopping-cart"></i></a>       
