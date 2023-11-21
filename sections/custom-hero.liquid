@@ -76,15 +76,19 @@
     font-style: italic;
     font-weight: 900;
   }
+  .slide-left-delay{
+    animation: slideLeft 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
 {% endstylesheet %}
 
 <section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-center position-relative ">
   <div class="container-fluid me-md-0 pe-md-0">
     <div class="row me-md-0 p-0">
       <div class="col-md-6 justify-content-evenly col-md-6 page-width d-flex align-items-start flex-column page-width ">
-        <h1 class="mb-0">{{ section.settings.heading }}</h1>
-        <p class="mb-0">{{ section.settings.description }}</p>
-        <div class="btn-group d-flex">
+        <h1 class="mb-0 slide-left">{{ section.settings.heading }}</h1>
+        <p class="mb-0 slide-left-delay">{{ section.settings.description }}</p>
+        <div class="btn-group d-flex slide-left">
           <a href="{{ section.settings.button_1_link }}" class="btn btn-primary">{{ section.settings.button_1_text }}</a>
           <a href="{{ section.settings.button_2_link }}" class="btn btn-primary-outline">{{ section.settings.button_2_text }}</a>
         </div>
