@@ -88,7 +88,7 @@
   left: 50%;
   width: 0;
   height: 0;
-  background-color: rgba(var(--color-button), 0.5);
+  background-color: rgba(var(--color-button), 1);
   transition: width 0.7s ease, height 0.7s ease, left 0.7s ease, top 0.7s ease;
   z-index: -1!important;
   transform: translate(-50%, -50%);
