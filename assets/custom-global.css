@@ -95,7 +95,7 @@
 }
 
 .btn-primary::after {
-  --color-button: 108, 117, 125;
+  --color-button: 0, 0, 0;
 }
 
 .btn-primary-outline::after {
