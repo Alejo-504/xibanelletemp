@@ -259,7 +259,7 @@ position: absolute;
   {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
   {% unless preview_image == blank %}
-    {% include 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+    {% render 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
   {% endunless %}
   
  
