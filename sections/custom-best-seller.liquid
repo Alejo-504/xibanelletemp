@@ -42,13 +42,13 @@
        color: #888888;
        max-width: 550px;
      }
-    .grid-container-product{
+    #shopify-section-{{section.id}} .grid-container-product{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 20px;
       margin-bottom: 45px;
     }
-    .grid-item{
+    #shopify-section-{{section.id}} .grid-item{
       display:flex;
       justify-content:center;
       align-items:center;
@@ -58,36 +58,39 @@
       color: rgb(var(--color-foreground_3));
       padding: 15px 20px 15px 20px;
     }
-     .grid-item:nth-child(1){
+     #shopify-section-{{section.id}} .grid-item:nth-child(1){
        grid-column: span 4;
      }
-    .grid-item:nth-child(2){
+    #shopify-section-{{section.id}} .grid-item:nth-child(2){
       grid-column: span 8;
     }
-    .grid-item:nth-child(5){
+    #shopify-section-{{section.id}} .grid-item:nth-child(5){
       grid-column: span 6;
     }
-    .grid-item:nth-child(1) .header-card{
+    #shopify-section-{{section.id}} .grid-item:nth-child(1) .header-card{
       height: 190px;
       overflow: hidden;
     }
-    .grid-item:nth-child(2) .header-card{
+    #shopify-section-{{section.id}} .grid-item:nth-child(2) .header-card{
       height: 190px;
       width: 200px;
       overflow: hidden;
     }
-    .grid-item:nth-child(3) .header-card{
+    #shopify-section-{{section.id}} .grid-item:nth-child(3) .header-card{
       height: 190px;
       overflow: hidden;
     }
-    .grid-item:nth-child(4) .header-card{
+    #shopify-section-{{section.id}} .grid-item:nth-child(4) .header-card{
       height: 190px;
       overflow: hidden;
     }
-    .grid-item:nth-child(5) .header-card{
+    #shopify-section-{{section.id}} .grid-item:nth-child(5) .header-card{
       height: 190px;
-       width: 200px;
+      width: 200px;
       overflow: hidden;
+    }
+    #shopify-section-{{section.id}} .title-card strong{
+      color:color: rgb(var(--color-foreground_3));
     }
    
   </style>
@@ -100,7 +103,7 @@
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
         
-              <div class="grid-item grid-item-{{forloop.index}}">
+             <div class="grid-item grid-item-{{forloop.index}}">
                {%  render "custom-card-product", product:product %}
              </div>
           
