@@ -132,7 +132,21 @@
           {% assign product = all_products[block.settings.product] %}
         
              <div class="grid-item grid-item-{{forloop.index}}">
-               {%  render "custom-card-product", product:product %}
+
+                {% if forloop.index == 2 %}
+                  
+                 {% render "custom-card-product", product:product, size:"large" %}
+               
+                {% elsif forloop.index == 5 %}
+                  
+                 {% render "custom-card-product", product:product, size:"medium" %}
+               
+                {% else %}
+                  
+                  {% render "custom-card-product", product:product, size:"normal" %}
+               
+                {% endif %}
+               
              </div>
           
         {% endfor %}
