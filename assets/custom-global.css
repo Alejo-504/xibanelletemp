@@ -103,8 +103,8 @@
   color: #fff;
 }
 @media (max-width: 768px) {
-  html{
-    font-size:8px;
+  :root{
+    --font-body-scale: 0.7!important;
   }
 }
 
