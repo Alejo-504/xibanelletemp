@@ -134,8 +134,8 @@
 .btn-primary:hover::after {
   height: 100%;
   bottom:0;
-  animation: boxshadowtop 1s forwards;
-  animation-delay: 1s;
+  animation: boxshadowtop 0.2s forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes boxshadowtop{
