@@ -1,0 +1,287 @@
+<style>
+  
+
+.product-grid .singl-service{
+  position:relative;
+  margin-bottom: 30px;
+} 
+
+ .team__item {
+	height: 100%;
+    width: 100%;
+	position: relative;
+	z-index: 4;
+	margin-bottom: 30px;
+	border-radius: 50px;
+    border: 5px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	/*var*/
+	--background-elements: var(--gradient-secondary);
+    --color-elements: white;
+}
+   @media screen and (max-width: 992px){
+    
+       .team__item .team__text p {
+          max-height: 28ex;
+          margin-top: 70px;
+   
+    opacity: 1 !important;
+    visibility: visible !important;
+
+        }
+      .team__item:after {
+    opacity: 1 !important;
+}
+     }
+  
+  
+.team__item:after {
+	position: absolute;
+	left: -1px;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(17, 17, 17, 0.9);
+	content: "";
+	z-index: -1;
+	opacity: 0.1;
+	-webkit-transition: all, 0.5s, ease-out, 0.5s;
+	-o-transition: all, 0.5s, ease-out, 0.5s;
+	transition: all, 0.5s, ease-out, 0.5s;
+	border-radius: 50px;
+}
+
+.team__item:hover {
+	cursor: pointer;
+}
+
+.team__item:hover:after {
+	opacity: 1;
+}
+
+
+
+.team__item:hover .team__text p {
+	opacity: 1;
+	visibility: visible;
+
+}
+
+
+
+.team__text {
+	height: 100%;
+	position: relative;
+	padding: 35px 30px 40px;
+}
+.team__item .team__text p{
+  color: var(--tertiary-dark);
+      text-align: center;
+}
+.team__text .team__title {
+position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 200px;
+    padding: 0 30px;
+    -webkit-transition: all, 0.7s, ease-out, 0.7s;
+    -o-transition: all, 0.7s, ease-out, 0.7s;
+    transition: all, 0.7s, ease-out, 0.7s;
+}
+
+.team__text .team__title h5 {
+    color: var(--color-elements);
+    font-weight: 600;
+    font-family: "fuente-titulo";
+    margin-bottom: 6px;
+    background: var(--background-elements);
+    padding: 10px;
+    border-radius: 25px;
+    letter-spacing: 2.5px;
+}
+  
+  
+
+  
+.team__text p {
+	color: #b7b7b7;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all, 0.7s, ease-out, 0.7s;
+	-o-transition: all, 0.7s, ease-out, 0.7s;
+	transition: all, 0.7s, ease-out, 0.7s;
+    font-family: "fuente-contenido";
+}
+  
+
+.team__text .title-package {
+	position: absolute;
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
+    color: var(--color-elements);
+    background: var(--background-elements);
+    top: 0px;
+    width: 100.15%;
+    left: 0px;
+    min-height: 60px;
+    border-radius: 42px 42px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17.5px;
+    padding: 5px 18px;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    max-height: 70px;
+  text-transform: capitalize;
+}
+  
+  
+.team__item:hover .team__text .title-package {
+	opacity: 1;
+	visibility: visible;
+    color: white;
+    text-align: center;
+
+    transition: all 0.6;
+}
+  .team__item:hover .team__text p{
+  max-height: 28ex;
+  margin-top: 70px;
+}
+.team__item:after {
+position: absolute;
+    left: -1px;
+    top: -1px;
+    height: 101.1%;
+    width: 101%;
+    background: rgb(243 243 243 / 84%);
+    content: "";
+    z-index: -1;
+    opacity: 0.1;
+    -webkit-transition: all, 0.5s, ease-out, 0.5s;
+    border-radius: 42px;
+}
+
+
+
+.team__item:hover:after {
+	opacity: 1 !important;
+}
+.team__text a {	
+	opacity: 0;	
+}
+
+.team__item:hover .team__text a {
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.team__item .item-cart{
+   opacity: 0;
+   transition: all 0.6s
+ }
+ .product-recomended a.grid-view-item__link{
+     pointer-events:none!important; 
+  }
+  
+.team__item .item-cart{
+ position: absolute;
+    top: 80%;
+    right: 20px;
+    z-index: 1;
+    padding: 10px 13px 8px 10px;
+    border-radius: 50%;
+    background: var(--background-elements);
+    color: var(--color-elements);
+    opacity: 1;
+    transition: all 0.6;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+
+ .team__item:hover .team__text p {
+	opacity: 1;
+	visibility: visible;
+
+} 
+  .team__item:hover .team__text a {
+	opacity: 1;
+	visibility: visible;
+
+}
+  
+.team__item a.item-cart:hover{
+   background: var(--gradient-secondary) !important;
+  transition: all 0.6;
+  color: white !important;
+  transition: all 0.6s;
+ }
+  .soap .team__text p, .soap .team__item:after{
+  display:none !important;
+}
+  
+</style>
+
+
+
+{% comment %}
+    Renders a product card using "Grid" style
+    Accepts:
+    - max_height: {Number} Maximum height of the product's image (required)
+    - product: {Object} Product Liquid object (required)
+    - show_vendor: {Boolean} Show the product's vendor depending on the section setting (optional)
+
+    Usage:
+    {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+    {% assign soap = false %}
+        {% for coll in product.collections %}
+        {% if coll.title == 'Soaps' or coll.title =="Jabones" %}
+            {% assign soap = true %}
+        {% endif %}
+        {% endfor %}
+    
+    
+    <section class="product-grid {% if soap %} soap {% endif %}">
+<div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
+  <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url }}">
+    <span class="visually-hidden">{{ product.title }}</span>
+  </a>
+
+  {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {%- assign preview_image = product.featured_media.preview_image -%}
+  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+  {% unless preview_image == blank %}
+    {% include 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+  {% endunless %}
+  
+ 
+<div class="team__item set-bg" style="background: url({{ product.featured_image | img_url: 'large' }}); background-size: cover;">
+ <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fas fa-shopping-cart"></i></a>       
+  <a href="{{product.url}}">
+  <div class="team__text">
+            <div class="team__title text-center">
+                <h5>{{product.price | money}}</h5>
+            </div>
+            <h3 class="title-package">{{product.title}} </h3>
+            <p class="scrollbar-0" style="max-height:28ex;" class="text-center">{{product.description | strip_html | truncate: 160 }} </p>
+  </div>
+  </a>
+</div>
+    
+  
+
+</div>
+</section>
+
