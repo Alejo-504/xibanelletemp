@@ -81,7 +81,7 @@
 }
 
 
-.btn::after {
+.btn-primary-outline::after {
   content: '';
   position: absolute;
   top: 50%;
