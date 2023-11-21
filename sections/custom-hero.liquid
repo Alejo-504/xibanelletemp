@@ -5,30 +5,14 @@
     max-height: calc(100vh - 160px); 
     height: auto;
 }
-@media (max-width: 768px){
-  .section-hero {
-    max-height: max-content !important;
-  }
-  .section-hero *{
-    text-align:center;
-  }
-  .section-hero h1 {
-    font-size: 3.5rem; 
-  }
-}
-
 .section-hero h1 {
   font-size: 4.5rem; 
   margin-bottom: 20px;
 }
-
 .section-hero p {
   font-size: 2rem;
   margin-bottom: 30px;
 }
-
-
-
 .image-overlay {
   position: absolute;
   top: 50%;
@@ -39,7 +23,6 @@
   background: url('path-to-your-icon.png') no-repeat center center;
   background-size: contain;
 }
-
 .badge-new-collection {
   position: absolute;
   bottom: -25px;
@@ -54,16 +37,12 @@
   align-items: center;
   font-size: 0.9rem;
 }
-
 .btn-group .btn {
   margin-right: 10px;
 }
-
 .btn-group .btn:last-child {
   margin-right: 0;
 }
-
-/* Adjustments for responsiveness */
 @media (max-width: 768px) {
   .hero-image-placeholder {
     margin-top: 30px;
@@ -73,6 +52,17 @@
     position: static;
     transform: none;
     margin: 20px auto;
+  }
+}
+@media (max-width: 768px){
+  .section-hero {
+    max-height: max-content !important;
+  }
+  .section-hero *{
+    text-align:center;
+  }
+  .section-hero h1 {
+    font-size: 3.5rem !important;
   }
 }
 {% endstylesheet %}
