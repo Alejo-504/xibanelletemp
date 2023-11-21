@@ -1,11 +1,3 @@
- <div class="body-card d-grid" style="
-      grid-template-columns:calc(100% - 50px) 50px;
-      align-items: center;
-      justify-items: start;
-      margin-top: 15px;
-      text-align: start;
-    ">
-
 <div class="header-card">
   <img
     src="{{ product.featured_image | img_url: 'large' }}"
@@ -15,6 +7,13 @@
     style="border-radius:1px;width:100%;height:100%;object-fit:cover"
   >
 </div>
+ <div class="body-card d-grid" style="
+      grid-template-columns:calc(100% - 50px) 50px;
+      align-items: center;
+      justify-items: start;
+      margin-top: 15px;
+      text-align: start;
+    ">
 <div class="d-flex flex-column align-items-start">
   <div class="title-card">
     <strong>{{ product.title }}</strong>
