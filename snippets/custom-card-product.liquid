@@ -36,9 +36,7 @@
 <!--<div class="team__item set-bg" style="background: url({{ product.featured_image | img_url: 'large' }}); background-size: cover;"></div>-->
 
   <div class="card-product-custom">
-    <div class="header-card">
-      <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}" width="100%" height="200" style="border-radius:1px;width:100%;height:100%;object-fit:cover">
-    </div>
+   
     <div class="body-card d-grid" style="
       grid-template-columns:calc(100% - 50px) 50px;
       align-items: center;
@@ -57,23 +55,7 @@
 
       {% else %}
 
-        <div class="d-flex flex-column align-items-start">
-        <div class="title-card">
-          <strong>{{ product.title }}</strong>
-        </div>
-         <div class="price-card">
-        {% if product.compare_at_price > product.price %}
-          <span class="price-original" style="text-decoration: line-through;color:red!important;">
-            {{ product.compare_at_price | money }}
-          </span>&nbsp;
-          <span class="price-sale">
-            {{ product.price | money }}
-          </span>
-        {% else %}
-          {{ product.price | money }}
-        {% endif %}
-         </div>
-      </div>
+       {%  render custom-normal-product, product:product %}
 
       {% endif %}
 
