@@ -1,0 +1,53 @@
+<div class="body-card d-grid" style="
+grid-template-columns:2fr 1fr;
+align-items: center;
+justify-items: start;
+margin-top: 15px;
+text-align: start;
+">
+
+<div class="header-card" style="
+  height: 250px;
+  width: 250px;
+  overflow: hidden;"
+>
+<img
+src="{{ product.featured_image | img_url: 'large' }}"
+alt="{{ product.featured_image.alt | escape }}"
+width="100%"
+height="200"
+style="border-radius:1px;width:100%;height:100%;object-fit:cover"
+>
+</div>
+  
+<div class="d-flex flex-column align-items-center">
+<div class="title-card">
+<strong>{{ product.title }}</strong>
+</div>
+<div class="description-card">
+<p style="font-size:1.4rem;padding-right:25px;">
+    {{ product.description }}
+</p>
+</div>
+<div class="price-card">
+{% if product.compare_at_price > product.price %}
+  <span class="price-original" style="text-decoration: line-through;color:red!important;">
+    {{ product.compare_at_price | money }} </span
+  >&nbsp;
+  <span class="price-sale">
+    {{ product.price | money }}
+  </span>
+{% else %}
+  {{ product.price | money }}
+{% endif %}
+</div>
+<div class="btn-group mt-5">
+<a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
+  GET NOW 
+</a>
+</div>
+</div>
+
+
+
+</div>
