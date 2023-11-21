@@ -61,8 +61,8 @@
           {
             "type": "color",
             "id": "background_4",
-            "label": "Background 3",
-            "default": "#FFFFFF"
+            "label": "Background 4",
+            "default": "#f8f8f8"
           },
           {
             "type": "color_background",
