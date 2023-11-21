@@ -219,10 +219,23 @@ position: absolute;
   {% endunless %}
   
  
-<div class="team__item set-bg" style="background: url({{ product.featured_image | img_url: 'large' }}); background-size: cover;">
- 
-   
-</div>
+<!--<div class="team__item set-bg" style="background: url({{ product.featured_image | img_url: 'large' }}); background-size: cover;"></div>-->
+
+  <div class="card-product-custom">
+    <div class="header-card">
+      <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}" width="auto" height="100%"/>
+    </div>
+    <div class="body-card">
+      <div class="title-card">
+        <h5>{{ product.title }}</h5>
+      </div>
+      <div class="price-card">
+        <p>{{ product.price | money }}</p>
+      </div>
+    </div>
+    <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fa fa-shopping-cart"></i></a>       
+    
+  </div>
     
   
 
