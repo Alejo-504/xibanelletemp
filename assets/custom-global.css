@@ -110,7 +110,7 @@
 }
 
 .btn-primary:hover .btn-primary-outline:hover {
-  color: #fff;
+  color: #fff!important;
 }
 
 
