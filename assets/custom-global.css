@@ -73,6 +73,7 @@
   font-size: 16px;
   display: inline-block;
   margin: 5px;
+  box-shadow:none;
 }
 
 
@@ -90,7 +91,6 @@
 
 
 .btn:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
