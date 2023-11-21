@@ -207,13 +207,13 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#9cb0b7",
-          "background_2": "#ffffff",
+          "background": "#c5b4c6",
+          "background_2": "#e1cb8a",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
-          "button": "#9cb0b7",
-          "button_label": "#ed1919",
+          "button": "#e1cb8a",
+          "button_label": "#ffffff",
           "secondary_button_label": "#f11a1a",
           "shadow": "#67ef00"
         }
