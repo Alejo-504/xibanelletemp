@@ -76,6 +76,42 @@
   box-shadow:none;
   min-width:150px;
   text-align:center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(var(--color-button), 0.5);
+  transition: width 0.3s ease, height 0.3s ease, left 0.3s ease, top 0.3s ease;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn-primary::after {
+  --color-button: 108, 117, 125;
+}
+
+.btn-primary-outline::after {
+  --color-button: 108, 117, 125; 
+}
+
+.btn:hover::after {
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+}
+
+.btn-primary:hover .btn-primary-outline:hover {
+  color: #fff;
 }
 
 
