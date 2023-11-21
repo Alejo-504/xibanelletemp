@@ -118,7 +118,7 @@
 .btn-primary::after {
   content: '';
   position: absolute;
-  bottom: -3;
+  bottom: -3px;
   left: 0;
   width: 100%;
   border: solid 1px;
