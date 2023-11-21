@@ -65,7 +65,13 @@
     height: 100px;
     text-align:center;
     color:white;
-    background: {{section.settings.promo_color }};
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -50px;
+    left: -25px;
+    z-index: 5;
   }
 {% endstylesheet %}
 
@@ -85,7 +91,7 @@
         {% assign products = section.blocks %}
         {% render "carousel-owl-two-items" , blocks:products %}
 
-        <div class="position-absolute promo_text">
+        <div class="position-absolute promo_text" style="background: {{section.settings.promo_color }};">
            {{ section.settings.promo_text }} 
         </div>
     
