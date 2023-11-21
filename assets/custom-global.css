@@ -62,6 +62,52 @@
 }
 
 /* Buttons */
+
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  margin: 5px;
+}
+
+
+.btn-primary {
+  background-color: #6c7a89;
+  border-color: #6c7a89;
+}
+
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #6c7a89; 
+  color: #6c7a89;
+}
+
+
+.btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  background-color: darken(#6c7a89, 10%); 
+}
+
+.btn-primary-outline:hover {
+  background-color: #6c7a89;
+  color: #fff;
+}
+
+
+
+
+
 .btn-primary, .btn-secondary {
   padding: 10px 20px;
   border: none;
