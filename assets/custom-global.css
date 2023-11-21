@@ -102,5 +102,9 @@
   background-color: #6c7a89;
   color: #fff;
 }
-
+@media (max-width: 768px) {
+  html{
+    font-size:8px;
+  }
+}
 
