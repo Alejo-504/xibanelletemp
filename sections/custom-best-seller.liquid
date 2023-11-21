@@ -97,19 +97,28 @@
       font-family: 'Assistant';
 
     }
-    .item-cart{
+    .item-cart {
       background: rgb(var(--color-background-2));
-      border-radius:50%;
-      width:45px;
-      height:45px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:rgb(var(--color-foreground));
-      text-decoration:none;
+      border: 2px solid transparent; /* Se prepara para el efecto de contorno */
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(var(--color-foreground));
+      text-decoration: none;
+      transition: all 0.3s ease; /* Suaviza la transición del efecto hover */
     }
+    
     .item-cart i {
-      color:rgb(var(--color-foreground));
+      color: inherit; /* Hereda el color de .item-cart para facilitar la gestión del color */
+    }
+    
+    .item-cart:hover {
+      background: transparent; /* Hace el fondo transparente */
+      color: rgb(var(--color-background-2)); /* Cambia el color del ícono al color original del fondo */
+      border-color: rgb(var(--color-background-2)); /* El borde toma el color original del fondo */
     }
    
   </style>
