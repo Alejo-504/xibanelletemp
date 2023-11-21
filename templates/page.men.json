@@ -51,13 +51,14 @@
       "settings": {
         "scheme_selector": "background-2",
         "heading": "Lorem Ipsum Dolor Sit Amet",
-        "subheading": "Consectetur. Tempus Mollis Nunc Mollis In",
         "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
         "button_1_link": "shopify:\/\/collections\/all",
         "button_1_text": "Shop Now",
         "button_2_link": "",
         "button_2_text": "Learn More",
-        "promo_text": "New Collection 2023"
+        "promo_text": "New Collection 2023",
+        "promo_color": "#9cb0b7",
+        "promo_color_text": "#f7f7f7"
       }
     },
     "27fa08b7-edfe-455c-9132-de5f1eb95a07": {
