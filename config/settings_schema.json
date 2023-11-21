@@ -89,6 +89,10 @@
             "default": "#121212"
           },
           {
+            "type": "header",
+            "content": "Others"
+          },
+          {
             "type": "color",
             "id": "button_label",
             "label": "t:settings_schema.colors.settings.button_label.label",
