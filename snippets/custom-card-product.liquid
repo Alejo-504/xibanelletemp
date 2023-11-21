@@ -243,15 +243,11 @@ position: absolute;
     {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
-    {% assign soap = false %}
-        {% for coll in product.collections %}
-        {% if coll.title == 'Soaps' or coll.title =="Jabones" %}
-            {% assign soap = true %}
-        {% endif %}
-        {% endfor %}
+  
+
     
     
-    <section class="product-grid {% if soap %} soap {% endif %}">
+    <section class="product-grid">
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
   <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url }}">
     <span class="visually-hidden">{{ product.title }}</span>
