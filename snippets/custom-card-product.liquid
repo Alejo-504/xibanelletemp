@@ -39,16 +39,18 @@
     <div class="header-card">
       <img style="border-radius:1px;" src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}" width="100%" height="200" style="width:100%;height:100%;object-fit:cover">
     </div>
-    <div class="body-card">
-      <div class="title-card">
-        <strong>{{ product.title }}</strong>
-      </div>
-      <div class="d-flex container-last-row-card align-items-center justify-content-between">
+    <div class="body-card d-flex align-items-center justify-content-between">
+      <div class="d-flex flex-direction-column align-items-start">
+        <div class="title-card">
+          <strong>{{ product.title }}</strong>
+        </div>
         <div class="price-card ">
           {{ product.price | money }}
         </div>
-        <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fa fa-shopping-cart"></i></a>       
       </div>
+
+      <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fa fa-shopping-cart"></i></a>       
+
     </div>
     
   </div>
