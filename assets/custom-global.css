@@ -24,7 +24,6 @@
       cursor: pointer;
     }
   }
-
   .product-info {
     .product-title {
       margin: 0;
@@ -62,8 +61,6 @@
 }
 
 /* Buttons */
-
-
 .btn {
   padding: 10px 20px;
   border: 2px solid transparent;
@@ -79,8 +76,6 @@
   position: relative;
   overflow: hidden;
 }
-
-
 .btn-primary-outline::after {
   content: '';
   position: absolute;
@@ -93,46 +88,30 @@
   z-index: -1!important;
   transform: translate(-50%, -50%);
 }
-
-.btn-primary::after {
-  --color-button: 255, 255, 255;
-}
-
-
 .btn:hover::after {
   width: 100%;
   height: 100%;
   top: 50%;
   left: 50%;
 }
-
 .btn-primary:hover .btn-primary-outline:hover {
   color: #fff!important;
 }
-
-
 .btn-primary {
   background-color: rgb(var(--color-button));
 }
-
-
 .btn-primary-outline {
   background-color: transparent;
   border: solid 1px rgb(var(--color-button));
   color: rgb(var(--color-button));
 }
-
-
 .btn:hover {
   transform: translateY(-4px);
 }
-
 .btn-primary:hover {
   background-color: rgb(var(--color-button)); 
 }
-
 .btn-primary-outline:hover {
- 
   color: #fff;
   border:solid 1px white;
 }
