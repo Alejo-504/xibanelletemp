@@ -80,12 +80,18 @@
     animation: slideRight 1s ease-in-out forwards;
     animation-delay: 0.3s;
   }
+  .col-content{
+    display:flex;
+    align-items:start;
+    flex-direction:column;
+    justify-content: space-evenly;
+  }
 {% endstylesheet %}
 
 <section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-center position-relative ">
   <div class="container-fluid me-md-0 pe-md-0">
     <div class="row me-md-0 p-0">
-      <div class="col-md-6  slide-right justify-content-evenly col-md-6 page-width d-flex align-items-start flex-column page-width ">
+      <div class="col-md-6  slide-right col-content col-md-6  page-width ">
         <h1 class="mb-0 ">{{ section.settings.heading }}</h1>
         <p class="mb-0 ">{{ section.settings.description }}</p>
         <div class="btn-group d-flex slide-left">
