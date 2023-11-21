@@ -90,8 +90,9 @@
 }
 .btn-primary-outline {
   background-color: transparent;
-  border: solid 1px rgb(var(--color-button));
+  border: solid 2px rgb(var(--color-button));
   color: rgb(var(--color-button));
+  font-weight: 900;
 }
 .btn-primary-outline:hover {
    color: #fff;
