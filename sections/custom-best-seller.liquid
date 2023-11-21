@@ -34,6 +34,7 @@
     #shopify-section-{{section.id}}, .best-sellers-section{
       text-align:center;
       background:rgb(var(--color-background-3)) !important;
+      padding:50px 0;
     }
      #shopify-section-{{section.id}} h2 {
        color: rgb(var(--color-foreground_3));
@@ -74,13 +75,13 @@
       font-size: 1.4rem;
       line-height:1;
     }
-    .price-card{
+    #shopify-section-{{section.id}} .price-card{
       color: rgb(var(--color-background-2));
       font-weight: 400;
       font-family: 'Assistant';
 
     }
-    .item-cart {
+    #shopify-section-{{section.id}} .item-cart {
       background: rgb(var(--color-background-2));
       border-radius: 50%;
       width: 42px;
@@ -93,18 +94,18 @@
       transition: all 0.3s ease;
     }
     
-    .item-cart:hover {
+    #shopify-section-{{section.id}} .item-cart:hover {
       transform: scale(1.1);
     
     }
     
-    .item-cart:active {
+    #shopify-section-{{section.id}} .item-cart:active {
       transform: scale(0.9); /* Reduce ligeramente el tamaño para simular presión */
       
     }
   </style>
   
-  <div class="best-sellers-section section-100vh mb-5 color-{{ section.settings.scheme_selector }} ">
+  <div class="best-sellers-section mb-5 color-{{ section.settings.scheme_selector }} ">
     <div class="page-width d-flex justify-content-center flex-column align-items-center">
       <h2 style="margin-bottom:45px;">Best Sellers Section</h2>
       <p style="margin-bottom:45px;">Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
