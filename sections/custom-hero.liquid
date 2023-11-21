@@ -73,11 +73,11 @@
   <div class="container-fluid me-md-0 pe-md-0">
     <div class="row me-md-0 p-0">
       <div class="col-md-6 justify-content-evenly col-md-6 page-width d-flex align-items-start flex-column page-width ">
-        <h1 class="mb-0">{{ section.setting.heading }}</h1>
-        <p class="mb-0">{{ section.setting.description }}</p>
+        <h1 class="mb-0">{{ section.settings.heading }}</h1>
+        <p class="mb-0">{{ section.settings.description }}</p>
         <div class="btn-group d-flex">
-          <a href="{{ section.setting.button_1_link }}" class="btn btn-primary">{{ section.setting.button_1_text }}</a>
-          <a href="{{ section.setting.button_2_link }}" class="btn btn-primary-outline">{{ section.setting.button_2_text }}</a>
+          <a href="{{ section.settings.button_1_link }}" class="btn btn-primary">{{ section.settings.button_1_text }}</a>
+          <a href="{{ section.settings.button_2_link }}" class="btn btn-primary-outline">{{ section.settings.button_2_text }}</a>
         </div>
       </div>
       <div class="col-md-6 text-right ps-md-4 position-relative pe-md-0">
@@ -86,7 +86,7 @@
         {% render "carousel-owl-two-items" , blocks:products %}
 
         <div class="position-absolute promo_text">
-           {{ section.setting.promo_text }} 
+           {{ section.settings.promo_text }} 
         </div>
     
       </div>
