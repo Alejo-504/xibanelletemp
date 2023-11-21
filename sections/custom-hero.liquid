@@ -77,7 +77,8 @@
         {% assign products = section.blocks %}
         {% render "carousel-owl-two-items" , blocks:products %}
 
-        <div class="position-absolute">
+        <div class="position-absolute promo_text">
+           {{ section.setting.promo_text }} 
         </div>
     
       </div>
