@@ -52,7 +52,7 @@
         </div>
          <div class="price-card">
         {% if product.compare_at_price > product.price %}
-          <span class="price-original" style="text-decoration: line-through;">
+          <span class="price-original" style="text-decoration: line-through;color:red!important;">
             {{ product.compare_at_price | money }}
           </span>
           <span class="price-sale">
