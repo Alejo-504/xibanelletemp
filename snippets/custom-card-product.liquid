@@ -17,8 +17,8 @@
 
     
     
-<section class="product-grid w-100 h-100">
-<div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
+<section class="product-grid w-100 h-100 d-flex align-items-center justify-content-center">
+<div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card w-100">
   <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url }}">
     <span class="visually-hidden">{{ product.title }}</span>
   </a>
