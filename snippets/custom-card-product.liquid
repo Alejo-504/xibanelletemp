@@ -46,7 +46,18 @@
       margin-top: 15px;
       text-align: start;
     ">
-      <div class="d-flex flex-column align-items-start">
+
+  
+      {%  if size=="medium" %}
+      
+      
+
+      {% elsif size=="large" %}
+
+
+      {% else %}
+
+        <div class="d-flex flex-column align-items-start">
         <div class="title-card">
           <strong>{{ product.title }}</strong>
         </div>
@@ -63,6 +74,12 @@
         {% endif %}
          </div>
       </div>
+
+      {% endif %}
+
+
+
+      
 
       <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
 
