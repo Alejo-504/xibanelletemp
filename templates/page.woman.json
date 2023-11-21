@@ -57,7 +57,8 @@
         "button_2_link": "",
         "button_2_text": "Learn More",
         "promo_text": "New Collection 2023",
-        "promo_color": "#e1cb8a"
+        "promo_color": "#e1cb8a",
+        "promo_color_text": "#5b5b5b"
       }
     }
   },
