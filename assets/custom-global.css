@@ -84,7 +84,7 @@
 
 .btn-primary-outline {
   background-color: transparent;
-  border-color: rgb(var(--color-button));
+  borderr: solid 1px rgb(var(--color-button));
   color: rgb(var(--color-button));
 }
 
