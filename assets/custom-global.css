@@ -77,15 +77,15 @@
 
 
 .btn-primary {
-  background-color: rgb(var(--color-primary-button));
+  background-color: rgb(var(--color-button));
   border-color: #6c7a89;
 }
 
 
 .btn-primary-outline {
   background-color: transparent;
-  border-color: rgb(var(--color-primary-button));
-  color: rgb(var(--color-primary-button));
+  border-color: rgb(var(--color-button));
+  color: rgb(var(--color-button));
 }
 
 
@@ -95,7 +95,7 @@
 }
 
 .btn-primary:hover {
-  background-color: rgb(var(--color-primary-button)); 
+  background-color: rgb(var(--color-button)); 
 }
 
 .btn-primary-outline:hover {
