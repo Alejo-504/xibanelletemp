@@ -43,13 +43,19 @@
           {
             "type": "color",
             "id": "background",
-            "label": "t:settings_schema.colors.settings.background.label",
+            "label": "Background 1",
             "default": "#FFFFFF"
           },
           {
             "type": "color",
             "id": "background_2",
-            "label": "t:settings_schema.colors.settings.background.label",
+            "label": "Background 2",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "background_3",
+            "label": "Background 3",
             "default": "#FFFFFF"
           },
           {
@@ -61,13 +67,19 @@
           {
             "type": "color",
             "id": "text",
-            "label": "t:settings_schema.colors.settings.text.label",
+            "label": "Text 1",
             "default": "#121212"
           },
           {
             "type": "color",
             "id": "text_2",
-            "label": "t:settings_schema.colors.settings.text.label",
+            "label": "Text 2",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "text_3",
+            "label": "Text 3",
             "default": "#121212"
           },
           {
