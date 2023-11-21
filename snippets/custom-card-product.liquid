@@ -1,11 +1,8 @@
 <style>
-  
-
 .product-grid .singl-service{
   position:relative;
   margin-bottom: 30px;
 } 
-
  .team__item {
 	height: 100%;
     width: 100%;
@@ -19,22 +16,17 @@
 	--background-elements: var(--gradient-secondary);
     --color-elements: white;
 }
-   @media screen and (max-width: 992px){
-    
-       .team__item .team__text p {
-          max-height: 28ex;
-          margin-top: 70px;
-   
+@media screen and (max-width: 992px){
+  .team__item .team__text p {
+    max-height: 28ex;
+    margin-top: 70px;
     opacity: 1 !important;
     visibility: visible !important;
-
-        }
-      .team__item:after {
+  }
+  .team__item:after {
     opacity: 1 !important;
+  }
 }
-     }
-  
-  
 .team__item:after {
 	position: absolute;
 	left: -1px;
@@ -50,25 +42,16 @@
 	transition: all, 0.5s, ease-out, 0.5s;
 	border-radius: 50px;
 }
-
 .team__item:hover {
 	cursor: pointer;
 }
-
 .team__item:hover:after {
 	opacity: 1;
 }
-
-
-
 .team__item:hover .team__text p {
 	opacity: 1;
 	visibility: visible;
-
 }
-
-
-
 .team__text {
 	height: 100%;
 	position: relative;
@@ -99,10 +82,6 @@ position: absolute;
     border-radius: 25px;
     letter-spacing: 2.5px;
 }
-  
-  
-
-  
 .team__text p {
 	color: #b7b7b7;
 	opacity: 0;
@@ -112,8 +91,6 @@ position: absolute;
 	transition: all, 0.7s, ease-out, 0.7s;
     font-family: "fuente-contenido";
 }
-  
-
 .team__text .title-package {
 	position: absolute;
     z-index: 2;
@@ -137,22 +114,19 @@ position: absolute;
     max-height: 70px;
   text-transform: capitalize;
 }
-  
-  
 .team__item:hover .team__text .title-package {
 	opacity: 1;
 	visibility: visible;
     color: white;
     text-align: center;
-
     transition: all 0.6;
 }
-  .team__item:hover .team__text p{
+.team__item:hover .team__text p{
   max-height: 28ex;
   margin-top: 70px;
 }
 .team__item:after {
-position: absolute;
+    position: absolute;
     left: -1px;
     top: -1px;
     height: 101.1%;
@@ -164,32 +138,25 @@ position: absolute;
     -webkit-transition: all, 0.5s, ease-out, 0.5s;
     border-radius: 42px;
 }
-
-
-
 .team__item:hover:after {
 	opacity: 1 !important;
 }
 .team__text a {	
 	opacity: 0;	
 }
-
 .team__item:hover .team__text a {
 	opacity: 1;
 	visibility: visible;
-
 }
-
 .team__item .item-cart{
    opacity: 0;
    transition: all 0.6s
  }
- .product-recomended a.grid-view-item__link{
-     pointer-events:none!important; 
-  }
-  
+.product-recomended a.grid-view-item__link{
+   pointer-events:none!important; 
+}
 .team__item .item-cart{
- position: absolute;
+    position: absolute;
     top: 80%;
     right: 20px;
     z-index: 1;
@@ -205,29 +172,20 @@ position: absolute;
     justify-content: center;
     align-items: center;
  }
-  
-
- .team__item:hover .team__text p {
+.team__item:hover .team__text p {
 	opacity: 1;
 	visibility: visible;
-
 } 
-  .team__item:hover .team__text a {
+.team__item:hover .team__text a {
 	opacity: 1;
 	visibility: visible;
-
 }
-  
 .team__item a.item-cart:hover{
    background: var(--gradient-secondary) !important;
   transition: all 0.6;
   color: white !important;
   transition: all 0.6s;
  }
-  .soap .team__text p, .soap .team__item:after{
-  display:none !important;
-}
-  
 </style>
 
 
