@@ -166,6 +166,9 @@
     transform: scale(1); 
   }
 }
+.pulse{
+  animation: pulse 1.5s ease-in-out infinite;
+}
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
