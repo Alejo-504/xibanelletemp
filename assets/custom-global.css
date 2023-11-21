@@ -103,8 +103,8 @@
 }
 
 .btn:hover::after {
-  width: 300%;
-  height: 300%;
+  width: 150%;
+  height: 150%;
   top: 50%;
   left: 50%;
 }
