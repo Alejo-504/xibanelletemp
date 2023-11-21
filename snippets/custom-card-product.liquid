@@ -50,9 +50,16 @@
         <div class="title-card">
           <strong>{{ product.title }}</strong>
         </div>
-        <div class="price-card ">
+        {% if product.compare_at_price > product.price %}
+          <span class="price-original" style="text-decoration: line-through;">
+            {{ product.compare_at_price | money }}
+          </span>
+          <span class="price-sale">
+            {{ product.price | money }}
+          </span>
+        {% else %}
           {{ product.price | money }}
-        </div>
+        {% endif %}
       </div>
 
       <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart"><i class="fa fa-shopping-cart"></i></a>       
