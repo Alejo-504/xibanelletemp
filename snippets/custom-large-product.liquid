@@ -35,7 +35,11 @@ text-align: start;
 </div>
 </div>
 
-<div class="header-card">
+<div class="header-card" style="
+  height: 250px;
+  width: 250px;
+  overflow: hidden;"
+>
 <img
 src="{{ product.featured_image | img_url: 'large' }}"
 alt="{{ product.featured_image.alt | escape }}"
