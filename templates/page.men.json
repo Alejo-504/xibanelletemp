@@ -115,6 +115,15 @@
         "button_url": "shopify:\/\/collections\/all",
         "button_label": "Read More"
       }
+    },
+    "9b5fbd87-7ba7-40dc-a619-c06462d34570": {
+      "type": "custom-discount-counter",
+      "settings": {
+        "heading": "Luxury For Every Lifestyle",
+        "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
+        "button_url": "shopify:\/\/collections\/all",
+        "button_label": "Read More"
+      }
     }
   },
   "order": [
@@ -122,6 +131,7 @@
     "0f0e7ac3-7338-4adf-aa47-dba031478f91",
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07",
-    "7b302da7-0124-4c70-8e86-742397839fc8"
+    "7b302da7-0124-4c70-8e86-742397839fc8",
+    "9b5fbd87-7ba7-40dc-a619-c06462d34570"
   ]
 }
