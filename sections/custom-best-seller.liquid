@@ -129,6 +129,11 @@
         grid-column: span 12 !important;
       }
    }
+   @media (max-width: 575px){
+      #shopify-section-{{section.id}} .grid-item:nth-child(2){
+        grid-column: span 6 !important;
+      }
+   }
   </style>
   
   <div class="best-sellers-section color-{{ section.settings.scheme_selector }} ">
