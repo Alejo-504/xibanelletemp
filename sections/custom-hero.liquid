@@ -101,7 +101,7 @@
       <div class="col-md-6 text-right ps-md-4 position-relative pe-md-0">
      
         {% assign products = section.blocks %}
-        {% render "carousel-owl-two-items" , blocks:products %}
+        {% render "custom-carousel-owl-two-items" , blocks:products %}
 
         <div class="position-absolute promo_text pulse" style="background: {{section.settings.promo_color }};color:{{ section.settings.promo_color_text }};">
            {{ section.settings.promo_text }} 
