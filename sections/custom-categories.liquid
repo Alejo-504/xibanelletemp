@@ -1,6 +1,6 @@
 <section id="categories-section" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
   {% for block in section.blocks %}
-  <div class="category-card" style="display: flex; flex-direction: column; align-items: center; {% if  forloop.index == 2 %} order: -1; {% endif %}">
+  <div class="category-card" style="display: flex;  align-items: center; {% if  forloop.index == 2 %} flex-direction: column-reverse; {% else %} flex-direction: column; {% endif %}">
     <div class="category-image" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); width: 100%; height: 200px; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
       <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
     </div>
