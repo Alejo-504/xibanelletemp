@@ -1,12 +1,105 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Luxury For Every Lifestyle"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Read More"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
+<style>
+  .split-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .split-section .text-content, .split-section .image-content {
+    flex: 1;
+    padding: 20px;
+  }
+  .split-section .text-content {
+    text-align: center;
+  }
+  .split-section .text-content h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  .split-section .text-content p {
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
+  .split-section .text-content a.btn {
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .split-section .image-content {
+    background-image: url('{{ section.settings.image | img_url: '1024x' }}');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .split-section .image-content:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .split-section .image-content .overlay-text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+  }
+  .split-section .image-content .overlay-text h2 {
+    font-size: 2em;
+  }
+</style>
 {% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
+<div class="split-section">
+  <div class="text-content">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+    <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
+  </div>
+  <div class="image-content">
+    <div class="overlay-text">
+      <h2>About Us</h2>
+    </div>
+  </div>
+</div>
