@@ -1,10 +1,14 @@
-{% assign discount_handle = '1407707250992' %}
-{% assign discount = discounts[discount_handle] %}
-{% if discount %}
-  {% assign discount_products = discount.products %}
-  {% for product in discount_products %}
-    {{ product.title }}
-  {% endfor %}
+
+{% if cart.cart_level_discount_application.size > 0 %}
+  Discounts:
+
+  <ul>
+    {% for discount_application in cart.cart_level_discount_applications %}
+      <li>
+        {{ discount_application.title }}-{{ discount_application.total_allocated_amount | money }}
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}
 
 {% schema %}
