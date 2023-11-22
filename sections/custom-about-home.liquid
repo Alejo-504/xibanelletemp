@@ -43,6 +43,30 @@
         "default": "Read More"
       }
     ],
+    "blocks": [
+      {
+        "type": "icons",
+        "name": "Icons info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "icon",
+            "label": "Font Awesome Icon"
+          },
+          {
+            "type":"text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type":"text",
+            "id": "description",
+            "label": "Description"
+          }
+        ],
+        "limit": 5
+      }
+    ],
     "presets": [
       {
         "name": "Custom About Home",
@@ -68,34 +92,16 @@
         </div>
       </div>
       <div class="row icons-row px-5">
-        <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 1fr;">
-          <i class="fa fa-truck"></i>
+
+        {% for block in section.blocks %}
+        <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 200px;">
+          <i class="fa fa-{{ block.settings.icon }}"></i>
           <div class="overlay-text d-flex align-items-start flex-column">
-            <strong>Free Shipping</strong>
-            <p>Free shipping on all US order or order above $200</p>
+            <strong>{{ block.settings.title }}</strong>
+            <p>{{ block.settings.description }}</p>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 1fr;">
-          <i class="fa fa-truck"></i>
-          <div class="overlay-text d-flex align-items-start flex-column">
-            <strong>Free Shipping</strong>
-            <p>Free shipping on all US order or order above $200</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 1fr;">
-          <i class="fa fa-truck"></i>
-          <div class="overlay-text d-flex align-items-start flex-column">
-            <strong>Free Shipping</strong>
-            <p>Free shipping on all US order or order above $200</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 1fr;">
-          <i class="fa fa-truck"></i>
-          <div class="overlay-text d-flex align-items-start flex-column">
-            <strong>Free Shipping</strong>
-            <p>Free shipping on all US order or order above $200</p>
-          </div>
-        </div>
+        {% endfor %}
+      
     </div>
   </div>
 </div>
