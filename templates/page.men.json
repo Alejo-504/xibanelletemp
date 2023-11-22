@@ -126,6 +126,46 @@
         "button_url": "shopify:\/\/collections\/all",
         "button_label": "Read More"
       }
+    },
+    "2d815898-f026-4f1f-a730-ee54d39d4994": {
+      "type": "custom-categories",
+      "blocks": {
+        "22d50b95-6fc6-431e-a73d-f84b9f3cf69e": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
+            "title": "Category Title",
+            "link": "",
+            "button_text": "View Products",
+            "icon": "fa-camera"
+          }
+        },
+        "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a": {
+          "type": "category",
+          "settings": {
+            "title": "Category Title",
+            "link": "",
+            "button_text": "View Products",
+            "icon": "fa-camera"
+          }
+        },
+        "e61dc44f-7d8d-4b03-8cf1-67ed8063533b": {
+          "type": "category",
+          "settings": {
+            "title": "Category Title",
+            "link": "",
+            "button_text": "View Products",
+            "icon": "fa-camera"
+          }
+        }
+      },
+      "block_order": [
+        "22d50b95-6fc6-431e-a73d-f84b9f3cf69e",
+        "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a",
+        "e61dc44f-7d8d-4b03-8cf1-67ed8063533b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -134,6 +174,7 @@
     "b378887a-0416-465e-b8d4-981298591f1b",
     "27fa08b7-edfe-455c-9132-de5f1eb95a07",
     "7b302da7-0124-4c70-8e86-742397839fc8",
-    "9b5fbd87-7ba7-40dc-a619-c06462d34570"
+    "9b5fbd87-7ba7-40dc-a619-c06462d34570",
+    "2d815898-f026-4f1f-a730-ee54d39d4994"
   ]
 }
