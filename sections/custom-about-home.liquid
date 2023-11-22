@@ -87,7 +87,7 @@
         <div class="text-content col-md-5 px-md-5" >
           <div class="overlay-text">
             <h2>About Us</h2>
-            <p class="mb-0">{{ section.settings.text }}</p>
+            {{ section.settings.text }}
           </div>
         </div>
       </div>
@@ -189,6 +189,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      .overlay-text p{
+        margin-bottom:0!important;
       }
     }
     @media (min-width: 768px){
