@@ -118,7 +118,7 @@
       grid-column: span 12 ;
     }
     #shopify-section-{{section.id}} .grid-item:nth-child(5) .body-card{
-        grid-template-columns: 1.2fr 2fr !important;
+        grid-template-columns: 2fr 1fr !important;
     }
    }
    @media (max-width: 768px){
@@ -136,7 +136,7 @@
    }
   </style>
   
-<div class="best-sellers-section color-{{ section.settings.scheme_selector }} ">
+  <div class="best-sellers-section color-{{ section.settings.scheme_selector }} ">
     <div class="page-width d-flex justify-content-center flex-column align-items-center">
       <h2 style="margin-bottom:45px;">Best Sellers Section</h2>
       <p style="margin-bottom:45px;">Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
@@ -166,7 +166,9 @@
                   
                   {% render "custom-card-product", product:product, size:"normal" %}
                 {% endif %}
+               
              </div>
+          
         {% endfor %}
       </div>
     </div>
