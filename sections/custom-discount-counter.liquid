@@ -1,12 +1,8 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+{% assign discount_handle = 'Discount Nov' %}
+{% assign discount = discounts[discount_handle] %}
+{% if discount %}
+  {% assign discount_products = discount.products %}
+  {% for product in discount_products %}
+    {{ product.title }}
+  {% endfor %}
+{% endif %}
