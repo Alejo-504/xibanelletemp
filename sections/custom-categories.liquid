@@ -1,6 +1,7 @@
 <section id="categories-section" class="container mt-5">
   <div class="row">
     {% for block in section.blocks %}
+      
     <div class="col-md-4 d-flex flex-column align-items-center">
       <div class="category-image d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}');">
         <i class="fa {{ block.settings.icon }}"></i>
@@ -10,9 +11,35 @@
         <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
       </div>
     </div>
+
+    
     {% endfor %}
   </div>
 </section>
+
+<style>
+  #categories-section .category-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  #categories-section .category-info {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 100%;
+  }
+  #categories-section .category-title {
+    margin-bottom: 15px;
+  }
+  #categories-section .btn-primary {
+    background-color: #d3ad5d;
+    border-color: #d3ad5d;
+  }
+  #categories-section .col-md-4:nth-child(n2) .category-image {
+    flex-direction: row-reverse;
+  }
+</style>
 
 {% schema %}
 {
@@ -75,24 +102,3 @@
   ]
 }
 {% endschema %}
-
-<style>
-  #categories-section .category-image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  #categories-section .category-info {
-    background-color: #f7f7f7;
-    padding: 20px;
-    width: 100%;
-  }
-  #categories-section .category-title {
-    margin-bottom: 15px;
-  }
-  #categories-section .btn-primary {
-    background-color: #d3ad5d;
-    border-color: #d3ad5d;
-  }
-</style>
