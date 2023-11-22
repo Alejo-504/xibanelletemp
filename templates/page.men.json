@@ -105,12 +105,23 @@
       "settings": {
         "scheme_selector": "background-2"
       }
+    },
+    "7b302da7-0124-4c70-8e86-742397839fc8": {
+      "type": "custom-about-home",
+      "settings": {
+        "heading": "Luxury For Every Lifestyle",
+        "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
+        "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
+        "button_url": "shopify:\/\/collections\/all",
+        "button_label": "Read More"
+      }
     }
   },
   "order": [
     "main-page-content",
     "0f0e7ac3-7338-4adf-aa47-dba031478f91",
     "b378887a-0416-465e-b8d4-981298591f1b",
-    "27fa08b7-edfe-455c-9132-de5f1eb95a07"
+    "27fa08b7-edfe-455c-9132-de5f1eb95a07",
+    "7b302da7-0124-4c70-8e86-742397839fc8"
   ]
 }
