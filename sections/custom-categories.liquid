@@ -7,7 +7,7 @@
       </div>
       <div class="category-info" style="background-color: #f7f7f7; padding: 20px; text-align: center; width: 100%;">
         <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title }}</h3>
-        <a href="{{ block.settings.link }}" class="category-btn" style="padding: 10px 15px; background-color: #d3ad5d; color: white; text-decoration: none; border: none; cursor: pointer;">{{ block.settings.button_text }}</a>
+        <a href="{{ block.settings.link }}" class="btn-primary btn" style="padding: 10px 15px; background-color: #d3ad5d; color: white; text-decoration: none; border: none; cursor: pointer;">{{ block.settings.button_text }}</a>
       </div>
     </div>
     {% endfor %}
@@ -17,6 +17,10 @@
   #categories-section{
     background: rgb(var(--color-background-4));
     color: rgb(var(--color-foreground_3));
+  }
+  #categories-section .btn-primary{
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
   }
 </style>
 
