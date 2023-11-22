@@ -1,7 +1,7 @@
 <div id="categories-section" class="container-fluid py-5 color-{{ section.settings.scheme_selector }}">
   <div class="row">
     {% for block in section.blocks %}
-    <div class="col-md-4 d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %}flex-column{% endif %} align-items-center">
+    <div class="col-md-4 d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
       <div class="category-image d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); height: 200px; background-size: cover; background-position: center;">
         <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
       </div>
@@ -24,7 +24,8 @@
     color: rgb(var(--color-button-text));
   }
   #categories-section .col-md-4{
-    box-shadow: -2px 1px 3px 1px #9595951f
+    box-shadow: -2px 1px 3px 1px #9595951f;
+    gap:15px;
   }
 </style>
 
