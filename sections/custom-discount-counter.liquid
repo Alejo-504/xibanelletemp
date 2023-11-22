@@ -1,18 +1,36 @@
-<div class="timer-app">
-<div id="countdownultimate-KT" class="hide-kt"></div>
-</div>
 
 <style>
   .timer-app .kt-timer > div:not([class]){
     display:none!important;
     visibility:hidden;
     opacity:0!important;
+    height:0px!important;
   }
 </style>
+
+<div class="discount-section-counter container-fluid py-5  color-{{ section.settings.scheme_selector }}"">
+  <div class=" text-center page-width d-flex align-items-center flex-column justify-content-start">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+    <div class="timer-app">
+      <div id="countdownultimate-KT" class="hide-kt"></div>
+    </div>
+    <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
+  </div>
+</div>
+
+
+
 {% schema %}
   {
     "name": "Custom Discount Section",
     "settings": [
+      {
+        "type": "color_scheme",
+        "id": "scheme_selector",
+        "label": "Heading",
+        "default": "Luxury For Every Lifestyle"
+      },
       {
         "type": "text",
         "id": "heading",
@@ -51,3 +69,5 @@
     ]
   }
   {% endschema %}
+
+  
