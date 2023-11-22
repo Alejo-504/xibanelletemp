@@ -108,6 +108,46 @@
     },
     "7b302da7-0124-4c70-8e86-742397839fc8": {
       "type": "custom-about-home",
+      "blocks": {
+        "293347a5-5bcc-4011-81f6-a9764327b0c1": {
+          "type": "icons",
+          "settings": {
+            "icon": "truck",
+            "title": "Free Shipping",
+            "description": "Lorem ipsum dolor sitamet, consectetur."
+          }
+        },
+        "c9931cec-23ab-4291-86e8-b1c80ca866df": {
+          "type": "icons",
+          "settings": {
+            "icon": "shield",
+            "title": "Secure Payment",
+            "description": "Lorem ipsum dolor sitamet, consectetur."
+          }
+        },
+        "3f02743a-2e58-4226-8262-aecef86d2440": {
+          "type": "icons",
+          "settings": {
+            "icon": "money",
+            "title": "Money Return",
+            "description": "Lorem ipsum dolor sitamet, consectetur."
+          }
+        },
+        "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c": {
+          "type": "icons",
+          "settings": {
+            "icon": "support",
+            "title": "24\/7 Support",
+            "description": "Lorem ipsum dolor sitamet, consectetur."
+          }
+        }
+      },
+      "block_order": [
+        "293347a5-5bcc-4011-81f6-a9764327b0c1",
+        "c9931cec-23ab-4291-86e8-b1c80ca866df",
+        "3f02743a-2e58-4226-8262-aecef86d2440",
+        "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c"
+      ],
       "settings": {
         "scheme_selector": "background-2",
         "heading": "Luxury For Every Lifestyle",
