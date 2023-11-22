@@ -1,22 +1,4 @@
-<style>
-  .timer-app .kt-timer > div:not([class]){
-    display:none!important;
-    visibility:hidden;
-    opacity:0!important;
-    height:0px!important;
-  }
-  .discount-section-counter{
-    background:rgb(var(--color-button));
-    color: rgb(var(--color-button-text));
-  }
-  .discount-section-counter .btn-primary{
-    background:rgb(var(--color-background));
-    color:rgb(var(--color-foreground));
-  }
-  .discount-image {
-    box-shadow: 10px 16px 32px 0px #0000001A;
-  }
-</style>
+
 
 <div class="discount-section-counter container-fluid py-5 color-{{ section.settings.scheme_selector }} overflow-hidden position-relative">
   <div class="row">
@@ -40,7 +22,28 @@
     </div>
   </div>
 </div>
-
+<style>
+  .timer-app .kt-timer > div:not([class]){
+    display:none!important;
+    visibility:hidden;
+    opacity:0!important;
+    height:0px!important;
+  }
+  .discount-section-counter{
+    background:rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+  }
+  .discount-section-counter .btn-primary{
+    background:rgb(var(--color-background));
+    color:rgb(var(--color-foreground));
+  }
+  .discount-image {
+    box-shadow: 10px 16px 32px 0px #0000001A;
+  }
+  .kt-timer .kt-card .kt-up, .kt-timer .kt-card .kt-down-parent{
+    height: 53%;
+  }
+</style>
 {% schema %}
 {
   "name": "Custom Discount Section",
