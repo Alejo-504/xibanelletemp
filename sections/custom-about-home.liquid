@@ -162,8 +162,14 @@
     .text-content{
       position: relative;
     }
-    .item-icon{
-      grid-template-columns: 50px 200px;
+    
+    @media (max-width: 768px){
+      .item-icon{
+        grid-template-columns: 50px 200px;
+        justify-content: center;
+        gap: 7px;
+        align-items: center;
+      }
     }
     @media (min-width: 768px){
       .item-icon{
