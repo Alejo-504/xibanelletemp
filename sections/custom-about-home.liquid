@@ -140,12 +140,22 @@
     .text-content::before{
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: auto;
-      background-image: url({{ section.settings.overlay_logo | img_url: 'master' }});
+      top: -65px;
+      left: 125px;
+      /* display: contents; */
+      width: 280px;
+      height: 190px;
+      /* background-color: aliceblue; */
+      background-image: url(//xibanelle-co-llc.myshopify.com/cdn/shop/files/Xibanelle_Logo-147.png?v=1700417665);
       z-index: 0;
+      background-position: unset;
+      background-origin: initial;
+      background-position: center;
+      background-size: cover;
+    }
+    .overlay-text{
+      position: relative;
+      z-index: 1;
     }
     .split-section .icons-row p{
       font-size: 0.95rem;
@@ -156,5 +166,8 @@
     }
     .split-section{
       background:rgb(var(--color-background));
+    }
+    .text-content{
+      position: relative;
     }
   </style>
