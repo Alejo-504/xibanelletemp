@@ -137,6 +137,16 @@
       background: rgb(255 255 255 / 50%);
       z-index: 0;
     }
+    .text-content::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: auto;
+      background-image: url({{ section.settings.overlay_logo | img_url: 'master' }});
+      z-index: 0;
+    }
     .split-section .icons-row p{
       font-size: 0.95rem;
     }
