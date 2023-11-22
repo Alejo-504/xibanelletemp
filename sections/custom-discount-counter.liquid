@@ -46,11 +46,19 @@
   .kt-timer .kt-card .kt-up, .kt-timer .kt-card .kt-down-parent{
     height: 53%;
   }
+  .kt-timer .kt-card .kt-front .kt-down-parent, .kt-timer .kt-card .kt-front .kt-up, .kt-timer .kt-card .kt-back .kt-down-parent, .kt-timer .kt-card .kt-back .kt-up{
+    background-color:{{section.settings.color_time}};
+  }
 </style>
 {% schema %}
 {
   "name": "Custom Discount Section",
   "settings": [
+    {
+      "type": "color",
+      "id": "color_time",
+      "label": "Color Timer"
+    },
     {
       "type": "text",
       "id": "heading",
