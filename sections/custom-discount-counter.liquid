@@ -3,7 +3,7 @@
 <div class="discount-section-counter container-fluid py-5 color-{{ section.settings.scheme_selector }} overflow-hidden position-relative">
   <div class="row">
     <div class="col-md-2 d-flex align-items-center justify-content-center">
-      <div class="discount-image position-absolute first" style="transform: rotate(9deg);margin-left: -100px;width: 440px; height: 440px; background-image: url('{{ section.settings.image_left | img_url: '600x' }}'); background-size: cover; background-position: center;">
+      <div class="discount-image position-absolute first" style="left:0;transform: rotate(9deg);margin-left: -100px;width: 440px; height: 440px; background-image: url('{{ section.settings.image_left | img_url: '600x' }}'); background-size: cover; background-position: center;">
         
       </div>
     </div>
@@ -16,7 +16,7 @@
       <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
     </div>
     <div class="col-md-2 d-flex align-items-center justify-content-center ">
-      <div class="discount-image position-absolute second" style="transform: rotate(350deg);margin-right: -28px;width: 400px; height: 400px; background-image: url('{{ section.settings.image_right | img_url: '600x' }}'); background-size: cover; background-position: center;">
+      <div class="discount-image position-absolute second" style="right:0;transform: rotate(350deg);margin-right: -28px;width: 400px; height: 400px; background-image: url('{{ section.settings.image_right | img_url: '600x' }}'); background-size: cover; background-position: center;">
         
       </div>
     </div>
