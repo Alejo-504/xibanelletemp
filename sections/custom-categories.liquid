@@ -1,4 +1,4 @@
-<div class="container-fluid  py-5">
+<div class="container-fluid  py-5 color-{{ section.settings.scheme_selector }}">
   <div id="categories-section" class="page-width" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
     {% for block in section.blocks %}
     <div class="category-card" style="display: flex;  align-items: center; {% if  forloop.index == 2 %} flex-direction: column-reverse; {% else %} flex-direction: column; {% endif %}">
