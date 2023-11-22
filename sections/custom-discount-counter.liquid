@@ -7,7 +7,7 @@
     height:0px!important;
   }
   .discount-section-counter{
-    background:#9CB0B7;
+    background:{{section.settings.background_color}}
   }
 </style>
 
@@ -33,6 +33,11 @@
         "id": "scheme_selector",
         "label": "Heading",
         "default": "Luxury For Every Lifestyle"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background"
       },
       {
         "type": "text",
