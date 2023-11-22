@@ -1,5 +1,5 @@
 <div id="categories-section" class="container-fluid py-5 color-{{ section.settings.scheme_selector }}">
-  <div class="row">
+  <div class="row page-width">
     {% for block in section.blocks %}
     <div class="col-md-4 ">
       <div class="card d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
@@ -11,7 +11,6 @@
           <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
         </div>
       </div>
-      
     </div>
     {% endfor %}
   </div>
