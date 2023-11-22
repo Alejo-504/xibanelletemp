@@ -109,6 +109,7 @@
     "7b302da7-0124-4c70-8e86-742397839fc8": {
       "type": "custom-about-home",
       "settings": {
+        "scheme_selector": "",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
@@ -119,6 +120,7 @@
     "9b5fbd87-7ba7-40dc-a619-c06462d34570": {
       "type": "custom-discount-counter",
       "settings": {
+        "scheme_selector": "background-2",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "button_url": "shopify:\/\/collections\/all",
