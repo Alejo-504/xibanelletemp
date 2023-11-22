@@ -94,7 +94,7 @@
       <div class="row icons-row px-5">
 
         {% for block in section.blocks %}
-          <div class="col-md-3 col-sm-6 d-grid" style="grid-template-columns: 50px 1fr;">
+          <div class="col-md-3 col-sm-6 d-grid item-icon">
             <i class="fa fa-{{ block.settings.icon }}"></i>
             <div class="overlay-text d-flex align-items-start flex-column">
               <strong>{{ block.settings.title }}</strong>
@@ -162,7 +162,13 @@
     .text-content{
       position: relative;
     }
+    .item-icon{
+      grid-template-columns: 50px 200px;
+    }
     @media (min-width: 768px){
+      .item-icon{
+        grid-template-columns: 50px 1fr;
+      }
       .text-content::before{
         content: "";
         position: absolute;
