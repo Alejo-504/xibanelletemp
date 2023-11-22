@@ -161,6 +161,7 @@
     "9b5fbd87-7ba7-40dc-a619-c06462d34570": {
       "type": "custom-discount-counter",
       "settings": {
+        "color_time": "#434343",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "button_url": "shopify:\/\/collections\/all",
