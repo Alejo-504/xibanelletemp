@@ -55,7 +55,7 @@
           
           <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
         </div>
-        <div class="image-content col-md-4">
+        <div class="image-content col-md-4" style="background-image: url({{ section.settings.image | img_url: 'master' }});">
           <div class="overlay-text">
             <h2>About Us</h2>
             <p>{{ section.settings.text }}</p>
@@ -96,6 +96,12 @@
 </div>
 
   <style>
+    .image-content{
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     .split-section .row-content{
       height: 500px;
     }
