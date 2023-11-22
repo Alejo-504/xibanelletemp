@@ -143,16 +143,23 @@
 
                 {% if forloop.index == 2 %}
                   
-                 {% render "custom-card-product", product:product, size:"large" %}
+                  <div class="d-md-block d-none">
+                   {% render "custom-card-product", product:product, size:"large" %}
+                  </div>
+                  <div class="d-md-none d-none">
+                    {% render "custom-card-product", product:product, size:"normal" %}
+                  </div>
                
                 {% elsif forloop.index == 5 %}
-                  
-                 {% render "custom-card-product", product:product, size:"medium" %}
-               
+                  <div class="d-md-block d-none">
+                    {% render "custom-card-product", product:product, size:"large" %}
+                  </div>
+                  <div class="d-md-none d-none">
+                       {% render "custom-card-product", product:product, size:"medium" %}
+                  </div>
                 {% else %}
                   
                   {% render "custom-card-product", product:product, size:"normal" %}
-               
                 {% endif %}
                
              </div>
