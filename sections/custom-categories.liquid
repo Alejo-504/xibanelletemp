@@ -1,54 +1,25 @@
-<section id="categories-section" class="container mt-5">
-  <div class="row">
-    {% for block in section.blocks %}
-      
-    <div class="col-md-4 d-flex flex-column align-items-center">
-      <div class="category-image d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}');">
-        <i class="fa {{ block.settings.icon }}"></i>
-      </div>
-      <div class="category-info text-center mt-3">
-        <h3 class="category-title">{{ block.settings.title }}</h3>
-        <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
-      </div>
+<section id="categories-section" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+  {% for block in section.blocks %}
+  <div class="category-card" style="display: flex; flex-direction: column; align-items: center; {% if  forloop.index == 2 %} 'order: -1;' {% endif %}">
+    <div class="category-image" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); width: 100%; height: 200px; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+      <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
     </div>
-
-    
-    {% endfor %}
+    <div class="category-info" style="background-color: #f7f7f7; padding: 20px; text-align: center; width: 100%;">
+      <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title }}</h3>
+      <a href="{{ block.settings.link }}" class="category-btn" style="padding: 10px 15px; background-color: #d3ad5d; color: white; text-decoration: none; border: none; cursor: pointer;">{{ block.settings.button_text }}</a>
+    </div>
   </div>
+  {% endfor %}
 </section>
-
-<style>
-  #categories-section .category-image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  #categories-section .category-info {
-    background-color: #f7f7f7;
-    padding: 20px;
-    width: 100%;
-  }
-  #categories-section .category-title {
-    margin-bottom: 15px;
-  }
-  #categories-section .btn-primary {
-    background-color: #d3ad5d;
-    border-color: #d3ad5d;
-  }
-  #categories-section .col-md-4:nth-child(2n)  {
-    flex-direction: row-reverse;
-  }
-</style>
 
 {% schema %}
 {
-  "name": "Custom Categories",
+  "name": "Custom Categories Grid",
   "max_blocks": 3,
   "blocks": [
     {
       "type": "category",
-      "name": "Category",
+      "name": "Category Block",
       "settings": [
         {
           "type": "image_picker",
@@ -96,8 +67,8 @@
   ],
   "presets": [
     {
-      "name": "Custom Categories",
-      "category": "custom"
+      "name": "Custom Categories Grid",
+      "category": "Custom Content"
     }
   ]
 }
