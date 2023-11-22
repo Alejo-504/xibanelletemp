@@ -1,15 +1,4 @@
-sss
-{% if cart.cart_level_discount_application.size > 0 %}
-  Discounts:5
-
-  <ul>
-    {% for discount_application in cart.cart_level_discount_applications %}
-      <li>
-        {{ discount_application.title }}-{{ discount_application.total_allocated_amount | money }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<div id="countdownultimate-KT" class="hide-kt"></div>
 
 {% schema %}
   {
