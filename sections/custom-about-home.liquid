@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "Custom Home",
+  "name": "Split Image & Text",
   "settings": [
     {
       "type": "text",
@@ -30,12 +30,6 @@
       "id": "button_label",
       "label": "Button Label",
       "default": "Read More"
-    }
-  ],
-  "presets":[
-    {
-      "name": "Custom Home",
-      "category": "custom"
     }
   ]
 }
@@ -97,11 +91,17 @@
 </style>
 {% endstylesheet %}
 
+{% javascript %}
+<script>
+  // Custom JavaScript if needed
+</script>
+{% endjavascript %}
+
 <div class="split-section">
   <div class="text-content">
     <h2>{{ section.settings.heading }}</h2>
     <p>{{ section.settings.text }}</p>
-    <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
+    <a href="{{ section.settings.button_url }}" class="btn">{{ section.settings.button_label }}</a>
   </div>
   <div class="image-content">
     <div class="overlay-text">
