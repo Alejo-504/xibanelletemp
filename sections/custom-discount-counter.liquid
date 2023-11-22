@@ -71,12 +71,16 @@
     background-color:{{section.settings.color_time}} !important;
   }
   .kt-section{
-    background-color:{{section.settings.color_time}} !important;;
+    background-color:{{section.settings.color_time}} !important;
     padding: 20px;
-   
   }
   .kt-section *{
      color:white!important;
+  }
+   @media (max-width: 768px){
+    .kt-section{
+      padding: 0px;
+    }
   }
 </style>
 {% schema %}
