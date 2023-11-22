@@ -148,18 +148,18 @@
 
                 {% if forloop.index == 2 %}
                   
-                  <div class="d-sm-block d-none">
+                  <div class="d-sm-block d-none w-100">
                    {% render "custom-card-product", product:product, size:"large" %}
                   </div>
-                  <div class="d-sm-none d-block">
+                  <div class="d-sm-none d-block w-100">
                     {% render "custom-card-product", product:product, size:"normal" %}
                   </div>
                
                 {% elsif forloop.index == 5 %}
-                  <div class="d-md-block d-none">
+                  <div class="d-md-block d-none w-100">
                     {% render "custom-card-product", product:product, size:"large" %}
                   </div>
-                  <div class="d-md-none d-block">
+                  <div class="d-md-none d-block w-100">
                        {% render "custom-card-product", product:product, size:"normal" %}
                   </div>
                 {% else %}
