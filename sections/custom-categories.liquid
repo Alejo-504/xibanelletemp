@@ -1,14 +1,17 @@
 <div id="categories-section" class="container-fluid py-5 color-{{ section.settings.scheme_selector }}">
   <div class="row">
     {% for block in section.blocks %}
-    <div class="col-md-4 d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
-      <div class="category-image w-100 d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); height: 200px; background-size: cover; background-position: center;">
-        <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
+    <div class="col-md-4 ">
+      <div class="card d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
+        <div class="category-image w-100 d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); height: 200px; background-size: cover; background-position: center;">
+          <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
+        </div>
+        <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
+          <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title }}</h3>
+          <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
+        </div>
       </div>
-      <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
-        <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title }}</h3>
-        <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
-      </div>
+      
     </div>
     {% endfor %}
   </div>
@@ -23,7 +26,7 @@
     background: rgb(var(--color-button));
     color: rgb(var(--color-button-text));
   }
-  #categories-section .col-md-4{
+  #categories-section .card{
     box-shadow: -2px 1px 3px 1px #9595951f;
     gap:15px;
   }
