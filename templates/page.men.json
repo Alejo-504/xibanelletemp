@@ -161,11 +161,13 @@
     "9b5fbd87-7ba7-40dc-a619-c06462d34570": {
       "type": "custom-discount-counter",
       "settings": {
-        "scheme_selector": "background-2",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "button_url": "shopify:\/\/collections\/all",
-        "button_label": "Read More"
+        "button_label": "Read More",
+        "image_left": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black_1.webp",
+        "image_right": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
+        "scheme_selector": "background-2"
       }
     },
     "2d815898-f026-4f1f-a730-ee54d39d4994": {
