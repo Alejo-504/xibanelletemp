@@ -137,21 +137,7 @@
       background: rgb(255 255 255 / 50%);
       z-index: 0;
     }
-    .text-content::before{
-      content: "";
-      position: absolute;
-      top: -111px;
-      left: 40px;
-      width: 251px;
-      height: 251px;
-      background-image: url({{ section.settings.overlay_logo | img_url: 'master' }});
-      z-index: 0;
-      background-position: unset;
-      background-origin: initial;
-      background-position: center;
-      background-size: cover;
-      opacity: 0.2;
-    }
+
     .overlay-text{
       position: relative;
       z-index: 1;
@@ -168,5 +154,22 @@
     }
     .text-content{
       position: relative;
+    }
+    @media (min-width: 768px){
+      .text-content::before{
+        content: "";
+        position: absolute;
+        top: -111px;
+        left: 40px;
+        width: 251px;
+        height: 251px;
+        background-image: url({{ section.settings.overlay_logo | img_url: 'master' }});
+        z-index: 0;
+        background-position: unset;
+        background-origin: initial;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.2;
+      }
     }
   </style>
