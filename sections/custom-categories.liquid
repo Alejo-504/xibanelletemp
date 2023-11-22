@@ -1,5 +1,5 @@
-<div class="container-fluid  py-5 color-{{ section.settings.scheme_selector }}">
-  <div id="categories-section" class="page-width" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+<div  id="categories-section" class="container-fluid  py-5 color-{{ section.settings.scheme_selector }}">
+  <div class="page-width" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
     {% for block in section.blocks %}
     <div class="category-card" style="display: flex;  align-items: center; {% if  forloop.index == 2 %} flex-direction: column-reverse; {% else %} flex-direction: column; {% endif %}">
       <div class="category-image" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); width: 100%; height: 200px; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
@@ -13,6 +13,12 @@
     {% endfor %}
   </div>
 </div>
+<style>
+  #categories-setion{
+    background: rgb(var(--color-background-4));
+    color: rgb(var(--color-foreground_3));
+  }
+</style>
 
 {% schema %}
 {
