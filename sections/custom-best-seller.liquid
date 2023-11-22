@@ -121,6 +121,14 @@
         grid-template-columns: 1.2fr 2fr !important;
     }
    }
+   @media (max-width: 768px){
+      #shopify-section-{{section.id}} .grid-item{
+        grid-column: span 4 !important;
+      }
+      #shopify-section-{{section.id}} .grid-item:nth-child(2){
+        grid-column: span 12 !important;
+      }
+   }
   </style>
   
   <div class="best-sellers-section color-{{ section.settings.scheme_selector }} ">
