@@ -203,12 +203,21 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "5394804488230052649": {
+        "type": "shopify:\/\/apps\/countdown-timer-ultimate\/blocks\/app-embed\/3da8fad5-a736-4384-8c4e-b54de86a161c",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
           "background": "#c5b4c6",
           "background_2": "#e1cb8a",
-          "background_3": "#FFFFFF",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
@@ -223,7 +232,8 @@
         "settings": {
           "background": "#728d82",
           "background_2": "#9cb0b7",
-          "background_3": "#fff",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#9cb0b7",
@@ -238,7 +248,8 @@
         "settings": {
           "background": "#242833",
           "background_2": "#ffffff",
-          "background_3": "#FFFFFF",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
@@ -253,7 +264,8 @@
         "settings": {
           "background": "#121212",
           "background_2": "#ffffff",
-          "background_3": "#FFFFFF",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
@@ -268,7 +280,8 @@
         "settings": {
           "background": "#334fb4",
           "background_2": "#ffffff",
-          "background_3": "#FFFFFF",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
@@ -283,7 +296,8 @@
         "settings": {
           "background": "#fcfcfc",
           "background_2": "#ffffff",
-          "background_3": "#FFFFFF",
+          "background_3": "#ffffff",
+          "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#121212",
           "text_2": "#121212",
