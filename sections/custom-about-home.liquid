@@ -82,7 +82,7 @@
         <div class="image-content  col-md-7 d-flex flex-column  align-items-start px-5 justify-content-evenly" style="background-image: url({{ section.settings.image | img_url: 'master' }});">
           <h2>{{ section.settings.heading }}</h2>
           
-          <a href="{{ section.settings.button_url }}" class="btn btn-primary">{{ section.settings.button_label }}</a>
+          <a href="{{ section.settings.button_url }}" class="btn btn-primary d-md-block d-none">{{ section.settings.button_label }}</a>
         </div>
         <div class="text-content col-md-5 px-md-5" >
           <div class="overlay-text">
@@ -103,6 +103,9 @@
           </div>
         {% endfor %}
       
+    </div>
+    <div class="d-flex jsutify-content-center">
+      <a href="{{ section.settings.button_url }}" class="btn btn-primary d-block d-md-none">{{ section.settings.button_label }}</a>
     </div>
   </div>
 </div>
@@ -181,6 +184,11 @@
         gap: 7px;
         align-items: center;
         margin-bottom:10px;
+      }
+      .image-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
     @media (min-width: 768px){
