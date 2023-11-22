@@ -6,3 +6,46 @@
     {{ product.title }}
   {% endfor %}
 {% endif %}
+
+{% schema %}
+  {
+    "name": "Custom Discount Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Luxury For Every Lifestyle"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL",
+        "default": "/collections/all"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Read More"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Discount",
+        "category": "custom"
+      }
+    ]
+  }
+  {% endschema %}
