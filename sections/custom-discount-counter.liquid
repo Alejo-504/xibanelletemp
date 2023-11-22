@@ -24,19 +24,24 @@
 </div>
 <style>
  @media (max-width: 768px){
-    .discount-section-counter .first{
-      width: 250px;
-      height: 250px;
+    .discount-image.first{
+      width: 250px !important;
+      height: 250px !important;
       left: 90px;
       top: 45%;
     }
-    .discount-section-counter .second{
-      width: 300px;
-      height: 300px;
-      right: 90px;
-      top: 45%;
+    .discount-image.second{
+      width: 300px!important;
+      height: 300px!important;
+      right: -30px;
+      top: 0%;
     }
     
+  }
+  @media (max-width: 576px){
+    .discount-image{
+      display:none !important;
+    }
   }
 
   .timer-app .kt-timer > div:not([class]){
