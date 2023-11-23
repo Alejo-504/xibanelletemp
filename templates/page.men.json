@@ -179,6 +179,7 @@
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
+            "title_category": "Name Category",
             "title": "Title",
             "link": "shopify:\/\/blogs\/news",
             "button_text": "View Products"
@@ -188,6 +189,7 @@
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
+            "title_category": "Name Category",
             "title": "Title",
             "link": "shopify:\/\/pages\/men",
             "button_text": "View Products"
@@ -197,6 +199,7 @@
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
+            "title_category": "Name Category",
             "title": "Title",
             "link": "shopify:\/\/products\/black-leather-jacket",
             "button_text": "View Products"
@@ -211,6 +214,25 @@
       "settings": {
         "scheme_selector": "background-2"
       }
+    },
+    "ea03ccd6-2366-4f9c-9ab8-31a092059969": {
+      "type": "custom-reviews",
+      "blocks": {
+        "d86f5489-16da-4618-b85b-d8cb3cee812d": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "d86f5489-16da-4618-b85b-d8cb3cee812d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -220,6 +242,7 @@
     "27fa08b7-edfe-455c-9132-de5f1eb95a07",
     "7b302da7-0124-4c70-8e86-742397839fc8",
     "9b5fbd87-7ba7-40dc-a619-c06462d34570",
-    "2d815898-f026-4f1f-a730-ee54d39d4994"
+    "2d815898-f026-4f1f-a730-ee54d39d4994",
+    "ea03ccd6-2366-4f9c-9ab8-31a092059969"
   ]
 }
