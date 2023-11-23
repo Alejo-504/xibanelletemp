@@ -226,10 +226,20 @@
             "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
             "rating": 4.8
           }
+        },
+        "c79e1352-534f-4efe-b691-1f679e7ab632": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
         }
       },
       "block_order": [
-        "d86f5489-16da-4618-b85b-d8cb3cee812d"
+        "d86f5489-16da-4618-b85b-d8cb3cee812d",
+        "c79e1352-534f-4efe-b691-1f679e7ab632"
       ],
       "settings": {
       }
