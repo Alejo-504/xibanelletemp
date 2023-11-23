@@ -1,8 +1,49 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Testimonial Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name",
+          "default": "Alexandro Samsóin"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "default": "Las Vegas, Montana"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam."
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Rating",
+          "min": 1,
+          "max": 5,
+          "step": 0.1,
+          "default": 4.8
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Testimonials",
+      "category": "Testimonial"
+    }
+  ]
+}
 {% endschema %}
 <section class="testimonials">
   <div class="container">
