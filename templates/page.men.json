@@ -243,6 +243,40 @@
       ],
       "settings": {
       }
+    },
+    "05599d10-2590-4ff6-8ddb-92b1a899a065": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up now & get 10% of",
+            "heading_size": "h2"
+          }
+        },
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Last chance to take advantage of our discount!<\/p>"
+          }
+        },
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-heading-1",
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-paragraph-1",
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -253,6 +287,7 @@
     "7b302da7-0124-4c70-8e86-742397839fc8",
     "9b5fbd87-7ba7-40dc-a619-c06462d34570",
     "2d815898-f026-4f1f-a730-ee54d39d4994",
-    "ea03ccd6-2366-4f9c-9ab8-31a092059969"
+    "ea03ccd6-2366-4f9c-9ab8-31a092059969",
+    "05599d10-2590-4ff6-8ddb-92b1a899a065"
   ]
 }
