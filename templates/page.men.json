@@ -179,30 +179,27 @@
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/pexels-nicky-manosalva-17664453.jpg",
-            "title": "Category Title",
+            "title": "Title",
             "link": "shopify:\/\/blogs\/news",
-            "button_text": "View Products",
-            "icon": "fa-camera"
+            "button_text": "View Products"
           }
         },
         "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a": {
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
-            "title": "Category Title",
+            "title": "Title",
             "link": "shopify:\/\/pages\/men",
-            "button_text": "View Products",
-            "icon": "fa-camera"
+            "button_text": "View Products"
           }
         },
         "e61dc44f-7d8d-4b03-8cf1-67ed8063533b": {
           "type": "category",
           "settings": {
             "image": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
-            "title": "Category Title",
+            "title": "Title",
             "link": "shopify:\/\/products\/black-leather-jacket",
-            "button_text": "View Products",
-            "icon": "fa-camera"
+            "button_text": "View Products"
           }
         }
       },
