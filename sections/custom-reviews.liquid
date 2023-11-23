@@ -2,7 +2,20 @@
 {% schema %}
 {
   "name": "Custom Testimonial",
-  "settings": [],
+  "settings": [
+     {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "What Our Customer Say"
+    },
+     {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
+        }
+  ],
   "blocks": [
     {
       "type": "testimonial",
