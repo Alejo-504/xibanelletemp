@@ -92,7 +92,7 @@
 
 @media (max-width: 768px) {
   :root{
-    --font-body-scale: 1.1!important;
+    --font-body-scale: 1.0!important;
   }
 }
 @keyframes pulse {
