@@ -7,7 +7,8 @@
           <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
         </div>
         <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
-          <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title }}</h3>
+          <span>{{ block.settings.title }}</span>
+          <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title_category }}</h3>
           <a href="{{ block.settings.link }}" class="btn btn-primary">{{ block.settings.button_text }}</a>
         </div>
       </div>
@@ -22,8 +23,9 @@
     padding: 70px 0;
     
   }
-   #categories-section .category-title{
+   #categories-section .category-title, #categories-section .category-info span{
      color:rgb(var(--color-foreground_3));
+     
    }
   #categories-section .btn-primary{
     background: rgb(var(--color-button));
@@ -61,9 +63,15 @@
         },
         {
           "type": "text",
+          "id": "title_category",
+          "label": "Name Category",
+          "default": "Name Category"
+        },
+        {
+          "type": "text",
           "id": "title",
           "label": "Title",
-          "default": "Category Title"
+          "default": "Title"
         },
         {
           "type": "url",
