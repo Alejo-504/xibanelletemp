@@ -46,6 +46,22 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    setTimeout(function(){
+      //si esta vacio #countdownultimate-KT
+      let content_empty = `{% render "custom-timer-empty" %}`;
+
+      if(document.querySelector("#countdownultimate-KT").textContent.trim() == ""){
+        document.querySelector("#countdownultimate-KT").innerHTML = content_empty;
+      }
+
+
+     }, 1000);
+    
+  });
+
+</script>
 <style>
  @media (max-width: 956px){
     
