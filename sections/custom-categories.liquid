@@ -42,6 +42,14 @@
     border-bottom: solid 4px rgb(var(--color-background-2));
     border-radius: 2px;
   }
+  @media (max-width:767px){
+    #categories-section .row{
+      gap:30px;
+    }
+     #categories-section .flex-column-reverse{
+       flex-direction:column!important;
+     }
+  }
 </style>
 
 {% schema %}
@@ -69,13 +77,12 @@
           "type": "text",
           "id": "title_category",
           "label": "Name Category",
-          "default": "Name Category"
+          "default": "Category"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
-          "default": "Title"
+          "label": "Title"
         },
         {
           "type": "url",
