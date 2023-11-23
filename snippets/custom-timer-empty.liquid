@@ -1,0 +1,37 @@
+ <div class="timer-container" style="display: flex; justify-content: center; gap: 10px;">
+  <div class="time-unit" style="background-color: #333; color: #fff; padding: 10px; width: 60px; text-align: center;">
+    <span class="number" style="font-size: 2em; line-height: 1;">00</span>
+    <span class="label" style="display: block; font-size: 0.75em;">Days</span>
+  </div>
+  <span class="colon" style="color: #fff; font-size: 2em; line-height: 1;">:</span>
+  <div class="time-unit" style="background-color: #333; color: #fff; padding: 10px; width: 60px; text-align: center;">
+    <span class="number" style="font-size: 2em; line-height: 1;">00</span>
+    <span class="label" style="display: block; font-size: 0.75em;">Hours</span>
+  </div>
+  <span class="colon" style="color: #fff; font-size: 2em; line-height: 1;">:</span>
+  <div class="time-unit" style="background-color: #333; color: #fff; padding: 10px; width: 60px; text-align: center;">
+    <span class="number" style="font-size: 2em; line-height: 1;">00</span>
+    <span class="label" style="display: block; font-size: 0.75em;">Minutes</span>
+  </div>
+  <span class="colon" style="color: #fff; font-size: 2em; line-height: 1;">:</span>
+  <div class="time-unit" style="background-color: #333; color: #fff; padding: 10px; width: 60px; text-align: center;">
+    <span class="number" style="font-size: 2em; line-height: 1;">00</span>
+    <span class="label" style="display: block; font-size: 0.75em;">Seconds</span>
+  </div>
+</div>
+
+<style>
+@media only screen and (max-width: 600px) {
+  .timer-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .time-unit {
+    width: 100%;
+    padding: 20px;
+  }
+  .colon {
+    display: none;
+  }
+}
+</style>
