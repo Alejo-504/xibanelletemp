@@ -17,7 +17,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.scheme_selector }} ">
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.color_scheme }} ">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -134,8 +134,7 @@
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
+      "label": "t:sections.all.colors.label"
     },
     {
       "type": "checkbox",
