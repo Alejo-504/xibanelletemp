@@ -3,6 +3,11 @@
 {
   "name": "Custom Testimonial",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "scheme_selector",
+      "label": "Scheme Number"
+    },
      {
           "type": "text",
           "id": "title",
@@ -60,7 +65,7 @@
 }
 {% endschema %}
 
-<section class="testimonials">
+<section class="testimonials color-{{ section.settings.scheme_selector }} ">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
