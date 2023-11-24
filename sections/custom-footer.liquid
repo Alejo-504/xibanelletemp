@@ -66,8 +66,8 @@
     ]
   }
   {% endschema %}
-
-   <footer class="footer-custom container color-{{ section.settings.scheme_selector }}" >
+<div class="w-100 h-100 color-{{ section.settings.scheme_selector }}"> 
+   <footer class="footer-custom container" >
       {% assign count_column = 0 %}
       {% assign html_opening_col = '<div class="col">' %}
       {% assign html_opening_ul = '<ul>' %}
@@ -147,5 +147,5 @@
     .footer-custom ul li i:before {
       font-size: 16px;
     }
-
 </style>
+</div>
