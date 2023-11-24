@@ -1,99 +1,69 @@
-
 {% schema %}
-  {
-    "name": "Custom Footer",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Custom Footer",
-        "category": "custom"
-      }
-    ]
-  }
+{
+  "name": "Custom Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Text",
+      "default": "Copyright © All rights reserved | This Website Was Designed And Developed by Strive Enterprise"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": "Column Links",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Company"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Footer"
+    }
+  ]
+}
 {% endschema %}
-<div style="width: 1776px; height: 295px; justify-content: flex-start; align-items: flex-start; gap: 185px; display: inline-flex">
-  <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-    <div style="color: white; font-size: 24px; font-family: Raleway; font-weight: 500; line-height: 36.53px; word-wrap: break-word">Company</div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">About Us</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Our Services</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Affiliate Program</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Privacy Policy</div>
+
+<div class="container-fluid bg-dark text-white py-4">
+  <div class="row">
+    {% for block in section.blocks %}
+    <div class="col-md">
+      <h5 class="font-weight-bold mb-3">{{ block.settings.heading }}</h5>
+      <ul class="list-unstyled">
+        {% for link in linklists[block.id].links %}
+        <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <div class="col-md">
+      <h5 class="font-weight-bold mb-3">Social Media</h5>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+        <li><a href="#" class="text-white"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a href="#" class="text-white"><i class="fa fa-tiktok"></i> TikTok</a></li>
+        <li><a href="#" class="text-white"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-md">
+      <h5 class="font-weight-bold mb-3">Contact</h5>
+      <address>
+        <strong>Address line 1</strong><br>
+        Address line 2<br>
+        <abbr title="Phone">P:</abbr> (xxx) xxx xxxx<br>
+        <abbr title="Email">E:</abbr> info@xibanelle.com<br>
+        <abbr title="Hours">H:</abbr> 24/7
+      </address>
     </div>
   </div>
-  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-    <div style="color: white; font-size: 24px; font-family: Raleway; font-weight: 500; line-height: 36.53px; word-wrap: break-word">Get Help</div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">FAQ</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Returns</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Payment Options</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Shipping and Delivery</div>
-    </div>
-  </div>
-  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-    <div style="color: white; font-size: 24px; font-family: Raleway; font-weight: 500; line-height: 36.53px; word-wrap: break-word">Online Shop</div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Bags</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Belts</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Accesories</div>
-      <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Privacy Policy</div>
-    </div>
-  </div>
-  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-    <div style="color: white; font-size: 24px; font-family: Raleway; font-weight: 500; line-height: 36.53px; word-wrap: break-word">Social Media</div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
-      <div style="justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 24px; height: 24px; position: relative">
-          <div style="width: 20px; height: 19.88px; left: 2px; top: 2px; position: absolute; background: white"></div>
-        </div>
-        <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Facebook</div>
-      </div>
-      <div style="justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 24px; height: 24px; position: relative">
-          <div style="width: 21px; height: 21px; left: 1.50px; top: 1.50px; position: absolute; background: white"></div>
-        </div>
-        <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Twitter</div>
-      </div>
-      <div style="justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 24px; height: 24px; position: relative">
-          <div style="width: 15.68px; height: 18px; left: 4.16px; top: 3px; position: absolute; background: white"></div>
-        </div>
-        <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">TikTok</div>
-      </div>
-      <div style="justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 24px; height: 24px; position: relative">
-          <div style="width: 23.04px; height: 23.04px; left: 0.48px; top: 0.48px; position: absolute; background: white"></div>
-        </div>
-        <div style="color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">YouTube</div>
-      </div>
-    </div>
-  </div>
-  <div style="width: 400px; position: relative">
-    <div style="left: 0px; top: 0px; position: absolute; color: white; font-size: 24px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Contact</div>
-    <div style="width: 400px; height: 247px; left: 0px; top: 48px; position: absolute">
-      <div style="width: 361px; height: 247px; left: 39px; top: 0px; position: absolute; color: white; font-size: 18px; font-family: Raleway; font-weight: 500; word-wrap: break-word">Address line 1<br/>Address line 2<br/><br/>(xxx) xxx xxxx<br/><br/>info@xibanelle.com<br/><br/>24/7</div>
-      <div style="width: 24px; height: 159px; left: 0px; top: 13px; position: absolute">
-        <div style="width: 24px; height: 24px; left: 0px; top: 91px; position: absolute">
-          <div style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute">
-            <div style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute"></div>
-            <div style="width: 20px; height: 16px; left: 2px; top: 4px; position: absolute; background: white"></div>
-          </div>
-        </div>
-        <div style="width: 24px; height: 24px; left: 0px; top: 49px; position: absolute">
-          <div style="width: 18.72px; height: 18.72px; left: 3px; top: 2.28px; position: absolute; background: white"></div>
-        </div>
-        <div style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute">
-          <div style="width: 16px; height: 19.62px; left: 4px; top: 2px; position: absolute; background: white"></div>
-        </div>
-        <div style="width: 24px; height: 24px; left: 0px; top: 135px; position: absolute">
-          <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; background: white"></div>
-        </div>
-      </div>
-    </div>
+  <div class="text-center mt-4">
+    {{ settings.footer_text }}
   </div>
 </div>
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
