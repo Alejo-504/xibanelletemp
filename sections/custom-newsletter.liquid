@@ -15,12 +15,15 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-   #shopify-section-{{ section.id }} .background-4-input{
+   #shopify-section-{{ section.id }} .background-4-input, .field-subscribe{
      background:rgb(var(--color-background-4));
      color:black;
    }
   .field__label, .customer .field label{
     color:black;
+  }
+  .field__label, .customer .field label{
+    top:auto;
   }
 {%- endstyle -%}
 
@@ -63,7 +66,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field">
+                <div class="field d-flex align-items-center field-subscribe">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
