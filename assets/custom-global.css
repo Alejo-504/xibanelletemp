@@ -2,6 +2,9 @@ body, html{
   background:white!important;
 }
 /* Buttons */
+.grecaptcha-badge{
+  display:none!important;
+}
 .btn {
   padding: 10px 20px;
   border: 2px solid transparent;
