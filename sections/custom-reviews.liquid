@@ -83,16 +83,19 @@
           <div class="item">
             <div class="testimonial p-4">
               <div class="testimonial-rating">
-                <div class="testimonial-avatar circle">
-                  <img src="{{ block.settings.avatar | img_url: '60x60' }}" alt="{{ block.settings.author }}" width="60" height="60">
-                </div>
-                <span>{{ block.settings.author }}</span>
-                <span>{{ block.settings.location }}</span>
-                <p class="stars d-flex">
-                  {% assign rating = block.settings.rating | round: 1 %}
-                  <span class="fa fa-star checked"></span>
-                  <span>{{ rating }}</span>
-                </p>
+               
+                <div class="header-card d-flex">
+                  <div class="testimonial-avatar circle">
+                    <img src="{{ block.settings.avatar | img_url: '60x60' }}" alt="{{ block.settings.author }}" width="60" height="60">
+                  </div>
+                  <span>{{ block.settings.author }}</span>
+                  <span>{{ block.settings.location }}</span>
+                  <span class="stars d-flex">
+                    {% assign rating = block.settings.rating | round: 1 %}
+                    <span class="fa fa-star checked"></span>
+                    <span>{{ rating }}</span>
+                  </span>
+                 </div
               </div>
               <div class="testimonial-content">
                 <p>"{{ block.settings.quote }}"</p>
