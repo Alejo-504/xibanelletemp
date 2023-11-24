@@ -147,7 +147,7 @@
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
             {%  assign direction = "" %} 
-            {% if forloop.index == 2 or forloop.index == 5 %}
+            {% if forloop.index <= 3 %}
               {% assign direction = "right" %}
             {% else %}
               {% assign direction = "left" %}
