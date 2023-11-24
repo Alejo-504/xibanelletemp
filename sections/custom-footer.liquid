@@ -1,69 +1,55 @@
 {% schema %}
 {
   "name": "Custom Footer",
-  "settings": [
-    {
-      "type": "text",
-      "id": "footer_text",
-      "label": "Text",
-      "default": "Copyright © All rights reserved | This Website Was Designed And Developed by Strive Enterprise"
-    }
-  ],
+  "settings": [],
   "blocks": [
     {
-      "type": "link_list",
-      "name": "Column Links",
+      "type": "column",
+      "name": "Column",
       "settings": [
         {
           "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Company"
+          "id": "title",
+          "label": "Title",
+          "default": "Column Title"
+        },
+        {
+          "type": "link_list",
+          "id": "links",
+          "label": "Links"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Custom Footer"
+      "name": "Custom Footer",
+      "category": "Footer"
     }
   ]
 }
 {% endschema %}
 
-<div class="container-fluid bg-dark text-white py-4">
-  <div class="row">
-    {% for block in section.blocks %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<div class="container">
+  {% for block in section.blocks %}
     <div class="col-md">
-      <h5 class="font-weight-bold mb-3">{{ block.settings.heading }}</h5>
-      <ul class="list-unstyled">
-        {% for link in linklists[block.id].links %}
-        <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+      <h4>{{ block.settings.title }}</h4>
+      <ul>
+        {% for link in block.settings.links.blocks %}
+          <li>
+            {% if link.settings.icon %}
+              <i class="{{ link.settings.icon }}"></i>
+            {% endif %}
+            <a href="{{ link.settings.url }}">{{ link.settings.label }}</a>
+          </li>
         {% endfor %}
       </ul>
     </div>
-    {% endfor %}
-    <div class="col-md">
-      <h5 class="font-weight-bold mb-3">Social Media</h5>
-      <ul class="list-unstyled">
-        <li><a href="#" class="text-white"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-        <li><a href="#" class="text-white"><i class="fa fa-twitter"></i> Twitter</a></li>
-        <li><a href="#" class="text-white"><i class="fa fa-tiktok"></i> TikTok</a></li>
-        <li><a href="#" class="text-white"><i class="fa fa-youtube-play"></i> YouTube</a></li>
-      </ul>
-    </div>
-    <div class="col-md">
-      <h5 class="font-weight-bold mb-3">Contact</h5>
-      <address>
-        <strong>Address line 1</strong><br>
-        Address line 2<br>
-        <abbr title="Phone">P:</abbr> (xxx) xxx xxxx<br>
-        <abbr title="Email">E:</abbr> info@xibanelle.com<br>
-        <abbr title="Hours">H:</abbr> 24/7
-      </address>
-    </div>
-  </div>
-  <div class="text-center mt-4">
-    {{ settings.footer_text }}
-  </div>
+  {% endfor %}
 </div>
