@@ -242,6 +242,9 @@
         "c79e1352-534f-4efe-b691-1f679e7ab632"
       ],
       "settings": {
+        "scheme_selector": "background-2",
+        "title": "What Our Customer Say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
       }
     },
     "05599d10-2590-4ff6-8ddb-92b1a899a065": {
@@ -272,7 +275,7 @@
         "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
