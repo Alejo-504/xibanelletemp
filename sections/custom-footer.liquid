@@ -54,12 +54,13 @@
     ]
   }
   {% endschema %}
-   <div class="footer">
+
+   <footer class="footer-custom container-fluid">
       {% assign count_column = 0 %}
       {% assign html_opening_col = '<div class="col">' %}
       {% assign html_opening_ul = '<ul>' %}
 
-    
+    <div class="row">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'column' %}
@@ -95,9 +96,6 @@
         </ul>
         </div>
       {% endif %}
-    </div>
+      </div>
+  </footer>
   
-
-
-
-
