@@ -276,7 +276,7 @@
       ],
       "custom_css": [
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 400px; max-height: 400px; left: 0;}",
-        ".lateral-2 {width: 10vw; height: 30vw; width: 530px; height: 305px; right: 0;}"
+        ".lateral-2 {width: 30vw; height: 20vw; max-width: 530px; max-height: 305px; right: 0;}"
       ],
       "settings": {
         "color_background": "#e6e6e6",
