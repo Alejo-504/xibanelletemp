@@ -80,7 +80,10 @@
       {% assign md_value = md_value | floor %}
       {% assign html_opening_col = '<div class="col-md-' | append: md_value | append: '">' %}
       {% assign html_opening_ul = '<ul>' %}
-
+      {% assign html_li_icon = '<li class="with-icon">' %}
+      {% assign html_li_svg = '<li class="with-icon svg">' %}
+      {% assign html_li_close ="</li>" %}
+      {% assign li_open ="<li>" %}
     <div class="row justify-content-center">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -105,17 +108,19 @@
           {% when 'menu_item' %}
             {% if block.settings.item_url != blank %}
                 {% if block.settings.item_icon != blank %}
-                   <li class="with-icon">
+                   {{ html_li_icon }}
                     <i class="{{ block.settings.item_icon }}"></i>
-                   </li>
+                  
                 {% elsif block.settings.item_svg != blank %}
-                   <li class="svg with-icon">
+                 {{ html_li_svg }}
                     {{ block.settings.item_svg }}
-                   </li
+
+                {% else %}
+                  {{ li_open }}
                 {% endif %}
-               <li>
+              
                 <a href="{{ block.settings.item_url }}">{{ block.settings.item_title }}</a>
-               </li>
+                 {{ html_li_close }}
             {% endif %}
         {% endcase %}
       {% endfor %}
