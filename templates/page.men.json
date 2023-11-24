@@ -286,10 +286,10 @@
     "cb55cc35-0009-492a-914d-0cebd201b13e": {
       "type": "custom-footer",
       "blocks": {
-        "5fe7e81c-5844-404b-9a0a-a2a3ddb9ff59": {
-          "type": "text",
+        "2dfbbade-7689-4401-a9f5-5a22af4e7eee": {
+          "type": "column",
           "settings": {
-            "title": "Columna 1"
+            "title": "column 1"
           }
         },
         "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1": {
@@ -298,10 +298,10 @@
             "menu": "main-menu"
           }
         },
-        "7b74eca0-14e0-4cdb-8d89-b750d9f11415": {
-          "type": "text",
+        "d971f86f-8b3d-4062-81cd-925c5b721eb9": {
+          "type": "column",
           "settings": {
-            "title": "Columna 2"
+            "title": "Column 2"
           }
         },
         "378170d1-87f5-4a5f-802b-a6373cb82a17": {
@@ -312,9 +312,9 @@
         }
       },
       "block_order": [
-        "5fe7e81c-5844-404b-9a0a-a2a3ddb9ff59",
+        "2dfbbade-7689-4401-a9f5-5a22af4e7eee",
         "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1",
-        "7b74eca0-14e0-4cdb-8d89-b750d9f11415",
+        "d971f86f-8b3d-4062-81cd-925c5b721eb9",
         "378170d1-87f5-4a5f-802b-a6373cb82a17"
       ],
       "settings": {
