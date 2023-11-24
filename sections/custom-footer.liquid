@@ -81,7 +81,7 @@
       {% assign html_opening_col = '<div class="col-md-' | append: md_value | append: '">' %}
       {% assign html_opening_ul = '<ul>' %}
 
-    <div class="row">
+    <div class="row justify-content-center">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'column' %}
