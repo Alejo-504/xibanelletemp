@@ -282,6 +282,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "cb55cc35-0009-492a-914d-0cebd201b13e": {
+      "type": "custom-footer",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -293,6 +298,7 @@
     "9b5fbd87-7ba7-40dc-a619-c06462d34570",
     "2d815898-f026-4f1f-a730-ee54d39d4994",
     "ea03ccd6-2366-4f9c-9ab8-31a092059969",
-    "05599d10-2590-4ff6-8ddb-92b1a899a065"
+    "05599d10-2590-4ff6-8ddb-92b1a899a065",
+    "cb55cc35-0009-492a-914d-0cebd201b13e"
   ]
 }
