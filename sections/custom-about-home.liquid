@@ -94,7 +94,7 @@
       <div class="row icons-row px-5 ">
         {% for block in section.blocks %}
           <div class="col-md-3 col-sm-6 d-grid item-icon"  
-            data-aos-delay="{{forloop.index}}00" 
+            data-aos-delay="{{forloop.index  | minus:1}}00" 
             data-aos="slide-right" 
             data-aos-easing="ease-in-out"
             data-aos-duration="600" 
