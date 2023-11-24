@@ -83,7 +83,7 @@
       {% assign title_count = section.blocks | where: "type", "column" | size %}
       {% assign md_value = md_value | divided_by: title_count %}
       {% assign md_value = md_value | floor %}
-      {% assign html_opening_col = '<div data-aos="zoom-out-up"  data-aos-duration="300" data-aos-easing="ease-in-out" class="d-md-block d-flex justify-content-center align-items-center flex-column col-md-' | append: md_value | append: '">' %}
+      {% assign html_opening_col = '<div data-aos="fade-up"  data-aos-duration="300" data-aos-easing="ease-in-out" class="d-md-block d-flex justify-content-center align-items-center flex-column col-md-' | append: md_value | append: '">' %}
       {% assign html_opening_ul = '<ul>' %}
       {% assign html_li_icon = '<li class="with-icon">' %}
       {% assign html_li_svg = '<li class="with-icon svg">' %}
