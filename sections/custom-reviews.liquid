@@ -85,7 +85,7 @@
               <div class="testimonial-rating">
                
                 <div class="header-card d-flex pb-5 justify-content-between">
-                  <div class="d-flex">
+                  <div class="d-flex gap-3">
                     <div class="testimonial-avatar circle">
                       <img src="{{ block.settings.avatar | img_url: '60x60' }}" alt="{{ block.settings.author }}" width="60" height="60">
                     </div>
@@ -93,12 +93,12 @@
                       <span>{{ block.settings.author }}</span>
                       <small>{{ block.settings.location }}</small>
                     </div>
-                    <span class="stars d-flex align-items-center gap-2">
+                  </div>
+                  <span class="stars d-flex align-items-center gap-2">
                       {% assign rating = block.settings.rating | round: 1 %}
                       <span class="fa fa-star checked" style="color:#efc80a"></span>
                       <span>{{ rating }}</span>
                     </span>
-                  </div>
                 </div>
               </div>
               <div class="testimonial-content">
