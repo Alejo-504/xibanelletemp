@@ -41,6 +41,14 @@
   .hero-carousel .owl-dots{
     display:none;
   }
+  .hero-carousel{
+    display: none;
+    animation: fadeIn ease 1s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
   @media screen and (max-width: 768px){
    .hero-carousel  .item{
        height: 390px;
@@ -50,6 +58,7 @@
         display:block;
     }
    }
+
   @media screen and (min-width: 1140px){
      .hero-carousel .owl-item:not(.active) {
           transform: scale(0.8) translateX(-83%);
@@ -96,5 +105,6 @@
             }
           }
         });
+        $(".hero-carousel").show();
   });
 </script>
