@@ -1,5 +1,6 @@
 body, html{
   background:white!important;
+  overflow-x:hidden;
 }
 /* Buttons */
 .grecaptcha-badge{
