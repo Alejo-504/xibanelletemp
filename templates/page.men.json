@@ -279,6 +279,8 @@
         ".lateral-2 {width: 27vw; height: 18vw; max-width: 530px; max-height: 305px; right: 0; margin-bottom: -120px;}"
       ],
       "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
+        "lateral_2": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black_1.webp",
         "color_background": "#e6e6e6",
         "color_text": "#728d82",
         "color_scheme": "background-2",
