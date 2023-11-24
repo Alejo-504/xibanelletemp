@@ -64,12 +64,14 @@
         "category": "custom"
       }
     ]
-  } 
+  }
   {% endschema %}
 <div class="w-100 h-100 color-{{ section.settings.scheme_selector }}"> 
    <footer class="footer-custom container" >
       {% assign count_column = 0 %}
-      {% assign md_value = 12 | divided_by: section.blocks.size %}
+      {% assign md_value = 12 %}
+      {% assign title_count = section.blocks | where: "type", "column" | size %}
+      {% assign md_value = md_value | divided_by: title_count %}
       {% assign md_value = md_value | floor %}
       {% assign html_opening_col = '<div class="col-md-' | append: md_value | append: '">' %}
       {% assign html_opening_ul = '<ul>' %}
