@@ -1,138 +1,158 @@
 
 {% schema %}
-{
-  "name": "Custom Testimonial",
-  "settings": [
-    {
-      "type": "color_scheme",
-      "id": "scheme_selector",
-      "label": "Scheme Number"
-    },
-     {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "What Our Customer Say"
-    },
-     {
-          "type": "text",
-          "id": "subtitle",
-          "label": "Subtitle",
-          "default": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
-        }
-  ],
-  "blocks": [
-    {
-      "type": "testimonial",
-      "name": "Testimonial",
-      "settings": [
-        {
-          "type": "text",
-          "id": "author",
-          "label": "Author Name",
-          "default": "Alexandro Samsóin"
-        },
-        {
-          "type": "text",
-          "id": "location",
-          "label": "Location",
-          "default": "Las Vegas, Montana"
-        },
-        {
-          "type": "textarea",
-          "id": "quote",
-          "label": "Quote",
-          "default": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam."
-        },
-        {
-          "type": "range",
-          "id": "rating",
-          "label": "Rating",
-          "min": 1,
-          "max": 5,
-          "step": 0.1,
-          "default": 4.8
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Custom Testimonials",
-      "category": "custom"
-    }
-  ]
-}
-{% endschema %}
-
-<section class="testimonials section color-{{ section.settings.scheme_selector }} py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>{{ section.settings.title }}</h2>
-        <p>{{ section.settings.subtitle }}</p>
+  {
+    "name": "Custom Testimonial",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "scheme_selector",
+        "label": "Scheme Number"
+      },
+       {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "What Our Customer Say"
+      },
+       {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
+          }
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author Name",
+            "default": "Alexandro Samsóin"
+          },
+          {
+            "type": "text",
+            "id": "location",
+            "label": "Location",
+            "default": "Las Vegas, Montana"
+          },
+          {
+            "type": "textarea",
+            "id": "quote",
+            "label": "Quote",
+            "default": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam."
+          },
+          {
+            "type": "range",
+            "id": "rating",
+            "label": "Rating",
+            "min": 1,
+            "max": 5,
+            "step": 0.1,
+            "default": 4.8
+          },
+          {
+            "type": "image_picker",
+            "id": "avatar",
+            "label": "Avatar"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Testimonials",
+        "category": "custom"
+      }
+    ]
+  }
+  {% endschema %}
+  
+  <section class="testimonials section color-{{ section.settings.scheme_selector }} py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>{{ section.settings.title }}</h2>
+          <p>{{ section.settings.subtitle }}</p>
+        </div>
       </div>
-    </div>
-    <div class="owl-carousel">
-      {% for block in section.blocks %}
-        <div class="item">
-          <div class="testimonial">
-            <div class="testimonial-rating">
-              <i class="fa fa-quote-left"></i>
-              <p>{{ block.settings.author }}</p>
-              <p>{{ block.settings.location }}</p>
-              <p class="stars">
-                {% assign rating = block.settings.rating | round: 1 %}
-                {% for i in (1..5) %}
-                  {% if rating >= i %}
-                    <span class="fa fa-star checked"></span>
-                  {% elsif rating > i-1 and rating < i %}
-                    <span class="fa fa-star-half-o checked"></span>
-                  {% else %}
-                    <span class="fa fa-star-o"></span>
-                  {% endif %}
-                {% endfor %}
-                <span>{{ rating }}</span>
-              </p>
-            </div>
-            <div class="testimonial-content">
-              <p>"{{ block.settings.quote }}"</p>
+      <div class="owl-carousel">
+        {% for block in section.blocks %}
+          <div class="item">
+            <div class="testimonial p-4">
+              <div class="testimonial-rating">
+                <div class="testimonial-avatar circle">
+                  <img src="{{ block.settings.avatar | img_url: '300x300' }}" alt="{{ block.settings.author }}">
+                </div>
+                <p>{{ block.settings.author }}</p>
+                <p>{{ block.settings.location }}</p>
+                <p class="stars">
+                  {% assign rating = block.settings.rating | round: 1 %}
+                  {% for i in (1..5) %}
+                    {% if rating >= i %}
+                      <span class="fa fa-star checked"></span>
+                    {% elsif rating > i-1 and rating < i %}
+                      <span class="fa fa-star-half-o checked"></span>
+                    {% else %}
+                      <span class="fa fa-star-o"></span>
+                    {% endif %}
+                  {% endfor %}
+                  <span>{{ rating }}</span>
+                </p>
+              </div>
+              <div class="testimonial-content">
+                <p>"{{ block.settings.quote }}"</p>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-primary">View More</a>
+      </div>
     </div>
-    <div class="text-center">
-      <a href="#" class="btn btn-primary">View More</a>
-    </div>
-  </div>
-</section>
-<style>
-  .testimonials.section {
-    background: rgb(var(--color-background-3));
-    color:rgb(var(--color-foreground_3));
-  }
-  .testimonials.section h2{
-     color:rgb(var(--color-foreground_3));
-  }
-  .testimonial{
-    background:rgb(var(--color-background));
-    color: rgb(var(--color-foreground));
-  }
-</style>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-    $(".testimonials .owl-carousel").owlCarousel({
-        items: 3,
-        margin: 30,
-        loop: true,
-        dots: true,
-        responsive : {
-          0 : { items: 1 },
-          768 : { items: 2 },
-          992 : { items: 3 }
-        }
-      });
-   });
-</script>
-
+  </section>
+  <style>
+    .testimonials.section {
+      background: rgb(var(--color-background-3));
+      color:rgb(var(--color-foreground_3));
+    }
+    .testimonials.section h2{
+       color:rgb(var(--color-foreground_3));
+    }
+    .testimonial{
+      background:rgb(var(--color-background));
+      color: rgb(var(--color-foreground));
+    }
+    .circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .testimonial-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function(){
+      $(".testimonials .owl-carousel").owlCarousel({
+          items: 3,
+          margin: 30,
+          loop: true,
+          dots: true,
+          responsive : {
+            0 : { items: 1 },
+            768 : { items: 2 },
+            992 : { items: 3 }
+          }
+        });
+     });
+  </script>
+  
+  
