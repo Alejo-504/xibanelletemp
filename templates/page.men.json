@@ -359,6 +359,44 @@
             "item_title": "Youtube",
             "item_icon": "fa fa-youtube"
           }
+        },
+        "9313fff6-6604-47a7-863b-3bda8154bb8a": {
+          "type": "column",
+          "settings": {
+            "title": "Contact"
+          }
+        },
+        "8020f027-9862-4205-b6af-aac5751a5ddb": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/products\/brown-leather-jacket",
+            "item_title": "Address line 1 Address line 2",
+            "item_icon": "fa fa-map"
+          }
+        },
+        "a9392dfa-ba31-4d99-b881-15e65d273b23": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/products\/brown-leather-jacket",
+            "item_title": "(xxx) xxx xxxx",
+            "item_icon": "fa fa-phone"
+          }
+        },
+        "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "",
+            "item_title": "",
+            "item_icon": ""
+          }
+        },
+        "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "",
+            "item_title": "",
+            "item_icon": ""
+          }
         }
       },
       "block_order": [
@@ -372,7 +410,12 @@
         "68843586-5698-4670-b581-d8a08ed752c0",
         "e62c22c3-aa76-4a8d-bda2-889fbe61856c",
         "b66bf464-d353-404b-8041-00b862649732",
-        "18373242-d1c9-49cb-9729-a3b966a2be7c"
+        "18373242-d1c9-49cb-9729-a3b966a2be7c",
+        "9313fff6-6604-47a7-863b-3bda8154bb8a",
+        "8020f027-9862-4205-b6af-aac5751a5ddb",
+        "a9392dfa-ba31-4d99-b881-15e65d273b23",
+        "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282",
+        "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee"
       ],
       "settings": {
       }
