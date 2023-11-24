@@ -90,13 +90,11 @@
                   </div>
                   <div>
                     <span>{{ block.settings.author }}</span>
-                    <p>{{ block.settings.location }}</p>
+                    <small>{{ block.settings.location }}</small>
                   </div>
                   <span class="stars d-flex align-items-center gap-2">
                     {% assign rating = block.settings.rating | round: 1 %}
-                    <span class="fa fa-star checked" style="color:#efc80a">
-                      
-                    </span>
+                    <span class="fa fa-star checked" style="color:#efc80a"></span>
                     <span>{{ rating }}</span>
                   </span>
                 </div>
