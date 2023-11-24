@@ -144,6 +144,29 @@
   </div>
   <div class="image-lateral lateral-2"></div>
 </div>
+<style>
+  .image-lateral{
+    position:absolute;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .lateral-1{
+    width:400px;
+    height:400px;
+    background-image:url({{section.settings.lateral_1 | img_url: 'master' }});
+    left:0;
+  }
+  .lateral-2{
+    width:530px;
+    height:305px;
+    background-image:url({{section.settings.lateral_2 | img_url: 'master' }});
+    right:0;
+  }
+  .newsletter{
+    position:relative;
+  }
+</style>
 
 {% schema %}
 {
@@ -154,6 +177,16 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "lateral_1",
+      "label": "Lateral"
+    },
+    {
+      "type": "image_picker",
+      "id": "lateral_2",
+      "label": "Lateral"
+    },
     {
       "type": "color",
       "id": "color_background",
