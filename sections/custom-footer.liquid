@@ -104,14 +104,18 @@
     
           {% when 'menu_item' %}
             {% if block.settings.item_url != blank %}
-              <li>
                 {% if block.settings.item_icon != blank %}
-                  <i class="{{ block.settings.item_icon }}"></i>
+                   <li class="with-icon">
+                    <i class="{{ block.settings.item_icon }}"></i>
+                   </li>
                 {% elsif block.settings.item_svg != blank %}
+                   <li class="svg with-icon">
                     {{ block.settings.item_svg }}
+                   </li
                 {% endif %}
+               <li>
                 <a href="{{ block.settings.item_url }}">{{ block.settings.item_title }}</a>
-              </li>
+               </li>
             {% endif %}
         {% endcase %}
       {% endfor %}
