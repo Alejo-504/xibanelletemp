@@ -104,7 +104,7 @@
 }
 {% endstylesheet %}
 
-<section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-md-center align-items-md-start position-relative" data-aos="fade-left">
+<section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-md-center align-items-md-start position-relative" >
   <div class="container-fluid me-md-0 pe-md-0">
     <div class="row me-md-0 p-0">
       <div class="col-md-6  slide-right col-content col-md-6  page-width ">
@@ -115,7 +115,7 @@
           <a href="{{ section.settings.button_2_link }}" class="btn btn-primary-outline ">{{ section.settings.button_2_text }}</a>
         </div>
       </div>
-      <div class="col-md-6 text-right ps-md-4 pe-md-0 ps-4 pe-4 position-relative ">
+      <div class="col-md-6 text-right ps-md-4 pe-md-0 ps-4 pe-4 position-relative " data-aos="fade-left">
      
         {% assign products = section.blocks %}
         {% render "custom-carousel-owl-two-items" , blocks:products %}
