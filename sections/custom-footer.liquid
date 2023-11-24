@@ -69,7 +69,9 @@
 <div class="w-100 h-100 color-{{ section.settings.scheme_selector }}"> 
    <footer class="footer-custom container" >
       {% assign count_column = 0 %}
-      {% assign html_opening_col = '<div class="col">' %}
+      {% assign md_value = 12 | divided_by: section.blocks.size %}
+      {% assign md_value = md_value | floor %}
+      {% assign html_opening_col = '<div class="col-md-' | append: md_value | append: '">' %}
       {% assign html_opening_ul = '<ul>' %}
 
     <div class="row">
@@ -111,6 +113,9 @@
       </div>
   </footer>
   <style>
+    @media (max-width: 767px) {
+      
+    }
     #shopify-section-{{section.id}}{
       background: rgb(var(--color-background));
     }
