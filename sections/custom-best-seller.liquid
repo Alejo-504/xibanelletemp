@@ -147,7 +147,12 @@
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
         
-             <div class="grid-item grid-item-{{forloop.index}}" data-aos="zoom-out-right" data-aos-delay="{{forloop.index}}00" data-aos-duration="600" data-aos-easing="ease-in-out">
+             <div class="grid-item grid-item-{{forloop.index}}" 
+               data-aos="zoom-out-right" 
+               data-aos-delay="{{forloop.index}}00" 
+               data-aos-duration="600" 
+               data-aos-easing="ease-in-out"
+               >
 
                 {% if forloop.index == 2 %}
                   
