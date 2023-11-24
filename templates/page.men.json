@@ -333,7 +333,8 @@
           "settings": {
             "item_url": "shopify:\/\/products\/black-leather-jacket",
             "item_title": "Facebook",
-            "item_icon": "fa fa-facebook"
+            "item_icon": "fa fa-facebook",
+            "item_svg": ""
           }
         },
         "e62c22c3-aa76-4a8d-bda2-889fbe61856c": {
@@ -341,7 +342,8 @@
           "settings": {
             "item_url": "shopify:\/\/pages\/affiliate-program",
             "item_title": "Instagram",
-            "item_icon": "fa fa-instagram"
+            "item_icon": "fa fa-instagram",
+            "item_svg": ""
           }
         },
         "b66bf464-d353-404b-8041-00b862649732": {
@@ -349,7 +351,8 @@
           "settings": {
             "item_url": "shopify:\/\/pages\/about-us",
             "item_title": "TikTok",
-            "item_icon": "fa fas-tiktok"
+            "item_icon": "",
+            "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
           }
         },
         "18373242-d1c9-49cb-9729-a3b966a2be7c": {
@@ -357,7 +360,8 @@
           "settings": {
             "item_url": "shopify:\/\/pages\/faq",
             "item_title": "Youtube",
-            "item_icon": "fa fa-youtube"
+            "item_icon": "fa fa-youtube",
+            "item_svg": ""
           }
         },
         "9313fff6-6604-47a7-863b-3bda8154bb8a": {
@@ -371,7 +375,8 @@
           "settings": {
             "item_url": "shopify:\/\/products\/brown-leather-jacket",
             "item_title": "Address line 1 Address line 2",
-            "item_icon": "fa fa-map"
+            "item_icon": "fa fa-map",
+            "item_svg": ""
           }
         },
         "a9392dfa-ba31-4d99-b881-15e65d273b23": {
@@ -379,7 +384,8 @@
           "settings": {
             "item_url": "shopify:\/\/products\/brown-leather-jacket",
             "item_title": "(xxx) xxx xxxx",
-            "item_icon": "fa fa-phone"
+            "item_icon": "fa fa-phone",
+            "item_svg": ""
           }
         },
         "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282": {
@@ -387,7 +393,8 @@
           "settings": {
             "item_url": "shopify:\/\/pages\/about-us",
             "item_title": "info@xinabelle.com",
-            "item_icon": "fa fa-envelope"
+            "item_icon": "fa fa-envelope",
+            "item_svg": ""
           }
         },
         "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee": {
@@ -395,7 +402,8 @@
           "settings": {
             "item_url": "shopify:\/\/pages\/contact",
             "item_title": "24\/7",
-            "item_icon": "fas fa-clock"
+            "item_icon": "fas fa-clock",
+            "item_svg": ""
           }
         }
       },
