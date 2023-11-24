@@ -292,10 +292,20 @@
             "menu_title": "Title Column",
             "menu": "main-menu"
           }
+        },
+        "e1d23f53-1779-47f0-aa81-c0dacce0826a": {
+          "type": "custom_link",
+          "settings": {
+            "custom_link_title": "Column Title",
+            "url": "shopify:\/\/pages\/men",
+            "text": "aasd",
+            "icon": "fa-facebook"
+          }
         }
       },
       "block_order": [
-        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4"
+        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4",
+        "e1d23f53-1779-47f0-aa81-c0dacce0826a"
       ],
       "settings": {
       }
