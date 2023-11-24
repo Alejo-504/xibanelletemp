@@ -1,22 +1,55 @@
 {% schema %}
 {
   "name": "Custom Footer",
-  "settings": [],
   "blocks": [
     {
-      "type": "column",
-      "name": "Column",
+      "type": "menu_column",
+      "name": "Menu Column",
       "settings": [
         {
           "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Column Title"
+          "id": "menu_title",
+          "label": "Menu Title"
         },
         {
           "type": "link_list",
-          "id": "links",
-          "label": "Links"
+          "id": "menu",
+          "label": "Select Menu"
+        }
+      ]
+    },
+    {
+      "type": "custom_link",
+      "name": "Custom Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "custom_link_title",
+          "label": "Column Title",
+          "default": "Column Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Link Text"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {"value": "", "label": "None"},
+            {"value": "fa-facebook", "label": "Facebook"},
+            {"value": "fa-twitter", "label": "Twitter"},
+            {"value": "fa-instagram", "label": "Instagram"},
+            {"value": "fa-linkedin", "label": "LinkedIn"},
+            {"value": "fa-youtube", "label": "YouTube"}
+          ]
         }
       ]
     }
@@ -24,32 +57,41 @@
   "presets": [
     {
       "name": "Custom Footer",
-      "category": "Footer"
+      "category": "custom"
     }
   ]
 }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
-
-<div class="container">
+<div class="footer">
   {% for block in section.blocks %}
-    <div class="col-md">
-      <h4>{{ block.settings.title }}</h4>
-      <ul>
-        {% for link in block.settings.links.blocks %}
-          <li>
-            {% if link.settings.icon %}
-              <i class="{{ link.settings.icon }}"></i>
-            {% endif %}
-            <a href="{{ link.settings.url }}">{{ link.settings.label }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% case block.type %}
+      {% when 'menu_column' %}
+        <div class="footer-column">
+          <h4>{{ block.settings.title }}</h4>
+          <ul>
+            {% for link in linklists[block.settings.menu].links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      {% when 'custom_links_column' %}
+        <div class="footer-column">
+          <h4>{{ block.settings.title }}</h4>
+          <ul>
+            {% for link_block in block.blocks %}
+              <li>
+                <a href="{{ link_block.settings.url }}">
+                  {% if link_block.settings.icon != '' %}
+                    <i class="fa {{ link_block.settings.icon }}"></i>
+                  {% endif %}
+                  {{ link_block.settings.text }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    {% endcase %}
   {% endfor %}
 </div>
