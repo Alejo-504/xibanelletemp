@@ -385,17 +385,17 @@
         "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282": {
           "type": "menu_item",
           "settings": {
-            "item_url": "",
-            "item_title": "",
-            "item_icon": ""
+            "item_url": "shopify:\/\/pages\/about-us",
+            "item_title": "info@xinabelle.com",
+            "item_icon": "fa fa-envelope"
           }
         },
         "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee": {
           "type": "menu_item",
           "settings": {
-            "item_url": "",
-            "item_title": "",
-            "item_icon": ""
+            "item_url": "shopify:\/\/pages\/contact",
+            "item_title": "24\/7",
+            "item_icon": "fas fa-clock"
           }
         }
       },
