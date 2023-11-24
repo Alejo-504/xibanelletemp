@@ -36,6 +36,9 @@
   #shopify-section-{{ section.id }} .btn-primary:hover svg{
     animation: arrow-to-right 0.5s ease-in-out infinite alternate;
   }
+   #shopify-section-{{ section.id }},  #shopify-section-{{ section.id }}  h2{
+     color:{{section.settings.color_text}};
+   }
 
 {%- endstyle -%}
 
@@ -152,6 +155,11 @@
       "type": "color",
       "id": "color_background",
       "label": "Background Section"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Color Text "
     },
     {
       "type": "color_scheme",
