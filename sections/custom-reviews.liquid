@@ -88,8 +88,10 @@
                   <div class="testimonial-avatar circle">
                     <img src="{{ block.settings.avatar | img_url: '60x60' }}" alt="{{ block.settings.author }}" width="60" height="60">
                   </div>
-                  <span>{{ block.settings.author }}</span>
-                  <span>{{ block.settings.location }}</span>
+                  <div>
+                    <span>{{ block.settings.author }}</span>
+                    <p>{{ block.settings.location }}</p>
+                  </div>
                   <span class="stars d-flex">
                     {% assign rating = block.settings.rating | round: 1 %}
                     <span class="fa fa-star checked"></span>
