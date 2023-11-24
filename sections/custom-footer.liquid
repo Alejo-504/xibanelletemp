@@ -35,7 +35,7 @@
         ]
       },
       {
-        "type": "text",
+        "type": "column",
         "name": "Title",
         "settings": [
           {
@@ -54,41 +54,50 @@
     ]
   }
   {% endschema %}
+   <div class="footer">
+      {% assign count_column = 0 %}
+      {% assign html_opening_col = '<div class="col">' %}
+      {% assign html_opening_ul = '<ul>' %}
+
+    
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'column' %}
+            {% if count_column > 0 %}
+              </ul>
+              </div>
+            {% endif %}
+           {{html_opening_col}}
+            <h4>{{ block.settings.title }}</h4>
+            {{html_opening_ul}}
+            {% assign count_column = count_column | plus: 1 %}
+    
+          {% when 'menu_items' %}
+            {% if block.settings.menu != blank %}
+              {% assign menu = block.settings.menu %}
+              {% for link in linklists[menu].links %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+    
+          {% when 'menu_item' %}
+            {% if block.settings.item_url != blank %}
+              <li>
+                {% if block.settings.item_icon != blank %}
+                  <i class="{{ block.settings.item_icon }}"></i>
+                {% endif %}
+                <a href="{{ block.settings.item_url }}">{{ block.settings.item_title }}</a>
+              </li>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+      {% if count_column > 0 %}
+        </ul>
+        </div>
+      {% endif %}
+    </div>
   
-<div class="footer">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'text' %}
-        {% if forloop.first or forloop.last %}
-          <div class="col">
-        {% endif %}
-        <h4>{{ block.settings.title }}</h4>
-        {% if forloop.last %}
-          </div>
-        {% endif %}
-      {% when 'menu_items' %}
-        {% if forloop.first %}
-          <div class="col">
-        {% endif %}
-        {% for link in linklists[block.settings.menu].links %}
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        {% endfor %}
-        {% if forloop.last %}
-          </div>
-        {% endif %}
-      {% when 'menu_item' %}
-        {% if forloop.first %}
-          <div class="col">
-        {% endif %}
-        <a href="{{ block.settings.item_url }}">
-          {% if block.settings.item_icon %}
-            <i class="fa {{ block.settings.item_icon }}"></i>
-          {% endif %}
-          {{ block.settings.item_title }}
-        </a>
-        {% if forloop.last %}
-          </div>
-        {% endif %}
-    {% endcase %}
-  {% endfor %}
-</div>
+
+
+
+
