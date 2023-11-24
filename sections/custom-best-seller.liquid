@@ -147,28 +147,27 @@
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
         
-             <div class="grid-item grid-item-{{forloop.index}}">
+             <div class="grid-item grid-item-{{forloop.index}}" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
 
                 {% if forloop.index == 2 %}
                   
-                  <div class="d-sm-block d-none w-100" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
+                  <div class="d-sm-block d-none w-100">
                    {% render "custom-card-product", product:product, size:"large" %}
                   </div>
-                  <div class="d-sm-none d-block w-100" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
+                  <div class="d-sm-none d-block w-100">
                     {% render "custom-card-product", product:product, size:"normal" %}
                   </div>
                
                 {% elsif forloop.index == 5 %}
-                  <div class="d-md-block d-none w-100" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
+                  <div class="d-md-block d-none w-100">
                     {% render "custom-card-product", product:product, size:"medium" %}
                   </div>
-                  <div class="d-md-none d-block w-100" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
+                  <div class="d-md-none d-block w-100">
                        {% render "custom-card-product", product:product, size:"normal" %}
                   </div>
                 {% else %}
-                  <div class="w-100" data-aos="flip-left" data-aos-delay="{{forloop.index}}00">
+                  
                   {% render "custom-card-product", product:product, size:"normal" %}
-                  </div>
                 {% endif %}
                
              </div>
