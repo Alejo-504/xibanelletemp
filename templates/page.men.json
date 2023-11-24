@@ -286,26 +286,36 @@
     "cb55cc35-0009-492a-914d-0cebd201b13e": {
       "type": "custom-footer",
       "blocks": {
-        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4": {
-          "type": "menu_column",
+        "5fe7e81c-5844-404b-9a0a-a2a3ddb9ff59": {
+          "type": "text",
           "settings": {
-            "menu_title": "Title Column",
+            "title": "Columna 1"
+          }
+        },
+        "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1": {
+          "type": "menu_items",
+          "settings": {
             "menu": "main-menu"
           }
         },
-        "e1d23f53-1779-47f0-aa81-c0dacce0826a": {
-          "type": "custom_link",
+        "7b74eca0-14e0-4cdb-8d89-b750d9f11415": {
+          "type": "text",
           "settings": {
-            "custom_link_title": "Column Title",
-            "url": "shopify:\/\/pages\/men",
-            "text": "aasd",
-            "icon": "fa-facebook"
+            "title": ""
+          }
+        },
+        "378170d1-87f5-4a5f-802b-a6373cb82a17": {
+          "type": "menu_items",
+          "settings": {
+            "menu": "footer"
           }
         }
       },
       "block_order": [
-        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4",
-        "e1d23f53-1779-47f0-aa81-c0dacce0826a"
+        "5fe7e81c-5844-404b-9a0a-a2a3ddb9ff59",
+        "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1",
+        "7b74eca0-14e0-4cdb-8d89-b750d9f11415",
+        "378170d1-87f5-4a5f-802b-a6373cb82a17"
       ],
       "settings": {
       }
