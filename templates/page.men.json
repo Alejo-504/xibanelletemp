@@ -275,7 +275,7 @@
         "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
       ],
       "custom_css": [
-        ".lateral-1 {width: 25vw; height: 25vw; max-width: 350px; max-height: 350px; left: 0; margin-bottom: 50px;}",
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 330px; max-height: 330px; left: 0; margin-top: -50px;}",
         ".lateral-2 {width: 27vw; height: 18vw; max-width: 530px; max-height: 305px; right: 0; margin-bottom: -120px;}"
       ],
       "settings": {
