@@ -275,6 +275,7 @@
         "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
       ],
       "settings": {
+        "color_background": "#e6e6e6",
         "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
