@@ -43,7 +43,9 @@
 {%- endstyle -%}
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.color_scheme }} ">
-<div class="image-lateral lateral-1"></div>
+<div class="image-lateral lateral-1">
+  
+</div>
   <div class="newsletter__wrapper content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -142,7 +144,9 @@
       {%- endcase -%}
     {%- endfor -%}
   </div>
-  <div class="image-lateral lateral-2"></div>
+  <div class="image-lateral lateral-2">
+    
+  </div>
 </div>
 <style>
   .image-lateral{
