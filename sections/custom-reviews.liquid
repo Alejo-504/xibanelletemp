@@ -88,7 +88,7 @@
                 </div>
                 <p>{{ block.settings.author }}</p>
                 <p>{{ block.settings.location }}</p>
-                <p class="stars">
+                <p class="stars d-flex">
                   {% assign rating = block.settings.rating | round: 1 %}
                   <span class="fa fa-star checked"></span>
                   <span>{{ rating }}</span>
