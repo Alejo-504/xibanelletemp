@@ -84,14 +84,14 @@
           
           <a href="{{ section.settings.button_url }}" class="btn btn-primary d-md-block d-none">{{ section.settings.button_label }}</a>
         </div>
-        <div class="text-content col-md-5 px-md-5" >
+        <div class="text-content col-md-5 px-md-5 aos-item" >
           <div class="overlay-text">
             <h2>About Us</h2>
             {{ section.settings.text }}
           </div>
         </div>
       </div>
-      <div class="row icons-row px-5">
+      <div class="row icons-row px-5 ">
         {% for block in section.blocks %}
           <div class="col-md-3 col-sm-6 d-grid item-icon"  
             data-aos-delay="{{forloop.index}}00" 
