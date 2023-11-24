@@ -286,32 +286,16 @@
     "cb55cc35-0009-492a-914d-0cebd201b13e": {
       "type": "custom-footer",
       "blocks": {
-        "978f0853-6bde-4918-8377-5168ba5e1885": {
-          "type": "column",
+        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4": {
+          "type": "menu_column",
           "settings": {
-            "title": "Column Title",
-            "links": "main-menu"
-          }
-        },
-        "a2a21d59-e146-4026-a6c2-9976d6387353": {
-          "type": "column",
-          "settings": {
-            "title": "Column Title",
-            "links": "main-menu"
-          }
-        },
-        "16c7c161-3721-4808-aae1-b626121b25f9": {
-          "type": "column",
-          "settings": {
-            "title": "Column Title",
-            "links": "main-menu"
+            "menu_title": "Title Column",
+            "menu": "main-menu"
           }
         }
       },
       "block_order": [
-        "978f0853-6bde-4918-8377-5168ba5e1885",
-        "a2a21d59-e146-4026-a6c2-9976d6387353",
-        "16c7c161-3721-4808-aae1-b626121b25f9"
+        "5ce69bec-ee1c-468c-8c15-8732f8aa91d4"
       ],
       "settings": {
       }
