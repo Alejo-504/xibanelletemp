@@ -25,6 +25,18 @@
   .field__label, .customer .field label{
     top:32%;
   }
+  @keyframes arrow-to-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  #shopify-section-{{ section.id }} .btn-primary:hover i{
+    animation: arrow-to-right 0.5s ease-in-out infinite alternate;
+  }
+
 {%- endstyle -%}
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.color_scheme }} ">
