@@ -42,7 +42,7 @@
 
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.color_scheme }} ">
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} color-{{ section.settings.color_scheme }} d-flex justify-content-center align-items-center">
 <div class="image-lateral lateral-1">
   
 </div>
@@ -168,9 +168,6 @@
     background-image:url({{section.settings.lateral_2 | img_url: 'master' }});
     right:0;
     top:0;
-  }
-  .newsletter{
-    position:relative;
   }
 </style>
 
