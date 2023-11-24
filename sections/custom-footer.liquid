@@ -180,10 +180,15 @@
     }
     #shopify-section-{{section.id}}{
       background: rgb(var(--color-background));
+      display:flex;
+      justify-content:center;
+      
     }
     .copyright{
       background: rgb(var(--color-background-2));
       font-weight: 700;
+      z-index: 1;
+      position: relative;
     }
     .footer-custom {
       padding-top: 40px;
@@ -225,15 +230,15 @@
      #shopify-section-{{section.id}}::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height:100%;
+        width: 643px;
+        height: 238px;
         background: url({{section.settings.overlay | img_url: 'master' }});
         background-size: cover;
         background-position: center;
-        opacity: 0.2;
-        z-index: -1;
+        opacity: 0.1;
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
     }
 </style>
 </div>
