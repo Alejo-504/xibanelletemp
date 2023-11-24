@@ -289,25 +289,75 @@
         "2dfbbade-7689-4401-a9f5-5a22af4e7eee": {
           "type": "column",
           "settings": {
-            "title": "column 1"
+            "title": "Company"
           }
         },
         "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1": {
           "type": "menu_items",
           "settings": {
-            "menu": "main-menu"
+            "menu": "footer"
           }
         },
         "d971f86f-8b3d-4062-81cd-925c5b721eb9": {
           "type": "column",
           "settings": {
-            "title": "Column 2"
+            "title": "Get Help"
           }
         },
         "378170d1-87f5-4a5f-802b-a6373cb82a17": {
           "type": "menu_items",
           "settings": {
-            "menu": "footer"
+            "menu": "footer-menu-2"
+          }
+        },
+        "b18c02c8-7a76-407c-afec-747120c42fab": {
+          "type": "column",
+          "settings": {
+            "title": "Online Shop"
+          }
+        },
+        "5406206a-e7e1-4665-a5f2-2c0c066adab7": {
+          "type": "menu_items",
+          "settings": {
+            "menu": "online-shop"
+          }
+        },
+        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14": {
+          "type": "column",
+          "settings": {
+            "title": "Social Media"
+          }
+        },
+        "68843586-5698-4670-b581-d8a08ed752c0": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/products\/black-leather-jacket",
+            "item_title": "Facebook",
+            "item_icon": "fa fa-facebook"
+          }
+        },
+        "e62c22c3-aa76-4a8d-bda2-889fbe61856c": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/pages\/affiliate-program",
+            "item_title": "Instagram",
+            "item_icon": "fa fa-instagram"
+          }
+        },
+        "b66bf464-d353-404b-8041-00b862649732": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/pages\/about-us",
+            "item_title": "TikTok",
+            "item_icon": "fa fas-tiktok"
+          }
+        },
+        "18373242-d1c9-49cb-9729-a3b966a2be7c": {
+          "type": "menu_item",
+          "settings": {
+            "item_url": "shopify:\/\/pages\/faq",
+            "item_title": "Youtube",
+            "item_icon": "fa fa-youtube"
           }
         }
       },
@@ -315,7 +365,14 @@
         "2dfbbade-7689-4401-a9f5-5a22af4e7eee",
         "92aafa4a-3f24-4fe2-b1ee-5a95d261eef1",
         "d971f86f-8b3d-4062-81cd-925c5b721eb9",
-        "378170d1-87f5-4a5f-802b-a6373cb82a17"
+        "378170d1-87f5-4a5f-802b-a6373cb82a17",
+        "b18c02c8-7a76-407c-afec-747120c42fab",
+        "5406206a-e7e1-4665-a5f2-2c0c066adab7",
+        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14",
+        "68843586-5698-4670-b581-d8a08ed752c0",
+        "e62c22c3-aa76-4a8d-bda2-889fbe61856c",
+        "b66bf464-d353-404b-8041-00b862649732",
+        "18373242-d1c9-49cb-9729-a3b966a2be7c"
       ],
       "settings": {
       }
