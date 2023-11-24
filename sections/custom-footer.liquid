@@ -11,7 +11,30 @@
         "type": "color",
         "id": "text_color",
         "label": "Text Color"
-      }
+      },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright text",
+      "default": "© All rights reserved"
+    },
+    {
+      "type": "text",
+      "id": "design_credit",
+      "label": "Design credit",
+      "default": "This Website Was Designed And Developed by"
+    },
+    {
+      "type": "text",
+      "id": "developer_name",
+      "label": "Developer name",
+      "default": "Strive Enterprise"
+    },
+    {
+      "type": "url",
+      "id": "developer_url",
+      "label": "Developer URL"
+    }
     ],
     "blocks": [
       {
@@ -130,6 +153,14 @@
       {% endif %}
       </div>
   </footer>
+<div class="container-fluid  py-2">
+  <div class="container text-center">
+    <small>
+      {{ section.settings.copyright_text }} | {{ section.settings.design_credit }}
+      <a href="{{ section.settings.developer_url }}" target="_blank" rel="noopener noreferrer">{{ section.settings.developer_name }}</a>
+    </small>
+  </div>
+</div>
   <style>
     @media (max-width:768px){
       #shopify-section-{{section.id}} ul{
