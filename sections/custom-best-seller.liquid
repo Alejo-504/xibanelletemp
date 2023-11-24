@@ -146,9 +146,14 @@
       <div class=" grid-container-product w-100">
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
-        
+            {%  assign direction = "" %} 
+            {% if forloop.index == 2 or forloop.index == 5 %}
+              {% assign direction = "right" %}
+            {% else %}
+              {% assign direction = "left" %}
+            {% endif %}
              <div class="grid-item grid-item-{{forloop.index}}" 
-               data-aos="zoom-out-right" 
+               data-aos="slide-{{direction}}"
                data-aos-delay="{{forloop.index}}00" 
                data-aos-duration="600" 
                data-aos-easing="ease-in-out"
