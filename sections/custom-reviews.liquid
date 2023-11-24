@@ -84,21 +84,13 @@
             <div class="testimonial p-4">
               <div class="testimonial-rating">
                 <div class="testimonial-avatar circle">
-                  <img src="{{ block.settings.avatar | img_url: '300x300' }}" alt="{{ block.settings.author }}">
+                  <img src="{{ block.settings.avatar | img_url: '60x60' }}" alt="{{ block.settings.author }}" width="60" height="60">
                 </div>
                 <p>{{ block.settings.author }}</p>
                 <p>{{ block.settings.location }}</p>
                 <p class="stars">
                   {% assign rating = block.settings.rating | round: 1 %}
-                  {% for i in (1..5) %}
-                    {% if rating >= i %}
-                      <span class="fa fa-star checked"></span>
-                    {% elsif rating > i-1 and rating < i %}
-                      <span class="fa fa-star-half-o checked"></span>
-                    {% else %}
-                      <span class="fa fa-star-o"></span>
-                    {% endif %}
-                  {% endfor %}
+                  <span class="fa fa-star checked"></span>
                   <span>{{ rating }}</span>
                 </p>
               </div>
