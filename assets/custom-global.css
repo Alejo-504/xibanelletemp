@@ -1,5 +1,5 @@
-body{
-  background:white ;
+body, html{
+  background:white!important;
 }
 /* Buttons */
 .btn {
