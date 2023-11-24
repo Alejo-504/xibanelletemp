@@ -275,8 +275,8 @@
         "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
       ],
       "custom_css": [
-        ".lateral-1 {width: 25vw; height: 25vw; max-width: 400px; max-height: 400px; left: 0;}",
-        ".lateral-2 {width: 30vw; height: 20vw; max-width: 530px; max-height: 305px; right: 0;}"
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 400px; max-height: 400px; left: 0; margin-top: -120px;}",
+        ".lateral-2 {width: 30vw; height: 20vw; max-width: 530px; max-height: 305px; right: 0; margin-bottom: -120px;}"
       ],
       "settings": {
         "color_background": "#e6e6e6",
