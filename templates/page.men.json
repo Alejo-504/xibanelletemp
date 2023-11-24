@@ -425,6 +425,9 @@
         "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282",
         "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee"
       ],
+      "custom_css": [
+        "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
+      ],
       "settings": {
         "scheme_selector": "background-2",
         "text_color": "#ffffff"
