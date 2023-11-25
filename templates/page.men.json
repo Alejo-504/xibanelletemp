@@ -75,31 +75,31 @@
         "23002965-cef3-45a1-911f-450ffe7fbbef": {
           "type": "product",
           "settings": {
-            "product": "example-bag-woman-1"
+            "product": "example-accessories-men-1"
           }
         },
         "88a7a64e-b06c-4e17-af6f-6694b8d89ea7": {
           "type": "product",
           "settings": {
-            "product": "example-belt-women-1"
+            "product": "example-men-bag-1"
           }
         },
         "74bd58be-b205-435f-bb5a-440f9aae8de4": {
           "type": "product",
           "settings": {
-            "product": "example-bag-woman-1"
+            "product": "example-men-bag-2"
           }
         },
         "0ce2817f-dcee-4521-9409-3bd74e26d82f": {
           "type": "product",
           "settings": {
-            "product": "example-belt-women-2"
+            "product": "example-men-belt-1"
           }
         },
         "f7a2df54-b3b0-4431-9647-a275d5364571": {
           "type": "product",
           "settings": {
-            "product": "example-belt-women-1"
+            "product": "example-men-belt-2"
           }
         }
       },
