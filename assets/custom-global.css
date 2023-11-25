@@ -6,6 +6,9 @@ body, html{
 .grecaptcha-badge{
   display:none!important;
 }
+.owl-dot.active span{
+  background:rgb(var(--color-background-2));
+}
 .btn {
   padding: 10px 20px;
   border: 2px solid transparent;
