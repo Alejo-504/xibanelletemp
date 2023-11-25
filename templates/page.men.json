@@ -369,7 +369,7 @@
         "e62c22c3-aa76-4a8d-bda2-889fbe61856c": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/affiliate-program",
+            "item_url": "",
             "item_title": "Instagram",
             "item_icon": "fa fa-instagram",
             "item_svg": ""
