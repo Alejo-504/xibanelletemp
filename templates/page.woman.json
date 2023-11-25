@@ -301,9 +301,9 @@
       "settings": {
         "lateral_1": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
         "lateral_2": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black_1.webp",
-        "color_background": "#e6e6e6",
-        "color_text": "#728d82",
-        "color_scheme": "background-2",
+        "color_background": "#c5b4c6",
+        "color_text": "#6b6559",
+        "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
