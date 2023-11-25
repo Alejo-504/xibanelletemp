@@ -363,6 +363,7 @@
             "item_url": "https:\/\/www.facebook.com",
             "item_title": "Facebook",
             "item_icon": "fa fa-facebook",
+            "new_tab": false,
             "item_svg": ""
           }
         },
@@ -372,6 +373,7 @@
             "item_url": "https:\/\/www.instagram.com",
             "item_title": "Instagram",
             "item_icon": "fa fa-instagram",
+            "new_tab": false,
             "item_svg": ""
           }
         },
@@ -381,6 +383,7 @@
             "item_url": "https:\/\/www.tiktok.com",
             "item_title": "TikTok",
             "item_icon": "",
+            "new_tab": false,
             "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
           }
         },
@@ -390,6 +393,7 @@
             "item_url": "https:\/\/www.youtube.com",
             "item_title": "Youtube",
             "item_icon": "fa fa-youtube",
+            "new_tab": false,
             "item_svg": ""
           }
         },
@@ -405,6 +409,7 @@
             "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
             "item_title": "Forest Park, Georgia, 30297",
             "item_icon": "fa fa-map",
+            "new_tab": true,
             "item_svg": ""
           }
         },
@@ -414,6 +419,7 @@
             "item_url": "tel:+14043438695",
             "item_title": "(404) 343 8695",
             "item_icon": "fa fa-phone",
+            "new_tab": false,
             "item_svg": ""
           }
         },
@@ -423,6 +429,7 @@
             "item_url": "mailto:info@xinabelle.com",
             "item_title": "info@xinabelle.com",
             "item_icon": "fa fa-envelope",
+            "new_tab": false,
             "item_svg": ""
           }
         },
@@ -432,6 +439,7 @@
             "item_url": "shopify:\/\/pages\/contact",
             "item_title": "24\/7",
             "item_icon": "",
+            "new_tab": false,
             "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewbox=\"0 0 512 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}<\/style>\n<path d=\"M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"><\/path><\/svg>"
           }
         }
