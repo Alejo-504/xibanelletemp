@@ -199,7 +199,7 @@
         </ul>
       </div>
       <div class="col text-right d-flex justify-content-end">
-        <span class="cta-text">{{ section.settings.cta_text }}</span>
+        <a href="{{ section.settings.cta_link }}" class="cta-text">{{ section.settings.cta_text }}</a>
       </div>
     </div>
   </div>
@@ -578,6 +578,11 @@
       "id": "cta_text",
       "label": "Call to Action Text",
       "default": "Call to Action"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Call to Action Link"
     },
     {
       "type": "select",
