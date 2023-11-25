@@ -1,7 +1,7 @@
 
 
 <div class="discount-section-counter container-fluid py-5 color-{{ section.settings.scheme_selector }} overflow-hidden position-relative">
-  <div class="row page-width">
+  <div class="row page-width padding-im">
     <div class="col-md-2 d-flex align-items-center justify-content-center" >
       <div data-aos="zoom-in"  data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="600"
         class="discount-image position-absolute first" style="
@@ -34,12 +34,12 @@
     <div class="col-md-2 d-flex align-items-center justify-content-center " >
       <div data-aos="zoom-in"  data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-duration="600"
         class="discount-image position-absolute second" style="
-        right:0;transform: rotate(350deg);
-        margin-right: -28px;
-        max-width: 400px;
-        max-height: 400px; 
-        width:40vw;
-        height:40vw;
+        right:0;transform: rotate(336deg);
+        margin-right: -44px;
+        max-width: 340px;
+        max-height: 420px;
+        width: 40vw;
+        height: 40vw;
         background-image: url('{{ section.settings.image_right | img_url: '600x' }}'); 
         background-size: cover;
         background-position: center;
@@ -127,7 +127,11 @@
       display:none !important;
     }
   }
-  @media (min-width: 768px){
+  @media (min-width: 992px){
+    .padding-im{
+      padding-top:60px;
+      padding-bottom:60px;
+    }
     .discount-section-counter {
       min-height: 500px;
       display: flex;
