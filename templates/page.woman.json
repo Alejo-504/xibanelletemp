@@ -352,7 +352,7 @@
             "menu": "online-shop-women"
           }
         },
-        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14": {
+        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14social": {
           "type": "column",
           "settings": {
             "title": "Social Media"
@@ -361,40 +361,40 @@
         "68843586-5698-4670-b581-d8a08ed752c0": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/example-bag-woman-1",
+            "item_url": "https:\/\/www.facebook.com",
             "item_title": "Facebook",
             "item_icon": "fa fa-facebook",
-            "new_tab": false,
+            "new_tab": true,
             "item_svg": ""
           }
         },
         "e62c22c3-aa76-4a8d-bda2-889fbe61856c": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/affiliate-program",
+            "item_url": "https:\/\/www.instagram.com",
             "item_title": "Instagram",
             "item_icon": "fa fa-instagram",
-            "new_tab": false,
+            "new_tab": true,
             "item_svg": ""
           }
         },
         "b66bf464-d353-404b-8041-00b862649732": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/about-us",
+            "item_url": "https:\/\/www.tiktok.com",
             "item_title": "TikTok",
             "item_icon": "",
-            "new_tab": false,
-            "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
+            "new_tab": true,
+            "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
           }
         },
         "18373242-d1c9-49cb-9729-a3b966a2be7c": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/faq",
+            "item_url": "https:\/\/www.youtube.com",
             "item_title": "Youtube",
             "item_icon": "fa fa-youtube",
-            "new_tab": false,
+            "new_tab": true,
             "item_svg": ""
           }
         },
@@ -407,18 +407,18 @@
         "8020f027-9862-4205-b6af-aac5751a5ddb": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/example-bag-woman-2",
-            "item_title": "Address line 1 Address line 2",
+            "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
+            "item_title": "Forest Park, Georgia, 30297",
             "item_icon": "fa fa-map",
-            "new_tab": false,
+            "new_tab": true,
             "item_svg": ""
           }
         },
         "a9392dfa-ba31-4d99-b881-15e65d273b23": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/example-bag-woman-2",
-            "item_title": "(xxx) xxx xxxx",
+            "item_url": "tel:+14043438695",
+            "item_title": "(404) 343 8695",
             "item_icon": "fa fa-phone",
             "new_tab": false,
             "item_svg": ""
@@ -427,7 +427,7 @@
         "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/about-us",
+            "item_url": "mailto:info@xinabelle.com",
             "item_title": "info@xinabelle.com",
             "item_icon": "fa fa-envelope",
             "new_tab": false,
@@ -452,7 +452,7 @@
         "378170d1-87f5-4a5f-802b-a6373cb82a17",
         "b18c02c8-7a76-407c-afec-747120c42fab",
         "5406206a-e7e1-4665-a5f2-2c0c066adab7",
-        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14",
+        "0c486c1f-fa58-4f84-85f6-e4806fd3ef14social",
         "68843586-5698-4670-b581-d8a08ed752c0",
         "e62c22c3-aa76-4a8d-bda2-889fbe61856c",
         "b66bf464-d353-404b-8041-00b862649732",
