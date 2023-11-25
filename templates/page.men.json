@@ -186,8 +186,9 @@
         "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a": {
           "type": "category",
           "settings": {
-            "title_category": "Name Category",
-            "title": "Title",
+            "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+            "title_category": "Bags",
+            "title": "",
             "link": "shopify:\/\/pages\/men",
             "button_text": "View Products"
           }
@@ -195,9 +196,10 @@
         "e61dc44f-7d8d-4b03-8cf1-67ed8063533b": {
           "type": "category",
           "settings": {
-            "title_category": "Name Category",
-            "title": "Title",
-            "link": "shopify:\/\/products\/example-bag-woman-1",
+            "image": "shopify:\/\/shop_images\/41zpH8qcJKL._SY300_SX300.jpg",
+            "title_category": "Accessories",
+            "title": "",
+            "link": "shopify:\/\/collections\/mens-accessories",
             "button_text": "View Products"
           }
         }
