@@ -57,7 +57,7 @@
         "a8ebab03-6ec8-4964-9765-65f10f008dcb"
       ],
       "custom_css": [
-        ".hero-carousel .item img{object-fit:container!important;}"
+        ".hero-carousel .item img {object-fit: contain !important;}"
       ],
       "settings": {
         "scheme_selector": "background-2",
