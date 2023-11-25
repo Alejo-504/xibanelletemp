@@ -4,10 +4,10 @@
       "type": "header",
       "settings": {
         "enabled_top_bar": true,
-        "cta_text": "Call to Action",
-        "cta_link": "",
+        "cta_text": "Affiliate Program",
+        "cta_link": "shopify:\/\/pages\/affiliate-program",
         "logo_position": "middle-center-center",
-        "menu": "main-menu",
+        "menu": "woman-main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
@@ -50,7 +50,7 @@
         "6cfd4113-eeaa-4c6d-9c29-bc92eeed0d84"
       ],
       "custom_css": [
-        ".hero-carousel .item img{object-fit:contain;}"
+        ".hero-carousel .item img {object-fit: contain;}"
       ],
       "settings": {
         "scheme_selector": "",
