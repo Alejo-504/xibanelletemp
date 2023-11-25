@@ -34,7 +34,7 @@
         "864ca981-9890-4c6b-95dc-1560b26d10de": {
           "type": "product",
           "settings": {
-            "product": "black-leather-jacket"
+            "product": "example-bag-woman-1"
           }
         },
         "6cfd4113-eeaa-4c6d-9c29-bc92eeed0d84": {
@@ -67,7 +67,7 @@
         "23002965-cef3-45a1-911f-450ffe7fbbef": {
           "type": "product",
           "settings": {
-            "product": "black-leather-jacket"
+            "product": "example-bag-woman-1"
           }
         },
         "88a7a64e-b06c-4e17-af6f-6694b8d89ea7": {
@@ -79,7 +79,7 @@
         "74bd58be-b205-435f-bb5a-440f9aae8de4": {
           "type": "product",
           "settings": {
-            "product": "black-leather-jacket"
+            "product": "example-bag-woman-1"
           }
         },
         "0ce2817f-dcee-4521-9409-3bd74e26d82f": {
@@ -201,7 +201,7 @@
             "image": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
             "title_category": "Name Category",
             "title": "Title",
-            "link": "shopify:\/\/products\/black-leather-jacket",
+            "link": "shopify:\/\/products\/example-bag-woman-1",
             "button_text": "View Products"
           }
         }
@@ -358,7 +358,7 @@
         "68843586-5698-4670-b581-d8a08ed752c0": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/black-leather-jacket",
+            "item_url": "shopify:\/\/products\/example-bag-woman-1",
             "item_title": "Facebook",
             "item_icon": "fa fa-facebook",
             "item_svg": ""

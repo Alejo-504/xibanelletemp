@@ -17,7 +17,6 @@
       "type": "custom-hero",
       "settings": {
         "heading": "Lorem Ipsum Dolor Sit Amet",
-        "subheading": "Consectetur. Tempus Mollis Nunc Mollis In",
         "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
         "button_1_link": "shopify:\/\/collections\/all",
         "button_1_text": "Shop Now",
@@ -32,7 +31,7 @@
         "a4ee0ceb-99ba-4dff-8a52-c3a0bdfb5ee9": {
           "type": "product",
           "settings": {
-            "product": "black-leather-jacket"
+            "product": "example-bag-woman-1"
           }
         },
         "a0848bae-3902-420f-b911-e9be6766efee": {
