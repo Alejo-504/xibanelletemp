@@ -43,11 +43,18 @@
           "settings": {
             "product": "example-accessories-men-1"
           }
+        },
+        "a8ebab03-6ec8-4964-9765-65f10f008dcb": {
+          "type": "product",
+          "settings": {
+            "product": "example-men-bag-1"
+          }
         }
       },
       "block_order": [
         "3ac5dc72-e7cb-4320-9715-44bc92b03653",
-        "67c7cbbf-0c08-4172-98a5-4713937313f6"
+        "67c7cbbf-0c08-4172-98a5-4713937313f6",
+        "a8ebab03-6ec8-4964-9765-65f10f008dcb"
       ],
       "settings": {
         "scheme_selector": "background-2",
