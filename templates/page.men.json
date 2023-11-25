@@ -12,7 +12,7 @@
       "type": "header",
       "settings": {
         "enabled_top_bar": true,
-        "cta_text": "Call to Action",
+        "cta_text": "Affiliate Program",
         "cta_link": "shopify:\/\/pages\/affiliate-program",
         "logo_position": "middle-center-center",
         "menu": "main-menu",
