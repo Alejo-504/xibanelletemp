@@ -19,7 +19,18 @@
             "id": "subtitle",
             "label": "Subtitle",
             "default": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
-          }
+        },
+      {
+            "type": "text",
+            "id": "link_text",
+            "label": "Text Button",
+            "default": "View More"
+      },
+       {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link"
+      }
     ],
     "blocks": [
       {
@@ -113,7 +124,7 @@
         {% endfor %}
       </div>
       <div class="text-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="{{ section.settings.link_url }}" class="btn btn-primary">{{ section.settings.link_text }}</a>
       </div>
     </div>
   </section>
