@@ -129,7 +129,12 @@
                   {{ li_open }}
                 {% endif %}
               
-                <a href="{{ block.settings.item_url }}"
+                <a
+                  {% if  block.settings.item_url %}
+                  href="{{ block.settings.item_url }}"
+                  {% else %}
+                  href="#"
+                  {% endif %}
                   {%  if block.settings.new_tab %}
                     target="_blank"
                   {%  endif %}
