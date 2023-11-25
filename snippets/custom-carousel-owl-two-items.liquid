@@ -1,7 +1,7 @@
 <div class="owl-carousel owl-theme hero-carousel">
   {% for block in blocks %}
     {% if block.settings.product != blank %}
-      <div class="item">
+      <a class="item" href="{{ block.settings.product.url }}">
        
           <img
             src="{{ block.settings.product.featured_image | img_url: 'master' }}"
@@ -10,7 +10,7 @@
             height="700"
           >
   
-      </div>
+      </a>
     {% endif %}
   {% endfor %}
 </div>
