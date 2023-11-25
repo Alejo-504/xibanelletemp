@@ -26,6 +26,9 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+   .section-header{
+     z-index:6565656;
+   }
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -86,6 +89,8 @@
 </style>
 
 {%- style -%}
+
+  
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
@@ -133,6 +138,51 @@
   </symbol>
 </svg>
 
+
+ {% if section.settings.enabled_top_bar == true %}
+   <style>
+    .header-bar {
+        background: rgb(var(--color-background-2));
+        color: white;
+        padding: 10px 0;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+   .header-bar .cta-link{
+     text-decoration:none;
+     color:white;
+   }
+    .header-bar .social-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .header-bar .social-links li {
+      display: inline;
+      margin-right: 10px;
+    }
+    .header-bar .social-links li a {
+      color: white;
+      text-decoration: none;
+    }
+    .header-bar .social-links li a:hover {
+      text-decoration: none;
+      color: #cccccc; 
+    }
+    .header-bar .social-links li a i {
+      font-size: 1.7rem;
+    }
+    .header-bar .cta-text {
+      font-weight: bold;
+    }
+   
+  </style>
+  {% endif %}
+
+      
 {%- liquid
   for block in section.blocks
     if block.type == '@app'
@@ -142,6 +192,25 @@
 -%}
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+ {%- if section.settings.enabled_top_bar == true -%}
+<div class="header-bar">
+  <div class="container-fluid page-width">
+    <div class="row">
+      <div class="col">
+        <ul class="social-links">
+          <li><a href="{{ settings.social_instagram_link }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="{{ settings.social_facebook_link }}" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a href="{{ settings.social_twitter_link }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="col text-right d-flex justify-content-end">
+        <a href="{{ section.settings.cta_link }}" class="cta-text cta-link pulse">{{ section.settings.cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+  
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -196,11 +265,13 @@
     {%- endif -%}
 
     {%- liquid
+
+  
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
+          render 'header-mega-menu' 
         endif
       endif
     %}
@@ -502,6 +573,23 @@
   "max_blocks": 3,
   "settings": [
     {
+      "type": "checkbox",
+      "id": "enabled_top_bar",
+      "label": "Enable Top Bar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Call to Action Text",
+      "default": "Call to Action"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Call to Action Link"
+    },
+    {
       "type": "select",
       "id": "logo_position",
       "options": [
@@ -520,7 +608,12 @@
         {
           "value": "middle-center",
           "label": "t:sections.header.settings.logo_position.options__4.label"
+        },
+        {
+          "value": "middle-center-center",
+          "label": "t:sections.header.settings.logo_position.options__4.label"
         }
+        
       ],
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
@@ -684,6 +777,10 @@
     {
       "type": "@app"
     }
-  ]
+  ],
+  "presets":[{
+    "name": "Principal Header",
+    "category": "Header"
+  }]
 }
 {% endschema %}
