@@ -103,7 +103,7 @@
         "f7a2df54-b3b0-4431-9647-a275d5364571"
       ],
       "settings": {
-        "scheme_selector": "background-2"
+        "scheme_selector": "background-1"
       }
     },
     "woman-about-home": {
@@ -149,7 +149,7 @@
         "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c"
       ],
       "settings": {
-        "scheme_selector": "background-2",
+        "scheme_selector": "background-1",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
@@ -161,15 +161,15 @@
     "woman-discount-counter": {
       "type": "custom-discount-counter",
       "settings": {
-        "color_time": "#434343",
-        "color_text": "#434343",
+        "color_time": "#c5b4c6",
+        "color_text": "#ffffff",
         "heading": "Luxury For Every Lifestyle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "button_url": "shopify:\/\/collections\/all",
         "button_label": "Shop Now",
         "image_left": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black_1.webp",
         "image_right": "shopify:\/\/shop_images\/chaqueta-rocky-efecto-piel-black.webp",
-        "scheme_selector": "background-2"
+        "scheme_selector": "background-1"
       }
     },
     "woman-categories": {
