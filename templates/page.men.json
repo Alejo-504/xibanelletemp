@@ -387,7 +387,7 @@
         "18373242-d1c9-49cb-9729-a3b966a2be7c": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/faq",
+            "item_url": "https:\/\/www.youtube.com",
             "item_title": "Youtube",
             "item_icon": "fa fa-youtube",
             "item_svg": ""
