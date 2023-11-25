@@ -182,28 +182,31 @@
         "22d50b95-6fc6-431e-a73d-f84b9f3cf69e": {
           "type": "category",
           "settings": {
-            "title_category": "Name Category",
-            "title": "Title",
-            "link": "shopify:\/\/blogs\/news",
-            "button_text": "View Products"
+            "image": "shopify:\/\/shop_images\/614r-BbfVFL._SX679.jpg",
+            "title_category": "Belts",
+            "title": "Women",
+            "link": "shopify:\/\/collections\/womens-belts",
+            "button_text": "View All"
           }
         },
         "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a": {
           "type": "category",
           "settings": {
-            "title_category": "Name Category",
-            "title": "Title",
-            "link": "shopify:\/\/pages\/men",
-            "button_text": "View Products"
+            "image": "shopify:\/\/shop_images\/Borse-in-PU-da-donna-borse-in-pelle-da-donna-di-alta-qualit-borse-firmate-di_jpg.jpg",
+            "title_category": "Bags",
+            "title": "Women's",
+            "link": "shopify:\/\/collections\/womens-bags",
+            "button_text": "View All"
           }
         },
         "e61dc44f-7d8d-4b03-8cf1-67ed8063533b": {
           "type": "category",
           "settings": {
-            "title_category": "Name Category",
-            "title": "Title",
-            "link": "shopify:\/\/products\/example-bag-woman-1",
-            "button_text": "View Products"
+            "image": "shopify:\/\/shop_images\/pexels-photo-1039518.jpg",
+            "title_category": "Accessories",
+            "title": "Women's",
+            "link": "shopify:\/\/collections\/womens-accessories",
+            "button_text": "View All"
           }
         }
       },
