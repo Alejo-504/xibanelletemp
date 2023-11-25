@@ -155,7 +155,7 @@
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "image": "shopify:\/\/shop_images\/pexels-lukas-293003.jpg",
         "overlay_logo": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png",
-        "button_url": "shopify:\/\/collections\/all",
+        "button_url": "shopify:\/\/pages\/about-us",
         "button_label": "Read More"
       }
     },
@@ -265,7 +265,9 @@
       "settings": {
         "scheme_selector": "background-2",
         "title": "What Our Customer Say",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
+        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+        "link_text": "View More",
+        "link_url": ""
       }
     },
     "05599d10-2590-4ff6-8ddb-92b1a899a065": {
