@@ -403,7 +403,7 @@
           "type": "menu_item",
           "settings": {
             "item_url": "shopify:\/\/products\/brown-leather-jacket",
-            "item_title": "Address line 1 Address line 2",
+            "item_title": "Forest Park, Georgia, 30297",
             "item_icon": "fa fa-map",
             "item_svg": ""
           }
@@ -411,8 +411,8 @@
         "a9392dfa-ba31-4d99-b881-15e65d273b23": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/brown-leather-jacket",
-            "item_title": "(xxx) xxx xxxx",
+            "item_url": "tel:+14043438695",
+            "item_title": "(404) 343 8695",
             "item_icon": "fa fa-phone",
             "item_svg": ""
           }
