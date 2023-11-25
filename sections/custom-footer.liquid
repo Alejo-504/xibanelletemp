@@ -129,7 +129,11 @@
                   {{ li_open }}
                 {% endif %}
               
-                <a href="{{ block.settings.item_url }}">{{ block.settings.item_title }}</a>
+                <a href="{{ block.settings.item_url }}"
+                  {%  if block.settings.new_tab %}
+                    target="_blank"
+                  {%  endif %}
+                  >{{ block.settings.item_title }}</a>
                  {{ html_li_close }}
             {% endif %}
         {% endcase %}
