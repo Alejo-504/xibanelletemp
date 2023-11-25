@@ -295,7 +295,7 @@
         "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
       ],
       "custom_css": [
-        ".newsletter{border-bottom: white solid 1px;}",
+        ".newsletter {border-bottom: white solid 1px;}",
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
         ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px;}"
       ],
@@ -458,7 +458,7 @@
       "settings": {
         "scheme_selector": "background-1",
         "text_color": "#6b6559",
-        "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-60.png"
+        "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_4a38d701-2024-4cfe-bb95-6e6a983a91fb.png"
       }
     }
   },
