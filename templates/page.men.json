@@ -420,7 +420,7 @@
         "9bdd97a3-5a75-44a5-a80f-8cb15c3fe282": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/about-us",
+            "item_url": "mailto:info@xinabelle.com",
             "item_title": "info@xinabelle.com",
             "item_icon": "fa fa-envelope",
             "item_svg": ""
