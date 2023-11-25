@@ -116,7 +116,7 @@
             {% endif %}
     
           {% when 'menu_item' %}
-            {% if block.settings.item_url != blank %}
+            {% if block.settings.item_title != blank %}
                 {% if block.settings.item_icon != blank %}
                    {{ html_li_icon }}
                     <i class="{{ block.settings.item_icon }}"></i>
