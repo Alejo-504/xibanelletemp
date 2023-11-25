@@ -40,7 +40,7 @@
         "6cfd4113-eeaa-4c6d-9c29-bc92eeed0d84": {
           "type": "product",
           "settings": {
-            "product": "brown-leather-jacket"
+            "product": "example-bag-woman-2"
           }
         }
       },
@@ -400,7 +400,7 @@
         "8020f027-9862-4205-b6af-aac5751a5ddb": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/brown-leather-jacket",
+            "item_url": "shopify:\/\/products\/example-bag-woman-2",
             "item_title": "Address line 1 Address line 2",
             "item_icon": "fa fa-map",
             "item_svg": ""
@@ -409,7 +409,7 @@
         "a9392dfa-ba31-4d99-b881-15e65d273b23": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/products\/brown-leather-jacket",
+            "item_url": "shopify:\/\/products\/example-bag-woman-2",
             "item_title": "(xxx) xxx xxxx",
             "item_icon": "fa fa-phone",
             "item_svg": ""
