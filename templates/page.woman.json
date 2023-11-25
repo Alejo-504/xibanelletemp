@@ -262,7 +262,7 @@
         "703ee8a6-4713-40cd-b419-1b3b3a24da8c"
       ],
       "settings": {
-        "scheme_selector": "background-2",
+        "scheme_selector": "background-1",
         "title": "What Our Customer Say",
         "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit."
       }
@@ -455,7 +455,7 @@
         "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
       ],
       "settings": {
-        "scheme_selector": "background-2",
+        "scheme_selector": "background-1",
         "text_color": "#ffffff",
         "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_21c52e80-9099-4d24-8bc8-9cb75e1f7993.png"
       }
