@@ -111,7 +111,7 @@
                   </label>
                   <button
                     type="submit"
-                    class="btn btn-primary inline m-0 no-hover"
+                    class="btn btn-primary inline m-0 no-hover d-md-flex d-none"
                     name="commit"
                     id="Subscribe"
                     aria-label="{{ 'newsletter.button_label' | t }}"
@@ -119,6 +119,16 @@
                     Subscribe {% render 'icon-arrow' %}
                   </button>
                 </div>
+                <button
+                    type="submit"
+                    class="btn btn-primary inline m-0 no-hover d-md-none d-flex w-100"
+                    name="commit"
+                    id="Subscribe"
+                    aria-label="{{ 'newsletter.button_label' | t }}"
+                    style="margin-top:10px!important;"
+                  >
+                    Subscribe {% render 'icon-arrow' %}
+                </button>
                <small class="text-center" style="font-size:11px;">Sign up to our Newsletter and get the discount code!</small>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
