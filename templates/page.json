@@ -7,27 +7,6 @@
         "padding_bottom": 28
       }
     },
-    "header-men": {
-      "type": "header",
-      "settings": {
-        "enabled_top_bar": true,
-        "cta_text": "Affiliate Program",
-        "cta_link": "shopify:\/\/pages\/affiliate-program",
-        "logo_position": "middle-center-center",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "reduce-logo-size",
-        "show_line_separator": true,
-        "color_scheme": "background-2",
-        "menu_color_scheme": "background-2",
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "mobile_logo_position": "left",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "db25146b-9015-4ab7-9c78-3d9c16753058": {
       "type": "custom-hero",
       "settings": {
@@ -58,7 +37,7 @@
         "c5e10c97-28e2-40cb-95c8-d8526904efd9": {
           "type": "product",
           "settings": {
-            "product": "example-belt-women-1"
+            "product": "italian-leather-jacket"
           }
         }
       },
@@ -72,7 +51,6 @@
     }
   },
   "order": [
-    "header-men",
     "main",
     "db25146b-9015-4ab7-9c78-3d9c16753058",
     "5356e5ea-6c0f-4d84-867a-47621672aef6"
