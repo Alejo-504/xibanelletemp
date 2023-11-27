@@ -11,6 +11,18 @@ text-align: start;
 <div class="title-card">
 <strong>{{ product.title }}</strong>
 </div>
+{% if product.available %}
+<!--><div class="available-card">
+  <span class="badge badge-success">Available</span>
+</div>-->
+{% else %}
+
+<div class="available-card">
+  <span class="badge badge-danger">Unavailable</span>
+</div>
+
+{% endif %}
+
 <div class="description-card">
 <p style="font-size:1.4rem;padding-right:25px;">
   {{ product.description | strip_html | truncatewords: 30 }}
