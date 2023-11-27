@@ -198,6 +198,24 @@
         ],
         "settings": {
         }
+      },
+      "custom-footer-men": {
+        "type": "custom-footer-men",
+        "blocks": {
+          "1943863b-8200-46d2-9fc1-1fa4e9ac329b": {
+            "type": "menu_items",
+            "settings": {
+              "menu": "footer-menu-2"
+            }
+          }
+        },
+        "block_order": [
+          "1943863b-8200-46d2-9fc1-1fa4e9ac329b"
+        ],
+        "settings": {
+          "scheme_selector": "",
+          "text_color": ""
+        }
       }
     },
     "content_for_index": [
