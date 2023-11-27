@@ -354,6 +354,27 @@
           "text_color": "#ffffff",
           "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_4a38d701-2024-4cfe-bb95-6e6a983a91fb.png"
         }
+      },
+      "custom-header-men": {
+        "type": "custom-header-men",
+        "settings": {
+          "enabled_top_bar": true,
+          "cta_text": "Affiliate Program",
+          "cta_link": "shopify:\/\/pages\/affiliate-program",
+          "logo_position": "middle-center-center",
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "sticky_header_type": "reduce-logo-size",
+          "show_line_separator": true,
+          "color_scheme": "background-2",
+          "menu_color_scheme": "background-2",
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
       }
     },
     "content_for_index": [
