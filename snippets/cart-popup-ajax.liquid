@@ -8,14 +8,15 @@
       <div class="mb-2 container-image">
         <img src="" alt="product in cart" />
       </div>
-      <a href="{{ routes.cart_url }}" class="btn btn-primary-outline  p-1 mb-2" class="d-flex align-items-center">View My Cart (<span data-ajax-cart-bind-state="cart.item_count" > </span>) </a>
+      <a href="{{ routes.cart_url }}" class="btn btn-primary-outline  p-1 mb-2" style="font-size:1.2rem;"
+        class="d-flex align-items-center">View My Cart (<span data-ajax-cart-bind-state="cart.item_count" > </span>) </a>
         <form style="
             width: 100%;
             display: flex;
             justify-content: center;
           " action="{{ routes.cart_url }}" method="post" class="my-cart">
       
-            <button  class="btn btn-primary hero" type="submit" name="checkout">
+            <button  class="btn btn-primary hero" type="submit" name="checkout" style="font-size:1.2rem;">
               Checkout —&nbsp;<span data-ajax-cart-bind-state="cart.total_price | money_with_currency" > {{ cart.total_price | money_with_currency }}</span>
             </button> 
         </form>
