@@ -11,20 +11,6 @@ text-align: start;
 <div class="title-card">
 <strong>{{ product.title }}</strong>
 </div>
-
-{% if product.available %}
-<!--><div class="available-card">
-  <span class="badge badge-success">Available</span>
-</div>-->
-{% else %}
-
-<div class="available-card">
-  <span class="badge badge-danger">Unavailable</span>
-</div>
-
-{% endif %}
-
-
 <div class="description-card">
 <p style="font-size:1.4rem;padding-right:25px;">
   {{ product.description | strip_html | truncatewords: 30 }}
@@ -43,16 +29,10 @@ text-align: start;
 {% endif %}
 </div>
 <div class="btn-group mt-5">
-{% if product.available %}
 <a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
   Get Now 
 </a>
 </div>
-{% else %}
-<button disabled class="btn btn-secondary" style="z-index:2;color:white;">
- Not Available
-</button>
-{% endif %}
 </div>
 
 <div class="header-card" style="
