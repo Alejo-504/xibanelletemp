@@ -558,6 +558,44 @@
           "text_color": "#6b6559",
           "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_4a38d701-2024-4cfe-bb95-6e6a983a91fb.png"
         }
+      },
+      "custom-newsletter": {
+        "type": "custom-newsletter",
+        "blocks": {
+          "42c4bda4-89ff-49e5-bc50-68f58a22b1b8": {
+            "type": "heading",
+            "settings": {
+              "heading": "Subscribe to our emails",
+              "heading_size": "h1"
+            }
+          },
+          "578815d5-2851-44fa-ba5a-97bc8304fa97": {
+            "type": "paragraph",
+            "settings": {
+              "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            }
+          },
+          "82f827ad-403c-4ff7-9574-eec0ba44d3da": {
+            "type": "email_form",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "42c4bda4-89ff-49e5-bc50-68f58a22b1b8",
+          "578815d5-2851-44fa-ba5a-97bc8304fa97",
+          "82f827ad-403c-4ff7-9574-eec0ba44d3da"
+        ],
+        "settings": {
+          "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+          "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+          "color_background": "#5b1e1e",
+          "color_text": "",
+          "color_scheme": "background-2",
+          "full_width": true,
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
