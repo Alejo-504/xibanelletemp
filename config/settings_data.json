@@ -586,6 +586,10 @@
           "578815d5-2851-44fa-ba5a-97bc8304fa97",
           "82f827ad-403c-4ff7-9574-eec0ba44d3da"
         ],
+        "custom_css": [
+          ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: 60px;}",
+          ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px;}"
+        ],
         "settings": {
           "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
           "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
