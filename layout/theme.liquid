@@ -306,6 +306,18 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
+
+    {% if page.metafields.page.type == "men" %}
+      
+      {% section  "custom-header-men" %}
+      
+    {% elsif page.metafields.namespace.type == "women" %}
+
+      {% section  "custom-header-women" %}
+       
+    {% endif %}
+
+
    
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
