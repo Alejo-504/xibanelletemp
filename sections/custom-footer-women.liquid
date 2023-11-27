@@ -36,7 +36,7 @@
         "settings": [
           {
             "type": "text",
-            "id": "item_title",
+            "id": "title",
             "label": "Title"
           },
           {
@@ -116,7 +116,7 @@
             {% endif %}
     
           {% when 'menu_item' %}
-            {% if block.settings.item_title != blank %}
+            {% if block.settings.title != blank %}
                 {% if block.settings.item_icon != blank %}
                    {{ html_li_icon }}
                     <i class="{{ block.settings.item_icon }}"></i>
@@ -138,7 +138,7 @@
                   {%  if block.settings.new_tab %}
                     target="_blank"
                   {%  endif %}
-                  >{{ block.settings.item_title }}</a>
+                  >{{ block.settings.title }}</a>
                  {{ html_li_close }}
             {% endif %}
         {% endcase %}
