@@ -1,0 +1,132 @@
+<div class="centrador-phone">
+<div  class="popup-cart-ajax">
+
+ <!-- -->
+
+    <div class="mb-2 title-section text-center"> 
+       <span clas="p text-center">Was added to cart: </span>
+       <h1 class="title-product "></h1>
+    </div>
+    <div class="mb-2 container-image">
+      <img src="" alt="product in cart" />
+    </div>
+    <a href="{{ routes.cart_url }}" class="btn-small btn-popup mb-2">View My Cart (<span><div data-ajax-cart-bind-state="cart.item_count" > </div>  </span>) </a>
+      <form style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        " action="{{ routes.cart_url }}" method="post" class="my-cart">
+    
+          <button  class="btn btn-popup checkout" type="submit" name="checkout">
+          Checkout —&nbsp;<span data-ajax-cart-bind-state="cart.total_price | money_with_currency"> {{ cart.total_price | money_with_currency }}</span>
+        </button> 
+      </form>
+
+    <button class="close-popup-cart" data-ajax-cart-toggle-class-button="show-popup-cart | remove">
+      <i class="fa fa-times"></i>
+    </button>
+
+
+  
+</div>
+</div>
+<script>
+  /* se activa esta funcion desde theme.liquid cada vez que se agrega al carrito un item */
+   function add_poppu_info(product){
+    let popup = document.querySelector(".popup-cart-ajax");
+      if(product != "Fail"){
+        popup.querySelector(".title-product").textContent = product.title;
+        popup.querySelector(".container-image img").src = product.image+"&width=90";
+        
+      }else{
+        
+       /* Fail */
+      }
+      
+    }
+</script>
+
+
+<style>
+   .popup-cart-ajax .checkout{
+    border: none;
+    border-radius: var(--radius);
+    padding: 8px 10px;
+    width: 100%;
+  }
+  @media screen and (max-width: 575px){
+    .centrador-phone{
+      display:flex;
+      justify-content:center;
+      width: 100%;
+    }
+    .popup-cart-ajax{
+      right: auto !important;
+    }
+  }
+  
+  .popup-cart-ajax .title-product{
+        font-size: 27px;
+  }
+  .popup-cart-ajax{
+   position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background:  white;
+    
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+    border-radius: var(--radius);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    transform:translateY(-225%);
+    transition: all .3s ease-in-out;
+    box-shadow: var(--shadow);
+  }
+ 
+    body.show-popup-cart .popup-cart-ajax{
+      transform:translateY(0);
+    }
+
+  .popup-cart-ajax .container-image {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+   .popup-cart-ajax .container-image img{
+     width:100%;
+     height:100%;
+   }
+  .popup-cart-ajax  .close-popup-cart{
+    border: none;
+    background: #ae6b71;
+    color: white;
+    border-radius: 50%;
+    right: 20px;
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+    transition: all .2s ease-in-out;
+  }
+   .popup-cart-ajax  .close-popup-cart:hover{
+     background:var(--danger);
+   }
+    .popup-cart-ajax .btn-popup{
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      width: 100%;
+      max-width: 215px;
+      margin-top: 6px;
+      box-shadow:0px -1px 10px 0 rgb(253 127 127 / 35%);
+    }
+
+</style>
