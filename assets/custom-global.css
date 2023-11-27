@@ -196,7 +196,9 @@ body, html{
       transition: all 0.3s ease;
     }
      .item-cart[disabled] {
-        background:#a1a1a1;
+       background:#a1a1a1;
+       border:none;
+       pointer-events:none;
      }
     
     .item-cart:hover {
