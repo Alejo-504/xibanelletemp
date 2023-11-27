@@ -376,7 +376,7 @@
         <script src="{{ 'aos.js' | asset_url }}" onload="AOS.init()" defer="defer"></script>
         <script src="{{ 'owl.carousel.min.js' | asset_url }}" ></script>
     {% endif %}
-    {{ page.metafields.namespace }}
+    {{ page.metafields }}
     {% if page.metafields.namespace.type == "men" %}
       {% section  "custom-footer-men" %}
     {% elsif page.metafields.namespace.type == "women" %}
