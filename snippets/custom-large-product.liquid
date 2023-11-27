@@ -12,9 +12,7 @@ text-align: start;
 <strong>{{ product.title }}</strong>
 </div>
 {% if product.available %}
-<!--><div class="available-card">
-  <span class="badge badge-success">Available</span>
-</div>-->
+
 {% else %}
 
 <div class="available-card">
@@ -41,8 +39,12 @@ text-align: start;
 {% endif %}
 </div>
 <div class="btn-group mt-5">
-<a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
+<a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;"   {% if product.available %} disabled {% endif %}>
+  {% if product.available %}
   Get Now 
+  {% else %}
+  Unavailable
+  {% endif %}
 </a>
 </div>
 </div>
