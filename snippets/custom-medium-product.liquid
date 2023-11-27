@@ -23,6 +23,15 @@ style="border-radius:1px;width:100%;height:100%;object-fit:cover"
 <div class="title-card">
 <strong>{{ product.title }}</strong>
 </div>
+{% if product.available %}
+
+{% else %}
+
+<div class="available-card">
+  <span class="badge" style="background:#a1a1a1;">Unavailable</span>
+</div>
+
+{% endif %}
 <div class="description-card">
 <p style="font-size:1.4rem;padding-right:25px;">
     {{ product.description | strip_html | truncatewords: 10 }}
