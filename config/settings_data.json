@@ -283,6 +283,52 @@
               "new_tab": false,
               "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewbox=\"0 0 512 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}<\/style>\n<path d=\"M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"><\/path><\/svg>"
             }
+          },
+          "f78ac39d-2af1-4f05-bf1d-8f2341927c35": {
+            "type": "column",
+            "settings": {
+              "title": "Contact"
+            }
+          },
+          "2efe88e6-b56c-4219-9b0a-e440fe9d2853": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
+              "item_title": "Forest Park, Georgia, 30297",
+              "item_icon": "fa fa-map",
+              "new_tab": true,
+              "item_svg": ""
+            }
+          },
+          "54b54147-eb3a-4df4-a774-5b03529a01f5": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "tel:+14043438695",
+              "item_title": "(404) 343 8695",
+              "item_icon": "fa fa-phone",
+              "new_tab": false,
+              "item_svg": ""
+            }
+          },
+          "640ceb09-4cbe-44fa-8902-d4ae938349a3": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "mailto:info@xinabelle.com",
+              "item_title": "info@xinabelle.com",
+              "item_icon": "fa fa-envelope",
+              "new_tab": false,
+              "item_svg": ""
+            }
+          },
+          "59cb1044-8f79-48d4-9a8b-88de64d95b20": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "",
+              "item_title": "24\/7",
+              "item_icon": "",
+              "new_tab": false,
+              "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewbox=\"0 0 512 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}<\/style>\n<path d=\"M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"><\/path><\/svg>"
+            }
           }
         },
         "block_order": [
@@ -296,7 +342,12 @@
           "23bfa647-8834-4fa8-8b98-dbb2ab93ec4f",
           "4659ab30-513a-4186-948f-52dee59a2a7e",
           "b1d7b223-51c8-4c90-897a-06abb41aa85e",
-          "3b0aec2f-a746-477f-88bc-13f32e4ddb16"
+          "3b0aec2f-a746-477f-88bc-13f32e4ddb16",
+          "f78ac39d-2af1-4f05-bf1d-8f2341927c35",
+          "2efe88e6-b56c-4219-9b0a-e440fe9d2853",
+          "54b54147-eb3a-4df4-a774-5b03529a01f5",
+          "640ceb09-4cbe-44fa-8902-d4ae938349a3",
+          "59cb1044-8f79-48d4-9a8b-88de64d95b20"
         ],
         "settings": {
           "scheme_selector": "background-2",
