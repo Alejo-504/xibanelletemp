@@ -446,7 +446,7 @@
         "d9af1ddc-aee9-422c-af3e-a89f6dc9b7ee": {
           "type": "menu_item",
           "settings": {
-            "item_url": "shopify:\/\/pages\/contact",
+            "item_url": "",
             "item_title": "24\/7",
             "item_icon": "",
             "new_tab": false,
