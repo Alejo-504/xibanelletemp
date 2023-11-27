@@ -202,6 +202,24 @@
       "custom-footer-men": {
         "type": "custom-footer-men",
         "blocks": {
+          "dd3b3ede-4944-43bf-9ef8-f7052d9ec696": {
+            "type": "column",
+            "settings": {
+              "title": "Company"
+            }
+          },
+          "0a5458da-1ba1-4cd0-b418-ac2fd06f7677": {
+            "type": "menu_items",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "8700058c-dee8-42a9-aa94-1c794913beee": {
+            "type": "column",
+            "settings": {
+              "title": "Get Help"
+            }
+          },
           "1943863b-8200-46d2-9fc1-1fa4e9ac329b": {
             "type": "menu_items",
             "settings": {
@@ -210,6 +228,9 @@
           }
         },
         "block_order": [
+          "dd3b3ede-4944-43bf-9ef8-f7052d9ec696",
+          "0a5458da-1ba1-4cd0-b418-ac2fd06f7677",
+          "8700058c-dee8-42a9-aa94-1c794913beee",
           "1943863b-8200-46d2-9fc1-1fa4e9ac329b"
         ],
         "settings": {
