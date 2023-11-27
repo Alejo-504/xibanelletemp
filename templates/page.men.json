@@ -210,7 +210,7 @@
       "settings": {
         "title": "Instagram Feed",
         "color_scheme": "background-2",
-        "subtitle": "Follow us on Instagram",
+        "subtitle": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris.",
         "instagram_url": "https:\/\/www.instagram.com",
         "label_button": "Follow us"
