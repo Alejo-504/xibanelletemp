@@ -375,6 +375,34 @@
           "padding_top": 20,
           "padding_bottom": 20
         }
+      },
+      "custom-header-women": {
+        "type": "custom-header-women",
+        "settings": {
+          "enabled_top_bar": true,
+          "cta_text": "Affiliate Program",
+          "cta_link": "shopify:\/\/pages\/affiliate-program",
+          "logo_position": "middle-center-center",
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "sticky_header_type": "always",
+          "show_line_separator": true,
+          "color_scheme": "background-1",
+          "menu_color_scheme": "",
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
+        }
+      },
+      "custom-footer-women": {
+        "type": "custom-footer-women",
+        "settings": {
+          "scheme_selector": "",
+          "text_color": ""
+        }
       }
     },
     "content_for_index": [
