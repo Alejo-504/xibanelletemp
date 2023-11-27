@@ -58,7 +58,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
         "button_1_link": "shopify:\/\/collections\/women",
         "button_1_text": "Shop Now",
-        "button_2_link": "shopify:\/\/pages\/about-us",
+        "button_2_link": "shopify:\/\/pages\/about-us-men",
         "button_2_text": "Learn More",
         "promo_text": "New Collection 2023",
         "promo_color": "#e1cb8a",
@@ -158,7 +158,7 @@
         "text": "<p>Lorem ipsum dolor sit amet consectetur. Lacus proin sed proin etiam suspendisse et est anean nulla. Risus vel risus ligula elementum amet vel massa integer.<\/p>",
         "image": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
         "overlay_logo": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png",
-        "button_url": "shopify:\/\/pages\/about-us",
+        "button_url": "shopify:\/\/pages\/about-us-men",
         "button_label": "Read More"
       }
     },
