@@ -508,16 +508,6 @@
               "item_svg": ""
             }
           },
-          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27": {
-            "type": "menu_item",
-            "settings": {
-              "item_title": "(404) 343 8695",
-              "item_url": "tel:+14043438695",
-              "item_icon": "fa fa-phone",
-              "new_tab": false,
-              "item_svg": ""
-            }
-          },
           "175758f9-43bd-41ae-8580-17c8ccb88f66": {
             "type": "menu_item",
             "settings": {
@@ -526,6 +516,16 @@
               "item_icon": "",
               "new_tab": false,
               "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"1em\" viewbox=\"0 0 512 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}<\/style>\n<path d=\"M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"><\/path><\/svg>"
+            }
+          },
+          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27": {
+            "type": "menu_item",
+            "settings": {
+              "item_title": "(404) 343 8695",
+              "item_url": "tel:+14043438695",
+              "item_icon": "fa fa-phone",
+              "new_tab": false,
+              "item_svg": ""
             }
           }
         },
@@ -544,8 +544,8 @@
           "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7",
           "817f2836-e3e8-4338-bc99-8e2ee47b6453",
           "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2",
-          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27",
-          "175758f9-43bd-41ae-8580-17c8ccb88f66"
+          "175758f9-43bd-41ae-8580-17c8ccb88f66",
+          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27"
         ],
         "custom_css": [
           "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
