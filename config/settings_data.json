@@ -225,13 +225,27 @@
             "settings": {
               "menu": "footer-menu-2"
             }
+          },
+          "ddf203e4-109f-4202-9cec-09e45f9c1835": {
+            "type": "column",
+            "settings": {
+              "title": "Online Shop"
+            }
+          },
+          "411ad59f-7699-4b9c-8d3e-6463d2d09033": {
+            "type": "menu_items",
+            "settings": {
+              "menu": "online-shop"
+            }
           }
         },
         "block_order": [
           "dd3b3ede-4944-43bf-9ef8-f7052d9ec696",
           "0a5458da-1ba1-4cd0-b418-ac2fd06f7677",
           "8700058c-dee8-42a9-aa94-1c794913beee",
-          "1943863b-8200-46d2-9fc1-1fa4e9ac329b"
+          "1943863b-8200-46d2-9fc1-1fa4e9ac329b",
+          "ddf203e4-109f-4202-9cec-09e45f9c1835",
+          "411ad59f-7699-4b9c-8d3e-6463d2d09033"
         ],
         "settings": {
           "scheme_selector": "background-2",
