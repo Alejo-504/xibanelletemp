@@ -1,12 +1,43 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Instagram Feed"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Follow us on Instagram"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris."
+      }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+<div class="container-fluid">
+  <div class="row page-width">
+    <div class="col-12">
+      <h2 class="text-center">{{ section.settings.title }}</h2>
+      
+      {% if section.settings.subtitle != blank %}
+        <h3 class="text-center">{{ section.settings.subtitle }}</h3>
+      {% endif %}
+        
+      {% if section.settings.description != blank %}
+          <p class="text-center">{{ section.settings.description }}</p>
+      {% endif %}
 
-{% javascript %}
-{% endjavascript %}
+    </div>
+  </div>
+</div>
+<div id="insta-feed"></div>
