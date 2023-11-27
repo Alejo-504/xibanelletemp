@@ -418,16 +418,68 @@
               "title": "Get Help"
             }
           },
+          "4df46aef-84d5-486c-abe8-a301f378ba02": {
+            "type": "menu_items",
+            "settings": {
+              "menu": "footer-menu-2"
+            }
+          },
           "959be89c-01fc-4e54-b118-50767704d2fc": {
             "type": "column",
             "settings": {
               "title": "Online Shop"
             }
           },
+          "68699f95-50d5-4067-8c84-3a419e94fa71": {
+            "type": "menu_items",
+            "settings": {
+              "menu": "online-shop"
+            }
+          },
           "15d8a131-563b-4cf8-88ab-371345ffa17d": {
             "type": "column",
             "settings": {
               "title": "Social Media"
+            }
+          },
+          "746ce1f7-2408-4172-8676-a0599f7feace": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "https:\/\/www.facebook.com",
+              "item_title": "Facebook",
+              "item_icon": "fa fa-facebook",
+              "new_tab": true,
+              "item_svg": ""
+            }
+          },
+          "6cd7073c-9458-4005-b3bb-845a03c33629": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "https:\/\/www.instagram.com",
+              "item_title": "Instagram",
+              "item_icon": "fa fa-instagram",
+              "new_tab": true,
+              "item_svg": ""
+            }
+          },
+          "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "mailto:info@xinabelle.com",
+              "item_title": "info@xinabelle.com",
+              "item_icon": "fa fa-envelope",
+              "new_tab": false,
+              "item_svg": ""
+            }
+          },
+          "f139ebf3-dcc2-41cd-b40c-6901e48b3a84": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "",
+              "item_title": "",
+              "item_icon": "",
+              "new_tab": false,
+              "item_svg": ""
             }
           },
           "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7": {
@@ -441,8 +493,14 @@
           "0b7ae4e3-85d5-444e-9d4f-55bf8ef8c9ea",
           "78eb6ca4-f750-4d6d-b9c5-8e6d496a8685",
           "2e5dd3c0-ee2c-4959-8557-e494f8f63553",
+          "4df46aef-84d5-486c-abe8-a301f378ba02",
           "959be89c-01fc-4e54-b118-50767704d2fc",
+          "68699f95-50d5-4067-8c84-3a419e94fa71",
           "15d8a131-563b-4cf8-88ab-371345ffa17d",
+          "746ce1f7-2408-4172-8676-a0599f7feace",
+          "6cd7073c-9458-4005-b3bb-845a03c33629",
+          "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2",
+          "f139ebf3-dcc2-41cd-b40c-6901e48b3a84",
           "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7"
         ],
         "custom_css": [
