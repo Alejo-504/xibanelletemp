@@ -403,7 +403,33 @@
     {% endif %}
 
 
+    <script type="application/json" data-ajax-cart-initial-state >
+      {{ cart | json }}
+    </script>
   
+    <!-- copy para cart ajax -->
+       <script type="application/json" data-ajax-cart-configuration >
+      {
+        "addToCartCssClass": "show-popup-cart"
+      }
+    </script>
+    <script type="module">
+      import '{{ "ajaxcart.js" | asset_url }}';
+      import { subscribeToCartAjaxRequests } from '{{ "ajaxcart.js" | asset_url }}';
+       subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
+          if ( requestState.requestType === 'add' ) {
+            subscribeToResult( requestState => {
+              if ( requestState.responseData?.ok ) {
+                let product = requestState.responseData.body;
+                if ( requestState.responseData.body.items?.length === 1 ) {
+                  product = requestState.responseData.body.items[0];
+                }
+                add_poppu_info( product ? product : "Fail");
+              }
+            });
+          }
+        })  
+    </script>  
   </body>
   <style>
     ::-webkit-scrollbar {
