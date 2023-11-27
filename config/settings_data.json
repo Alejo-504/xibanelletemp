@@ -294,7 +294,7 @@
             "type": "menu_item",
             "settings": {
               "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
-              "item_title": "Forest Park, Georgia,&nbsp;30297",
+              "item_title": "Forest Park, Georgia, 30297",
               "item_icon": "fa fa-map",
               "new_tab": true,
               "item_svg": ""
@@ -348,6 +348,9 @@
           "54b54147-eb3a-4df4-a774-5b03529a01f5",
           "640ceb09-4cbe-44fa-8902-d4ae938349a3",
           "59cb1044-8f79-48d4-9a8b-88de64d95b20"
+        ],
+        "custom_css": [
+          "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
         ],
         "settings": {
           "scheme_selector": "background-2",
