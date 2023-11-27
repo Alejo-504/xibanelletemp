@@ -198,6 +198,17 @@
         "scheme_selector": "background-1"
       }
     },
+    "a794af04-1e89-4d70-8f37-383a4f16256e": {
+      "type": "custom-instafeed",
+      "settings": {
+        "title": "Instagram Feed",
+        "color_scheme": "",
+        "subtitle": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris.",
+        "instagram_url": "",
+        "label_button": "Follow us"
+      }
+    },
     "woman-testimonials": {
       "type": "custom-reviews",
       "blocks": {
@@ -303,6 +314,7 @@
     "woman-about-home",
     "woman-discount-counter",
     "woman-categories",
+    "a794af04-1e89-4d70-8f37-383a4f16256e",
     "woman-testimonials",
     "woman-newsletter"
   ]
