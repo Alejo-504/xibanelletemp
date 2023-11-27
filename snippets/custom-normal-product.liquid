@@ -41,5 +41,11 @@
     {% endif %}
   </div>
 </div>
+{% if product.available %}
  <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
+{% else %}
+    <button disabled class="item-cart">
+       <i class="fa fa-shopping-cart"></i>
+    </button>
+{%  endif %}
  </div>
