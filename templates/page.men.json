@@ -56,6 +56,7 @@
         "67c7cbbf-0c08-4172-98a5-4713937313f6",
         "a8ebab03-6ec8-4964-9765-65f10f008dcb"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero-carousel .item img {object-fit: contain !important;}"
       ],
