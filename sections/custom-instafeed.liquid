@@ -9,6 +9,11 @@
         "default": "Instagram Feed"
       },
       {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Scheme"
+      },
+      {
         "type": "text",
         "id": "subtitle",
         "label": "Subtitle",
@@ -29,8 +34,12 @@
     ]
   }
 {% endschema %}
-
-<div class="container-fluid">
+<style>
+  .section-insta{
+    background: rgb(var(--color-background));
+  }
+</style>
+<div class="section-insta container-fluid color-{{ section.settings.color_scheme }}">
   <div class="row page-width">
     <div class="col-12">
       <h2 class="text-center">{{ section.settings.title }}</h2>
