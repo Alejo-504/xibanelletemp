@@ -213,8 +213,9 @@
           "1943863b-8200-46d2-9fc1-1fa4e9ac329b"
         ],
         "settings": {
-          "scheme_selector": "",
-          "text_color": ""
+          "scheme_selector": "background-2",
+          "text_color": "#ffffff",
+          "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_4a38d701-2024-4cfe-bb95-6e6a983a91fb.png"
         }
       }
     },
