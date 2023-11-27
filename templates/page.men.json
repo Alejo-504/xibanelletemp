@@ -211,7 +211,9 @@
         "title": "Instagram Feed",
         "color_scheme": "background-2",
         "subtitle": "Follow us on Instagram",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris.",
+        "instagram_url": "https:\/\/www.instagram.com",
+        "label_button": "Follow us"
       }
     },
     "ea03ccd6-2366-4f9c-9ab8-31a092059969": {
