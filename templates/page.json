@@ -6,53 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "db25146b-9015-4ab7-9c78-3d9c16753058": {
-      "type": "custom-hero",
-      "settings": {
-        "heading": "Lorem Ipsum Dolor Sit Amet",
-        "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
-        "button_1_link": "shopify:\/\/collections\/all",
-        "button_1_text": "Shop Now",
-        "button_2_link": "",
-        "button_2_text": "Learn More",
-        "promo_text": "New Collection 2023"
-      }
-    },
-    "5356e5ea-6c0f-4d84-867a-47621672aef6": {
-      "type": "custom-best-seller",
-      "blocks": {
-        "a4ee0ceb-99ba-4dff-8a52-c3a0bdfb5ee9": {
-          "type": "product",
-          "settings": {
-            "product": "example-bag-woman-1"
-          }
-        },
-        "a0848bae-3902-420f-b911-e9be6766efee": {
-          "type": "product",
-          "settings": {
-            "product": "example-bag-woman-2"
-          }
-        },
-        "c5e10c97-28e2-40cb-95c8-d8526904efd9": {
-          "type": "product",
-          "settings": {
-            "product": "italian-leather-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "a4ee0ceb-99ba-4dff-8a52-c3a0bdfb5ee9",
-        "a0848bae-3902-420f-b911-e9be6766efee",
-        "c5e10c97-28e2-40cb-95c8-d8526904efd9"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "db25146b-9015-4ab7-9c78-3d9c16753058",
-    "5356e5ea-6c0f-4d84-867a-47621672aef6"
+    "main"
   ]
 }
