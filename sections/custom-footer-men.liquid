@@ -1,12 +1,268 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Custom Footer Men",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "scheme_selector",
+        "label": "Scheme"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color"
+      },
+          {
+            "type": "image_picker",
+            "id": "overlay",
+            "label": "Overlay"
+          }
+    ],
+    "blocks": [
+      {
+        "type": "menu_items",
+        "name": "Menu Column",
+        "settings": [
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Select Menu"
+          }
+        ]
+      },
+      {
+        "type": "menu_item",
+        "name": "Custom Link",
+        "settings": [
+          {
+            "type": "url",
+            "id": "item_url",
+            "label": "Link URL"
+          },
+          {
+            "type": "text",
+            "id": "item_title",
+            "label": "Link Text"
+          },
+          {
+            "type": "text",
+            "id": "item_icon",
+            "label": "Link Icon"
+          },
+          {
+            "type": "checkbox",
+            "id": "new_tab",
+            "label": "Open in new tab"
+          },
+          {
+            "type": "textarea",
+            "id": "item_svg",
+            "label": "Icon Svg"
+          }
+        ]
+      },
+      {
+        "type": "column",
+        "name": "Title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Footer Men",
+        "category": "custom"
+      }
+    ]
   }
-{% endschema %}
+  {% endschema %}
+<div class="w-100 h-100 color-{{ section.settings.scheme_selector }}"> 
+   <footer class="footer-custom container" >
+      {% assign count_column = 0 %}
+      {% assign md_value = 12 %}
+      {% assign title_count = section.blocks | where: "type", "column" | size %}
+      {% assign md_value = md_value | divided_by: title_count %}
+      {% assign md_value = md_value | floor %}
+      {% assign html_opening_col = '<div data-aos="fade-down"  data-aos-duration="800" data-aos-easing="ease-in-out" class="d-md-block d-flex justify-content-center align-items-center flex-column col-md-' | append: md_value | append: '">' %}
+      {% assign html_opening_ul = '<ul>' %}
+      {% assign html_li_icon = '<li class="with-icon">' %}
+      {% assign html_li_svg = '<li class="with-icon svg">' %}
+      {% assign html_li_close ="</li>" %}
+      {% assign li_open ="<li>" %}
+    <div class="row justify-content-center">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'column' %}
+            {% if count_column > 0 %}
+              </ul>
+              </div>
+            {% endif %}
+           {{html_opening_col}}
+            <h3>{{ block.settings.title }}</h3>
+            {{html_opening_ul}}
+            {% assign count_column = count_column | plus: 1 %}
+    
+          {% when 'menu_items' %}
+            {% if block.settings.menu != blank %}
+              {% assign menu = block.settings.menu %}
+              {% for link in linklists[menu].links %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {% endfor %}
+            {% endif %}
+    
+          {% when 'menu_item' %}
+            {% if block.settings.item_title != blank %}
+                {% if block.settings.item_icon != blank %}
+                   {{ html_li_icon }}
+                    <i class="{{ block.settings.item_icon }}"></i>
+                  
+                {% elsif block.settings.item_svg != blank %}
+                 {{ html_li_svg }}
+                    {{ block.settings.item_svg }}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+                {% else %}
+                  {{ li_open }}
+                {% endif %}
+              
+                <a
+                  {% if  block.settings.item_url %}
+                  href="{{ block.settings.item_url }}"
+                  {% else %}
+                  href="#"
+                  {% endif %}
+                  {%  if block.settings.new_tab %}
+                    target="_blank"
+                  {%  endif %}
+                  >{{ block.settings.item_title }}</a>
+                 {{ html_li_close }}
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+      {% if count_column > 0 %}
+        </ul>
+        </div>
+      {% endif %}
+      </div>
+  </footer>
+<div class="container-fluid copyright py-3">
+  <div class="container text-center d-flex justify-content-md-between justify-content-center align-items-center flex-md-nowrap flex-wrap gap-3">
+      <small>
+       Copyright © All rights reserved | This Website Was Designed And Developed&nbsp;by
+      </small>
+      <a href="https://www.striveenterprise.com" target="_blank" rel="noopener noreferrer">
+        <svg width="152" height="40" viewBox="0 0 158 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_975_1101)">
+            <path d="M66.2471 37.8059V38.6942H61.9141V32.9912H66.1318V33.8795H62.9869V35.3622H65.7763V36.2347H62.9869V37.8074H66.2471V37.8059Z" fill="white"/>
+            <path d="M77.3804 32.9897V38.6927H76.4965L73.31 34.8312V38.6927H72.2451V32.9897H73.129L76.3155 36.8513V32.9897H77.3804Z" fill="white"/>
+            <path d="M84.9083 33.886H82.9932V32.9897H87.8962V33.886H85.9811V38.6927H84.9083V33.886Z" fill="white"/>
+            <path d="M97.8428 37.8059V38.6942H93.5098V32.9912H97.7275V33.8795H94.5826V35.3622H97.372V36.2347H94.5826V37.8074H97.8428V37.8059Z" fill="white"/>
+            <path d="M107.624 38.6927L106.444 37.022C106.394 37.0267 106.32 37.0299 106.221 37.0299H104.918V38.6927H103.845V32.9897H106.223C106.724 32.9897 107.159 33.0719 107.531 33.2347C107.902 33.3976 108.187 33.6315 108.386 33.935C108.584 34.24 108.684 34.6004 108.684 35.0193C108.684 35.4382 108.578 35.8175 108.367 36.1273C108.155 36.4371 107.851 36.6679 107.454 36.8197L108.783 38.6943H107.627L107.624 38.6927ZM107.236 34.1784C106.994 33.9824 106.639 33.8844 106.171 33.8844H104.916V36.1574H106.171C106.639 36.1574 106.994 36.0578 107.236 35.8602C107.478 35.6626 107.6 35.3813 107.6 35.0161C107.6 34.651 107.478 34.3728 107.236 34.1768V34.1784Z" fill="white"/>
+            <path d="M118.367 33.2346C118.739 33.3974 119.024 33.6314 119.222 33.9349C119.421 34.2399 119.52 34.6003 119.52 35.0192C119.52 35.4381 119.421 35.7921 119.222 36.0988C119.024 36.4054 118.739 36.6409 118.367 36.8037C117.996 36.9665 117.56 37.0487 117.059 37.0487H115.755V38.6942H114.683V32.9912H117.06C117.562 32.9912 117.997 33.0734 118.369 33.2362L118.367 33.2346ZM118.074 35.8585C118.316 35.6625 118.438 35.3827 118.438 35.0192C118.438 34.6556 118.316 34.3759 118.074 34.1799C117.832 33.9839 117.477 33.8859 117.009 33.8859H115.754V36.1509H117.009C117.477 36.1509 117.832 36.0529 118.074 35.8569V35.8585Z" fill="white"/>
+            <path d="M129.176 38.6927L127.996 37.022C127.947 37.0267 127.873 37.0299 127.774 37.0299H126.47V38.6927H125.397V32.9897H127.775C128.277 32.9897 128.712 33.0719 129.084 33.2347C129.455 33.3976 129.74 33.6315 129.939 33.935C130.137 34.24 130.236 34.6004 130.236 35.0193C130.236 35.4382 130.131 35.8175 129.919 36.1273C129.708 36.4371 129.404 36.6679 129.007 36.8197L130.336 38.6943H129.18L129.176 38.6927ZM128.789 34.1784C128.547 33.9824 128.192 33.8844 127.724 33.8844H126.469V36.1574H127.724C128.192 36.1574 128.547 36.0578 128.789 35.8602C129.031 35.6626 129.152 35.3813 129.152 35.0161C129.152 34.651 129.031 34.3728 128.789 34.1768V34.1784Z" fill="white"/>
+            <path d="M136.233 32.9897H137.306V38.6927H136.233V32.9897Z" fill="white"/>
+            <path d="M144.169 38.5869C143.754 38.462 143.424 38.296 143.183 38.0905L143.554 37.267C143.791 37.452 144.081 37.6021 144.425 37.7191C144.769 37.8361 145.114 37.8945 145.461 37.8945C145.89 37.8945 146.211 37.8266 146.424 37.6906C146.635 37.5547 146.741 37.3761 146.741 37.1532C146.741 36.9904 146.681 36.8561 146.563 36.7502C146.444 36.6442 146.294 36.5621 146.113 36.502C145.932 36.4419 145.684 36.374 145.37 36.2981C144.93 36.1953 144.574 36.091 144.3 35.9883C144.028 35.8855 143.794 35.7227 143.599 35.503C143.404 35.2833 143.306 34.9862 143.306 34.6115C143.306 34.297 143.392 34.0093 143.565 33.7517C143.738 33.494 143.999 33.2885 144.35 33.1368C144.699 32.9851 145.127 32.9092 145.634 32.9092C145.986 32.9092 146.332 32.9534 146.675 33.0388C147.016 33.1257 147.311 33.2506 147.559 33.4134L147.221 34.2369C146.968 34.0899 146.704 33.9793 146.428 33.9034C146.153 33.8275 145.887 33.7896 145.628 33.7896C145.203 33.7896 144.89 33.8607 144.683 34.0014C144.476 34.1421 144.374 34.3302 144.374 34.5641C144.374 34.7269 144.433 34.8597 144.552 34.964C144.67 35.0668 144.821 35.149 145.002 35.209C145.183 35.2691 145.431 35.3371 145.745 35.4129C146.174 35.5109 146.526 35.6121 146.801 35.718C147.077 35.8239 147.312 35.9851 147.508 36.2032C147.703 36.4214 147.801 36.7138 147.801 37.0837C147.801 37.3982 147.714 37.6843 147.541 37.9388C147.368 38.1949 147.106 38.3972 146.753 38.5505C146.401 38.7023 145.972 38.7781 145.466 38.7781C145.021 38.7781 144.59 38.7149 144.174 38.59L144.169 38.5869Z" fill="white"/>
+            <path d="M158 37.8059V38.6942H153.667V32.9912H157.885V33.8795H154.74V35.3622H157.529V36.2347H154.74V37.8074H158V37.8059Z" fill="white"/>
+            <path d="M70.401 7.22507C71.6884 7.22507 72.8141 7.36417 73.778 7.64394C74.7404 7.92372 75.5154 8.21772 76.1015 8.52753C76.6875 8.83733 77.043 9.0444 77.1695 9.14714L74.9085 12.8822C74.7404 12.7589 74.4554 12.5771 74.0535 12.34C73.6499 12.103 73.1744 11.8911 72.6251 11.7046C72.0759 11.5181 71.5026 11.4249 70.9054 11.4249C70.0983 11.4249 69.4482 11.5671 68.9502 11.8516C68.4522 12.1361 68.204 12.5566 68.204 13.1146C68.204 13.4971 68.3369 13.8401 68.6044 14.1451C68.8718 14.4502 69.2801 14.7395 69.8293 15.0129C70.3786 15.2864 71.0783 15.5835 71.9254 15.9044C72.7004 16.1842 73.4274 16.5145 74.1079 16.8971C74.7884 17.2796 75.3873 17.7316 75.9061 18.2533C76.4249 18.7749 76.8349 19.3771 77.1391 20.0599C77.4433 20.7428 77.5939 21.5173 77.5939 22.3851C77.5939 23.4188 77.3793 24.315 76.9502 25.0737C76.521 25.834 75.9366 26.4616 75.2 26.9579C74.4618 27.4542 73.6243 27.8241 72.6876 28.0659C71.7508 28.3093 70.7789 28.4295 69.7749 28.4295C68.3514 28.4295 67.0768 28.2698 65.9511 27.9489C64.8254 27.6281 63.9175 27.2819 63.2273 26.9105C62.5356 26.539 62.1224 26.2908 61.9863 26.166L64.3258 22.2744C64.4507 22.3677 64.6941 22.5178 65.056 22.7233C65.4178 22.9304 65.8598 23.1438 66.3834 23.3666C66.907 23.5895 67.4643 23.7776 68.0551 23.9325C68.646 24.0874 69.2305 24.1649 69.8053 24.1649C70.7677 24.1649 71.4914 23.9815 71.9718 23.6148C72.4538 23.2481 72.694 22.7644 72.694 22.1654C72.694 21.7212 72.5419 21.3229 72.2392 20.972C71.935 20.6211 71.4802 20.2875 70.8733 19.9714C70.2665 19.6569 69.5075 19.3233 68.5964 18.9709C67.6852 18.6089 66.835 18.1695 66.0439 17.6526C65.2529 17.1357 64.6124 16.4892 64.1208 15.7147C63.6292 14.9402 63.3826 13.9792 63.3826 12.8316C63.3826 11.6841 63.7093 10.6899 64.3642 9.84737C65.0191 9.00488 65.8822 8.35682 66.9551 7.90159C68.0279 7.44636 69.1776 7.21875 70.4026 7.21875L70.401 7.22507Z" fill="white"/>
+            <path d="M84.2822 11.6574H79.3359V7.59668H93.909V11.6574H88.9788V28.0582H84.2838V11.6574H84.2822Z" fill="white"/>
+            <path d="M96.3428 7.59668H104.791C105.995 7.59668 107.068 7.84484 108.01 8.34116C108.951 8.83749 109.697 9.55352 110.248 10.4877C110.797 11.4234 111.073 12.5362 111.073 13.8276C111.073 15.119 110.839 16.1764 110.375 16.9984C109.909 17.8203 109.351 18.4352 108.703 18.843C108.054 19.2508 107.452 19.4974 106.897 19.5796L111.937 28.0582H106.661L102.17 19.9352H101.039V28.0582H96.3444V7.59668H96.3428ZM101.038 16.7265H103.111C103.949 16.7265 104.682 16.5258 105.31 16.1227C105.938 15.7196 106.251 15.0068 106.251 13.9841C106.251 12.9614 105.942 12.2501 105.324 11.8534C104.706 11.455 103.979 11.2559 103.142 11.2559H101.038V16.7281V16.7265Z" fill="white"/>
+            <path d="M115.187 7.59668H119.881V28.0582H115.187V7.59668Z" fill="white"/>
+            <path d="M135.004 28.0582H129.696L122.315 7.59668H127.608L132.351 22.1529L137.094 7.59668H142.386L135.005 28.0582H135.004Z" fill="white"/>
+            <path d="M144.693 7.59668H157.931V11.6574H149.372V15.8271H157.853V19.7645H149.372V23.9959H157.931V28.0566H144.693V7.59668Z" fill="white"/>
+            <path d="M50.2825 4.16955L15.0035 23.297L15.0339 23.346C14.8657 23.1247 14.7056 22.8939 14.5551 22.6552C13.9338 21.6673 13.5143 20.6114 13.2837 19.5366C12.4526 15.6403 14.1116 11.4769 17.7368 9.25765C21.3621 7.03842 25.8776 7.42094 29.0433 9.88833L35.7334 5.79287C29.7911 -0.463332 20.0154 -1.93175 12.3486 2.76277C4.6801 7.45729 1.66812 16.7547 4.70412 24.7907C5.12846 25.9161 5.67129 27.0162 6.33741 28.0753C7.19569 29.4409 8.20449 30.6549 9.33018 31.7139L50.2825 4.16955Z" fill="white"/>
+            <path d="M0 41.8301L35.2791 22.7027L35.2486 22.6537C35.4168 22.875 35.5769 23.1058 35.7274 23.3444C36.3487 24.3324 36.7682 25.3882 36.9988 26.4631C37.8299 30.3594 36.171 34.5228 32.5457 36.742C28.9204 38.9612 24.4049 38.5787 21.2392 36.1113L14.5491 40.2068C20.493 46.463 30.2671 47.9314 37.9356 43.2353C45.604 38.5408 48.6144 29.245 45.5784 21.2074C45.1541 20.082 44.6112 18.9819 43.9451 17.9228C43.0868 16.5572 42.078 15.3432 40.9524 14.2842L0 41.8301Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_975_1101">
+            <rect width="158" height="46" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>
+      </a>
+    
+  </div>
+</div>
+  <style>
+    @media (max-width:768px){
+      #shopify-section-{{section.id}} ul{
+        width:126px;
+      }
+    }
+    #shopify-section-{{section.id}}{
+      background: rgb(var(--color-background));
+      display:flex;
+      justify-content:center;
+      
+    }
+    .copyright{
+      background: rgb(var(--color-background-2));
+      font-weight: 700;
+      z-index: 1;
+      position: relative;
+    }
+    .footer-custom {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+    .footer-custom h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color:{{section.settings.text_color}};
+      margin-bottom: 20px;
+    }
+    .footer-custom ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-custom ul li {
+      margin-bottom: 5px;
+    }
+    .footer-custom ul li a {
+      color:{{section.settings.text_color}};
+      font-size: 13px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    .footer-custom ul li a:hover {
+      text-decoration:none;
+      font-weight:900;
+      opacity: 0.8;
+    }
+    li.with-icon {
+        display: grid;
+        grid-template-columns: 16px 1fr;
+        gap: 8px;
+        align-items: center;
+        color: {{section.settings.text_color}};
+    }
+     li.with-icon svg{
+       fill:{{section.settings.text_color}};
+     }
+     #shopify-section-{{section.id}}{
+        position:relative;
+    }
+     #shopify-section-{{section.id}}::before {
+        content: "";
+        position: absolute;
+        width: 643px;
+        height: 238px;
+        background: url({{section.settings.overlay | img_url: 'master' }});
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        z-index: 0;
+        background-size: cover;
+        pointer-events:none!important;
+        background-position: center;
+    }
+    @media (max-width: 768px) {
+        #shopify-section-{{section.id}}::before {
+            display: none;
+        }
+    }
+</style>
+</div>
