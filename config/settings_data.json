@@ -593,8 +593,8 @@
         "settings": {
           "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
           "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
-          "color_background": "#5b1e1e",
-          "color_text": "",
+          "color_background": "#eaeaea",
+          "color_text": "#461900",
           "color_scheme": "background-2",
           "full_width": true,
           "padding_top": 40,
