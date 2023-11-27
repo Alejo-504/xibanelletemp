@@ -417,12 +417,19 @@
             "settings": {
               "title": "Get Help"
             }
+          },
+          "959be89c-01fc-4e54-b118-50767704d2fc": {
+            "type": "column",
+            "settings": {
+              "title": "Online Shop"
+            }
           }
         },
         "block_order": [
           "0b7ae4e3-85d5-444e-9d4f-55bf8ef8c9ea",
           "78eb6ca4-f750-4d6d-b9c5-8e6d496a8685",
-          "2e5dd3c0-ee2c-4959-8557-e494f8f63553"
+          "2e5dd3c0-ee2c-4959-8557-e494f8f63553",
+          "959be89c-01fc-4e54-b118-50767704d2fc"
         ],
         "custom_css": [
           "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
