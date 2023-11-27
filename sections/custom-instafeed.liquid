@@ -24,6 +24,17 @@
         "id": "description",
         "label": "Description",
         "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, libero vitae imperdiet faucibus, urna justo euismod elit, nec tincidunt nisl mi eget mauris."
+      },
+      {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "label_button",
+        "label": "Label",
+        "default": "Follow us"
       }
     ],
     "presets": [
@@ -56,6 +67,9 @@
     </div>
   </div>
   <div id="insta-feed"></div>
+  <div class="d-flex justify-content-center mt-5">
+    <a href="{{ section.settings.instagram_url }}" class="btn btn-primary">{{ section.settings.label_button }}</a>
+  </div>
 </div>
 
 <div id="insta-feed"></div>
