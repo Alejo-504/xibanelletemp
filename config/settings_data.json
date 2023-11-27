@@ -488,6 +488,16 @@
               "title": "Contact"
             }
           },
+          "817f2836-e3e8-4338-bc99-8e2ee47b6453": {
+            "type": "menu_item",
+            "settings": {
+              "item_title": "Forest Park, Georgia, 30297",
+              "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
+              "item_icon": "fa fa-map",
+              "new_tab": true,
+              "item_svg": ""
+            }
+          },
           "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2": {
             "type": "menu_item",
             "settings": {
@@ -498,13 +508,13 @@
               "item_svg": ""
             }
           },
-          "817f2836-e3e8-4338-bc99-8e2ee47b6453": {
+          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27": {
             "type": "menu_item",
             "settings": {
-              "item_title": "Forest Park, Georgia, 30297",
-              "item_url": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
-              "item_icon": "fa fa-map",
-              "new_tab": true,
+              "item_title": "(404) 343 8695",
+              "item_url": "tel:+14043438695",
+              "item_icon": "fa fa-phone",
+              "new_tab": false,
               "item_svg": ""
             }
           }
@@ -522,8 +532,9 @@
           "f139ebf3-dcc2-41cd-b40c-6901e48b3a84",
           "f2f52fbd-e1f9-44b8-a2b4-0ea5735d080a",
           "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7",
+          "817f2836-e3e8-4338-bc99-8e2ee47b6453",
           "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2",
-          "817f2836-e3e8-4338-bc99-8e2ee47b6453"
+          "4b72f1f4-524e-4c36-a6ec-c5b36079fe27"
         ],
         "custom_css": [
           "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
