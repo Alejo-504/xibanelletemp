@@ -462,6 +462,32 @@
               "item_svg": ""
             }
           },
+          "f139ebf3-dcc2-41cd-b40c-6901e48b3a84": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "https:\/\/www.tiktok.com",
+              "item_title": "TikTok",
+              "item_icon": "",
+              "new_tab": true,
+              "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
+            }
+          },
+          "f2f52fbd-e1f9-44b8-a2b4-0ea5735d080a": {
+            "type": "menu_item",
+            "settings": {
+              "item_url": "https:\/\/www.youtube.com",
+              "item_title": "Youtube",
+              "item_icon": "fa fa-youtube",
+              "new_tab": true,
+              "item_svg": ""
+            }
+          },
+          "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7": {
+            "type": "column",
+            "settings": {
+              "title": "Contact"
+            }
+          },
           "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2": {
             "type": "menu_item",
             "settings": {
@@ -470,22 +496,6 @@
               "item_icon": "fa fa-envelope",
               "new_tab": false,
               "item_svg": ""
-            }
-          },
-          "f139ebf3-dcc2-41cd-b40c-6901e48b3a84": {
-            "type": "menu_item",
-            "settings": {
-              "item_url": "",
-              "item_title": "",
-              "item_icon": "",
-              "new_tab": false,
-              "item_svg": ""
-            }
-          },
-          "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7": {
-            "type": "column",
-            "settings": {
-              "title": "Contact"
             }
           }
         },
@@ -499,9 +509,10 @@
           "15d8a131-563b-4cf8-88ab-371345ffa17d",
           "746ce1f7-2408-4172-8676-a0599f7feace",
           "6cd7073c-9458-4005-b3bb-845a03c33629",
-          "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2",
           "f139ebf3-dcc2-41cd-b40c-6901e48b3a84",
-          "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7"
+          "f2f52fbd-e1f9-44b8-a2b4-0ea5735d080a",
+          "d7db9e53-aa8f-4e71-9d5e-d158e8e40ea7",
+          "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2"
         ],
         "custom_css": [
           "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
