@@ -48,7 +48,6 @@
 <style>
    .popup-cart-ajax .checkout{
     border: none;
-    border-radius: var(--radius);
     padding: 8px 10px;
     width: 100%;
   }
@@ -71,8 +70,7 @@
     top: 145px;
     right: 20px;
     width: 300px;
-    background:  white;
-    
+    background: rgb(var(--color-background));
     display: flex;
     justify-content: center;
     z-index: 500;
@@ -82,7 +80,7 @@
     flex-direction: column;
     transform:translateY(-225%);
     transition: all .3s ease-in-out;
-    box-shadow: var(--shadow);
+    color: rgb(var(--color-foreground));
   }
  
     body.show-popup-cart .popup-cart-ajax{
@@ -93,8 +91,6 @@
     width: 90px;
     height: 90px;
     overflow: hidden;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
   }
    .popup-cart-ajax .container-image img{
      width:100%;
@@ -102,8 +98,8 @@
    }
   .popup-cart-ajax  .close-popup-cart{
     border: none;
-    background: #ae6b71;
-    color: white;
+    background: rgb(var(--color-background-2));
+    color: rgb(var(--color-foreground_2));
     border-radius: 50%;
     right: 20px;
     position: absolute;
