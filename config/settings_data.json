@@ -101,9 +101,9 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com",
-    "social_instagram_link": "https:\/\/www.instagram.com",
-    "social_youtube_link": "https:\/\/www.twitter.com",
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "https:\/\/admin.shopify.com",
     "social_snapchat_link": "",
@@ -445,8 +445,8 @@
           "746ce1f7-2408-4172-8676-a0599f7feace": {
             "type": "menu_item",
             "settings": {
-              "item_url": "https:\/\/www.facebook.com",
               "item_title": "Facebook",
+              "item_url": "https:\/\/www.facebook.com",
               "item_icon": "fa fa-facebook",
               "new_tab": true,
               "item_svg": ""
@@ -455,8 +455,8 @@
           "6cd7073c-9458-4005-b3bb-845a03c33629": {
             "type": "menu_item",
             "settings": {
-              "item_url": "https:\/\/www.instagram.com",
               "item_title": "Instagram",
+              "item_url": "https:\/\/www.instagram.com",
               "item_icon": "fa fa-instagram",
               "new_tab": true,
               "item_svg": ""
@@ -465,8 +465,8 @@
           "f139ebf3-dcc2-41cd-b40c-6901e48b3a84": {
             "type": "menu_item",
             "settings": {
-              "item_url": "https:\/\/www.tiktok.com",
               "item_title": "TikTok",
+              "item_url": "https:\/\/www.tiktok.com",
               "item_icon": "",
               "new_tab": true,
               "item_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" height=\"1em\" viewbox=\"0 0 448 512\"><!--! Font Awesome Free 6.4.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d=\"M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z\"><\/path><\/svg>"
@@ -475,8 +475,8 @@
           "f2f52fbd-e1f9-44b8-a2b4-0ea5735d080a": {
             "type": "menu_item",
             "settings": {
-              "item_url": "https:\/\/www.youtube.com",
               "item_title": "Youtube",
+              "item_url": "https:\/\/www.youtube.com",
               "item_icon": "fa fa-youtube",
               "new_tab": true,
               "item_svg": ""
@@ -491,8 +491,8 @@
           "f9ad73b2-6c25-42d2-940a-aa5e74bc8cc2": {
             "type": "menu_item",
             "settings": {
-              "item_url": "mailto:info@xinabelle.com",
               "item_title": "info@xinabelle.com",
+              "item_url": "mailto:info@xinabelle.com",
               "item_icon": "fa fa-envelope",
               "new_tab": false,
               "item_svg": ""
