@@ -44,20 +44,9 @@
   }
 
   #{{unique_id}}{
-    display: none;
-    animation: zoomIn ease 1.5s;
+    opacity:0;
   }
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-    }
 
-    50% {
-      opacity: 1;
-    }
-
-    
-  }
   @media screen and (max-width: 768px){
    #{{unique_id}}  .item{
        height: 390px;
@@ -117,9 +106,11 @@
             }
           }
         });
-        setTimeout(function(){
-          $("#{{unique_id}}").show();
-        }, 2500);
+         $("#{{unique_id}}" ).animate({
+            opacity: 1,
+          }, 1000, function() {
+            // Animation complete.
+          });
        
   });
 </script>
