@@ -1,12 +1,54 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Custom About",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "About"
+      },
+      {
+        "type": "richtext",
+        "id": "about",
+        "label": "About",
+        "default": "<p>Enter your about text here.</p>"
+      },
+      {
+        "type": "text",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link Text",
+        "default": "Learn More"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom About",
+        "category": "Custom"
+      }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<div class="custom-about container-fluid">
+  <div class="row page-width">
+    <div class="col-12 col-md-6">
+      <img src="{{ section.settings.image }}" alt="About Image" class="img-fluid">
+    </div>
+    <div class="col-12 col-md-6">
+      <h2>{{ section.settings.title }}</h2>
+      {{ section.settings.about }}
+      <a href="{{ section.settings.link }}" class="btn btn-primary">{{ section.settings.link_text }}</a>
+    </div>
+  </div>
+</div>
