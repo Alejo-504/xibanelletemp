@@ -3,6 +3,7 @@
     "5bc4b909-8e72-4b0a-849b-2f2659276c21": {
       "type": "hero_subpage",
       "settings": {
+        "image-bg-1": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
         "title": "About Us",
         "color_scheme": "background-2"
       }
