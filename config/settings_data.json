@@ -600,6 +600,16 @@
           "padding_top": 40,
           "padding_bottom": 52
         }
+      },
+      "custom-about": {
+        "type": "custom-about",
+        "settings": {
+          "title": "About",
+          "about": "<p>Enter your about text here.<\/p>",
+          "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+          "link": "",
+          "link_text": "Learn More"
+        }
       }
     },
     "content_for_index": [
