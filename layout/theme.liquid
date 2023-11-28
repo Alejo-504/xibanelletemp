@@ -310,51 +310,27 @@
 
     {% render "getTypePage" %}
     
-   {% if 
-     
-      template contains "metaobject/men" or
-      page.metafields.page.type == "men" or 
-      collection.metafields.page.type == "men" or
-      product.type == "men"
-    %}
+   {% if type == "men"%}
        {% section  "custom-header-men" %}
       
-    {% elsif 
-       
-      template contains "metaobject/women" or
-      page.metafields.page.type == "women" or
-      collection.metafields.page.type == "women" or
-      product.type == "women"
-    %} 
+    {% elsif type == "women" %} 
        {% section  "custom-header-women" %}
+     
     {% endif %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-       <!--<h1 style="color:black;">
-          page:  {{ collection.metafields.page.type }}
-       </h1>-->
+     
       {{ content_for_layout }}
     </main>
 
 
 
     
-    {% if 
-     
-      template contains "metaobject/men" or
-      page.metafields.page.type == "men" or 
-      collection.metafields.page.type == "men" or
-      product.type == "men"
-    %}
+    {% if type == "men" %}
       {% section  "custom-footer-men" %}
       
-    {% elsif 
-       
-      template contains "metaobject/women" or
-      page.metafields.page.type == "women" or
-      collection.metafields.page.type == "women" or
-      product.type == "women"
-    %} 
+     {% elsif type == "women" %} 
+    
       {% section  "custom-footer-women" %}
     {% endif %}
 
