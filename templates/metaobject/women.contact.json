@@ -11,6 +11,7 @@
     "39df0256-d664-43be-bf83-9690185d98c8": {
       "type": "hero_subpage",
       "settings": {
+        "image-bg-1": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
         "title": "Contact Us",
         "color_scheme": "background-2"
       }
