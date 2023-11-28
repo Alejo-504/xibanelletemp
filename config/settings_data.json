@@ -685,7 +685,7 @@
       "hero_subpage": {
         "type": "hero_subpage",
         "settings": {
-          "title": "About Us",
+          "title": "FAQs",
           "color_scheme": "background-2"
         }
       },
