@@ -308,9 +308,9 @@
     {%- endif -%}
 
 
-    {% if page.metafields.page.type == "men" %}   
+    {% if page.metafields.page.type == "men" or template == "metaobject/men" %}
       {% section  "custom-header-men" %}
-    {% elsif page.metafields.page.type == "women" %}
+    {% elsif page.metafields.page.type == "women" or template == "metaobject/women" %} 
       {% section  "custom-header-women" %}
     {% endif %}
 
@@ -328,9 +328,9 @@
 
 
     
-    {% if page.metafields.page.type == "men" %}
+    {% if page.metafields.page.type == "men" or template == "metaobject/men" %}
       {% section  "custom-footer-men" %}
-    {% elsif page.metafields.page.type == "women" %}
+    {% elsif page.metafields.page.type == "women" or template == "metaobject/women" %} 
       {% section  "custom-footer-women" %}
     {% endif %}
 
