@@ -763,8 +763,8 @@
           "230d8b05-cdcc-4c3b-b420-70ab9866f6ec": {
             "type": "button_action",
             "settings": {
-              "label": "Read More",
-              "link": "",
+              "label": "Learn More",
+              "link": "shopify:\/\/pages\/about-us-men",
               "align": "center"
             }
           }
