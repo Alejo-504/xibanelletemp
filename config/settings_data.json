@@ -697,7 +697,7 @@
             "settings": {
               "name_benefit": "Innovation",
               "image": "shopify:\/\/shop_images\/disruption.png",
-              "icon": "fas fa-home"
+              "icon": ""
             }
           },
           "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b": {
@@ -732,7 +732,7 @@
           "5341cf2e-3fe0-4c7f-8881-eaebd1418413"
         ],
         "settings": {
-          "title_channels": "Benefits",
+          "title_channels": "Values",
           "color_scheme": "background-2"
         }
       }
