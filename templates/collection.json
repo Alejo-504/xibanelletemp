@@ -7,14 +7,6 @@
         "color_scheme": "background-2"
       }
     },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-2"
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -38,7 +30,6 @@
   },
   "order": [
     "7a6c7602-a790-4a9b-a4d7-8c94fcec3a64",
-    "banner",
     "product-grid"
   ]
 }
