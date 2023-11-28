@@ -735,6 +735,54 @@
           "title_channels": "Our Values",
           "color_scheme": "background-2"
         }
+      },
+      "custom-faqs": {
+        "type": "custom-faqs",
+        "blocks": {
+          "56973b93-32cb-4829-8b48-2ea1e53863aa": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
+          },
+          "b739b52d-b608-4aa7-84a6-77daf97cdc4b": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
+          },
+          "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Your question here",
+              "answer": ""
+            }
+          },
+          "230d8b05-cdcc-4c3b-b420-70ab9866f6ec": {
+            "type": "button_action",
+            "settings": {
+              "label": "Read More",
+              "link": "",
+              "align": "center"
+            }
+          }
+        },
+        "block_order": [
+          "56973b93-32cb-4829-8b48-2ea1e53863aa",
+          "b739b52d-b608-4aa7-84a6-77daf97cdc4b",
+          "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73",
+          "230d8b05-cdcc-4c3b-b420-70ab9866f6ec"
+        ],
+        "settings": {
+          "title-section": "Frequent Questions",
+          "subtitle-section": "Frequent Questions",
+          "align_title": "center",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
