@@ -1,8 +1,4 @@
 
-{% render "hero" image-hero-local: section.settings.image-bg-1 %}
-
-
-
 
 
 
@@ -17,9 +13,14 @@
        },
       {
         "type": "text",
-        "id": "Title",
+        "id": "title",
         "label": "Title"
       }
     ]
   }
 {% endschema %}
+
+
+
+
+{% render "hero" image-hero-local: section.settings.image-bg-1 , title: section.settings.title %}
