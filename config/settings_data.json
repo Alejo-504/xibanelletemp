@@ -604,11 +604,56 @@
       "custom-about": {
         "type": "custom-about",
         "settings": {
+          "color_scheme": "",
           "title": "About",
           "about": "<p>Enter your about text here.<\/p>",
           "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
           "link": "",
           "link_text": "Learn More"
+        }
+      },
+      "custom-reviews": {
+        "type": "custom-reviews",
+        "blocks": {
+          "902803ea-1fc7-4b10-ab31-bfb4a264ee33": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Alexandro Samsóin",
+              "location": "Las Vegas, Montana",
+              "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+              "rating": 4.8
+            }
+          },
+          "f1848521-9c71-4226-82d9-2d1817a9e090": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Alexandro Samsóin",
+              "location": "Las Vegas, Montana",
+              "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+              "rating": 4.8
+            }
+          },
+          "ffba4105-2c26-421f-b0ad-ffd5b09d2abb": {
+            "type": "testimonial",
+            "settings": {
+              "author": "Alexandro Samsóin",
+              "location": "Las Vegas, Montana",
+              "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+              "rating": 4.8
+            }
+          }
+        },
+        "block_order": [
+          "902803ea-1fc7-4b10-ab31-bfb4a264ee33",
+          "f1848521-9c71-4226-82d9-2d1817a9e090",
+          "ffba4105-2c26-421f-b0ad-ffd5b09d2abb"
+        ],
+        "settings": {
+          "scheme_selector": "",
+          "title": "What Our Customer Say",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+          "link_text": "View More",
+          "link_url": ""
         }
       }
     },
