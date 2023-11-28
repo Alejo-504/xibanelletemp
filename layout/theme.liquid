@@ -324,9 +324,21 @@
 
 
     
-    {% if page.metafields.page.type == "men" or template contains "metaobject/men" %}
+    {% if 
+     
+      template contains "metaobject/men" or
+      page.metafields.page.type == "men" or 
+      collection.metafields.page.type == "men"
+    %}
       {% section  "custom-footer-men" %}
-    {% elsif page.metafields.page.type == "women" or template contains "metaobject/women" %} 
+      
+    {% elsif 
+       
+      template contains "metaobject/women" or
+      page.metafields.page.type == "women" or
+      collection.metafields.page.type == "men"
+      
+    %} 
       {% section  "custom-footer-women" %}
     {% endif %}
 
