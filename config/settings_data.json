@@ -750,14 +750,14 @@
             "type": "faq-item",
             "settings": {
               "question": "Your question here",
-              "answer": ""
+              "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p><p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
             }
           },
           "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73": {
             "type": "faq-item",
             "settings": {
               "question": "Your question here",
-              "answer": ""
+              "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
             }
           },
           "230d8b05-cdcc-4c3b-b420-70ab9866f6ec": {
