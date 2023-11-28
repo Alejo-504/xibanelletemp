@@ -1,7 +1,361 @@
+
+<style>
+/*===================================================================
+ * #00 SECCION CONTAC US
+ -------------------------------------------------------------------/*/
+.contact-us{
+ position:relative;
+ overflow: hidden;
+ padding: 50px 0px;
+
+}
+.info-wrap {
+  color: rgba(255, 255, 255, 0.8);
+  background: var(--primary);
+  border-radius: var(--radius) 0 0 var(--radius);
+  transform: translateX(275px);
+  box-shadow: var(--shadow) !important;
+}
+  
+  
+
+
+.info-wrap h3 {
+  color: var(--primary);
+    background: #fee2e9;
+    padding: 8px;
+    text-align: center;
+    border-radius: var(--radius);
+    transition: all 0.6s;
+    font-weight: 100;
+}
+  
+ 
+  
+.info-wrap p {
+     color: #fff;
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+  font-family: "fuente-contenido", sans-serif;
+
+}
+    
+.info-wrap .dbox:last-child {
+  margin-bottom: 0; 
+}
+    
+.info-wrap .dbox p {
+  margin-bottom: 0;
+  font-size: 14px; 
+}
+      
+.info-wrap .dbox p span {
+  font-weight: 900;
+  color: #fff; 
+}
+
+.info-wrap .dbox p a {
+  color: #fff; 
+  transition: all 0.6s;
+}
+  
+.info-wrap .dbox p a:hover {
+  color: var(--primary-light); 
+}
+    
+.info-wrap .dbox .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+   
+
+}
+      
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: #fff; 
+}
+@media screen and (min-width:575px){
+.info-wrap .dbox .text {
+  width: calc(100% - 50px); 
+}
+
+}
+.contact-wrap {
+position: relative;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    box-shadow: var(--shadow) !important;
+    background-image: linear-gradient(140deg, #eedce7 0, #efdbe5 8.33%, #f0dbe3 16.67%, #f2dbe1 25%, #f2dbdf 33.33%, #f3dbdd 41.67%, #f3dbdb 50%, #f3dbd9 58.33%, #f3dbd7 66.67%, #f2dcd6 75%, #f1dcd4 83.33%, #f0ddd3 91.67%, #efddd2 100%);
+    -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+
+
+  
+.contact-wrap .form-group {
+  position: relative;
+  margin-bottom: 10px; 
+}
+
+
+    
+
+
+.contact-wrap .form-control {
+ height: 40px;
+    background: #fff;
+    color: var(--paragraph);
+    font-size: var(--paragraph-size);
+    border-radius: var(--radius);
+    border: 1px solid transparent !important;
+    font-family: "fuente-contenido" !important;
+    box-shadow:1px solid #ffbcbc!important;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+.contact-wrap .btn{
+  padding: 8px 40px;
+  font-size: 18px;
+}
+    
+.contact-wrap .form-control:focus, .contact-wrap .form-control:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ffbcbc!important; 
+}
+  
+.contact textarea.form-control {
+    height: inherit !important; 
+}
+
+.contact select.form-control {
+    height: inherit !important; 
+}
+  
+.contact-us .scanfcode {
+    margin: 20px 0px;
+}
+
+   [data-aos=left-translate].aos-animate{
+      transform: translateX(0);
+    
+   } 
+  @media screen and (max-width: 767px){
+    .info-wrap, .contact-wrap{
+      border-radius: var(--radius);
+    }
+    .info-wrap{
+      transform: translateX(0px) !important;
+    }
+    .info-wrap{
+      margin-top: var(--section-separation);
+    }
+  }
+  @media screen and (min-width: 767px){
+     .info-wrap:hover  h3{
+       transform: scale(1.1)
+
+      }
+      .info-wrap{
+        margin-top: 2.5px;
+      }
+  }
+    
+ 
+ .contact-us .h3.form-message__title{
+   display:none;
+ }
+</style>
+
+<!-- ================================================== 
+	      SECCION CONTACT
+================================================== -->
+<section class="contact-us">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters justify-content-center">
+							<div class="col-lg-5 col-md-6  order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4 title-section align-items-center">
+									<h1 class="mb-4 ">Get in touch</h1>
+								 {%- assign formId = 'ContactForm' -%}
+                                  {% form 'contact', id: formId %}
+                                    {% include 'form-status', form: form, form_id: formId %}
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+                                                  <input type="email"
+                                                    id="{{ formId }}-email"
+                                                    name="contact[email]"
+                                                    autocorrect="off"
+                                                    autocapitalize="off"
+                                                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                                    aria-required="true"
+                                                    class="form-control"
+                                                    {%- if form.errors contains 'email' -%}
+                                                      class="input--error"
+                                                      aria-invalid="true"
+                                                      aria-describedby="{{ formId }}-email-error"                                                      
+                                                    {%- endif -%}
+                                                    placeholder="Email"
+                                                    >
+                                                  {%- if form.errors contains 'email' -%}
+                                                    <span id="{{ formId}}-email-error" class="input-error-message">
+                                                      <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                                                      {% include 'icon-error' %}
+                                                      <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                                                    </span>
+                                                  {%- endif -%}
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                    <input type="tel" class="form-control" placeholder="Phone" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                    <textarea placeholder="Message" class="form-control" rows="4" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+												</div>
+											</div>
+											<div class="col-md-12 d-flex justify-content-center ">
+												<div class="form-group">
+                                                     <button type="submit" class="btn" value=""> {{ 'contact.form.submit' | t }}</button>
+												
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									{% endform %}
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+								<div data-aos="left-translate" class="info-wrap w-100 p-md-5 p-4">
+									<h3>Let's get in touch</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>									
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-sm-flex d-none align-items-center justify-content-center">
+											<span class="fa fa-phone"></span>
+										</div>
+										<div class="text pl-sm-3 pl-0 w-100">
+											<p><span>Phone:</span> <br>
+												<a href="tel:{{ section.settings.telephone-link}}"> {{ section.settings.telephone}}</a> 
+												
+											</p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-sm-flex d-none align-items-center justify-content-center">
+											<span class="fa fa-paper-plane"></span>
+										</div>
+										<div class="text pl-sm-3 pl-0 w-100">
+											<p><span>Email:</span><br> 
+                                              <a href="mailto:{{ section.settings.email-link}}">
+                                              {{ section.settings.email}}</a></p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div class="icon d-sm-flex d-none align-items-center justify-content-center">
+											<span class="fa fa-location-dot"></span>
+										</div>
+										<div class="text pl-sm-3 pl-0 w-100">
+											<p><span>Location:</span><br> 
+                                            <a href="{{ section.settings.location-link}}" target="_blank">{{ section.settings.address}}</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-10 col-md-12 mt-section">
+					<div id="map" class="bg-white">
+                      <iframe  src=" {{ section.settings.iframe    }}  " style="
+                        border: 0;
+                          width: 100%;
+                          height: 450px;
+                          border-radius: var(--radius);
+                          box-shadow: var(--shadow);
+                      
+                        " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              
+                      
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- #FIN DE SECCION CONTACT -->
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "custom-contact",
+    "settings": [
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email",
+    	  "default": "Email"
+        },
+    	{
+          "type": "text",
+          "id": "email-link",
+          "label": "Email Link"
+        }
+    	,
+    	{
+          "type": "text",
+          "id": "telephone",
+          "label": "Telephone",
+    	   "default": "Telephone"
+        },
+    	{
+          "type": "text",
+          "id": "telephone-link",
+          "label": "Telephone Link"
+        },
+    	{
+          "type": "text",
+          "id": "address",
+          "label": "Address"
+    	  
+        },
+    	{
+          "type": "text",
+          "id": "location-link",
+          "label": "Location Link"
+        },
+        {
+          "type": "text",
+          "id": "iframe",
+          "label": "Embed Link Map"
+        }
+     ],
+    "presets": [
+      {
+        "name": "Custom Contact",
+        "category": "custom"
+      }
+    ]
   }
 {% endschema %}
 
