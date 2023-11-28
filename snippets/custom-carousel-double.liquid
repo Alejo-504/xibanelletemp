@@ -2,14 +2,13 @@
 {% assign unique_id = 'unique-id-' | append: current_timestamp %}
 
 
-<div class="owl-carousel owl-theme hero-carousel" id="{{ unique_id }}">
+<div class="owl-carousel owl-theme " id="{{ unique_id }}">
   {% for image in images %}
   
-      <a class="item" href="{{ image.src | img_url: '1024x1024' }}" data-fancybox="gallery" data-caption="{{ image.alt }}">
+      <a class="item" href="{{ image | img_url: '1024x1024' }}" >
        
           <img
-            src="{{ image.src | img_url: '1024x1024' }}"
-            alt="{{ image.alt }}"
+            src="{{ image | img_url: '1024x1024' }}"
             width="450"
             height="700"
           >
