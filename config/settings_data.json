@@ -696,21 +696,31 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Innovation",
-              "image": "shopify:\/\/shop_images\/61oSDojS1zS._SX679.jpg",
+              "image": "shopify:\/\/shop_images\/disruption.png",
               "icon": "fas fa-home"
             }
           },
           "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
+              "name_benefit": "Quality",
+              "image": "shopify:\/\/shop_images\/quality.png",
               "icon": ""
             }
           },
           "3635cf22-d84b-480c-91f8-5412674b92a1": {
             "type": "benefits",
             "settings": {
-              "name_benefit": "",
+              "name_benefit": "Responsability",
+              "image": "shopify:\/\/shop_images\/responsibility.png",
+              "icon": ""
+            }
+          },
+          "5341cf2e-3fe0-4c7f-8881-eaebd1418413": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Commitment",
+              "image": "shopify:\/\/shop_images\/commitment.png",
               "icon": ""
             }
           }
@@ -718,10 +728,12 @@
         "block_order": [
           "3f5731ed-5407-4f9c-9ad3-24e32d6ded95",
           "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b",
-          "3635cf22-d84b-480c-91f8-5412674b92a1"
+          "3635cf22-d84b-480c-91f8-5412674b92a1",
+          "5341cf2e-3fe0-4c7f-8881-eaebd1418413"
         ],
         "settings": {
-          "title_channels": "Benefits"
+          "title_channels": "Benefits",
+          "color_scheme": "background-2"
         }
       }
     },
