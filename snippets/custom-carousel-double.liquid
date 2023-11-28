@@ -1,7 +1,7 @@
 {% assign current_timestamp = 'now' | date: '%s' %}
 {% assign unique_id = 'unique-id-' | append: current_timestamp %}
 
-
+{{ images }}
 <div class="owl-carousel owl-theme " id="{{ unique_id }}">
   {% for image in images %}
   
