@@ -62,28 +62,21 @@
       <a href="{{ section.settings.link }}" class="btn btn-primary hero">{{ section.settings.link_text }}</a>
     </div>
     <div class="col-12 col-md-6 d-flex align-items-center" style="height: 450px;">
-      <div class="container-image px-0">
+     
        
 
           {%  render "custom-carousel-double", blocks: section.blocks %}
-      </div>
+     
     </div>
   </div>
 </div>
 
 <style>
-  .container-image{
-    width: 400px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  }
+ 
   .custom-about{
     padding: 50px 0;
   }
-  .container-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
   .custom-about{
     overflow-x:hidden;
   }
