@@ -42,26 +42,22 @@
       padding: 7px;
       transition: all 0.3s ease-in-out;
   }
-  #{{unique_id}} .owl-dots{
-    display:none;
-  }
+
   #{{unique_id}}{
     display: none;
-    animation: fadeDowToUp ease 1.5s;
+    animation: zoomIn ease 1.5s;
   }
-  @keyframes fadeDowToUp {
-    0% {
+  @keyframes zoomIn {
+    from {
       opacity: 0;
-      transform: translateY(100%);
+      transform: scale3d(.3, .3, .3);
     }
-    40% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    100% {
+
+    50% {
       opacity: 1;
-      transform: translateY(0px);
     }
+
+    
   }
   @media screen and (max-width: 768px){
    #{{unique_id}}  .item{
