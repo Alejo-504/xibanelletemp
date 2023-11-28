@@ -18,22 +18,22 @@
       {
         "type": "color_background",
         "id": "subpage_hero_overlay_color_men",
-        "label": "hero subpages overlay "
+        "label": "hero subpages overlay men "
       },
       {
         "type": "image_picker",
         "id": "subpage_hero_background_men",
-        "label": "Global image subpages hero"
+        "label": "Global image subpages hero men"
       },
       {
         "type": "color_background",
         "id": "subpage_hero_overlay_color_women",
-        "label": "hero subpages overlay "
+        "label": "hero subpages overlay women"
       },
       {
         "type": "image_picker",
         "id": "subpage_hero_background_women",
-        "label": "Global image subpages hero"
+        "label": "Global image subpages hero women"
       }
     ]
   },
