@@ -704,7 +704,7 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Quality",
-              "image": "shopify:\/\/shop_images\/quality.png",
+              "image": "shopify:\/\/shop_images\/quality_1.png",
               "icon": ""
             }
           },
@@ -712,7 +712,7 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Responsability",
-              "image": "shopify:\/\/shop_images\/responsibility.png",
+              "image": "shopify:\/\/shop_images\/responsibility_1.png",
               "icon": ""
             }
           },
@@ -720,7 +720,7 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Commitment",
-              "image": "shopify:\/\/shop_images\/commitment.png",
+              "image": "shopify:\/\/shop_images\/commitment_f61805d3-8695-45a4-be30-0bbd8feac120.png",
               "icon": ""
             }
           }
