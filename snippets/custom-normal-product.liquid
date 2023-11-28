@@ -1,53 +1,50 @@
-<a  href="{{ product.url }}" class="card-product-custom" style="text-decoration: none;">
-<div class="header-card" style="height: 190px;">
-  <img
-    src="{{ product.featured_image | img_url: '500x500' }}"
-    alt="{{ product.featured_image.alt | escape }}"
-    width="100%"
-    height="200"
-    style="border-radius:1px;width:100%;height:100%;object-fit:cover"
-  >
-</div>
- <div class="body-card d-grid" style="
+<div href="{{ product.url }}" class="card-product-custom" style="text-decoration: none;cursor: pointer;" onclick="window.location.href='{{ product.url }}'">
+  <div class="header-card" style="height: 190px;">
+    <img
+      src="{{ product.featured_image | img_url: '500x500' }}"
+      alt="{{ product.featured_image.alt | escape }}"
+      width="100%"
+      height="200"
+      style="border-radius:1px;width:100%;height:100%;object-fit:cover"
+    >
+  </div>
+  <div class="body-card d-grid" style="
       grid-template-columns:calc(100% - 50px) 50px;
       align-items: center;
       justify-items: start;
       margin-top: 15px;
       text-align: start;
-    ">
-<div class="d-flex flex-column align-items-start">
-  <div class="title-card">
-    <strong>{{ product.title }}</strong>
+  ">
+  <div class="d-flex flex-column align-items-start">
+    <div class="title-card">
+      <strong>{{ product.title }}</strong>
+    </div>
+    {% if product.available %}
+    {% else %}
+        <div class="available-card">
+          <span class="badge" style="background:#a1a1a1;">Unavailable</span>
+        </div>
+    {% endif %}
+      
+    <div class="price-card">
+      {% if product.compare_at_price > product.price %}
+        <span class="price-original" style="text-decoration: line-through;color:red!important;">
+          {{ product.compare_at_price | money }} </span
+        >&nbsp;
+        <span class="price-sale">
+          {{ product.price | money }}
+        </span>
+      {% else %}
+        {{ product.price | money }}
+      {% endif %}
+    </div>
   </div>
   {% if product.available %}
-
-
-  
+    <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
   {% else %}
-      <div class="available-card">
-        <span class="badge" style="background:#a1a1a1;">Unavailable</span>
-      </div>
-  {% endif %}
-    
-  <div class="price-card">
-    {% if product.compare_at_price > product.price %}
-      <span class="price-original" style="text-decoration: line-through;color:red!important;">
-        {{ product.compare_at_price | money }} </span
-      >&nbsp;
-      <span class="price-sale">
-        {{ product.price | money }}
-      </span>
-    {% else %}
-      {{ product.price | money }}
-    {% endif %}
+      <button disabled class="item-cart">
+        <i class="fa fa-shopping-cart"></i>
+      </button>
+  {%  endif %}
   </div>
 </div>
-{% if product.available %}
- <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
-{% else %}
-    <button disabled class="item-cart">
-       <i class="fa fa-shopping-cart"></i>
-    </button>
-{%  endif %}
- </div>
-</a>
