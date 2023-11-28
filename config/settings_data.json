@@ -603,11 +603,28 @@
       },
       "custom-about": {
         "type": "custom-about",
+        "blocks": {
+          "85a447da-9612-440b-9abc-f38e8771bc19": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+            }
+          },
+          "83b1d883-c5de-42a6-a6b3-943de5caa7e5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/61bOaOlkzpL._SX679.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "85a447da-9612-440b-9abc-f38e8771bc19",
+          "83b1d883-c5de-42a6-a6b3-943de5caa7e5"
+        ],
         "settings": {
           "color_scheme": "background-2",
           "title": "About Us",
           "about": "<p>Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odi<strong>o blandit<\/strong>.Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.<strong>Lorem ipsum dolor<\/strong> sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.<\/p>",
-          "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
           "link": "",
           "link_text": "Learn More"
         }
