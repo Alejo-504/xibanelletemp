@@ -87,18 +87,14 @@ body, html{
 }
     
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item.active {
-   color:var(--subpage-color-text);;
    font-size: 18px;
    font-weight: 300;
-   font-family: "fuente-contenido" !important;
 }
 
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a {
    font-size: 18px;
-   color:  var(--subpage-color-text);
    font-weight: 300;
    transition: 0.6s;
-   font-family: "fuente-contenido" !important;
 }
       
 .breadcrumb-area .breadcrumb-content .breadcrumb .breadcrumb-item a:hover {
