@@ -688,6 +688,41 @@
           "title": "About Us",
           "color_scheme": "background-2"
         }
+      },
+      "custom-values": {
+        "type": "custom-values",
+        "blocks": {
+          "3f5731ed-5407-4f9c-9ad3-24e32d6ded95": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "Innovation",
+              "image": "shopify:\/\/shop_images\/61oSDojS1zS._SX679.jpg",
+              "icon": "fas fa-home"
+            }
+          },
+          "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "",
+              "icon": ""
+            }
+          },
+          "3635cf22-d84b-480c-91f8-5412674b92a1": {
+            "type": "benefits",
+            "settings": {
+              "name_benefit": "",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "3f5731ed-5407-4f9c-9ad3-24e32d6ded95",
+          "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b",
+          "3635cf22-d84b-480c-91f8-5412674b92a1"
+        ],
+        "settings": {
+          "title_channels": "Benefits"
+        }
       }
     },
     "content_for_index": [
