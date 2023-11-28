@@ -71,8 +71,9 @@
 {% if title == blank %}
   
        {% if page.title %}
-         {%  if title != blank %}
-           {%  assign title = title %}
+         
+         {%  if title_var != blank %}
+           {%  assign title = title_var %}
              {%  else %}
             {% assign ttile = page.title %}
          {% endif %}
