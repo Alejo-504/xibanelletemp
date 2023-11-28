@@ -102,7 +102,7 @@ font-size: 1.8rem;
 
 {%- endstyle -%}
 
-  <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative">
+  <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative color-{{ section.settings.color_scheme }}">
     <div class="page-width container-fluid">
 
       <div class="title-section pb-element">
@@ -181,6 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color scheme"
+    },
 	{
         "type": "text",
         "id": "title-section",
