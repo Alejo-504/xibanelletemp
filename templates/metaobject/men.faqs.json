@@ -28,7 +28,7 @@
           "type": "button_action",
           "settings": {
             "label": "Learn More",
-            "link": "shopify:\/\/pages\/about-us-men",
+            "link": "shopify:\/\/metaobjects\/men\/about-us",
             "align": "center"
           }
         }
