@@ -11,7 +11,11 @@ body, html{
   z-index: 2;
   background-position: center center;
   background-size: cover; 
+  
 }
+       .breadcrumb-item + .breadcrumb-item::before{
+          color:white!important; 
+        }
 
 .breadcrumb-area.bg-overlay::after {
   background: var(--subpage-overlay);
