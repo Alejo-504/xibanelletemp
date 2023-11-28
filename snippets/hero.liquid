@@ -4,6 +4,8 @@
 {% assign heroImageGlobalMen = settings.subpage_hero_background_men  %}
 {% assign heroImageGlobalWomen = settings.subpage_hero_background_women  %}
 {% assign hero = "" %}
+{% include "getTypePage" %}
+
 {% if heroImageLocal == blank %}
 
   {% if type=="men" and heroImageGlobalMen != blank %}
