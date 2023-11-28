@@ -1,7 +1,178 @@
 {
   "sections": {
+    "custom-about": {
+      "type": "custom-about",
+      "blocks": {
+        "85a447da-9612-440b-9abc-f38e8771bc19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+          }
+        },
+        "83b1d883-c5de-42a6-a6b3-943de5caa7e5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/61bOaOlkzpL._SX679.jpg"
+          }
+        },
+        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/61Ib4yu6vdL._SX679.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "85a447da-9612-440b-9abc-f38e8771bc19",
+        "83b1d883-c5de-42a6-a6b3-943de5caa7e5",
+        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "About Us",
+        "about": "<h3>Our Mission<\/h3><p>Company dedicated to the manufacture of various Italian leather accessory pieces for ladies and gentlemen, aimed at satisfying the needs of our customers with the highest quality items.<\/p><p><\/p><h3>Our Vision<\/h3><p>To be the leading company in the manufacture of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the best quality finishes.<\/p><h3><\/h3>",
+        "link": "shopify:\/\/metaobjects\/men\/contact",
+        "link_text": "Contact Us"
+      }
+    },
+    "custom-values": {
+      "type": "custom-values",
+      "blocks": {
+        "3f5731ed-5407-4f9c-9ad3-24e32d6ded95": {
+          "type": "benefits",
+          "settings": {
+            "name_benefit": "Innovation",
+            "image": "shopify:\/\/shop_images\/project-management.png",
+            "icon": ""
+          }
+        },
+        "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b": {
+          "type": "benefits",
+          "settings": {
+            "name_benefit": "Quality",
+            "image": "shopify:\/\/shop_images\/quality_1.png",
+            "icon": ""
+          }
+        },
+        "3635cf22-d84b-480c-91f8-5412674b92a1": {
+          "type": "benefits",
+          "settings": {
+            "name_benefit": "Responsability",
+            "image": "shopify:\/\/shop_images\/responsibility_1.png",
+            "icon": ""
+          }
+        },
+        "5341cf2e-3fe0-4c7f-8881-eaebd1418413": {
+          "type": "benefits",
+          "settings": {
+            "name_benefit": "Commitment",
+            "image": "shopify:\/\/shop_images\/commitment_f61805d3-8695-45a4-be30-0bbd8feac120.png",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "3f5731ed-5407-4f9c-9ad3-24e32d6ded95",
+        "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b",
+        "3635cf22-d84b-480c-91f8-5412674b92a1",
+        "5341cf2e-3fe0-4c7f-8881-eaebd1418413"
+      ],
+      "settings": {
+        "title_channels": "Our Values",
+        "color_scheme": "background-2"
+      }
+    },
+    "custom-reviews": {
+      "type": "custom-reviews",
+      "blocks": {
+        "902803ea-1fc7-4b10-ab31-bfb4a264ee33": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "f1848521-9c71-4226-82d9-2d1817a9e090": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "902803ea-1fc7-4b10-ab31-bfb4a264ee33",
+        "f1848521-9c71-4226-82d9-2d1817a9e090",
+        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb"
+      ],
+      "settings": {
+        "scheme_selector": "background-2",
+        "title": "What Our Customer Say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+        "link_text": "View More",
+        "link_url": "https:\/\/www.google.com\/business\/"
+      }
+    },
+    "custom-newsletter": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "42c4bda4-89ff-49e5-bc50-68f58a22b1b8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up now & get 10% of",
+            "heading_size": "h1"
+          }
+        },
+        "578815d5-2851-44fa-ba5a-97bc8304fa97": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Last chance to take advantage of our discount!<\/p>"
+          }
+        },
+        "82f827ad-403c-4ff7-9574-eec0ba44d3da": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "42c4bda4-89ff-49e5-bc50-68f58a22b1b8",
+        "578815d5-2851-44fa-ba5a-97bc8304fa97",
+        "82f827ad-403c-4ff7-9574-eec0ba44d3da"
+      ],
+      "custom_css": [
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: 60px;}",
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px;}"
+      ],
+      "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "color_background": "#e6e6e6",
+        "color_text": "#728d82",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
   },
   "order": [
-
+    "custom-about",
+    "custom-values",
+    "custom-reviews",
+    "custom-newsletter"
   ]
 }
