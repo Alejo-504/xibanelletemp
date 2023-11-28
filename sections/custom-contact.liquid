@@ -127,14 +127,8 @@ position: relative;
     
    } 
   @media screen and (max-width: 767px){
-    .info-wrap, .contact-wrap{
-      border-radius: var(--radius);
-    }
     .info-wrap{
       transform: translateX(0px) !important;
-    }
-    .info-wrap{
-      margin-top: var(--section-separation);
     }
   }
   @media screen and (min-width: 767px){
@@ -200,7 +194,9 @@ position: relative;
                                                     <span id="{{ formId}}-email-error" class="input-error-message">
                                                       <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
                                                       {% include 'icon-error' %}
-                                                      <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                                                      <span>
+                                                        Email is invalid
+                                                      </span>
                                                     </span>
                                                   {%- endif -%}
 												</div>
