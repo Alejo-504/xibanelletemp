@@ -72,11 +72,9 @@
   
        {% if page.title %}
          
-         {%  if title_var != blank %}
-           {%  assign title = title_var %}
-             {%  else %}
-            {% assign ttile = page.title %}
-         {% endif %}
+
+        {% assign ttile = page.title %}
+    
          
       
        {%  else %}
