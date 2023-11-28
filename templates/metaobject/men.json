@@ -1,7 +1,42 @@
 {
   "sections": {
+    "custom-about": {
+      "type": "custom-about",
+      "blocks": {
+        "85a447da-9612-440b-9abc-f38e8771bc19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+          }
+        },
+        "83b1d883-c5de-42a6-a6b3-943de5caa7e5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/61bOaOlkzpL._SX679.jpg"
+          }
+        },
+        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/61Ib4yu6vdL._SX679.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "85a447da-9612-440b-9abc-f38e8771bc19",
+        "83b1d883-c5de-42a6-a6b3-943de5caa7e5",
+        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "About Us",
+        "about": "<h3>Our Mission<\/h3><p>Company dedicated to the manufacture of various Italian leather accessory pieces for ladies and gentlemen, aimed at satisfying the needs of our customers with the highest quality items.<\/p><p><\/p><h3>Our Vision<\/h3><p>To be the leading company in the manufacture of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the best quality finishes.<\/p><h3><\/h3>",
+        "link": "shopify:\/\/pages\/contact-men",
+        "link_text": "Contact Us"
+      }
+    }
   },
   "order": [
-
+    "custom-about"
   ]
 }
