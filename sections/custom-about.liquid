@@ -20,11 +20,6 @@
         "default": "<p>Enter your about text here.</p>"
       },
       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
         "type": "url",
         "id": "link",
         "label": "Link"
@@ -34,6 +29,20 @@
         "id": "link_text",
         "label": "Link Text",
         "default": "Learn More"
+      }
+      
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
       }
     ],
     "presets": [
@@ -54,7 +63,11 @@
     </div>
     <div class="col-12 col-md-6 d-flex align-items-center" style="height: 450px;">
       <div class="container-image position-absolute px-0">
-        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title }}">
+          {% assign images = "" | split: "," %}
+          {% for block in section.blocks %}
+            {% assign images = images | push: block.settings.image %}
+          {% endfor %}
+          {%  render "custom-carousel-double", images: images %} 
       </div>
     </div>
   </div>
