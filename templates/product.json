@@ -78,6 +78,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".grid__item{background:white; padding:10px;}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
