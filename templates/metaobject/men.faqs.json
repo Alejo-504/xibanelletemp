@@ -1,129 +1,51 @@
 {
   "sections": {
-    "custom-about": {
-      "type": "custom-about",
+    "custom-faqs": {
+      "type": "custom-faqs",
       "blocks": {
-        "85a447da-9612-440b-9abc-f38e8771bc19": {
-          "type": "image",
+        "56973b93-32cb-4829-8b48-2ea1e53863aa": {
+          "type": "faq-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+            "question": "Your question here",
+            "answer": "<p>Lorem ipsum dolor sit amit, Lorem ipsum dolor sit amit,Lorem ipsum dolor sit amit,Lorem ipsum dolor sit amit<\/p>"
           }
         },
-        "83b1d883-c5de-42a6-a6b3-943de5caa7e5": {
-          "type": "image",
+        "b739b52d-b608-4aa7-84a6-77daf97cdc4b": {
+          "type": "faq-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/61bOaOlkzpL._SX679.jpg"
+            "question": "Your question here",
+            "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p><p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
           }
         },
-        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8": {
-          "type": "image",
+        "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73": {
+          "type": "faq-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/61Ib4yu6vdL._SX679.jpg"
+            "question": "Your question here",
+            "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
+          }
+        },
+        "230d8b05-cdcc-4c3b-b420-70ab9866f6ec": {
+          "type": "button_action",
+          "settings": {
+            "label": "Learn More",
+            "link": "shopify:\/\/pages\/about-us-men",
+            "align": "center"
           }
         }
       },
       "block_order": [
-        "85a447da-9612-440b-9abc-f38e8771bc19",
-        "83b1d883-c5de-42a6-a6b3-943de5caa7e5",
-        "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8"
+        "56973b93-32cb-4829-8b48-2ea1e53863aa",
+        "b739b52d-b608-4aa7-84a6-77daf97cdc4b",
+        "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73",
+        "230d8b05-cdcc-4c3b-b420-70ab9866f6ec"
       ],
       "settings": {
         "color_scheme": "background-2",
-        "title": "About Us",
-        "about": "<h3>Our Mission<\/h3><p>Company dedicated to the manufacture of various Italian leather accessory pieces for ladies and gentlemen, aimed at satisfying the needs of our customers with the highest quality items.<\/p><p><\/p><h3>Our Vision<\/h3><p>To be the leading company in the manufacture of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the best quality finishes.<\/p><h3><\/h3>",
-        "link": "shopify:\/\/pages\/contact-men",
-        "link_text": "Contact Us"
-      }
-    },
-    "custom-reviews": {
-      "type": "custom-reviews",
-      "blocks": {
-        "902803ea-1fc7-4b10-ab31-bfb4a264ee33": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Alexandro Samsóin",
-            "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
-            "rating": 4.8
-          }
-        },
-        "f1848521-9c71-4226-82d9-2d1817a9e090": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Alexandro Samsóin",
-            "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
-            "rating": 4.8
-          }
-        },
-        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Alexandro Samsóin",
-            "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
-            "rating": 4.8
-          }
-        }
-      },
-      "block_order": [
-        "902803ea-1fc7-4b10-ab31-bfb4a264ee33",
-        "f1848521-9c71-4226-82d9-2d1817a9e090",
-        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb"
-      ],
-      "settings": {
-        "scheme_selector": "background-2",
-        "title": "What Our Customer Say",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
-        "link_text": "View More",
-        "link_url": ""
-      }
-    },
-    "custom-values": {
-      "type": "custom-values",
-      "blocks": {
-        "3f5731ed-5407-4f9c-9ad3-24e32d6ded95": {
-          "type": "benefits",
-          "settings": {
-            "name_benefit": "Innovation",
-            "image": "shopify:\/\/shop_images\/project-management.png",
-            "icon": ""
-          }
-        },
-        "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b": {
-          "type": "benefits",
-          "settings": {
-            "name_benefit": "Quality",
-            "image": "shopify:\/\/shop_images\/quality_1.png",
-            "icon": ""
-          }
-        },
-        "3635cf22-d84b-480c-91f8-5412674b92a1": {
-          "type": "benefits",
-          "settings": {
-            "name_benefit": "Responsability",
-            "image": "shopify:\/\/shop_images\/responsibility_1.png",
-            "icon": ""
-          }
-        },
-        "5341cf2e-3fe0-4c7f-8881-eaebd1418413": {
-          "type": "benefits",
-          "settings": {
-            "name_benefit": "Commitment",
-            "image": "shopify:\/\/shop_images\/commitment_f61805d3-8695-45a4-be30-0bbd8feac120.png",
-            "icon": ""
-          }
-        }
-      },
-      "block_order": [
-        "3f5731ed-5407-4f9c-9ad3-24e32d6ded95",
-        "00e2e523-663b-46e4-8ca3-e8e1c9ca0f5b",
-        "3635cf22-d84b-480c-91f8-5412674b92a1",
-        "5341cf2e-3fe0-4c7f-8881-eaebd1418413"
-      ],
-      "settings": {
-        "title_channels": "Our Values",
-        "color_scheme": "background-2"
+        "subtitle-section": "Frequent Questions",
+        "align_title": "center",
+        "background-color": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "custom-newsletter": {
@@ -170,9 +92,7 @@
     }
   },
   "order": [
-    "custom-about",
-    "custom-values",
-    "custom-reviews",
+    "custom-faqs",
     "custom-newsletter"
   ]
 }
