@@ -13,10 +13,10 @@
       "settings": {
         "email": "Email",
         "email-link": "bh",
-        "telephone": "Telephone",
-        "telephone-link": "",
-        "address": "",
-        "location-link": "",
+        "telephone": "(404) 343 8695",
+        "telephone-link": "tel:+14043438695",
+        "address": "Forest Park, Georgia, 30297",
+        "location-link": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
         "iframe": "https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d53160.919386100635!2d-84.3928436!3d33.616785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc263257f97f%3A0x87190d6fe9db9f11!2sGILLEM%20ENCLAVE%2C%20GA%2030297%2C%20USA!5e0!3m2!1sen!2sve!4v1701182245977!5m2!1sen!2sve"
       }
     },
