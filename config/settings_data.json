@@ -685,7 +685,7 @@
       "hero_subpage": {
         "type": "hero_subpage",
         "settings": {
-          "title": "FAQs",
+          "title": "About Us",
           "color_scheme": "background-2"
         }
       },
@@ -777,7 +777,6 @@
         ],
         "settings": {
           "color_scheme": "background-2",
-          "title-section": "Frequent Questions",
           "subtitle-section": "Frequent Questions",
           "align_title": "center",
           "background-color": "",
