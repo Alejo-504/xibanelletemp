@@ -82,7 +82,7 @@
             <div class="card-header" id="headingOne" data-toggle="collapse"
                         data-target="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapseOne" role="button">
                 <h5 class="mb-0 text-primary-small">
-                    <a class=" hover_a" >
+                    <a class=" hover_a " >
                         <i class=" fa fa-angle-down pr-3"></i> {{block.settings.question}}
                     </a>
                 </h5>
@@ -101,7 +101,7 @@
      {% for block in section.blocks %}
                     {% if block.type == 'button_action' %}
                         <div class=" w-100 justify-content-{{block.settings.align}} d-flex">    
-                            <a style="text-transform:capitalize;" class="btn-3d btn btn-section mt-5 mx-0" href="{{ block.settings.link }}">
+                            <a style="text-transform:capitalize;" class="btn btn-primary mt-5 mx-0" href="{{ block.settings.link }}">
                                 {{ block.settings.label }}
                             </a>
                         </div>
