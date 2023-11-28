@@ -312,7 +312,8 @@
      
       template contains "metaobject/men" or
       page.metafields.page.type == "men" or 
-      collection.metafields.page.type == "men"
+      collection.metafields.page.type == "men" or
+      product.type == "men"
     %}
        {% section  "custom-header-men" %}
       
@@ -320,8 +321,8 @@
        
       template contains "metaobject/women" or
       page.metafields.page.type == "women" or
-      collection.metafields.page.type == "women"
-      
+      collection.metafields.page.type == "women" or
+      product.type == "women"
     %} 
        {% section  "custom-header-women" %}
     {% endif %}
@@ -340,7 +341,8 @@
      
       template contains "metaobject/men" or
       page.metafields.page.type == "men" or 
-      collection.metafields.page.type == "men"
+      collection.metafields.page.type == "men" or
+      product.type == "men"
     %}
       {% section  "custom-footer-men" %}
       
@@ -348,8 +350,8 @@
        
       template contains "metaobject/women" or
       page.metafields.page.type == "women" or
-      collection.metafields.page.type == "women"
-      
+      collection.metafields.page.type == "women" or
+      product.type == "women"
     %} 
       {% section  "custom-footer-women" %}
     {% endif %}
