@@ -6,11 +6,11 @@
 {% assign hero = "" %}
 {% if heroImageLocal == blank %}
 
-  {% if page.metafields.page.type == "men" or template contains "metaobject/men" and heroImageGlobalMen != blank %}
+  {% if type=="men" and heroImageGlobalMen != blank %}
     {% assign hero = heroImageGlobalMen %}
   {% endif %}
 
-  {% if page.metafields.page.type == "women" or template contains "metaobject/women" and heroImageGlobalWomen != blank %}
+  {% if type=="women" and heroImageGlobalWomen != blank %}
     {% assign hero = heroImageGlobalWomen %}
   {% endif %}
 
