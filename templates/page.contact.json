@@ -54,7 +54,7 @@
       "type": "custom-contact",
       "settings": {
         "email": "Email",
-        "email-link": "",
+        "email-link": "bh",
         "telephone": "Telephone",
         "telephone-link": "",
         "address": "",
