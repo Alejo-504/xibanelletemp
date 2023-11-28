@@ -1,5 +1,12 @@
 {
   "sections": {
+    "14c14ee1-b94c-4174-ba38-fb90a7f5c3b4": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -99,6 +106,7 @@
     }
   },
   "order": [
+    "14c14ee1-b94c-4174-ba38-fb90a7f5c3b4",
     "main",
     "related-products"
   ]
