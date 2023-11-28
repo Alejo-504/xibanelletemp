@@ -79,7 +79,7 @@
       ],
       "settings": {
         "title_channels": "Our Values",
-        "color_scheme": "background-2"
+        "color_scheme": "background-1"
       }
     },
     "custom-reviews": {
@@ -119,7 +119,7 @@
         "ffba4105-2c26-421f-b0ad-ffd5b09d2abb"
       ],
       "settings": {
-        "scheme_selector": "background-2",
+        "scheme_selector": "background-1",
         "title": "What Our Customer Say",
         "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
         "link_text": "View More",
@@ -161,8 +161,8 @@
         "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
         "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
         "color_background": "#e6e6e6",
-        "color_text": "#728d82",
-        "color_scheme": "background-2",
+        "color_text": "#6b6559",
+        "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
