@@ -1,0 +1,22 @@
+{%  assign sex  = "" %}
+
+
+{% if 
+     
+      template contains "metaobject/men" or
+      page.metafields.page.type == "men" or 
+      collection.metafields.page.type == "men" or
+      product.type == "men"
+%}
+      {%  assign sex = "men" %}
+      
+{% elsif 
+       
+      template contains "metaobject/women" or
+      page.metafields.page.type == "women" or
+      collection.metafields.page.type == "women" or
+      product.type == "women"
+%} 
+       {%  assign sex = "women" %}
+  
+{% endif %}
