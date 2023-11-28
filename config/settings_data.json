@@ -696,7 +696,7 @@
             "type": "benefits",
             "settings": {
               "name_benefit": "Innovation",
-              "image": "shopify:\/\/shop_images\/quality.png",
+              "image": "shopify:\/\/shop_images\/disruption.png",
               "icon": "fas fa-home"
             }
           },
