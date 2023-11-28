@@ -65,10 +65,12 @@
       <div class="container-image position-absolute px-0">
           {% assign images = "" | split: "," %}
           {% for block in section.blocks %}
+          
             {% assign images = images | push: block.settings.image %}
+
           {% endfor %}
           {{ images }}
-          {%  render "custom-carousel-double", images: images %} 
+          {%  render "custom-carousel-double", images: images %}
       </div>
     </div>
   </div>
