@@ -120,8 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let a = evt.currentTarget.parentNode.querySelector('a');
       i.style.transform = "scaleY(1)";
       header.classList.remove('bg-primary');
-  	//header.querySelector("h5").classList.remove('text-white');
-      //header.classList.add('bg-light');
   })
   $('.collapse').on('shown.bs.collapse', function(evt) {
       let header = evt.currentTarget.parentNode.querySelector('.card-header');
@@ -129,8 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let i = evt.currentTarget.parentNode.querySelector('i');
       let a = evt.currentTarget.parentNode.querySelector('a');
       i.style.transform = "scaleY(-1)";
-      //header.classList.remove('bg-light');
-  	//header.querySelector("h5").classList.add('text-white');
       header.classList.add('bg-primary');
   })
 
