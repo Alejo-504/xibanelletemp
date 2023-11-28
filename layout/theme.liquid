@@ -308,10 +308,22 @@
     {%- endif -%}
 
 
-    {% if page.metafields.page.type == "men" or template contains "metaobject/men" %}
-      {% section  "custom-header-men" %}
-    {% elsif page.metafields.page.type == "women" or template contains "metaobject/women" %} 
-      {% section  "custom-header-women" %}
+   {% if 
+     
+      template contains "metaobject/men" or
+      page.metafields.page.type == "men" or 
+      collection.metafields.page.type == "men"
+    %}
+       {% section  "custom-header-men" %}
+      
+    {% elsif 
+       
+      template contains "metaobject/women" or
+      page.metafields.page.type == "women" or
+      collection.metafields.page.type == "women"
+      
+    %} 
+       {% section  "custom-header-women" %}
     {% endif %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
