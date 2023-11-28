@@ -47,10 +47,10 @@
 
 <div class="custom-about container-fluid position-relative color-{{ section.settings.color_scheme }}">
   <div class="row page-width">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 d-flex align-items-md-start align-items-center flex-column justify-content-center">
       <h2>{{ section.settings.title }}</h2>
       {{ section.settings.about }}
-      <a href="{{ section.settings.link }}" class="btn btn-primary">{{ section.settings.link_text }}</a>
+      <a href="{{ section.settings.link }}" class="btn btn-primary hero">{{ section.settings.link_text }}</a>
     </div>
     <div class="col-12 col-md-6 d-flex align-items-center" style="height: 450px;">
       <div class="container-image position-absolute px-0">
@@ -69,15 +69,7 @@
     transform: rotate(15deg);
   }
   .custom-about{
-    padding: 100px 0;
-  }
-  .custom-about h2{
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  .custom-about p{
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    padding: 50px 0;
   }
   .container-image img{
     width: 100%;
