@@ -4,7 +4,6 @@
   padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
 }
 .section-{{ section.id }} {
-  background-color: {{ section.settings.background-color }};
   height:auto;
 }
 @media screen and (min-width: 750px) {
@@ -13,16 +12,14 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
-.faq .bg-primary{
-  background: var(--primary) !important;
-}
+
 .faq i {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 .faq .card-body{
     font-size: 18px; 
-    color: var(--color-secondary);
+ 
 }
 .faq .card {
   border-radius: 0 !important;
@@ -41,65 +38,32 @@
 }
 .faq .card-header {
     border: 1px solid #e7e7e700;
-    background: var(--primary-light);
     -webkit-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear;
     margin: 3px 0px;
     border-radius: var(--radius) !important;
-  padding: 1rem 1.25rem;
+    padding: 1rem 1.25rem;
 }
  
 .faq .card-header a {
   cursor: pointer;
 }
 
-#accordion #headingOne h5 > a{
-font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--primary);
-    font-family: var(--font-body-family);
-  
-    font-size: 15px;
- 
-}
 
-.card-header.bg-primary h5 a {
-    color: var(--primary-light) !important;
-}
-  .card-body a{
-    color: var(--primary);
-  }
+
 .faq .card-body, .faq .collapse {
   border-radius: 0 !important;
   background: none;
 }
-.faq .section-title h1{
-	background-color: {{ section.settings.background-color }};
-}
 
-.faq .hover_a:hover,  .faq .hover_a:hover i {
-  color: var(--tertiary) !important;
-}
 #accordion li::before {
-            content: "";
-            background: #D88100;
-            display: inline-block;
-            font-size: 50px;
-            width: 11px;
-            height: 11px;
-            margin-right: 8px;
-        }
-        
-        #accordion li,
-        #accordion p,
-        #accordion a {
-           
-        }
-        
-        #accordion a:hover {
-            color:var(--tertiary);
-        }
-
+    content: "";
+    display: inline-block;
+    font-size: 50px;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+}
 {%- endstyle -%}
 
   <section class=" section-{{ section.id }}-padding section-{{ section.id }}   m-0 faq my-section container-fluid position-relative color-{{ section.settings.color_scheme }}">
