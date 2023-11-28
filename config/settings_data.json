@@ -416,7 +416,7 @@
           "78eb6ca4-f750-4d6d-b9c5-8e6d496a8685": {
             "type": "menu_items",
             "settings": {
-              "menu": "footer"
+              "menu": "footer-menu-women"
             }
           },
           "2e5dd3c0-ee2c-4959-8557-e494f8f63553": {
@@ -428,7 +428,7 @@
           "4df46aef-84d5-486c-abe8-a301f378ba02": {
             "type": "menu_items",
             "settings": {
-              "menu": "footer-menu-2"
+              "menu": "get-help-women"
             }
           },
           "959be89c-01fc-4e54-b118-50767704d2fc": {
