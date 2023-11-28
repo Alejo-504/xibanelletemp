@@ -1,12 +1,14 @@
 {% assign current_timestamp = 'now' | date: '%s' %}
 {% assign unique_id = 'unique-id-' | append: current_timestamp %}
+{% assign blocks = blocks | map: 'settings' %}
+{% assign images = blocks | map: 'image' %}
 
-{{ images }}
+
 <div class="owl-carousel owl-theme " id="{{ unique_id }}">
   {% for image in images %}
   
       <a class="item" href="{{ image | img_url: '1024x1024' }}" >
-       
+
           <img
             src="{{ image | img_url: '1024x1024' }}"
             width="450"
@@ -14,7 +16,7 @@
           >
   
       </a>
-   
+
   {% endfor %}
 </div>
 <style>
