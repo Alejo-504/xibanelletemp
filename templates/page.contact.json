@@ -8,6 +8,18 @@
         "padding_bottom": 0
       }
     },
+    "04682752-769e-4d63-a7d0-49f431d5ef61": {
+      "type": "custom-contact",
+      "settings": {
+        "email": "Email",
+        "email-link": "bh",
+        "telephone": "Telephone",
+        "telephone-link": "",
+        "address": "",
+        "location-link": "",
+        "iframe": "https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d53160.919386100635!2d-84.3928436!3d33.616785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc263257f97f%3A0x87190d6fe9db9f11!2sGILLEM%20ENCLAVE%2C%20GA%2030297%2C%20USA!5e0!3m2!1sen!2sve!4v1701182245977!5m2!1sen!2sve"
+      }
+    },
     "aa79b7f0-ac24-420b-91e5-51f8014f928a": {
       "type": "custom-newsletter",
       "blocks": {
@@ -49,23 +61,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "04682752-769e-4d63-a7d0-49f431d5ef61": {
-      "type": "custom-contact",
-      "settings": {
-        "email": "Email",
-        "email-link": "bh",
-        "telephone": "Telephone",
-        "telephone-link": "",
-        "address": "",
-        "location-link": "",
-        "iframe": ""
-      }
     }
   },
   "order": [
     "main",
-    "aa79b7f0-ac24-420b-91e5-51f8014f928a",
-    "04682752-769e-4d63-a7d0-49f431d5ef61"
+    "04682752-769e-4d63-a7d0-49f431d5ef61",
+    "aa79b7f0-ac24-420b-91e5-51f8014f928a"
   ]
 }
