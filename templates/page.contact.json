@@ -11,6 +11,7 @@
     "04682752-769e-4d63-a7d0-49f431d5ef61": {
       "type": "custom-contact",
       "settings": {
+        "color_scheme": "background-2",
         "email": "info@xinabelle.com",
         "email-link": "mailto:info@xinabelle.com",
         "telephone": "(404) 343 8695",
