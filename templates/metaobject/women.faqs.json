@@ -28,7 +28,7 @@
           "type": "button_action",
           "settings": {
             "label": "Learn More",
-            "link": "shopify:\/\/metaobjects\/men\/about-us",
+            "link": "shopify:\/\/metaobjects\/women\/about-us",
             "align": "center"
           }
         }
@@ -40,7 +40,7 @@
         "230d8b05-cdcc-4c3b-b420-70ab9866f6ec"
       ],
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "subtitle-section": "Frequent Questions",
         "align_title": "center",
         "background-color": "",
