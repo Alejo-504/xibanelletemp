@@ -679,6 +679,12 @@
           "link_text": "View More",
           "link_url": ""
         }
+      },
+      "hero_subpage": {
+        "type": "hero_subpage",
+        "settings": {
+          "image-bg-1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+        }
       }
     },
     "content_for_index": [
