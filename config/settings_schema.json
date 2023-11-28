@@ -17,18 +17,23 @@
       },
       {
         "type": "color_background",
-        "id": "subpage_hero_overlay_color",
+        "id": "subpage_hero_overlay_color_men",
         "label": "hero subpages overlay "
       },
       {
         "type": "image_picker",
-        "id": "subpage_hero_background",
+        "id": "subpage_hero_background_men",
         "label": "Global image subpages hero"
       },
       {
-        "type": "url",
-        "id": "subpage_hero_background_video",
-        "label": "Global video subpages hero"
+        "type": "color_background",
+        "id": "subpage_hero_overlay_color_women",
+        "label": "hero subpages overlay "
+      },
+      {
+        "type": "image_picker",
+        "id": "subpage_hero_background_women",
+        "label": "Global image subpages hero"
       }
     ]
   },
