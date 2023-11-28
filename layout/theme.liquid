@@ -315,13 +315,15 @@
     {% endif %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+          
+     {{ page.metafields.title }}
+     {{ template.suffix }}
+     
       {{ content_for_layout }}
     </main>
 
 
-    
-     {{ page.metafields.title }}
-     {{ template.suffix }}
+
     
     {% if page.metafields.page.type == "men" %}
       {% section  "custom-footer-men" %}
