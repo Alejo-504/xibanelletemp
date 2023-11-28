@@ -2,6 +2,11 @@
   {
     "name": "Custom About",
     "settings": [
+       {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color"
+      },
       {
         "type": "text",
         "id": "title",
@@ -40,7 +45,7 @@
   }
 {% endschema %}
 
-<div class="custom-about container-fluid position-relative">
+<div class="custom-about container-fluid position-relative color-{{ section.settings.color_scheme }}">
   <div class="row page-width">
     <div class="col-12 col-md-6">
       <h2>{{ section.settings.title }}</h2>
