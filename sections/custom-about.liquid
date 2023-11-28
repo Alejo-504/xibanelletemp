@@ -15,7 +15,7 @@
         "default": "<p>Enter your about text here.</p>"
       },
       {
-        "type": "text",
+        "type": "image_picker",
         "id": "image",
         "label": "Image"
       },
@@ -43,7 +43,7 @@
 <div class="custom-about container-fluid">
   <div class="row page-width">
     <div class="col-12 col-md-6">
-      <img src="{{ section.settings.image }}" alt="About Image" class="img-fluid">
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title }}">
     </div>
     <div class="col-12 col-md-6">
       <h2>{{ section.settings.title }}</h2>
