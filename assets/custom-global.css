@@ -23,7 +23,9 @@ body, html{
   height: 100%;
   content: "";
 }
- 
+ .breadcrumb-item + .breadcrumb-item::before{
+   color:white!important;
+ }
 /* Buttons */
 .grecaptcha-badge{
   display:none!important;
