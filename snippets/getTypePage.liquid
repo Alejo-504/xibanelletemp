@@ -1,4 +1,4 @@
-{%  assign sex  = "" %}
+{%  assign type  = "" %}
 
 
 {% if 
@@ -8,7 +8,7 @@
       collection.metafields.page.type == "men" or
       product.type == "men"
 %}
-      {%  assign sex = "men" %}
+      {%  assign type = "men" %}
       
 {% elsif 
        
@@ -17,6 +17,6 @@
       collection.metafields.page.type == "women" or
       product.type == "women"
 %} 
-       {%  assign sex = "women" %}
+       {%  assign type = "women" %}
   
 {% endif %}
