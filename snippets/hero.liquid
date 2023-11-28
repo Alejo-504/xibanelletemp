@@ -71,9 +71,14 @@
 {% if title == blank %}
   
        {% if page.title %}
-         {%  assign title = page.title %}
+         {%  if title != blank %}
+           {%  assign title = title %}
+             {%  else %}
+            {% assign ttile = page.title %}
+         {% endif %}
+         
       
-        {%  else %}
+       {%  else %}
          {%  if template.name == "collection" %}
          {% assign title = collection.title %}
           
