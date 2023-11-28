@@ -40,10 +40,12 @@
   }
 {% endschema %}
 
-<div class="custom-about container-fluid">
+<div class="custom-about container-fluid position-relative">
   <div class="row page-width">
-    <div class="col-12 col-md-6">
-      <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title }}">
+    <div class="col-12 col-md-6 d-flex align-items-center" style="height: 450px;"></div>
+      <div class="container-image position-absolute">
+       <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title }}">
+      </div>
     </div>
     <div class="col-12 col-md-6">
       <h2>{{ section.settings.title }}</h2>
@@ -52,3 +54,29 @@
     </div>
   </div>
 </div>
+
+<style>
+  .container-image{
+    left: -15px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  .custom-about{
+    padding: 100px 0;
+  }
+  .custom-about h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .custom-about p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .container-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(45deg);
+  }
+</style>
