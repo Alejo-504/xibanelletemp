@@ -6,21 +6,16 @@
 {% assign hero = "" %}
 {% if heroImageLocal == blank %}
 
+  {% if (page.metafields.page.type == "men" or template contains "metaobject/men") and heroImageGlobalMen != blank %}
+    {% assign hero = heroImageGlobalMen %}
+  {% endif %}
 
-     {% if page.metafields.page.type == "men" or template contains "metaobject/men" and (heroImageGlobalMen != blank) %}
-
-        {% assign hero = heroImageGlobalMen %}
-
-      {% endif %}
-
-      {% if page.metafields.page.type == "women"  or template contains "metaobject/women" and (heroImageGlobalWomen != blank) %}
-
-        {% assign hero = heroImageGlobalWomen %}
-
-      {% endif %}
+  {% if (page.metafields.page.type == "women" or template contains "metaobject/women") and heroImageGlobalWomen != blank %}
+    {% assign hero = heroImageGlobalWomen %}
+  {% endif %}
 
 {% else %}
-
+  
       {% assign hero = heroImageLocal %}
 
 {%  endif %}
