@@ -684,7 +684,8 @@
       "hero_subpage": {
         "type": "hero_subpage",
         "settings": {
-          "image-bg-1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp"
+          "image-bg-1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+          "title": "About Us"
         }
       }
     },
