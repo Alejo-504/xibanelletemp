@@ -320,8 +320,8 @@
 
 
     
-     {{ page.metafields.page.name }}
-        {{ template }}
+     {{ page.metafields.title }}
+     {{ template.suffix }}
     
     {% if page.metafields.page.type == "men" %}
       {% section  "custom-footer-men" %}
