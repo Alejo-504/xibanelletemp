@@ -1,7 +1,215 @@
+<style>
+
+  
+.channels{
+  background: var(--primary-gradient);
+  text-align: center;
+  height: auto !important;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+  
+  
+.channels p{
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0px 0px 0px;
+}
+
+.channels img{
+  max-width: 70px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 7;
+  transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+
+.channels h2{
+  color: #fff;
+  position: relative;
+  z-index: 7;
+  font-weight: var(--heading1-weight);
+  margin-bottom: 0;
+}
+
+.channels .col-6:hover img, .channels i:hover {
+    transform: rotateY(180deg);
+}
+  
+ .channels .adorno {
+    position: absolute;
+    left: -200px;
+    top: 80px;
+    height: 100%;
+    opacity: 0.05;
+}
+
+@media (max-width: 760px){
+  .channels .border-left-channels {
+    border-left: 0px;
+  }
+  
+  .channels .adorno {
+    position: absolute;
+    left: -200px;
+    top: 80px;
+    height: 100%;
+    opacity: 0.05;
+}
+  
+  .channels h2{
+  
+  margin: 20px 0px;
+}
+  
+  .channels p{
+
+  margin-bottom: 20px;
+}
+}
+.custom-shape-divider-top-1660083344 {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+@keyframes derrame{
+  0% {
+    height: 2px;
+  }
+  100% {
+    height: 172px;
+  }
+}
+.custom-shape-divider-top-1660083344 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 2px;
+  transition: height 1s ease-in-out;
+  
+}
+
+.custom-shape-divider-top-1660083344 .shape-fill {
+  fill: #e0a3a3;
+}
+
+[data-aos=derrame].aos-animate .custom-shape-divider-top-1660083344 svg {
+  animation: derrame 3s ease-in-out;
+  animation-fill-mode: both;
+}
+.icon-benefit{
+  width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  transition: all ease-in-out .3s;
+}
+</style>
+
+  <section data-aos="derrame" class="channels fix py-section">
+   
+    <div class="custom-shape-divider-top-1660083344">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+
+          <div class="container">
+                             
+                  <div class="row  justify-content-center d-flex align-items-center ">
+                      <div class="col-md-4 justify-content-center d-flex align-items-center title-section ">
+                        <h1 class="text-white">{{ section.settings.title_channels }}</h1>
+                        
+                      </div>
+
+
+                      {% for block in section.blocks %}
+                          {% if block.type == 'benefits' %}
+                            
+                              <div class="col-md-2 col-6 justify-content-center d-flex align-items-center">
+                                <div class="row justify-content-center">
+                                  <div class="d-flex justify-content-center align-items-center flex-column col-md-6 col-6 px-0">
+                                    {% if block.settings.icon != blank %}
+                                      <i class="icon-benefit {{block.settings.icon}}"></i>
+                                      <p> {{ block.settings.name_benefit }}</p>
+                                    {% else %}
+                                        <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="">  
+                                        <p> {{ block.settings.name_benefit }}</p>
+                                    {% endif %} 
+                                  </div>
+                                </div>     
+                              </div>
+                         
+                          {% endif %}
+                        {% endfor %}
+
+                    
+                    
+                   
+                   
+                                         
+                  </div>                                  
+          </div>
+                
+                   
+</section> 
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Custom Values",
+    "settings": [ 
+    {
+	"type": "text",
+     "id": "title_channels",
+     "label": "Title",
+     "default": "Benefits"
+	 }
+  ],
+    "blocks": [
+      {
+        "type": "benefits",
+        "name": "Values",
+        "limit": 4,
+        "settings":[
+            {
+                "type": "text",
+                "id": "name_benefit",
+                "label": "title benefit"     
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "image benefit"  
+            },
+            {
+              "type": "text",
+              "id": "icon",
+              "label": "Icon Font Awesome",
+              "info": "Replace the image with an icon" 
+            }
+      ]
+  }],
+  	"presets": [
+      {
+        "category": "custom",
+        "name": "Custom Values"     
+        
+      }
+    ]
   }
 {% endschema %}
 
@@ -10,3 +218,5 @@
 
 {% javascript %}
 {% endjavascript %}
+
+
