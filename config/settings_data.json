@@ -390,7 +390,7 @@
           "cta_text": "Affiliate Program",
           "cta_link": "shopify:\/\/pages\/affiliate-program",
           "logo_position": "middle-center-center",
-          "menu": "main-menu",
+          "menu": "woman-main-menu",
           "menu_type_desktop": "dropdown",
           "sticky_header_type": "reduce-logo-size",
           "show_line_separator": true,
