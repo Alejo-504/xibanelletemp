@@ -63,7 +63,7 @@
     </div>
     <div class="col-12 col-md-6 d-flex align-items-center" style="height: 450px;">
       <div class="container-image position-absolute px-0">
-          {% assign images = "s" | split: "," %}
+          {% assign images = "" | split: "," %}
           {% for block in section.blocks %}
           
             {% assign images = images | push: block.settings.image %}
