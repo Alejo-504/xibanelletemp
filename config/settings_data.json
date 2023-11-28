@@ -604,9 +604,9 @@
       "custom-about": {
         "type": "custom-about",
         "settings": {
-          "color_scheme": "",
-          "title": "About",
-          "about": "<p>Enter your about text here.<\/p>",
+          "color_scheme": "background-2",
+          "title": "About Us",
+          "about": "<p>Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odi<strong>o blandit<\/strong>.Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.<strong>Lorem ipsum dolor<\/strong> sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.<\/p>",
           "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
           "link": "",
           "link_text": "Learn More"
