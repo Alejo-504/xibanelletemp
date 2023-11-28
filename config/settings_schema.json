@@ -8,6 +8,31 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Custom",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Subpages",
+        "info": "Video or Imagen "
+      },
+      {
+        "type": "color_background",
+        "id": "subpage_hero_overlay_color",
+        "label": "hero subpages overlay "
+      },
+      {
+        "type": "image_picker",
+        "id": "subpage_hero_background",
+        "label": "Global image subpages hero"
+      },
+      {
+        "type": "url",
+        "id": "subpage_hero_background_video",
+        "label": "Global video subpages hero"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
