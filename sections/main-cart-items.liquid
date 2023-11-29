@@ -17,6 +17,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  cart-items.is-empty {
+    min-height: calc(100vh - 480px);
+  }
+  
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
