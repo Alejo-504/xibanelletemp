@@ -1,5 +1,12 @@
 {
   "sections": {
+    "f3c99757-b218-437a-913f-6ec13dd51ef3": {
+      "type": "hero_subpage_men",
+      "settings": {
+        "title": "All Categories",
+        "color_scheme": "background-2"
+      }
+    },
     "main": {
       "type": "main-list-collection-men",
       "settings": {
@@ -13,6 +20,7 @@
     }
   },
   "order": [
+    "f3c99757-b218-437a-913f-6ec13dd51ef3",
     "main"
   ]
 }
