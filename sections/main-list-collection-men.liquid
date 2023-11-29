@@ -24,26 +24,16 @@
     endif
   -%}
 
-{% assign filtered_collections = '' %}
-{% for collection in collections %}
-  {% if collection.metafields.page.type == "men" %}
-    {% if forloop.first %}
-      {% assign filtered_collections = collection %}
-    {% else %}
-      {% assign filtered_collections = filtered_collections | append: ',' | append: collection %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-{% assign filtered_collections = filtered_collections | split: ',' %}
 
-
-  {%- paginate filtered_collections by paginate_by -%}
   
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
     >
-      {%- for collection in filtered_collections -%}
+      {%- for collection in collections -%}
+
+        {%  if collection.metafields.page.type == "men" %}
+      
         <li
           class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -57,11 +47,14 @@
             columns: 3
           %}
         </li>
+
+
+        {% endif %}
+      
       {%- endfor -%}
     </ul>
      
-  {% render 'pagination', paginate: paginate %}
-  {%- endpaginate -%}
+
    
 </div>
 {% schema %}
