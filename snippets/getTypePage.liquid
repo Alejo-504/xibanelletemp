@@ -4,14 +4,14 @@
       template contains "metaobject/men" or
       page.metafields.page.type == "men" or 
       collection.template_suffix == "men" or
-      product.type == "men" %}
+      product.template_suffix == "men" %}
   {% assign type = "men" %}
   
 {% elsif
         template contains "metaobject/women" or
         page.metafields.page.type == "women" or
         collection.template_suffix == "women" or
-        product.type == "women" %}
+        product.template_suffix == "women" %}
   {% assign type = "women" %}
 
 {% endif %}
