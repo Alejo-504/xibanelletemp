@@ -31,6 +31,7 @@
       
       {% assign admited = collection.metafields.page.type %}
       {% if admited == "men" %}
+        admited
         {% assign collections_to_display = collections_to_display | push: collection %}
       {% endif %}
     {% endfor %}
