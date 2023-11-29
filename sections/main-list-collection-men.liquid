@@ -25,31 +25,29 @@
   -%}
 
    
-    {% assign collections_to_display =  '' | split: '' %}
+ {% assign filtered_collections = '' %}
+{% for collection in collections %}
+  {% if collection.metafields.page.type == "men" %}
+    {% unless forloop.first %}
+      {% assign filtered_collections = filtered_collections | append: ',' %}
+    {% endunless %}
+    {% assign filtered_collections = filtered_collections | append: collection.handle %}
+  {% endif %}
+{% endfor %}
 
-    {% for collection in collections  %}
-      
-      {% assign admited = collection.metafields.page.type %}
-      {% if admited == "men" %}
-        admited
-        {% assign collections_to_display = collections_to_display | push: collection %}
-      {% endif %}
-    {% endfor %}
 
-  {% for  collection  in collections_to_display %}
-    {{collection.title}}
-
-  {% endfor %}
+  {{ filtered_collections  }}
+{% assign filtered_collections_array = filtered_collections | split: ',' %}
 
   
 
-  {%- paginate collections_to_display by paginate_by -%}
+  {%- paginate filtered_collections by paginate_by -%}
   
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
     >
-      {%- for collection in collections_to_display -%}
+      {%- for collection in filtered_collections -%}
         <li
           class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
