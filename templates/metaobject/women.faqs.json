@@ -1,5 +1,12 @@
 {
   "sections": {
+    "d4696897-9805-40b4-bd1e-d66a4f46a762": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "FAQ's",
+        "color_scheme": ""
+      }
+    },
     "5cf111d0-6191-4afa-9189-aa41c180bb7e": {
       "type": "collapsible-content",
       "blocks": {
@@ -106,6 +113,7 @@
     }
   },
   "order": [
+    "d4696897-9805-40b4-bd1e-d66a4f46a762",
     "5cf111d0-6191-4afa-9189-aa41c180bb7e",
     "custom-newsletter"
   ]
