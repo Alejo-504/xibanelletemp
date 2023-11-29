@@ -615,16 +615,6 @@
 
 
 
-      //capturar botones product-form__buttons
-      const buttons = document.querySelectorAll('.product-form__button button');
-      let firstButton = buttons[0];
-
-      //cambiar todas las calases por my-4 mx-0 w-100 btn btn-primary-outline
-      buttons.setAttribute('class', 'my-4 mx-0 w-100 btn btn-primary-outline');
-
-
-
-
     });
   </script>
 
@@ -682,6 +672,22 @@
   </script>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const buttons = document.querySelectorAll('.product-form__button button');
+    console.log(buttons);
+    let firstButton = buttons[0];
+
+    //cambiar todas las calases por my-4 mx-0 w-100 btn btn-primary-outline
+    buttons.setAttribute('class', 'my-4 mx-0 w-100 btn btn-primary-outline');
+
+
+
+
+  });
+</script>
 
 {% schema %}
 {
