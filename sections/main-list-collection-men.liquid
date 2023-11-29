@@ -1,7 +1,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width" style="color:black">
+<div class="page-width" style="color:black;">
   <h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ section.settings.title }}
   </h1>
@@ -24,16 +24,9 @@
     endif
   -%}
 
-  {% assign collections_to_display = '' %}
-
-  {% for collection in collections %}
-     {{ collection.metafields.page.type }}
-  {% endfor %}
-
-
-
-
-  
+ {% assign collections_to_display = collections | where: "metafields.page.type", "men" %}
+ 
+  {%- paginate collections_to_display by paginate_by -%}
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
@@ -54,6 +47,8 @@
         </li>
       {%- endfor -%}
     </ul>
+     {% render 'pagination', paginate: paginate %}
+  {%- endpaginate -%}
    
 </div>
 {% schema %}
