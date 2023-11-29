@@ -33,7 +33,19 @@
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
         popup.querySelector(".container-image img").src = product.image+"&width=90";
-        document.querySelector(".cart-count-bubble").textContent = parseInt(document.querySelector(".cart-count-bubble").textContent) + 1;
+        /* 
+          aumentar cart-count-bubble
+
+        */
+        let bubble = document.querySelector(".cart-count-bubble");
+        if(!bubble){
+          return;
+        }
+        if(bubble.textContent == ""){
+          bubble.textContent = 0;
+        }
+        bubble.textContent = parseInt(bubble.textContent) + 1;
+        
       }else{
         
        /* Fail */
