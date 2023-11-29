@@ -276,11 +276,16 @@
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
                         {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
+
+                    {% if item.template_suffix ==  type %}
                         {% render 'custom-normal-product',
                           product: item
                         %}
+                    {% endif %}
+
+                    
                       {%- when 'article' -%}
-                        {% render 'article-card',
+                       <!-- {% render 'article-card',
                           article: item,
                           show_image: true,
                           show_date: section.settings.article_show_date,
@@ -288,9 +293,9 @@
                           show_badge: true,
                           media_aspect_ratio: 1,
                           lazy_load: lazy_load
-                        %}
+                        %}-->
                       {%- when 'page' -%}
-                        <div class="article-card-wrapper card-wrapper underline-links-hover">
+                       <!-- <div class="article-card-wrapper card-wrapper underline-links-hover">
                           <div
                             class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}"
                             style="--ratio-percent: 100%;"
@@ -310,7 +315,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div>-->
                     {%- endcase -%}
                   </li>
                 {%- endfor -%}
