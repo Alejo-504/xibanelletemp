@@ -30,12 +30,17 @@
     {% for collection in collections  %}
       
       {% assign admited = collection.metafields.page.type %}
-
       {% if admited == "men" %}
         {% assign collections_to_display = collections_to_display | push: collection %}
-        
       {% endif %}
     {% endfor %}
+
+  {% for  collection  in collections_to_display %}
+    {{collection.title}}
+
+  {% endfor %}
+
+  
 
   {%- paginate collections_to_display by paginate_by -%}
   
