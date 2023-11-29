@@ -63,7 +63,7 @@
     }
   },
   "order": [
-    "custom-newsletter",
-    "main"
+    "main",
+    "custom-newsletter"
   ]
 }
