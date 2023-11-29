@@ -36,10 +36,10 @@
 {% endfor %}
 
 
-  {{ filtered_collections  }}
+ 
 {% assign filtered_collections_array = filtered_collections | split: ',' %}
 
-  
+   {{ filtered_collections_array  }}
 
   {%- paginate filtered_collections_array by paginate_by -%}
   
