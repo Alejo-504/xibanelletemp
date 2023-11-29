@@ -1,5 +1,12 @@
 {
   "sections": {
+    "428ac75e-ebd0-4618-ac0c-bcd5230bd7b8": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "About Us",
+        "color_scheme": ""
+      }
+    },
     "custom-about": {
       "type": "custom-about",
       "blocks": {
@@ -170,6 +177,7 @@
     }
   },
   "order": [
+    "428ac75e-ebd0-4618-ac0c-bcd5230bd7b8",
     "custom-about",
     "custom-values",
     "custom-reviews",
