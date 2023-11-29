@@ -58,7 +58,7 @@
         "heading": "Collapsible content",
         "heading_size": "h2",
         "heading_alignment": "left",
-        "layout": "row",
+        "layout": "section",
         "color_scheme": "background-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
