@@ -1,16 +1,16 @@
 {% assign type = "" %}
 
-{% if request.params['type'] == 'men' or
+{% if
       template contains "metaobject/men" or
       page.metafields.page.type == "men" or 
-      collection.metafields.page.type == "men" or
+      collection.template_suffix == "men" or
       product.type == "men" %}
   {% assign type = "men" %}
   
-{% elsif request.params['type'] == 'women' or
+{% elsif
         template contains "metaobject/women" or
         page.metafields.page.type == "women" or
-        collection.metafields.page.type == "women" or
+        collection.template_suffix == "women" or
         product.type == "women" %}
   {% assign type = "women" %}
 
