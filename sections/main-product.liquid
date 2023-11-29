@@ -612,6 +612,19 @@
       document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
         hiddenInput.value = event.currentTarget.value;
       });
+
+
+
+      //capturar botones product-form__buttons
+      const buttons = document.querySelectorAll('.product-form__button button');
+      let firstButton = buttons[0];
+
+      //cambiar todas las calases por my-4 mx-0 w-100 btn btn-primary-outline
+      buttons.setAttribute('class', 'my-4 mx-0 w-100 btn btn-primary-outline');
+
+
+
+
     });
   </script>
 
