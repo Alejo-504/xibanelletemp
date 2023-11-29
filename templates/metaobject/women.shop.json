@@ -1,7 +1,7 @@
 {
   "sections": {
-    "549da165-d6e4-4e95-b6f7-662a0b8f88ba": {
-      "type": "hero_subpage_women",
+    "05815e6b-3ec9-485e-8b4b-e12e3c057a9d": {
+      "type": "hero_subpage",
       "settings": {
         "title": "All Categories",
         "color_scheme": ""
@@ -20,7 +20,7 @@
     }
   },
   "order": [
-    "549da165-d6e4-4e95-b6f7-662a0b8f88ba",
+    "05815e6b-3ec9-485e-8b4b-e12e3c057a9d",
     "main"
   ]
 }
