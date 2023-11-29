@@ -48,7 +48,11 @@
   .collection h2{
     color:rgb(var(--color-foreground_3));
   }
-  
+  aside#main-collection-filters * {
+    font-family: var(--font-body-family);
+    font-weight: 600;
+    color: rgb(var(--color-foreground_2));
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}" style="background:rgb(var(--color-background-3));color:rgb(var(--color-foreground_3))">
