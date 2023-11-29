@@ -1,51 +1,65 @@
 {
   "sections": {
-    "custom-faqs": {
-      "type": "custom-faqs",
+    "5cf111d0-6191-4afa-9189-aa41c180bb7e": {
+      "type": "collapsible-content",
       "blocks": {
-        "56973b93-32cb-4829-8b48-2ea1e53863aa": {
-          "type": "faq-item",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-1": {
+          "type": "collapsible_row",
           "settings": {
-            "question": "Your question here",
-            "answer": "<p>Lorem ipsum dolor sit amit, Lorem ipsum dolor sit amit,Lorem ipsum dolor sit amit,Lorem ipsum dolor sit amit<\/p>"
+            "heading": "What is the delivery schedule?",
+            "icon": "question_mark",
+            "row_content": "<p>Delivery time is from Monday and Thursday at 4 pm<\/p>",
+            "page": ""
           }
         },
-        "b739b52d-b608-4aa7-84a6-77daf97cdc4b": {
-          "type": "faq-item",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-2": {
+          "type": "collapsible_row",
           "settings": {
-            "question": "Your question here",
-            "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p><p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
+            "heading": "Lorem Ipsum Dolor?",
+            "icon": "question_mark",
+            "row_content": "<p>Lorem Ipsum Dolor sit amit<\/p>",
+            "page": ""
           }
         },
-        "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73": {
-          "type": "faq-item",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-3": {
+          "type": "collapsible_row",
           "settings": {
-            "question": "Your question here",
-            "answer": "<p>Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit Lorem ipsum dolor sit amit<\/p>"
+            "heading": "Lorem Ipsum Dolor sit amit?",
+            "icon": "question_mark",
+            "row_content": "<p>Lorem Ipsum Dolor sit amit Lorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amit vLorem Ipsum Dolor sit amit<\/p>",
+            "page": ""
           }
         },
-        "230d8b05-cdcc-4c3b-b420-70ab9866f6ec": {
-          "type": "button_action",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-4": {
+          "type": "collapsible_row",
           "settings": {
-            "label": "Learn More",
-            "link": "shopify:\/\/metaobjects\/women\/about-us",
-            "align": "center"
+            "heading": "Lorem?",
+            "icon": "question_mark",
+            "row_content": "<p>Lorem Ipsum Dolor sit amit Lorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolo<\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "56973b93-32cb-4829-8b48-2ea1e53863aa",
-        "b739b52d-b608-4aa7-84a6-77daf97cdc4b",
-        "6dce4e26-9b2c-43b5-b668-b5c3d97c8b73",
-        "230d8b05-cdcc-4c3b-b420-70ab9866f6ec"
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-1",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-2",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-3",
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-4"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "subtitle-section": "Frequent Questions",
-        "align_title": "center",
-        "background-color": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "caption": "",
+        "heading": "Frequently Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "custom-newsletter": {
@@ -92,7 +106,7 @@
     }
   },
   "order": [
-    "custom-faqs",
+    "5cf111d0-6191-4afa-9189-aa41c180bb7e",
     "custom-newsletter"
   ]
 }
