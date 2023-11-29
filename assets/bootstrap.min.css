@@ -4460,6 +4460,8 @@ textarea.form-control-lg {
   border-radius: 0;
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
+  font-weight: 600;
+  letter-spacing: 0.1px;
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
@@ -4505,7 +4507,14 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
-
+.accordion-item {
+    border-radius: 0!important;
+    background-color: rgb(var(--color-background-2));
+    margin-top: 5px;
+}
+button.accordion-button.collapsed {
+    color: white;
+}
 .accordion-item:first-of-type {
   border-top-left-radius: var(--bs-accordion-border-radius);
   border-top-right-radius: var(--bs-accordion-border-radius);
