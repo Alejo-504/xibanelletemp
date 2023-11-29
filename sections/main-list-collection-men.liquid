@@ -24,17 +24,18 @@
     endif
   -%}
 
-   
-{% assign filtered_collections = '' | split: '' %}
+{% assign filtered_collections = '' %}
 {% for collection in collections %}
-  {% assign admited = collection.metafields.page.type %}
-  {% if admited == 'men' %}
-    {% assign filtered_collections = filtered_collections | concat: collection | concat: ',' %}
+  {% if collection.metafields.page.type == "men" %}
+    {% if forloop.first %}
+      {% assign filtered_collections = collection %}
+    {% else %}
+      {% assign filtered_collections = filtered_collections | append: ',' | append: collection %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 {% assign filtered_collections = filtered_collections | split: ',' %}
 
-   {{ filtered_collections  }}
 
   {%- paginate filtered_collections by paginate_by -%}
   
