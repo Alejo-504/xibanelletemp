@@ -67,7 +67,7 @@
   <div style="background: rgb(var(--color-background-3));"
     class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <h1 class="h2 center" style="    background: rgb(var(--color-foreground_2));">
+      <h1 class="h2 center" style="color: rgb(var(--color-foreground_3));">
         {%- if search.performed -%}
           {{- 'templates.search.title' | t -}}
         {%- else -%}
