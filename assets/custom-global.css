@@ -33,7 +33,7 @@ body, html{
 .owl-dot.active span{
   background:rgb(var(--color-background-2))!important;
 }
-.btn {
+.btn, .button--secondary {
   padding: 10px 20px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
