@@ -1,5 +1,12 @@
 {
   "sections": {
+    "baef2b01-4060-4f69-bfce-904620b50c72": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "My Cart",
+        "color_scheme": ""
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -34,6 +41,7 @@
     }
   },
   "order": [
+    "baef2b01-4060-4f69-bfce-904620b50c72",
     "cart-items",
     "cart-footer"
   ]
