@@ -1,5 +1,12 @@
 {
   "sections": {
+    "549da165-d6e4-4e95-b6f7-662a0b8f88ba": {
+      "type": "hero_subpage_women",
+      "settings": {
+        "title": "All Categories",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-list-collection-women",
       "settings": {
@@ -13,6 +20,7 @@
     }
   },
   "order": [
+    "549da165-d6e4-4e95-b6f7-662a0b8f88ba",
     "main"
   ]
 }
