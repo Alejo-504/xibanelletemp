@@ -49,7 +49,7 @@ body, html{
   overflow: hidden;
   font-weight: 600;
 }
-.btn-primary-outline::after {
+.btn-primary-outline::after, .button--secondary::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -67,11 +67,11 @@ body, html{
   color: rgb(var(--color-button));
   
 }
-.btn-primary-outline:hover {
+.btn-primary-outline:hover, .button--secondary:hover {
    color: #fff;
   border:solid 1px white;
 }
-.btn-primary-outline:hover::after {
+.btn-primary-outline:hover::after, .button--secondary:hover:after {
   width: 100%;
   height: 100%;
   top: 50%;
@@ -230,4 +230,10 @@ body, html{
     .item-cart:active {
       transform: scale(0.9); 
     }
+
+
+
+/* SHOPIFY BUTTON */
+
+
 
