@@ -85,6 +85,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "custom_css": [
         ".grid__item {background: white; padding: 10px;}"
       ],
