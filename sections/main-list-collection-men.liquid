@@ -27,7 +27,7 @@
   {% assign collections_to_display = '' %}
 
   {% for collection in collections %}
-     {{ collection.title }}
+     {{ collection.metafields.page.type }}
   {% endfor %}
 
 
