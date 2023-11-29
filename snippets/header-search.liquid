@@ -6,6 +6,7 @@
 
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
+  type: tipo de pagina men or women
 {% endcomment %}
 
 <details-modal class="header__search">
@@ -40,7 +41,23 @@
         {%- else -%}
           <search-form class="search-modal__form">
         {%- endif -%}
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+
+        
+
+           {% assign route = "" %}
+
+          {%  if type=="men" %}
+            {% assign route = "/pages/men/search" %}
+            
+          {% elsif type=="women" %}
+             {% assign route = "/pages/women/search" %}
+            
+          {% endif %}
+
+      
+
+            
+        <form action="{{ route }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
               class="search__input field__input"
