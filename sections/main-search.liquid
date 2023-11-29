@@ -46,7 +46,7 @@
 {%- liquid
   assign sort_by = search.sort_by | default: search.default_sort_by
   assign terms = search.terms | escape
-  assign search_url = '?q=' | append: terms | append: '&type=men&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  assign search_url = '?q=' | append: terms | append: '&type=' | append: type | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
 -%}
 
 {%- style -%}
@@ -106,7 +106,7 @@
   
               <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
               <input name="options[prefix]" type="hidden" value="last">
-              <input name="type" type="hidden" value="men">
+              <input name="type" type="hidden" value="{{ type }}">
 
               {%- if settings.predictive_search_enabled -%}
                 <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
