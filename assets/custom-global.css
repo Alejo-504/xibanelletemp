@@ -233,7 +233,12 @@ body, html{
 
 
 
-/* SHOPIFY BUTTON */
 
-
+.search-modal__form .search__input {
+  background: white;
+  color: black;
+}
+.search-modal__form. field__label{
+  color: gray;
+}
 
