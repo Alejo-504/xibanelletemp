@@ -1,7 +1,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width text-center color-{{ section.settings.color_scheme }} py-5" style="background:rgb(var(--color-background-3));color:rgb(var(--color-foreground_2));">
+<div class="page-width text-center color-{{ section.settings.color_scheme }}" style="padding-top:50px;padding-bottom:50px;background:rgb(var(--color-background-3));color:rgb(var(--color-foreground_2));">
   <h1 class="mt-0 title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" style="color:rgb(var(--color-foreground_3));">
     {{ section.settings.title }}
   </h1>
