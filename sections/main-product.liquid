@@ -1,5 +1,7 @@
 <style>
-  
+ 
+/* FIN PORTADA SUB PAGINAS*/
+
   
 .product-individual{ 
     padding-top:80px;
@@ -7,9 +9,30 @@
     position: relative;
     overflow: hidden;
     z-index: 3;
+    background: #FFFAED;
+}
+  .product-single__thumbnails{
+        justify-content: center;
+  }
+.product-individual .coco-left {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  height:95%;
+  z-index: 0; 
+  opacity: 0.06;
 }
   
-
+.product-individual .coco-right {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  height:95%;
+  z-index: 0; 
+  opacity: 0.06;
+}  
 .product-single__description{ 
   text-align: center;
   position : relative;
@@ -20,7 +43,7 @@
   
  .product-single__description p{ 
   background: transparent !important;
-  color: #47280D;
+  color: var(--titulos-y-textos);
   font-size: 16px;
 } 
   
@@ -28,25 +51,23 @@
 line-height: 1.25;
     margin-bottom: 21px;
     font-size: 30px !important;
-    color: var(--primary);
+    color: var(--secondary-dark);
     text-transform: none;
     position: relative;
     z-index: 1;
     letter-spacing: 0;
 }
-
+} 
    
-@media screen and (max-width: 765px){
-  .product-single__media-group{
-    width: 265px !important;
-  }
-}  
-@media only screen and (max-width: 767px) {
-   .product-single__description{ 
-   
-    font-size: 10px !important;
-    
-  } 
+  
+@media only screen and (max-width: 449px) {
+ .product-single__description{ 
+  margin-left: 30px !important;
+  font-size: 10px !important;
+  padding-right: 50px !important;
+}
+  
+  
 }
   
 .price--on-sale .price-item--regular{
@@ -55,42 +76,95 @@ line-height: 1.25;
   
 
 .shopify-payment-button__button--unbranded {  
-  background-color: var(--primary-dark);
-  background-image: linear-gradient(268deg, #e9b0b0 0%, #db7777 55%, #e19999 90%);
-  background-position: 100% 0;
-  background-size: 200% 200%;
-  color: white !important;
-  border-radius: 50px;
-  padding: 11px 40px;
-  font-family: "fuente-contenido", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  text-decoration: none;
-  box-shadow: 0px 8px 32px 0 rgb(253 127 127 / 35%);
-  transition: all 0.5s ease;
+  margin-top: 50px;
+   color: #fff;
+  cursor: pointer;
+  font-size: 18px !important;
+  font-weight: 700;
+  background: linear-gradient(to right, #4d2c10, #543011, #5b3412, #623812, #693c13, #724115, #7c4616, #854b18, #92531b, #a05b1e, #ae6422, #bc6c25);
+  border-radius: 25px !important;
+  padding: 10px 35px;
+  border: 1px solid #fff;
+  position: relative;
+  font-family: "fuente-contenido";
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
 }
 
+.shopify-payment-button__button--unbranded:before {
+    position: absolute;
+    border: 2px solid #BC6C25;
+    content: '';
+    left: -7px;
+    top: -6px;
+    bottom: -6px;
+    right: -7px;
+    border-radius: 35px;
+}
 
 .shopify-payment-button__button--unbranded:hover {
   text-decoration: none;
    background-position: right center;
 }
 
+  
+
+  
+.product-individual .btn-2 {
+     color: white!important;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: var(--gradient-secondary);
+    border-radius: 25px;
+    padding: 10px 35px;
+    border: 1px solid #fff;
+    position: relative;
+    font-family: "fuente-contenido";
+    background-size: 200% auto;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
+.product-individual .btn-2:before {
+    position: absolute;
+    border: 2px solid var(--tertiary-light);
+    content: '';
+    left: -7px;
+    top: -6px;
+    bottom: -6px;
+    right: -7px;
+    border-radius: 35px;
+}
+
+.product-individual .btn-2:hover {
+  text-decoration: none;
+   background-position: right center;
+}
 .empty-page-content h1{
    color:  #383838;   
   }
   
  .product-individual .product-single__media {
-   z-index: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* border: 4px solid #fff; */
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-
+    position:relative;
+  z-index:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  
+  border: 4px solid #fff;
+  box-shadow: -9px 7px 23px -12px rgba(0,0,0,0.69);
+  border-radius: 35px;
 }
   
 .product-individual .product-single__media img{   
@@ -110,7 +184,7 @@ line-height: 1.25;
 }
   
   
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 449px) {
  .product-single__media-wrapper {
     margin: 0 auto;
     width: 250px;    
@@ -119,28 +193,13 @@ line-height: 1.25;
   
 }
   
-.product-single__media-group{
-  width:100%;
-}
-.product-single__thumbnails{
- justify-content:center; 
-}
-  .product-single__thumbnails li a{
-    border-radius: var(--radius);
-  }
-  .product-single__thumbnails li a img{
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-  }
 
-  .product-single__thumbnail.active-thumb{
-    border: none;
-  }
-  .product-single__thumbnail.active-thumb img{
-    border: solid 1px var(--primary-light);
-  }
+ /*============================================================================================ */
+/* FIN SECCION HERO SUBPAGINAS
+============================================================================================ */
+  
 .product-individual h1 {
-    color: var(--primary) !important;
+    color: var(--secondary-dark) !important;
     font-size: 30px;    
     text-transform: none !important;
     letter-spacing: 0;
@@ -150,15 +209,12 @@ line-height: 1.25;
 }
   
   .price__pricing-group{
-         background: var(--primary-light);
-    padding: 4px 20px!important;
-    padding-left: 40px;
+    background: var(--tertiary-light); 
+    padding: 5px 15px 5px 15px;
+     padding-left: 40px;
     border-radius: 25px;
     text-align: center;
-    /* border: 2px solid #fff; */
-    /* text-align: center; */
-    display: flex;
-    justify-content: space-between;
+
   }
     
    .price-item{   
@@ -168,14 +224,7 @@ line-height: 1.25;
   
 
   
-
-  @media screen and (min-width: 767px){
-     .product-individual .product-single__media{
-      height: 350px;
-      width: 350px;
-      padding-top: 0 !important;
-    }
-  }
+  
 .return-link-wrapper{
   display: none !important;
 }
@@ -183,20 +232,37 @@ line-height: 1.25;
   
 
 .product-individual input {
-    border:1px solid var(--primary-light);
+    border: 2px solid rgb(126 70 19 / 20%) !important;
     background: #fff !important;
     border-radius: 25px;
     font-family: "fuente-contenido";
     color: #7D4D22 !important;
-   
+    margin-bottom: 25px;
     font-weight: 700;
-    padding-left: 20px;
+     padding-left: 20px;
 }
   
   
-.product-form__error-message-wrapper.product-form__error-message-wrapper--has-payment-buttone{
-  display:none !important;
+.label_izyrent:before {
+    height: 40px;
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M148%20288h-40c-6.6%200-12-5.4-12-12v-40c0-6.6%205.4-12%2012-12h40c6.6%200%2012%205.4%2012%2012v40c0%206.6-5.4%2012-12%2012zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6%200-12%205.4-12%2012v40c0%206.6%205.4%2012%2012%2012h40c6.6%200%2012-5.4%2012-12zm96%200v-40c0-6.6-5.4-12-12-12h-40c-6.6%200-12%205.4-12%2012v40c0%206.6%205.4%2012%2012%2012h40c6.6%200%2012-5.4%2012-12zm-96%2096v-40c0-6.6-5.4-12-12-12h-40c-6.6%200-12%205.4-12%2012v40c0%206.6%205.4%2012%2012%2012h40c6.6%200%2012-5.4%2012-12zm-96%200v-40c0-6.6-5.4-12-12-12h-40c-6.6%200-12%205.4-12%2012v40c0%206.6%205.4%2012%2012%2012h40c6.6%200%2012-5.4%2012-12zm192%200v-40c0-6.6-5.4-12-12-12h-40c-6.6%200-12%205.4-12%2012v40c0%206.6%205.4%2012%2012%2012h40c6.6%200%2012-5.4%2012-12zm96-260v352c0%2026.5-21.5%2048-48%2048H48c-26.5%200-48-21.5-48-48V112c0-26.5%2021.5-48%2048-48h48V12c0-6.6%205.4-12%2012-12h40c6.6%200%2012%205.4%2012%2012v52h128V12c0-6.6%205.4-12%2012-12h40c6.6%200%2012%205.4%2012%2012v52h48c26.5%200%2048%2021.5%2048%2048zm-48%20346V160H48v298c0%203.3%202.7%206%206%206h340c3.3%200%206-2.7%206-6z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    padding-right: calc(1.5em + 0.75rem);
+    background-position: center right calc(0.375em + 0.1875rem);
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    background-color: transparent;
+    margin: 2px 0px;
+    cursor: pointer;
+    z-index: 1;
+   
 }
+  
   .flatpickr-months * {
     color: #FFFAED !important;
     fill: #FFFAED !important;
@@ -233,7 +299,7 @@ span.flatpickr-weekday {
     background: #7D4D22 !important;
     color: #FFFAED !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .social-sharing {
     display: flex;
     justify-content: center;
@@ -277,7 +343,7 @@ span.flatpickr-weekday {
     font-family: "fuente-titulos";
 }
 
-@media screen and (max-width: 992px){
+@media screen (max-width: 767px){
   .product__price > .price{
     align-items: center;
   }
@@ -302,74 +368,105 @@ span.flatpickr-weekday {
     -webkit-box-shadow: -5px 0 0 #FFFAED, 5px 0 0 #FFFAED !important;
     box-shadow: -5px 0 0 #FFFAED, 5px 0 0 #FFFAED !important;
 }
-   .product-individual .grid{
-     display: grid;
-      grid-template-columns: 1fr 2fr;
-      width: 100%;
-      justify-items: center;
-   }
-  .product-single__description ul{
-    list-style:none;
-  }
-   .product-single__description .social-sharing * {
-     color:white;
-     fill:white;
-   }
-   .product-individual * {
-     list-style:none;
-   }
-  @media screen and (max-width: 992px){
-    .product-individual .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-      justify-items: center;
-   }
-    .product-single__description{
-      margin-top:0;
-     
-    }
-  }
-.price__badges{
-  display:none;
-}
- .product-individual button{
-    max-width: 245px;
-  }
-  .product__policies *:hover {
-    color:var(--tertiary) !important;
-  }
-  .product-form__controls-group .product-form__item label{
-     cursor: pointer;
-   
-      position: absolute;
-      font-size: 13px;
-      right: 20px;
-      top: -5px;
-      background: #ffffff;
-      padding: 0;
-      line-height: 11px;
-      color: var(--primary);
-  }
-  .product-form__controls-group .product-form__item{
-    position:relative;
-    margin:
-  }
-  .product-form__controls-group .product-form__item input, .product-form__controls-group .product-form__item select{
-      border: 1px solid var(--primary-light);
-    border-radius: 50px;
-    outline: none;
-  }
-  .custom-inputs:empty{
-    display:none;
-  }
+  
 </style>
 
-<section class="py-section  product-individual">
-   <div class="product-single__meta mb-5 d-flex justify-content-center text-center ">
-       
-         <h1 class="d-lg-none d-flex product-single__title">{{ product.title }}</h1> 
-   </div>
+
+ <!--==========================
+      SECCION HERO SUBPAGINAS
+ ============================-->
+{% assign heroImageLocal = section.settings.image-bg-1 %}
+{% assign heroImageGlobal = settings.subpage_hero_background  %}
+{% assign heroVideoGlobal = settings.subpage_hero_background_video %}
+
+{% assign video = false  %}
+{% assign hero = "" %}
+
+{%  if heroImageLocal == blank %}
+
+{% if heroVideoGlobal == blank %}
+  
+
+{% assign hero = heroImageGlobal %}
+ 
+
+  
+{% else %}
+  
+    {% assign hero = heroVideoGlobal %}
+    {% assign video = true %}
+
+  
+{% endif %}
+{% else  %}
+  {% assign hero = heroImageLocal %}
+ {% endif %}
+
+
+
+ <section class="site-hero inner-page overlay section-{{ section.id }}">
+      
+       {% if video %}
+      <video autoplay="" muted="" loop="" playsinline>
+	    	 <source src="{{ hero }}" type="video/mp4">
+	  </video>
+  <style>
+    .section-{{ section.id }} video{
+      object-fit:cover;
+      object-position:center;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:-1;
+    }
+  </style>
+  {% else %}
+
+  <style>
+    .section-{{ section.id }}{
+      background-image: url({{ hero | img_url: 'master' }});
+      background-size: cover;
+      background-position:center;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  {% endif %}  
+   
+   
+   
+   <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center" data-aos="fade">
+            <h1 class="heading mb-3">
+              {{ product.title }}
+            </h1>
+            <ul class="custom-breadcrumbs mb-4">
+              <li><a href="{{ routes.root_url }}">{{ settings.home-name }}</a></li>
+              <li>&bullet;</li>
+              <li>
+                {% for collection in product.collections limit:1 %}
+                  <a href="{{ collection.url }}"> {{ collection.title }} </a>
+               {% endfor %}
+              </li>
+              <li>&bullet;</li>
+              <li>
+                {{ product.title }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</section>
+ <!-- FIN SUBPAGINAS -->
+
+ <!--==========================
+      SECCION HERO SUBPAGINAS
+ ============================-->
+<section class="spad-1 product-individual">
+
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
   data-section-id="{{ section.id }}"
@@ -448,15 +545,9 @@ span.flatpickr-weekday {
         <div data-thumbnail-slider>
           <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} slider-active{% endif %}" data-slider>
             {% if enable_thumbnail_slides == true %}
-              <button type="button" style="
-                width: 30px;
-                height: 30px;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;" 
-               class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}" data-slider-button>
+              <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}" data-slider-button>
                 {% include 'icon-chevron-left' %}
+                <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
               </button>
             {% endif %}
 
@@ -503,16 +594,9 @@ span.flatpickr-weekday {
               {% endif %}
             </ul>
             {% if enable_thumbnail_slides == true %}
-              <button style="
-                  width: 30px;
-                  height: 30px;
-                  padding: 0;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;" 
-                type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}" data-slider-button data-slider-button-next>
+              <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}" data-slider-button data-slider-button-next>
                 {% include 'icon-chevron-right' %}
-                
+                <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
               </button>
             {% endif %}
           </div>
@@ -522,8 +606,11 @@ span.flatpickr-weekday {
 
     <div class="grid__item {{ product_description_width }}">
       <div class="product-single__meta">
-       
-         <h1 class="d-lg-flex d-none product-single__title mb-4">{{ product.title }}</h1> 
+        <div class="col-md-12 title-section mb-5">
+        <div class="triangulo  d-lg-block d-none" style = "float: left"></div>
+        <div class="triangulo-2 d-lg-block d-none" style = "float: left"></div>   
+        <div class="triangulo-3 d-lg-block d-none" style = "float: left"></div>
+         <h1 class="product-single__title">{{ product.title }}</h1> 
         </div>
        
         <script>window.performance.mark('debut:product:title_visible');</script>
@@ -533,7 +620,7 @@ span.flatpickr-weekday {
           </div>
 
           {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-            <div class="product__policies  rte" data-product-policies>
+            <div class="product__policies rte" data-product-policies>
               {%- if cart.taxes_included -%}
                 {{ 'products.product.include_taxes' | t }}
               {%- endif -%}
@@ -549,101 +636,93 @@ span.flatpickr-weekday {
             {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
           {%- endcapture %}
 
-          {% include "form-product", form_classes: form_classes, product: product, current_variant: current_variant %}
-          
-       <div
-          class="rte product-single__store-availability-container"
-          data-store-availability-container
-          data-product-title="{{ product.title | escape }}"
-          data-has-only-default-variant="{{ product.has_only_default_variant }}"
-          data-base-url="{{ shop.url }}{{ routes.root_url }}"       
-        >
-           
+          {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+            {{ form | payment_terms }}
+
+            {% unless product.has_only_default_variant %}
+              <div class="product-form__controls-group">
+                {% for option in product.options_with_values %}
+                  <div class="selector-wrapper js product-form__item">
+                    <label for="SingleOptionSelector-{{ forloop.index0 }}">
+                      {{ option.name }}
+                    </label>
+                    <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input"
+                      id="SingleOptionSelector-{{ forloop.index0 }}"
+                      data-index="option{{ forloop.index }}"
+                    >
+                      {% for value in option.values %}
+                        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endunless %}
+
+            <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}"
+                  {%- if variant == current_variant %} selected="selected" {%- endif -%}
+                >
+                  {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                </option>
+              {% endfor %}
+            </select>
+
+            {% if section.settings.show_quantity_selector %}
+              <div class="product-form__controls-group">
+                <div class="product-form__item">
+                  <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                  <input type="number" id="Quantity-{{ section.id }}"
+                    name="quantity" value="1" min="1" pattern="[0-9]*"
+                    class="product-form__input product-form__input--quantity" data-quantity-input
+                  >
+                </div>
+              </div>
+            {% endif %}
+
+            <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
+              data-error-message-wrapper
+              role="alert"
+            >
+              <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+              {% include 'icon-error' %}
+              <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
+            </div>
+
+            <div class="product-form__controls-group product-form__controls-group--submit">
+              <div class="product-form__item product-form__item--submit
+                {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+                {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+              >
+              {% for collection in product.collections limit:1 %}  
+               {%- if collection.title != "Services" and collection.title != "Servicios" -%}
+                <button type="submit" name="add"
+                  {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                  aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                  class="btn-section product-form__cart-submit d-flex align-items-center justify-content-center{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn-2{% endif %}"
+                  {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                  data-add-to-cart>
+                  <span data-add-to-cart-text>
+                    {% unless current_variant.available %}
+                      {{ 'products.product.sold_out' | t }}
+                    {% else %}
+                      {{ 'products.product.add_to_cart' | t }}
+                    {% endunless %}
+                  </span>
+                  <span class="hide" data-loader>
+                    {% include 'icon-spinner' %}
+                  </span>
+                </button>
+              {% endif %}
+              {% endfor %}
+                {% if section.settings.enable_payment_button %}
+                  {{ form | payment_button }}
+                {% endif %}
+              </div>
+            </div>
+          {% endform %}
         </div>
-
-       
-           <style>
-             @media screen and (max-width: 767px){
-               padding-bottom: 30px;
-             }
-             .store-availability-information__button{
-               display:none;
-             }
-             .store-availabilities-list{
-               list-style:none;
-             }
-             .store-availability-list__item::before{
-               display:none;
-             }
-             .store-availability-list__stock svg{
-                  width: 15px;
-                  height: 15px;
-                  color: var(--primary);
-                  fill: var(--primary) !important;
-             }
-              .store-availability-list__stock svg path{
-                 fill: var(--primary) !important;
-              }
-             .store-availability-list__location{
-               font-size: 20px;
-                margin: 5px;
-               font-family: "fuente-contenido"!important;
-             }
-             .store-availability-list__address p, .store-availability-list__stock{
-               font-size: 14px;
-             }
-             .modal-header .close{
-               padding: 0rem 1rem;
-             }
-             .store-availability-information-container{
-               display: flex;
-                flex-direction: column;
-             }
-             .store-availability-information{
-             position:relative;
-               
-             }
-             .store-availability-information svg{
-               position: absolute;
-                left: -20px;
-
-             }
-             .link-pick:hover{
-               color:var(--tertiary)!important;
-             }
-           </style>
-     <script>
-       document.addEventListener("DOMContentLoaded", function(){
-         const output = (out) => {
-           let el = document.querySelector(".store-availability-information-container");
-           let title = document.querySelector(".title-modal-pick");
-           let content = document.querySelector(".store-availabilities-list");
-           let contentModal = document.querySelector(".modal-pick-title");
-           title.innerHTML = "{{ product.title }}";
-           contentModal.innerHTML = content.outerHTML;
-           el.insertAdjacentHTML("beforeEnd", "<a href='#modal-pickup' data-toggle='modal' style='border-bottom:none;' class='link-pick w-100 d-flex justify-content-md-start justify-content-center'>More Information</a>");   
-        }
-        const panoptico = new MutationObserver(
-            (mutaciones, observer) => {
-                for (var m of mutaciones) {
-                    if (m.type == 'childList') {
-                        if (m.addedNodes[0] && m.addedNodes[0].nodeValue) {
-                            output(m);
-                        }
-                    }
-                }
-            }
-        );
-        panoptico.observe(
-            document.querySelector(".product-single__store-availability-container"), {
-                attributes: true,
-                childList: true,
-                subtree: true
-            },
-        );
-       });
-     </script>
-    </div>
 
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
@@ -663,27 +742,35 @@ span.flatpickr-weekday {
           aria-hidden="true"
         >{{ 'products.product.loader_label' | t }}</p>
 
-        
+        <div
+          class="product-single__store-availability-container"
+          data-store-availability-container
+          data-product-title="{{ product.title | escape }}"
+          data-has-only-default-variant="{{ product.has_only_default_variant }}"
+          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+        >
+        </div>
        
 
       
     </div>
   </div>
-
   {% if product.description != blank %}
-   <div class="product-single__description title-section align-items-center page-width">
+   <div class="product-single__description">
    
-                
-      <h1> Description</h1> 
-                    
+    {% if shop.locale == "en" %}
+   <h3> Description</h3> 
+      {% else %}
+    <h3> Descripción</h3> 
+               {% endif; %}     
      <p>{{ product.description }}<p>    
       
       {% if section.settings.show_share_buttons %}
-        <div class="d-flex justify-content-center  mt-5">
+        <div class="d-flex justify-content-center">
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
         </div>
           {% endif %}
-      </div>
+  </div>
   {% endif %}
 </div>
 
