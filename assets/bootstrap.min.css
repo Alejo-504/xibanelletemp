@@ -4461,6 +4461,7 @@ textarea.form-control-lg {
   transition: var(--bs-accordion-transition);
   font-weight: 600;
   letter-spacing: 0.1px;
+  background: rgb(var(--color-background-2));
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
