@@ -20,9 +20,11 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+     .section-{{ section.id }}-padding #main-collection-filters{
+        margin-bottom: {{ section.settings.padding_top }}px;
+     }
   }
    .grid__item  {
      padding: 10px;
