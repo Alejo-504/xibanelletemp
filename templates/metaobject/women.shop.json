@@ -9,6 +9,9 @@
     },
     "main": {
       "type": "main-list-collection-women",
+      "custom_css": [
+        ".card.d-flex.flex-column.align-items-center {border-top: 5px solid rgb(var(--color-background-2)); border-bottom: 5px solid rgb(var(--color-background-2));}"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "title": "Collections",
