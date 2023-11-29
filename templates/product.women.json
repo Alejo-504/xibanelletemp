@@ -4,7 +4,7 @@
       "type": "hero_subpage",
       "settings": {
         "title": "Product Information",
-        "color_scheme": "background-2"
+        "color_scheme": "background-1"
       }
     },
     "main": {
@@ -69,7 +69,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
