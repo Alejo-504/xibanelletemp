@@ -1,22 +1,17 @@
-{%  assign type  = "" %}
+{% assign type = "" %}
 
-
-{% if 
-     
+{% if request.params['type'] == 'men' or
       template contains "metaobject/men" or
       page.metafields.page.type == "men" or 
       collection.metafields.page.type == "men" or
-      product.type == "men"
-%}
-      {%  assign type = "men" %}
-      
-{% elsif 
-       
-      template contains "metaobject/women" or
-      page.metafields.page.type == "women" or
-      collection.metafields.page.type == "women" or
-      product.type == "women"
-%} 
-       {%  assign type = "women" %}
+      product.type == "men" %}
+  {% assign type = "men" %}
   
+{% elsif request.params['type'] == 'women' or
+        template contains "metaobject/women" or
+        page.metafields.page.type == "women" or
+        collection.metafields.page.type == "women" or
+        product.type == "women" %}
+  {% assign type = "women" %}
+
 {% endif %}
