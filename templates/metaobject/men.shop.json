@@ -3,6 +3,7 @@
     "main": {
       "type": "main-list-collection-men",
       "settings": {
+        "color_scheme": "background-2",
         "title": "Collections",
         "sort": "alphabetical",
         "image_ratio": "square",
