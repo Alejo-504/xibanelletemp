@@ -684,13 +684,6 @@
           "link_url": ""
         }
       },
-      "hero_subpage": {
-        "type": "hero_subpage",
-        "settings": {
-          "title": "Faqs",
-          "color_scheme": "background-2"
-        }
-      },
       "custom-values": {
         "type": "custom-values",
         "blocks": {

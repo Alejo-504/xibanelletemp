@@ -1,13 +1,10 @@
 {
   "sections": {
-    "7a6c7602-a790-4a9b-a4d7-8c94fcec3a64": {
-      "type": "hero_subpage",
-      "custom_css": [
-
-      ],
+    "fbe885e7-094e-47c8-a078-84d9bdd9de4a": {
+      "type": "hero_subpage_women",
       "settings": {
         "title": "",
-        "color_scheme": "background-1"
+        "color_scheme": ""
       }
     },
     "product-grid": {
@@ -35,7 +32,7 @@
     }
   },
   "order": [
-    "7a6c7602-a790-4a9b-a4d7-8c94fcec3a64",
+    "fbe885e7-094e-47c8-a078-84d9bdd9de4a",
     "product-grid"
   ]
 }
