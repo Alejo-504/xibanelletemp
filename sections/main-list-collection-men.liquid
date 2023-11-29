@@ -24,15 +24,7 @@
     endif
   -%}
 
-      {% assign collections_to_display = '' | split: ',' %}
-      {% assign index = 0 %}
-      
-      {% for collection in collections %}
-        {% if collection.metafields.page.type == 'men' %}
-          {% assign collections_to_display[index] = collection %}
-          {% assign index = index | plus: 1 %}
-        {% endif %}
-      {% endfor %}
+    {% assign collections_to_display = collections.all | where: 'metafields.page.type', 'men' %}
 
  
   {%- paginate collections_to_display by paginate_by -%}
