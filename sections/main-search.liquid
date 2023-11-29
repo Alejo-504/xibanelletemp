@@ -80,7 +80,7 @@
         <main-search style="color:red;">
   
          {{  search.terms | escape }}
-          {{ request.params['type'] }}
+          {{ request.path}}
   
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
             <div class="field">
