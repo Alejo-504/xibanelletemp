@@ -77,11 +77,7 @@
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
-        <main-search style="color:red;">
-  
-         {{  search.terms | escape }}
-          {{ request.path}}
-  
+        <main-search>
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
             <div class="field">
               <input
