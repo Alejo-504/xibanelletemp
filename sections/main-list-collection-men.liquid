@@ -27,7 +27,7 @@
     {% assign collections_to_display = collections.all | where: 'metafields.page.type', 'men' %}
 
  
-  {%- paginate collections_to_display by paginate_by -%}
+  
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
@@ -48,8 +48,8 @@
         </li>
       {%- endfor -%}
     </ul>
-     {% render 'pagination', paginate: paginate %}
-  {%- endpaginate -%}
+     
+  
    
 </div>
 {% schema %}
