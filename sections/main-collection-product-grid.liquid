@@ -110,7 +110,7 @@
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
-          style="background:rgb(var(--color-background-2));color:rgb(var(--color-foreground_2));width: 100%;margin-bottom: 30px;"
+          style="background:rgb(var(--color-background-2));color:rgb(var(--color-foreground_2));width: 100%;"
           aria-labelledby="verticalTitle"
           class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} {% endif %}"
           id="main-collection-filters"
