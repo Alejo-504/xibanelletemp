@@ -77,9 +77,20 @@
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
-        <main-search>
-          {{ routes.search_url }}
-          <form action="" method="get" role="search" class="search">
+        <main-search style="color:red;">
+          {% assign route = "" %}
+
+          {%  if type=="men" %}
+            {% assign route = "/pages/men/search" %}
+            
+          {% elsif type=="women" %}
+             {% assign route = "/pages/women/search" %}
+            
+          {% endif %}
+
+
+  
+          <form action="{{ route }}" method="get" role="search" class="search">
             <div class="field">
               <input
                 class="search__input field__input"
