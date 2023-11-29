@@ -3,7 +3,7 @@
     "main": {
       "type": "main-list-collection-women",
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "title": "Collections",
         "sort": "alphabetical",
         "image_ratio": "square",
