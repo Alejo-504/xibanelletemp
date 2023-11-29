@@ -4541,8 +4541,12 @@ button.accordion-button.collapsed {
 
 .accordion-body {
   padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+  background: transparent;
 }
-
+.accordion-body p{
+  font-size: 13px;
+    color: white;
+}
 .accordion-flush .accordion-collapse {
   border-width: 0;
 }
