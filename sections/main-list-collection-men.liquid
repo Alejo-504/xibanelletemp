@@ -23,7 +23,23 @@
       assign paginate_by = 28
     endif
   -%}
-  {%- paginate collections by paginate_by -%}
+
+  {% assign collections_to_display = '' %}
+
+  {% for collection in collections %}
+    {% if collection.metafields.page.type == 'men' %}
+      {% if collections_to_display == '' %}
+        {% assign collections_to_display = collection %}
+      {% else %}
+        {% assign collections_to_display = collections_to_display | append: ',' | append: collection %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+
+
+
+  {%- paginate collections_to_display by paginate_by -%}
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
