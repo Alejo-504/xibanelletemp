@@ -61,7 +61,7 @@
         "layout": "section",
         "color_scheme": "background-2",
         "container_color_scheme": "",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
