@@ -1,10 +1,10 @@
 {
   "sections": {
-    "fbe885e7-094e-47c8-a078-84d9bdd9de4a": {
-      "type": "hero_subpage_women",
+    "760b7831-2a9f-4ed4-8203-bbcb89c4bb5c": {
+      "type": "hero_subpage_men",
       "settings": {
         "title": "",
-        "color_scheme": ""
+        "color_scheme": "background-2"
       }
     },
     "product-grid": {
@@ -15,7 +15,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "image_ratio": "portrait",
         "image_shape": "chevronleft",
         "show_secondary_image": false,
@@ -32,7 +32,7 @@
     }
   },
   "order": [
-    "fbe885e7-094e-47c8-a078-84d9bdd9de4a",
+    "760b7831-2a9f-4ed4-8203-bbcb89c4bb5c",
     "product-grid"
   ]
 }
