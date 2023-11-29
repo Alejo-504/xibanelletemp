@@ -13,7 +13,7 @@
 {%- endif -%}
 
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
-
+{% include "getTypePage" %}
 <style>
   .template-search__header {
     margin-bottom: 3rem;
@@ -78,7 +78,8 @@
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
         <main-search>
-          <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+          {{ routes.search_url }}
+          <form action="" method="get" role="search" class="search">
             <div class="field">
               <input
                 class="search__input field__input"
