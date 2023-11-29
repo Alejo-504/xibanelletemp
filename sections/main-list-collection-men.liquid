@@ -24,9 +24,20 @@
     endif
   -%}
 
-    {% assign collections_to_display = collections | where: 'metafields.page.type', 'men' %}
+   
+    {% assign collections_to_display =  '' | split: '' %}
 
- 
+    {% for collection in collections  %}
+      
+      {% assign admited = collection.metafields.page.type %}
+
+      {% if admited == "men" %}
+        {% assign collections_to_display = collections_to_display | push: collection %}
+        
+      {% endif %}
+    {% endfor %}
+
+  {%- paginate collections_to_display by paginate_by -%}
   
     <ul
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
@@ -49,7 +60,8 @@
       {%- endfor -%}
     </ul>
      
-  
+  {% render 'pagination', paginate: paginate %}
+  {%- endpaginate -%}
    
 </div>
 {% schema %}
