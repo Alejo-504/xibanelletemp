@@ -108,7 +108,7 @@
         <aside
           style="background:rgb(var(--color-background-2));color:rgb(var(--color-foreground_2))"
           aria-labelledby="verticalTitle"
-          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} {% endif %}"
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
