@@ -1,5 +1,12 @@
 {
   "sections": {
+    "4c5ab5f1-a85b-4774-b7c6-a28c98587e78": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "",
+        "color_scheme": "background-2"
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
@@ -25,6 +32,7 @@
     }
   },
   "order": [
+    "4c5ab5f1-a85b-4774-b7c6-a28c98587e78",
     "product-grid"
   ]
 }
