@@ -27,13 +27,7 @@
   {% assign collections_to_display = '' %}
 
   {% for collection in collections %}
-    {% if collection.metafields.page.type == 'men' %}
-      {% if collections_to_display == '' %}
-        {% assign collections_to_display = collection %}
-      {% else %}
-        {% assign collections_to_display = collections_to_display | append: ',' | append: collection %}
-      {% endif %}
-    {% endif %}
+     {{ collection.title }}
   {% endfor %}
 
 
