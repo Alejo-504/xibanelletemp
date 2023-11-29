@@ -11,7 +11,7 @@
       "type": "main-list-collection-men",
       "settings": {
         "color_scheme": "background-2",
-        "title": "Collections",
+        "title": "Categories",
         "sort": "alphabetical",
         "image_ratio": "square",
         "columns_desktop": 3,
