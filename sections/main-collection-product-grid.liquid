@@ -101,11 +101,12 @@
       </facet-filters-form>
     {%- endif -%}
 
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}" style="background:rgb(var(--color-background-2));color:rgb(var(--color-foreground_2))">
+    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
+          style="background:rgb(var(--color-background-2));color:rgb(var(--color-foreground_2))"
           aria-labelledby="verticalTitle"
           class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
           id="main-collection-filters"
