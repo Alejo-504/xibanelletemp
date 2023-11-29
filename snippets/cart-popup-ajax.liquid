@@ -33,7 +33,7 @@
       if(product != "Fail"){
         popup.querySelector(".title-product").textContent = product.title;
         popup.querySelector(".container-image img").src = product.image+"&width=90";
-        
+        document.querySelector(".cart-count-bubble").textContent = parseInt(document.querySelector(".cart-count-bubble").textContent) + 1;
       }else{
         
        /* Fail */
