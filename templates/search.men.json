@@ -1,5 +1,12 @@
 {
   "sections": {
+    "h": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "Search",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-search",
       "settings": {
@@ -22,6 +29,7 @@
     }
   },
   "order": [
+    "h",
     "main"
   ]
 }
