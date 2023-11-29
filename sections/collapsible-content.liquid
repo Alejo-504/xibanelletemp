@@ -79,7 +79,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ block.id }}" aria-expanded="true" aria-controls="collapse{{ block.id }}">
                       {% render 'icon-accordion', icon: block.settings.icon %}
                       {{ block.settings.heading | default: block.settings.page.title }}
-                      {% render 'icon-caret' %}
+                     
                     </button>
                   </h2>
                   <div id="collapse{{ block.id }}" class="accordion-collapse collapse{% if section.settings.open_first_collapsible_row and forloop.first %} show{% endif %}" aria-labelledby="heading{{ block.id }}" data-bs-parent="#accordionExample">
