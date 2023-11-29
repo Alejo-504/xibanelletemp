@@ -24,7 +24,7 @@
     endif
   -%}
 
-    {% assign collections_to_display = collections.all | where: 'metafields.page.type', 'men' %}
+    {% assign collections_to_display = collections | where: 'metafields.page.type', 'men' %}
 
  
   
