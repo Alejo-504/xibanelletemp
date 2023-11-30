@@ -2,6 +2,7 @@
 
 {% if
       template contains "metaobject/men" or
+      template contains "customer/account.men" or
       page.metafields.page.type == "men" or 
       collection.template_suffix == "men" or
       product.template_suffix == "men" or
@@ -11,6 +12,7 @@
   
 {% elsif
         template contains "metaobject/women" or
+        template contains "customer/account.women" or
         page.metafields.page.type == "women" or
         collection.template_suffix == "women" or
         product.template_suffix == "women" or
