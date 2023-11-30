@@ -1,10 +1,30 @@
 {% schema %}
   {
-    "name": "Privacy Policy",
-    "settings": [],
+    "name": "Custom Policy",
+    "settings": [
+      {
+        "type": "select",
+        "id": "policy",
+        "label": "Policy",
+        "options": [
+          {
+            "value": "privacy_policy",
+            "label": "Privacy Policy"
+          },
+          {
+            "value": "terms_of_service",
+            "label": "Terms of Service"
+          },
+          {
+            "value": "refund_policy",
+            "label": "Refund Policy"
+          }
+        ]
+      }
+    ],
     "presets":[
       {
-        "name": "Privacy Policy",
+        "name": "Custom Policy",
         "category": "custom"
       }
     ]
@@ -12,5 +32,14 @@
 {% endschema %}
 
 <div class="container py-5">
-{{ shop.privacy_policy.body }}
-</div
+  <div class="row">
+    <div class="col-12">
+      {% if section.settings.policy == 'privacy_policy' %}
+       {{ shop.privacy_policy.body }} 
+      {% elsif section.settings.policy == 'terms_of_service' %}
+        {{ shop.terms_of_service.body }}
+      {% elsif section.settings.policy == 'refund_policy' %}
+        {{ shop.refund_policy.body }}
+      {% endif %}
+  </div>
+</div>
