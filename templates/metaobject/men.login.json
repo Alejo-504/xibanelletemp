@@ -9,6 +9,9 @@
     },
     "main": {
       "type": "main-login",
+      "custom_css": [
+        "*{color:white}"
+      ],
       "settings": {
         "scheme_selector": "background-2",
         "title": "Welcome!",
