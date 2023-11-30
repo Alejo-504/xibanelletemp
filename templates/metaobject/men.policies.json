@@ -15,15 +15,16 @@
         "color_scheme": "background-2"
       }
     },
-    "71118c3f-6659-47ea-be7c-2a8fe25d94d7": {
-      "type": "privacy_policy",
+    "0b1c0d25-9207-4305-82b0-aad054350cc1": {
+      "type": "policie",
       "settings": {
+        "policy": "terms_of_service"
       }
     }
   },
   "order": [
     "main",
     "39df0256-d664-43be-bf83-9690185d98c8",
-    "71118c3f-6659-47ea-be7c-2a8fe25d94d7"
+    "0b1c0d25-9207-4305-82b0-aad054350cc1"
   ]
 }
