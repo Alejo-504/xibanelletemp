@@ -17,7 +17,7 @@
 
 <div class="customer login section-{{ section.id }}-padding color-{{ section.settings.scheme_selector }}">
   <h1 id="recover" tabindex="-1">
-    {{ 'customer.recover_password.title' | t }}
+   {{ section.settings.title }}
   </h1>
   <div>
     <p>
@@ -170,6 +170,11 @@
         "type": "color_scheme",
         "id": "scheme_selector",
         "label": "Scheme Number"
+    },
+     {
+        "type": "text",
+        "id": "title",
+        "label": "Titlte"
     },
     {
       "type": "header",
