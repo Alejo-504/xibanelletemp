@@ -162,11 +162,11 @@
       ],
       "custom_css": [
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: 60px;}",
-        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px;}"
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px; background-position:bottom;}"
       ],
       "settings": {
-        "lateral_1": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
-        "lateral_2": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
+        "lateral_1": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
+        "lateral_2": "shopify:\/\/shop_images\/0656e7ca-d465-4e3c-86fb-e709f556e2b9.webp",
         "color_background": "#e6e6e6",
         "color_text": "#6b6559",
         "color_scheme": "background-1",
