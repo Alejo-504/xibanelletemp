@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "05815e6b-3ec9-485e-8b4b-e12e3c057a9d": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "All Categories",
+        "color_scheme": ""
+      }
+    },
+    "main": {
+      "type": "main-list-collection-women",
+      "custom_css": [
+        ".card.d-flex.flex-column.align-items-center {border-top: 5px solid rgb(var(--color-background-2)); border-bottom: 5px solid rgb(var(--color-background-2));}"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "title": "Categories",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "1"
+      }
+    }
+  },
+  "order": [
+    "05815e6b-3ec9-485e-8b4b-e12e3c057a9d",
+    "main"
+  ]
+}
