@@ -92,43 +92,53 @@
     "custom-reviews": {
       "type": "custom-reviews",
       "blocks": {
-        "902803ea-1fc7-4b10-ab31-bfb4a264ee33": {
+        "1": {
           "type": "testimonial",
           "settings": {
-            "author": "Alexandro Samsóin",
+            "author": "Amanda S.",
             "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "quote": "Not only is the craftsmanship top-notch, but the customer service was also incredibly helpful and friendly. Definitely a repeat customer here!",
             "rating": 4.8
           }
         },
-        "f1848521-9c71-4226-82d9-2d1817a9e090": {
+        "2": {
           "type": "testimonial",
           "settings": {
-            "author": "Alexandro Samsóin",
+            "author": "Liam R.",
             "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "quote": "As a fashion enthusiast, I'm always on the lookout for pieces that stand out. I found exactly what I was looking for here – unique design, excellent quality, and a seamless shopping experience",
             "rating": 4.8
           }
         },
-        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb": {
+        "3": {
           "type": "testimonial",
           "settings": {
-            "author": "Alexandro Samsóin",
+            "author": "Sophia T.",
             "location": "Las Vegas, Montana",
-            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "quote": "From browsing to unboxing, the entire process was a delight. The attention to detail in the packaging made it feel like I was opening a gift to myself. The product quality is unmatched!",
+            "rating": 4.8
+          }
+        },
+        "4": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Ethan K.",
+            "location": "Las Vegas, Montana",
+            "quote": "I needed a last-minute gift, and not only did my order arrive in record time, but it was also perfect in every way. The recipient was thrilled, and I couldn't be happier with the service.",
             "rating": 4.8
           }
         }
       },
       "block_order": [
-        "902803ea-1fc7-4b10-ab31-bfb4a264ee33",
-        "f1848521-9c71-4226-82d9-2d1817a9e090",
-        "ffba4105-2c26-421f-b0ad-ffd5b09d2abb"
+        "1",
+        "2",
+        "3",
+        "4"
       ],
       "settings": {
         "scheme_selector": "background-1",
         "title": "What Our Customer Say",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+        "subtitle": "Discover the experiences of our satisfied customers. Their stories highlight the exceptional quality and style that define our brand.",
         "link_text": "View More",
         "link_url": "https:\/\/www.google.com\/business\/"
       }
