@@ -50,7 +50,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I return a product if I'm not satisfied?",
-            "icon": "check_mark",
+            "icon": "question_mark",
             "row_content": "<p>Absolutely. Customer satisfaction is our top priority. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please review our return policy for specific terms and conditions<\/p>",
             "page": ""
           }
