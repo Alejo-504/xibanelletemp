@@ -11,7 +11,9 @@
       "type": "main-login",
       "custom_css": [
         "* {color: white;}",
-        ".bg-login {background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}"
+        ".bg-login {background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
+        "input{background:white; color:black;}",
+        "label{color:gray;}"
       ],
       "settings": {
         "scheme_selector": "background-2",
