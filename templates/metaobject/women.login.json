@@ -1,5 +1,12 @@
 {
   "sections": {
+    "4c5ab5f1-a85b-4774-b7c6-a28c98587e78": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "Login",
+        "color_scheme": "background-1"
+      }
+    },
     "main": {
       "type": "main-login",
       "settings": {
@@ -9,6 +16,7 @@
     }
   },
   "order": [
+    "4c5ab5f1-a85b-4774-b7c6-a28c98587e78",
     "main"
   ]
 }
