@@ -2,9 +2,12 @@
   "sections": {
     "4c5ab5f1-a85b-4774-b7c6-a28c98587e78": {
       "type": "hero_subpage",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Sign In",
-        "color_scheme": "inverse"
+        "color_scheme": "background-2"
       }
     },
     "main": {
