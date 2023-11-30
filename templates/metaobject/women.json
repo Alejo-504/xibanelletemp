@@ -35,7 +35,7 @@
         "scheme_selector": "",
         "heading": "Timeless Elegance",
         "description": "Explore the essence of sophistication with our Classic Handbag 2023. Crafted for the contemporary woman, it blends functionality with effortless style.",
-        "button_1_link": "shopify:\/\/collections\/women",
+        "button_1_link": "shopify:\/\/metaobjects\/women\/shop",
         "button_1_text": "Shop Now",
         "button_2_link": "shopify:\/\/metaobjects\/women\/about-us",
         "button_2_text": "Learn More",
@@ -295,7 +295,7 @@
       "custom_css": [
         ".newsletter {border-bottom: white solid 1px;}",
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
-        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position:bottom;}"
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position: bottom;}"
       ],
       "settings": {
         "lateral_1": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
