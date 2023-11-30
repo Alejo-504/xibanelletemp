@@ -32,8 +32,8 @@
       ],
       "settings": {
         "scheme_selector": "background-2",
-        "heading": "Lorem Ipsum Dolor Sit Amet",
-        "description": "Lorem ipsum dolor sit amet consectetur. Sagittis amet condimentum enim sapien enim convallis sapien massa netus.",
+        "heading": "Redefining Masculine Elegance",
+        "description": "Explore our unique collection of leather goods for men, where each piece perfectly blends classic style with modern flair. A world of sophistication and quality awaits you.",
         "button_1_link": "shopify:\/\/collections\/men",
         "button_1_text": "Shop Now",
         "button_2_link": "shopify:\/\/metaobjects\/men\/about-us",
@@ -85,7 +85,9 @@
         "f7a2df54-b3b0-4431-9647-a275d5364571"
       ],
       "settings": {
-        "scheme_selector": "background-2"
+        "scheme_selector": "background-2",
+        "title": "",
+        "description": ""
       }
     },
     "7b302da7-0124-4c70-8e86-742397839fc8": {
