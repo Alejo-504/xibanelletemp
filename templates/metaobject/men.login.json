@@ -11,10 +11,10 @@
       "type": "main-login",
       "custom_css": [
         "* {color: white;}",
-        ".bg-login {padding:80px 0; background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
+        ".bg-login {padding: 80px 0; background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
         "input {background: white; color: black;}",
         "label {color: gray;}",
-        ".bg-login > div {padding:50px auto; border: solid 1px white;}"
+        ".bg-login > div {padding: 50px 50px; border: solid 4px rgb(var(--color-background-2));}"
       ],
       "settings": {
         "scheme_selector": "background-2",
