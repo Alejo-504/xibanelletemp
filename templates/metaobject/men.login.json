@@ -10,7 +10,8 @@
     "main": {
       "type": "main-login",
       "custom_css": [
-        "*{color:white}"
+        "* {color: white;}",
+        ".bg-login{background:rgb(var(--color-background)); color:rgb(var(--color-foreground_2)); }"
       ],
       "settings": {
         "scheme_selector": "background-2",
