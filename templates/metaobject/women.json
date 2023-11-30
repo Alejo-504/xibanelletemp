@@ -86,7 +86,9 @@
         "f7a2df54-b3b0-4431-9647-a275d5364571"
       ],
       "settings": {
-        "scheme_selector": "background-1"
+        "scheme_selector": "background-1",
+        "title": "Best Sellers",
+        "description": "<p>Dive into our Bestsellers selection, where each piece narrates a tale of craftsmanship and luxury. With designs that transcend seasons, our top-selling handbags are the epitome of timeless fashion for the modern woman.<\/p>"
       }
     },
     "woman-about-home": {
