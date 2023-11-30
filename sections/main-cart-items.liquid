@@ -33,21 +33,32 @@
 {%- unless settings.cart_type == 'drawer' -%}
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
+{% include "getTypePage" %}
+{%  assign url_continue_shopping = "" %}
 
+{% if type == "men" %}
+  {%  assign url_continue_shopping = "/pages/men/shop" %}
+    {% elsif type == "women" %}
+  {%  assign url_continue_shopping = "/pages/women/shop" %}
+{% endif %}
+
+
+
+  
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="btn btn-primary-outline hero">
+      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline hero">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
 
     <div class="cart__warnings">
       <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="btn btn-primary hero">
+      <a href="{{ url_continue_shopping }}" class="btn btn-primary hero">
         {{ 'general.continue_shopping' | t }}
       </a>
 
