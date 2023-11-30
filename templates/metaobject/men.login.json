@@ -4,13 +4,13 @@
       "type": "hero_subpage",
       "settings": {
         "title": "Sign In",
-        "color_scheme": "background-2"
+        "color_scheme": "inverse"
       }
     },
     "main": {
       "type": "main-login",
       "custom_css": [
-        "* {color: white; text-decoration:none;}",
+        "* {color: white; text-decoration: none;}",
         ".bg-login {background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
         "input {background: white; color: black;}",
         "label {color: gray;}",
