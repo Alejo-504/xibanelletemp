@@ -233,12 +233,12 @@ body, html{
 
 
 
-
+/* INPUT SEARCH */
 .search-modal__form .search__input {
   background: white;
   color: black;
 }
-.search-modal__form. field__label{
+.search-modal__form  .field__label{
   color: gray;
 }
 
