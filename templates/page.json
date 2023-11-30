@@ -1,5 +1,12 @@
 {
   "sections": {
+    "ba0d18f4-a078-4892-8078-4e494ed15f7a": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "Shipping",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -9,6 +16,7 @@
     }
   },
   "order": [
+    "ba0d18f4-a078-4892-8078-4e494ed15f7a",
     "main"
   ]
 }
