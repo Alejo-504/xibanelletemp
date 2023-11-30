@@ -23,8 +23,8 @@ body, html{
   height: 100%;
   content: "";
 }
-.breadcrumb-item.not-active:hover{
-  color:rgb(var(--color-foreground_3));
+.breadcrumb-item.not-active:hover a{
+  color:rgb(var(--color-foreground_3))!important;
 }
 .women.breadcrumb-area.bg-overlay::after {
   background: var(--subpage-overlay_women);
