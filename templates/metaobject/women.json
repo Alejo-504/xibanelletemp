@@ -107,7 +107,7 @@
           "settings": {
             "icon": "shield",
             "title": "Secure Payment",
-            "description": "Experience safe and protected transactions with our state-of-the-art encryption and fraud prevention systems"
+            "description": "Your personal and payment information is always safe."
           }
         },
         "3f02743a-2e58-4226-8262-aecef86d2440": {
@@ -123,7 +123,7 @@
           "settings": {
             "icon": "support",
             "title": "24\/7 Support",
-            "description": "Our dedicated support team is available 24\/7 to answer your questions and ensure a seamless shopping experience."
+            "description": "Our dedicated support team is available 24\/7 to answer your questions."
           }
         }
       },
