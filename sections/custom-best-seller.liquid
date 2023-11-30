@@ -120,8 +120,8 @@
   
   <div class="best-sellers-section color-{{ section.settings.scheme_selector }} ">
     <div class="page-width d-flex justify-content-center flex-column align-items-center">
-      <h2 style="margin-bottom:45px;">Best Sellers Section</h2>
-      <p style="margin-bottom:45px;">Lorem ipsum dolor sit amet consectetur. Adipiscing purus commodo nulla cras pulvinar ante at magna.</p>
+      <h2 style="margin-bottom:45px;">{{ section.settings.title }}</h2>
+      <p style="margin-bottom:45px;">{{ section.settings.description }}</p>
       <div class=" grid-container-product w-100">
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
