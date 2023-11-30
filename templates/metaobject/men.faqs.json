@@ -22,27 +22,45 @@
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Lorem Ipsum Dolor?",
+            "heading": "What types of leather products does Xinabelle Store offer?",
             "icon": "question_mark",
-            "row_content": "<p>Lorem Ipsum Dolor sit amit<\/p>",
+            "row_content": "<p>At Xinabelle Store, we specialize in a variety of high-quality leather goods. Our product range includes handcrafted leather wallets, elegant purses, durable belts, and an array of stylish accessories. Each product is designed with a focus on both functionality and fashion.<\/p>",
             "page": ""
           }
         },
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Lorem Ipsum Dolor sit amit?",
+            "heading": "How can I care for my leather items to ensure their longevity?",
             "icon": "question_mark",
-            "row_content": "<p>Lorem Ipsum Dolor sit amit Lorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amit vLorem Ipsum Dolor sit amit<\/p>",
+            "row_content": "<p>To maintain the quality of your leather items, we recommend keeping them away from excessive moisture and direct sunlight. Use a soft, dry cloth for regular dusting and apply a leather conditioner occasionally to keep the material supple.<\/p>",
             "page": ""
           }
         },
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Lorem?",
+            "heading": "Does Xinabelle Store offer international shipping?",
             "icon": "question_mark",
-            "row_content": "<p>Lorem Ipsum Dolor sit amit Lorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolor sit amitLorem Ipsum Dolo<\/p>",
+            "row_content": "<p>Yes, we do! Xinabelle Store is delighted to serve an international clientele. Shipping fees and times vary depending on the destination. Please refer to our shipping policy for more details.<\/p>",
+            "page": ""
+          }
+        },
+        "1e690d99-a602-4fc0-b010-ae28b77d70d4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return a product if I'm not satisfied?",
+            "icon": "question_mark",
+            "row_content": "<p>Absolutely. Customer satisfaction is our top priority. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please review our return policy for specific terms and conditions<\/p>",
+            "page": ""
+          }
+        },
+        "eb699078-e7ef-4220-8790-e89d2c83eb2d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know which size to choose when purchasing belts or wrist accessories?",
+            "icon": "question_mark",
+            "row_content": "<p>For the best fit, we advise measuring your wrist or waist before ordering. Our size guide provides detailed instructions and measurements to help you select the perfect size. If you're still unsure, our customer service team is here to assist you.<\/p>",
             "page": ""
           }
         }
@@ -51,18 +69,23 @@
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-1",
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-2",
         "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-3",
-        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-4"
+        "template--21747231424816__5cf111d0-6191-4afa-9189-aa41c180bb7e-collapsible_row-4",
+        "1e690d99-a602-4fc0-b010-ae28b77d70d4",
+        "eb699078-e7ef-4220-8790-e89d2c83eb2d"
+      ],
+      "custom_css": [
+        "img {height: 325px;}"
       ],
       "settings": {
         "caption": "",
-        "heading": "Frequently Questions",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h2",
         "heading_alignment": "left",
         "layout": "section",
-        "color_scheme": "background-2",
-        "container_color_scheme": "",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-1",
         "open_first_collapsible_row": false,
-        "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "image": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 0,
