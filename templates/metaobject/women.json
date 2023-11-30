@@ -99,7 +99,7 @@
           "settings": {
             "icon": "truck",
             "title": "Free Shipping",
-            "description": "Lorem ipsum dolor sitamet, consectetur."
+            "description": "Enjoy the convenience of fast, cost-free delivery on all your purchases."
           }
         },
         "c9931cec-23ab-4291-86e8-b1c80ca866df": {
@@ -107,7 +107,7 @@
           "settings": {
             "icon": "shield",
             "title": "Secure Payment",
-            "description": "Lorem ipsum dolor sitamet, consectetur."
+            "description": "Experience safe and protected transactions with our state-of-the-art encryption and fraud prevention systems"
           }
         },
         "3f02743a-2e58-4226-8262-aecef86d2440": {
@@ -115,7 +115,7 @@
           "settings": {
             "icon": "money",
             "title": "Money Return",
-            "description": "Lorem ipsum dolor sitamet, consectetur."
+            "description": "If you're not satisfied with your purchase, return it for a full refund within the specified period."
           }
         },
         "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c": {
@@ -123,7 +123,7 @@
           "settings": {
             "icon": "support",
             "title": "24\/7 Support",
-            "description": "Lorem ipsum dolor sitamet, consectetur."
+            "description": "Our dedicated support team is available 24\/7 to answer your questions and ensure a seamless shopping experience."
           }
         }
       },
