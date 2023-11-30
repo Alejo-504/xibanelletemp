@@ -23,9 +23,6 @@ body, html{
   height: 100%;
   content: "";
 }
-.breadcrumb-item.not-active a{
-  transition:color .2s ease-in-out;
-}
 .breadcrumb-item.not-active:hover a{
   color:rgb(var(--color-foreground_3))!important;
 }
