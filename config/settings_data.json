@@ -367,7 +367,7 @@
         "settings": {
           "enabled_top_bar": true,
           "cta_text": "Affiliate Program",
-          "cta_link": "shopify:\/\/pages\/affiliate-program",
+          "cta_link": "https:\/\/xibanelle.affiliatery.staqlab.com\/partner\/signIn",
           "logo_position": "middle-center-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
