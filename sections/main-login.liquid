@@ -12,9 +12,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  
 {%- endstyle -%}
 
-<div class="customer login section-{{ section.id }}-padding">
+<div class="customer login section-{{ section.id }}-padding color-{{ section.settings.scheme_selector }}">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
