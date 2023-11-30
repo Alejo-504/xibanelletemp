@@ -12,9 +12,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .bg-login{
+    background:rgb(var(--color-background-2));
+  }
   
 {%- endstyle -%}
-<div class="container-fluid color-{{ section.settings.scheme_selector }}">
+<div class="container-fluid color-{{ section.settings.scheme_selector }} bg-login">
 <div class="customer login section-{{ section.id }}-padding ">
   <h1 id="recover" tabindex="-1">
    {{ section.settings.title }}
