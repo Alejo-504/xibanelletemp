@@ -11,70 +11,13 @@
     "39df0256-d664-43be-bf83-9690185d98c8": {
       "type": "hero_subpage",
       "settings": {
-        "title": "Contact Us",
-        "color_scheme": "background-1"
-      }
-    },
-    "04682752-769e-4d63-a7d0-49f431d5ef61": {
-      "type": "custom-contact",
-      "settings": {
-        "color_scheme": "background-1",
-        "email": "info@xinabelle.com",
-        "email-link": "info@xinabelle.com",
-        "telephone": "(404) 343 8695",
-        "telephone-link": "+14043438695",
-        "address": "Forest Park, Georgia, 30297",
-        "location-link": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu",
-        "iframe": "https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d53160.919386100635!2d-84.3928436!3d33.616785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc263257f97f%3A0x87190d6fe9db9f11!2sGILLEM%20ENCLAVE%2C%20GA%2030297%2C%20USA!5e0!3m2!1sen!2sve!4v1701182245977!5m2!1sen!2sve"
-      }
-    },
-    "aa79b7f0-ac24-420b-91e5-51f8014f928a": {
-      "type": "custom-newsletter",
-      "blocks": {
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign up now & get 10% of",
-            "heading_size": "h1"
-          }
-        },
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Last chance to take advantage of our discount!<\/p>"
-          }
-        },
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-heading-1",
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-paragraph-1",
-        "template--21740232409392__aa79b7f0-ac24-420b-91e5-51f8014f928a-email_form-1"
-      ],
-      "custom_css": [
-        ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
-        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px;}"
-      ],
-      "settings": {
-        "lateral_1": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
-        "lateral_2": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
-        "color_background": "#e6e6e6",
-        "color_text": "#6b6559",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "title": "Policies",
+        "color_scheme": "background-2"
       }
     }
   },
   "order": [
     "main",
-    "39df0256-d664-43be-bf83-9690185d98c8",
-    "04682752-769e-4d63-a7d0-49f431d5ef61",
-    "aa79b7f0-ac24-420b-91e5-51f8014f928a"
+    "39df0256-d664-43be-bf83-9690185d98c8"
   ]
 }
