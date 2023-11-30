@@ -18,8 +18,8 @@
         "input {background: white; color: black;}",
         "label {color: gray;}",
         ".bg-login > div {padding: 50px 50px;}",
-        "a{transition:all .3s ease;}",
-        "a:hover{color:rgb(var(--color-foreground_3));}"
+        "a {transition: all 0.3s ease;}",
+        "a:hover {color: rgb(var(--color-foreground_2));}"
       ],
       "settings": {
         "scheme_selector": "background-2",
