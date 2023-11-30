@@ -388,6 +388,10 @@
         {%- endcase -%}
       {%- endfor -%}
 
+       <a  class="header__icon  d-flex d-md-none"  href="/pages/women/login">
+          <i class="fa fa-user" style="font-size: 2rem;color: white;"></i>
+        </a>
+  
       <a href="/pages/women/cart" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -408,9 +412,7 @@
       </a>
 
       <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/pages/women/login"  style="min-width:120px;">Login</a>
-       <a  class="header__icon  d-flex d-md-none"  href="/pages/women/login">
-          <i class="fa fa-user" style="font-size: 2rem;color: white;"></i>
-        </a>
+      
   
     </div>
       {% render "cart-popup-ajax", type: "women" %}
