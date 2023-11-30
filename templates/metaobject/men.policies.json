@@ -14,10 +14,16 @@
         "title": "Policies",
         "color_scheme": "background-2"
       }
+    },
+    "71118c3f-6659-47ea-be7c-2a8fe25d94d7": {
+      "type": "privacy_policy",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "39df0256-d664-43be-bf83-9690185d98c8"
+    "39df0256-d664-43be-bf83-9690185d98c8",
+    "71118c3f-6659-47ea-be7c-2a8fe25d94d7"
   ]
 }
