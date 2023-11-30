@@ -73,6 +73,9 @@
         "1e690d99-a602-4fc0-b010-ae28b77d70d4",
         "eb699078-e7ef-4220-8790-e89d2c83eb2d"
       ],
+      "custom_css": [
+        "img{height:325px;}"
+      ],
       "settings": {
         "caption": "",
         "heading": "Frequently Asked Questions",
@@ -82,7 +85,7 @@
         "color_scheme": "background-1",
         "container_color_scheme": "background-1",
         "open_first_collapsible_row": false,
-        "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "image": "shopify:\/\/shop_images\/f2952c64-2fc6-41f1-b262-b3396b950b11.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 0,
@@ -118,7 +121,7 @@
       ],
       "custom_css": [
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: 60px;}",
-        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px; background-position:bottom;}"
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px; background-position: bottom;}"
       ],
       "settings": {
         "lateral_1": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
