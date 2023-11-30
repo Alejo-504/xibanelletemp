@@ -11,6 +11,7 @@
       "type": "main-login",
       "settings": {
         "scheme_selector": "background-2",
+        "title": "Welcome!",
         "padding_top": 36,
         "padding_bottom": 36
       }
