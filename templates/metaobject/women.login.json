@@ -10,7 +10,11 @@
     "main": {
       "type": "main-login",
       "custom_css": [
-        "* {color: white;}"
+        "* {color: white; text-decoration: none;}",
+        ".bg-login {background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
+        "input {background: white; color: black;}",
+        "label {color: gray;}",
+        ".bg-login > div {padding: 50px 50px;}"
       ],
       "settings": {
         "scheme_selector": "",
