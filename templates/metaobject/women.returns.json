@@ -11,14 +11,14 @@
     "39df0256-d664-43be-bf83-9690185d98c8": {
       "type": "hero_subpage",
       "settings": {
-        "title": "Privacy Policy",
-        "color_scheme": "background-2"
+        "title": "Returns Policy",
+        "color_scheme": "background-1"
       }
     },
     "32515ac7-be16-4a62-92e9-b72999161524": {
       "type": "policie",
       "settings": {
-        "policy": "privacy_policy"
+        "policy": "refund_policy"
       }
     }
   },
