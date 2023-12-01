@@ -840,12 +840,12 @@
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#fefefe",
           "text_2": "#121212",
           "text_3": "#121212",
           "button": "#dcdcdc",
           "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label": "#d7d7d7",
           "shadow": "#121212"
         }
       },
