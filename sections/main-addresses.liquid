@@ -187,6 +187,7 @@
           {%- endif -%}
           {{ address | format_address }}
           <button
+            class="btn btn-primary-outline"
             type="button"
             id="EditFormButton_{{ address.id }}"
             aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -197,6 +198,7 @@
             {{ 'customer.addresses.edit' | t }}
           </button>
           <button
+            class="btn btn-primary-outline"
             type="button"
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
             data-target="{{ address.url }}"
@@ -339,8 +341,8 @@
                 </label>
               </div>
               <div>
-                <button>{{ 'customer.addresses.update' | t }}</button>
-                <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                <button class="btn btn-primary-outline">{{ 'customer.addresses.update' | t }}</button>
+                <button class="btn btn-primary-outline" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
               </div>
             {%- endform -%}
           </div>
