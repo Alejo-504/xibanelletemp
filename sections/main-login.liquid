@@ -140,7 +140,7 @@
         </a>
       {%- endif -%}
 
-     <div class="d-flex"> 
+     <div class="d-flex gap-2"> 
         <span class="button-back"></span> 
         <button class="btn btn-primary">
           {{ 'customer.login_page.sign_in' | t }}
@@ -169,16 +169,16 @@
 
 <script>
   let type = localStorage.getItem('type_page_favorite');
-    let button = document.createElement('button');
+    let button = document.createElement('a');
     button.classList.add('btn');
     button.classList.add('btn-primary-outline');
     button.classList.add('btn-back');
     button.innerHTML = 'Back to Home';
     button.addEventListener('click', () => {
       if(type){
-          window.location.href = '/pages/'+type+'/index';
+        button.href = '/pages/'+type+'/index';
       }else{
-          window.location.href = '/';
+        button.href = '/';
       }
   });
   document.querySelector('.button-back').appendChild(button);
