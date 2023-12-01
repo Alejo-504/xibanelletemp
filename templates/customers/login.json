@@ -10,14 +10,14 @@
         ".bg-login > div {padding: 50px 50px;}",
         "a {transition: all 0.3s ease;}",
         "a:hover {text-decoration: underline;}",
-        ".logo img {width: 200px; }"
+        ".logo img {width: 200px;}"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
         "background": "shopify:\/\/shop_images\/70010cfd-9e30-4d83-b2c4-5a545567eeb5.webp",
         "background_overlay": "linear-gradient(357deg, rgba(0, 0, 0, 0.71) 13%, rgba(52, 52, 52, 0.06) 86%)",
         "scheme_selector": "scheme-0aa986c7-68aa-4f09-8a6d-a62fdc39fce6",
-        "title": "Sign In",
+        "title": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
