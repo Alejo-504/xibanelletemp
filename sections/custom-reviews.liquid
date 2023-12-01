@@ -226,14 +226,16 @@
               document.body.appendChild(script);
           }else{
             $.fancybox.open({
-              src: video,
-              type: 'inline',
+              src: video.attr("src"),
+              type: 'iframe', // especifica que el contenido es un iframe
               opts: {
                 iframe: {
                   css: {
                     width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
+                    height: '100%'
+                  },
+                  attr: {
+                    allowfullscreen: true // permite pantalla completa
                   }
                 }
               }
