@@ -135,33 +135,37 @@
           </form>
         </main-search>
        <script>
-          
-          let form = document.querySelector('form.search');
-          form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            let input = form.querySelector('input[name="q"]');
-            input.value += '+women';
-            input.dispatchEvent(new Event('change'));
-            input.dispatchEvent(new Event('keyup'));
-            input.dispatchEvent(new Event('input'));
+     
 
-            console.log("hola");
-            //form.submit();
-          });
-          document.addEventListener("DOMContentLoaded", function(){
-              let input = form.querySelector('input[name="q"]');
-              let value = input.value;
-              let word = "women";
-              if (value.endsWith(word)) {
-                input.value = value.substring(0, value.length - word.length);
-                input.value = input.value.trim();
-                input.dispatchEvent(new Event('change'));
-                input.dispatchEvent(new Event('keyup'));
-                input.dispatchEvent(new Event('input'));
-                console.log(input.value);
-              }
-          });
+            document.addEventListener("DOMContentLoaded", function(){
+                let word = "women";
+                let input = document.querySelector('input[name="p"]');
           
+                let p = document.querySelector('input[name="p"]');
+                p.addEventListener('input', function(e) {
+                  if (!value.endsWith(word)) {
+                    input.value = value + "+"+word;
+                    input.dispatchEvent(new Event('change'));
+                    input.dispatchEvent(new Event('keyup'));
+                    input.dispatchEvent(new Event('input'));
+                    console.log(input.value);
+                  }
+                });
+          
+                let value = input.value;
+              
+                if (value.endsWith(word)) {
+                  input.value = value.substring(0, value.length - word.length);
+                  input.value = input.value.trim();
+                  input.dispatchEvent(new Event('change'));
+                  input.dispatchEvent(new Event('keyup'));
+                  input.dispatchEvent(new Event('input'));
+                  console.log(input.value);
+                }
+          
+            });
+            
+
         </script>
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
