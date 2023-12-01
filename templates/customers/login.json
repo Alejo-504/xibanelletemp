@@ -2,7 +2,18 @@
   "sections": {
     "main": {
       "type": "main-login",
+      "custom_css": [
+        "* {color: white; text-decoration: none;}",
+        ".bg-login {color: rgb(var(--color-foreground_2));}",
+        "input {background: white; color: black;}",
+        "label {color: gray;}",
+        ".bg-login > div {padding: 50px 50px;}",
+        "a {transition: all 0.3s ease;}",
+        "a:hover {color: rgb(var(--color-foreground_2));}"
+      ],
       "settings": {
+        "scheme_selector": "accent-2",
+        "title": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
