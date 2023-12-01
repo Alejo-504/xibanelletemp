@@ -176,24 +176,26 @@
 
   <script>
   document.addEventListener("DOMContentLoaded", function(){
-     $(".testimonials .owl-carousel").owlCarousel({
-          items: 3,
-          margin: 30,
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 3000,
-          autoplayHoverPause: true,
-          dots: true,
-          responsive : {
-            0 : { items: 1 },
-            768 : { items: 2 },
-            992 : { items: 3 }
-          }
-        });
-     });
+      $(".testimonials .owl-carousel").owlCarousel({
+            items: 3,
+            margin: 30,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            dots: true,
+            responsive : {
+              0 : { items: 1 },
+              768 : { items: 2 },
+              992 : { items: 3 }
+            }
+          });
+    
         //crear un script que importe fancybox y abra el video al hacer click en playBtn
         $(".playBtn").click(function(){
-         
+          //importar fancybox  /*
+         // <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+         // <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
           let video = $(this).parent().find("video");
 
           let script = document.createElement("script");
@@ -232,6 +234,8 @@
             });
           }
         });
+
+    });
   </script>
     <style>
       .playBtn:hover, .playBtn-off:hover {
