@@ -34,6 +34,11 @@
         "type": "image_picker",
         "id": "subpage_hero_background_women",
         "label": "Global image subpages hero women"
+      },
+      {
+        "type": "image_picker",
+        "id": "challenge_background_image",
+        "label": "Global image subpages hero men"
       }
     ]
   },
