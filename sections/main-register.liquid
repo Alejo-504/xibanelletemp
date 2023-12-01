@@ -184,34 +184,14 @@
 
 
     <div class="d-flex gap-5 align-items-center my-5"> 
-      <span class="button-back"></span> 
+      <span class="button-back d-flex align-items-center">
+          <i class="fa fa-arrow-left me-2"></i>
+          <a href="/account/login">Back to Login</a>
+      </span> 
       <button class="btn btn-primary-outline my-0">
         {{ 'customer.register.submit' | t }}
       </button>
    </div>        
-
-
-
-    <script>
-      let type = localStorage.getItem('type_page_favorite');
-        let button = document.createElement('a');
-        button.classList.add('btn-back');
-        button.innerHTML = 'Back to Home';
-      
-          if(type){
-            button.setAttribute('href',  '/pages/'+type+'/index');
-          }else{
-            button.setAttribute('href',  '/');
-          }
-        let i = document.createElement('i');
-        i.classList.add('fas');
-        i.classList.add('fa-arrow-left');
-        button.appendChild(i);
-        
-    
-      document.querySelector('.button-back').appendChild(button);
-    </script>
-
 
   {%- endform -%}
 </div>
