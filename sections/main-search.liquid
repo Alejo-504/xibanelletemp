@@ -144,7 +144,9 @@
             input.dispatchEvent(new Event('change'));
             input.dispatchEvent(new Event('keyup'));
             input.dispatchEvent(new Event('input'));
-            form.submit();
+
+            console.log("hola");
+            //form.submit();
           });
           document.addEventListener("DOMContentLoaded", function(){
               let input = form.querySelector('input[name="q"]');
