@@ -1,5 +1,12 @@
 {
   "sections": {
+    "6e2738b5-c136-431d-9d0b-bbe317dea7e7": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "Create Account",
+        "color_scheme": "background-2"
+      }
+    },
     "main": {
       "type": "main-register",
       "settings": {
@@ -11,6 +18,7 @@
     }
   },
   "order": [
+    "6e2738b5-c136-431d-9d0b-bbe317dea7e7",
     "main"
   ]
 }
