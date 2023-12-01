@@ -16,6 +16,16 @@
     background:rgb(var(--color-background-4));
     color: rgb(var(--color-foreground-2));
   }
+  .customer .field{
+    border: solid 1px #ebebeb;
+  }
+  .field__input, .select__select, .customer .field input, .customer select{
+    background-color: rgb(var(--color-background-4));
+    color: rgb(var(--color-foreground_3));
+  }
+  .field__label, .customer .field label{
+        color: rgba(var(--color-foreground_3),.75);
+  }
 {%- endstyle -%}
 <div class="register container-fluid color-{{ section.settings.scheme_selector }}">
 <div class="customer  section-{{ section.id }}-padding ">
