@@ -1198,7 +1198,7 @@ deferred-media {
 
 .button,
 .shopify-challenge__button,
-.customer button,
+.customer button.normal,
 button.shopify-payment-button__button--unbranded,
 .shopify-payment-button [role='button'],
 .cart__dynamic-checkout-buttons [role='button'],
@@ -1216,7 +1216,7 @@ button.shopify-payment-button__button--unbranded,
 
 .button,
 .shopify-challenge__button,
-.customer button,
+.customer button.normal,
 button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
@@ -1233,7 +1233,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button,
 .shopify-challenge__button,
-.customer button {
+.customer button.normal {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1252,7 +1252,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button:before,
 .shopify-challenge__button:before,
-.customer button:before,
+.customer button.normal:before,
 .shopify-payment-button__button--unbranded:before,
 .shopify-payment-button [role='button']:before,
 .cart__dynamic-checkout-buttons [role='button']:before {
@@ -1269,7 +1269,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .shopify-challenge__button:after,
-.customer button:after,
+.customer button.normal:after,
 .shopify-payment-button__button--unbranded:after {
   content: '';
   position: absolute;
@@ -1287,7 +1287,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
-.customer button:hover::after,
+.customer button.normal:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
@@ -1319,14 +1319,14 @@ button.shopify-payment-button__button--unbranded {
 
 .button::selection,
 .shopify-challenge__button::selection,
-.customer button::selection {
+.customer button.normal::selection {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
 .button,
 .button-label,
 .shopify-challenge__button,
-.customer button {
+.customer button.normal {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
@@ -1348,9 +1348,9 @@ button.shopify-payment-button__button--unbranded {
 .button:disabled,
 .button[aria-disabled='true'],
 .button.disabled,
-.customer button:disabled,
-.customer button[aria-disabled='true'],
-.customer button.disabled,
+.customer button.normal:disabled,
+.customer button.normal[aria-disabled='true'],
+.customer button.normal.disabled,
 .quantity__button.disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -3128,7 +3128,7 @@ details-disclosure > details {
 @media (forced-colors: active) {
   .button,
   .shopify-challenge__button,
-  .customer button {
+  .customer button.normal {
     border: transparent solid 1px;
   }
 
@@ -3363,7 +3363,7 @@ details-disclosure > details {
   .animate--hover-3d-lift .card-wrapper .card--standard .card__inner,
   .animate--hover-3d-lift .button:not(.button--tertiary),
   .animate--hover-3d-lift .shopify-challenge__button,
-  .animate--hover-3d-lift .customer button,
+  .animate--hover-3d-lift .customer button.normal,
   .animate--hover-3d-lift .shopify-payment-button__button,
   .animate--hover-3d-lift .deferred-media .deferred-media__poster-button {
     transition: transform var(--duration-long) ease, box-shadow var(--duration-long) ease;
@@ -3374,7 +3374,7 @@ details-disclosure > details {
   .animate--hover-3d-lift .card-wrapper:hover .card--standard .card__inner,
   .animate--hover-3d-lift .button:not(.button--tertiary):not([disabled]):hover,
   .animate--hover-3d-lift .shopify-challenge__button:not([disabled]):hover,
-  .animate--hover-3d-lift .customer button:not([disabled]):hover,
+  .animate--hover-3d-lift .customer button.normal:not([disabled]):hover,
   .animate--hover-3d-lift .shopify-payment-button__button:hover,
   .animate--hover-3d-lift .deferred-media:hover .deferred-media__poster-button {
     transition: transform var(--duration-extended) ease, box-shadow var(--duration-long) ease; /* Slow the card transition speed while hover is active. */
@@ -3479,7 +3479,7 @@ details-disclosure > details {
 
   .animate--hover-vertical-lift .button:not(.button--tertiary),
   .animate--hover-vertical-lift .shopify-challenge__button,
-  .animate--hover-vertical-lift .customer button,
+  .animate--hover-vertical-lift .customer button.normal,
   .animate--hover-vertical-lift .shopify-payment-button__button {
     transition: transform var(--duration-default) var(--ease-out-slow);
   }
@@ -3501,20 +3501,20 @@ details-disclosure > details {
 
   .animate--hover-vertical-lift .button:not(.button--tertiary):not([disabled]):hover,
   .animate--hover-vertical-lift .shopify-challenge__button:not([disabled]):hover,
-  .animate--hover-vertical-lift .customer button:not([disabled]):hover,
+  .animate--hover-vertical-lift .customer button.normal:not([disabled]):hover,
   .animate--hover-vertical-lift .shopify-payment-button__button:hover {
     transform: translateY(-0.25rem);
   }
 
   .animate--hover-vertical-lift .button:not(.button--tertiary):not([disabled]):active,
   .animate--hover-vertical-lift .shopify-challenge__button:not([disabled]):active,
-  .animate--hover-vertical-lift .customer button:not([disabled]):active,
+  .animate--hover-vertical-lift .customer button.normal:not([disabled]):active,
   .animate--hover-vertical-lift .shopify-payment-button__button:active {
     transform: translateY(0);
   }
 
   .animate--hover-vertical-lift .button:not([disabled]):hover:after,
-  .animate--hover-vertical-lift .customer button:not([disabled]):hover:after,
+  .animate--hover-vertical-lift .customer button.normal:not([disabled]):hover:after,
   .animate--hover-vertical-lift .shopify-payment-button__button:not([disabled]):hover:after {
     --border-offset: 0.3px; /* Default is 1.3px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
