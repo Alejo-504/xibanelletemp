@@ -164,6 +164,32 @@
   {%- endif -%}
 </div>
 </div>
+<style>
+  .bg-login {
+    background-image: url({{ section.settings.background | img_url: 'master' }});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .bg-login::before {
+    background-color: {{ section.settings.background_overlay }};
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+  }
+
+</style>
+              
 {% schema %}
 {
   "name": "t:sections.main-login.name",
