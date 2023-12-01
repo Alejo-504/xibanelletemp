@@ -1,5 +1,12 @@
 {
   "sections": {
+    "e93a727c-ca84-4132-bbba-854671fff532": {
+      "type": "hero_subpage",
+      "settings": {
+        "title": "Create Account",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-register",
       "settings": {
@@ -9,6 +16,7 @@
     }
   },
   "order": [
+    "e93a727c-ca84-4132-bbba-854671fff532",
     "main"
   ]
 }
