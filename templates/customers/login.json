@@ -9,7 +9,8 @@
         "label {color: gray;}",
         ".bg-login > div {padding: 50px 50px;}",
         "a {transition: all 0.3s ease;}",
-        "a:hover {text-decoration: underline;}"
+        "a:hover {text-decoration: underline;}",
+        ".logo img {width: 200px; }"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
