@@ -1,5 +1,5 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-   {% include "getTypePage" %}
+
 {%- if predictive_search.performed -%}
   {% assign first_column_results_size = predictive_search.resources.queries.size
     | plus: predictive_search.resources.collections.size
@@ -130,27 +130,8 @@
               role="group"
               aria-labelledby="predictive-search-products"
             >
-
-
-         
-         
-              {{ type }}
-            {% if type == "men" %}
-              
-
-              {% assign products_filtered = predictive_search.resources.products | where: "product_type", "men" %}
-        
-
-            {% elsif type == "women" %}
-                
-              {% assign products_filtered = predictive_search.resources.products | where: "product_type", "women" %}
-
-              {% else %}
-
-               {% assign products_filtered = predictive_search.resources.products %}
-            {% endif %}
-
-              {%- for product in products_filtered -%}
+           
+              {%- for product in predictive_search.resources.products -%}
                 <li
                   id="predictive-search-option-product-{{ forloop.index }}"
                   class="predictive-search__list-item"
