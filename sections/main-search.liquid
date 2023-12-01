@@ -152,6 +152,7 @@
             let word = "women";
             if (value.endsWith(word)) {
               input.value = value.substring(0, value.length - word.length);
+              console.log(input.value);
             }
             console.log("hola", value, value.endsWith(word), input);
         });
