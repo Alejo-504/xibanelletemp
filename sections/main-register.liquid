@@ -155,6 +155,19 @@
   {%- endform -%}
 </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const registrationForm = document.querySelector('.register form'); 
+  if (registrationForm) {
+    registrationForm.addEventListener('submit', function(event) {
+    
+      window.location.href = '/pages/men/register';
+    });
+  }
+});
+</script>
+
+            
 {% schema %}
 {
   "name": "t:sections.main-register.name",
