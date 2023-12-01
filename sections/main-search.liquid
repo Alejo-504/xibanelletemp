@@ -87,56 +87,81 @@
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
-        <main-search>
-          <form action="{{ routes.search_url }}" method="get" role="search" class="search">
-            <div class="field">
-              <input
-                style="background: rgb(var(--color-background-2));"
-                class="search__input field__input"
-                id="Search-In-Template"
-                type="search"
-                name="q"
-                value="{{ search.terms | escape }}"
-                placeholder="{{ 'general.search.search' | t }}"
-                {%- if settings.predictive_search_enabled -%}
-                  role="combobox"
-                  aria-expanded="false"
-                  aria-owns="predictive-search-results"
-                  aria-controls="predictive-search-results"
-                  aria-haspopup="listbox"
-                  aria-autocomplete="list"
-                  autocorrect="off"
-                  autocomplete="off"
-                  autocapitalize="off"
-                  spellcheck="false"
-                {%- endif -%}
-              >
-              <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
-              <input name="options[prefix]" type="hidden" value="last">
-              <input name="view" type="hidden" value="{{ type }}">
-              {%- if settings.predictive_search_enabled -%}
-                <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
-                  {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
-                </div>
-                <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-              {%- endif -%}
-              <button
-                type="reset"
-                class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
-                aria-label="{{ 'general.search.reset' | t }}"
-              >
-                <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                  <use xlink:href="#icon-reset">
-                </svg>
-              </button>
-              <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                <svg class="icon icon-search" aria-hidden="true" focusable="false">
-                  <use xlink:href="#icon-search">
-                </svg>
-              </button>
-            </div>
-          </form>
-        </main-search>
+       <main-search>
+  <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+    <div class="field">
+      <input
+        style="background: rgb(var(--color-background-2));"
+        class="search__input field__input"
+        id="Search-In-Template"
+        type="search"
+        name="p"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'general.search.search' | t }}"
+        {%- if settings.predictive_search_enabled -%}
+          role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results"
+          aria-controls="predictive-search-results"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        {%- endif -%}
+      >
+      <input type="hidden" name="q" value="{{ search.terms | escape }}">
+      <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
+      <input name="options[prefix]" type="hidden" value="last">
+      <input name="view" type="hidden" value="{{ type }}">
+
+      {%- if settings.predictive_search_enabled -%}
+        <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
+          {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
+        </div>
+
+        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+      {%- endif -%}
+
+      <button
+        type="reset"
+        class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
+        aria-label="{{ 'general.search.reset' | t }}"
+      >
+        <svg class="icon icon-close" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-reset">
+        </svg>
+      </button>
+      <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+        <svg class="icon icon-search" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-search">
+        </svg>
+      </button>
+    </div>
+  </form>
+</main-search>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function(){
+      let word = "women";
+      let input = document.querySelector('input[name="q"]');
+      let p = document.querySelector('input[name="p"]');
+
+      p.addEventListener('input', function(e) {
+          let value = e.target.value;
+          input.value = value + "+"+word;
+          input.dispatchEvent(new Event('change'));
+          input.dispatchEvent(new Event('keyup'));
+          input.dispatchEvent(new Event('input'));
+          console.log(input.value);
+      });
+
+
+
+  });
+  
+</script>
 
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
