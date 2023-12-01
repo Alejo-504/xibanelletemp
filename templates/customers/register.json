@@ -3,7 +3,7 @@
     "main": {
       "type": "main-register",
       "custom_css": [
-        "* {color: white; text-decoration: none;}",
+        "* {color: white; text-decoration: none; border:none;}",
         ".bg-login {color: rgb(var(--color-foreground_2));}",
         "input {background: white; color: black;}",
         "label {color: gray;}",
