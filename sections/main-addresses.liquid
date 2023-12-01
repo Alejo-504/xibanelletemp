@@ -14,6 +14,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .acco{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    width:100%;
+  }
 {%- endstyle -%}
 <div class="container-fluid color-{{ section.settings.color_scheme }} acco">
 {%- paginate customer.addresses by 5 -%}
