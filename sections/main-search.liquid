@@ -87,7 +87,7 @@
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
-       <main-search>
+<main-search>
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
     <div class="field">
       <input
@@ -151,9 +151,6 @@
       p.addEventListener('input', function(e) {
           let value = e.target.value;
           input.value = value + "+"+word;
-          input.dispatchEvent(new Event('change'));
-          input.dispatchEvent(new Event('keyup'));
-          input.dispatchEvent(new Event('input'));
           console.log(input.value);
       });
 
