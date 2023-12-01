@@ -179,7 +179,7 @@ class PredictiveSearch extends SearchForm {
       searchTerm = searchTerm +"+"+localStorage.getItem("type_page_favorite");
     }
     
-    fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&resources[type]=product&section_id=predictive-search&resources[options][fields]=title,product_type`, {
+    fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&resources[type]=product&section_id=predictive-search`, {
       signal: this.abortController.signal,
     })
       .then((response) => {
