@@ -143,27 +143,27 @@
 
             document.addEventListener("DOMContentLoaded", function(){
                 let word = "women";
-                let input = document.querySelector('input[name="p"]');
-          
+                let q = document.querySelector('input[name="q"]');
                 let p = document.querySelector('input[name="p"]');
+              
                 p.addEventListener('input', function(e) {
-                  if (!value.endsWith(word)) {
-                    input.value = value + "+"+word;
-                    input.dispatchEvent(new Event('change'));
-                    input.dispatchEvent(new Event('keyup'));
-                    input.dispatchEvent(new Event('input'));
-                    console.log(input.value);
+                  if (!p.value.endsWith(word)) {
+                    q.value = value + "+"+word;
+                    q.dispatchEvent(new Event('change'));
+                    q.dispatchEvent(new Event('keyup'));
+                    q.dispatchEvent(new Event('input'));
+                    console.log(q.value);
                   }
                 });
           
-                let value = input.value;
+                let value = p.value;
               
                 if (value.endsWith(word)) {
-                  input.value = value.substring(0, value.length - word.length);
-                  input.value = input.value.trim();
-                  input.dispatchEvent(new Event('change'));
-                  input.dispatchEvent(new Event('keyup'));
-                  input.dispatchEvent(new Event('input'));
+                  p.value = value.substring(0, value.length - word.length);
+                  p.value = input.value.trim();
+                  p.dispatchEvent(new Event('change'));
+                  p.dispatchEvent(new Event('keyup'));
+                  p.dispatchEvent(new Event('input'));
                   console.log(input.value);
                 }
           
