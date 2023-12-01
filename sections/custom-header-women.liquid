@@ -410,14 +410,17 @@
           </div>
         {%- endif -%}
       </a>
-
+  
+     {% if customer %}
+      <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account" style="min-width:120px;">
+        <span class="d-none d-md-block">My Account</span>
+      </a>
+     {% else %}
       <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login" style="min-width:120px;">
-          {% if customer %}
-            <span class="d-none d-md-block">My Account</span>
-          {% else %}
-            <span class="d-none d-md-block">Login</span>
-          {% endif %} 
-        </a>
+       <span class="d-none d-md-block">Login</span>
+      </a>
+       
+    {% endif %} 
       
   
     </div>
