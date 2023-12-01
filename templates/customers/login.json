@@ -13,7 +13,7 @@
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/70010cfd-9e30-4d83-b2c4-5a545567eeb5.webp",
-        "background_overlay": "linear-gradient(46deg, rgba(154, 154, 154, 0.71) 13%, rgba(52, 52, 52, 0.06) 86%)",
+        "background_overlay": "linear-gradient(357deg, rgba(0, 0, 0, 0.71) 13%, rgba(52, 52, 52, 0.06) 86%)",
         "scheme_selector": "scheme-0aa986c7-68aa-4f09-8a6d-a62fdc39fce6",
         "title": "",
         "padding_top": 36,
