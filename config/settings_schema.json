@@ -38,7 +38,7 @@
       {
         "type": "image_picker",
         "id": "challenge_background_image",
-        "label": "Global image subpages hero men"
+        "label": "CHALLENGE BACKGROUND"
       }
     ]
   },
