@@ -7,7 +7,7 @@
         "cta_text": "Call to Action",
         "cta_link": "",
         "logo_position": "top-left",
-        "menu": "main-menu",
+        "menu": "portal-header",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
@@ -15,7 +15,7 @@
         "menu_color_scheme": "accent-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "mobile_logo_position": "center",
+        "mobile_logo_position": "left",
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
