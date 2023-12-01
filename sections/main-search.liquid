@@ -146,7 +146,7 @@
                 let q = document.querySelector('input[name="q"]');
                 let p = document.querySelector('input[name="p"]');
               
-                p.addEventListener('input', function(e) {
+                p.addEventListener('change', function(e) {
                 
                     q.value = value + "+"+word;
                     q.dispatchEvent(new Event('change'));
