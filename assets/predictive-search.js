@@ -175,7 +175,10 @@ class PredictiveSearch extends SearchForm {
       this.renderSearchResults(this.cachedResults[queryKey]);
       return;
     }
-    searchTerm = searchTerm + "+men";
+    if(localStorage.getItem("type_page_favorite")){
+      searchTerm = searchTerm + "+"+localStorage.getItem("type_page_favorite"));
+    }
+    
     fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&resources[type]=product&section_id=predictive-search`, {
       signal: this.abortController.signal,
     })
