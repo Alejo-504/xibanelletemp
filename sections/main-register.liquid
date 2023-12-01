@@ -12,9 +12,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .register{
+    background
+  }
 {%- endstyle -%}
-
-<div class="customer register section-{{ section.id }}-padding color-{{ section.settings.scheme_selector }}">
+<div class="container-fluid color-{{ section.settings.scheme_selector }}">
+<div class="customer register section-{{ section.id }}-padding ">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -140,7 +143,7 @@
     </button>
   {%- endform -%}
 </div>
-
+</div>
 {% schema %}
 {
   "name": "t:sections.main-register.name",
