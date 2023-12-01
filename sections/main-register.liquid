@@ -28,26 +28,6 @@
   }
 {%- endstyle -%}
 
-{% include  "getTypePage" %}
-
-{% if type %}
-
-  <script type="text/javascript">
-  localStorage.setItem('customer_register_type', '{{ type }}');
-  </script>
-  {% else  %}
-
-  <script type="text/javascript">
-    let a = localStorage.getItem('customer_register_type');
-    if(a == 'men'){
-      window.location.href = "/pages/men/create-account";
-    }else if(a=="women"){
-      window.location.href = "/pages/women/create-account";
-    }
-  </script>
-
-{% endif %}
-
 
 
 <div class="register container-fluid color-{{ section.settings.scheme_selector }}">
