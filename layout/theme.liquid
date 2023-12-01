@@ -274,6 +274,9 @@
           font-size: 1.6rem;
         }
       }
+      .shopify-challenge__container{
+        background:red;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
@@ -308,7 +311,7 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-     <span style="color:black;">{{ template }}</span>
+     
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
