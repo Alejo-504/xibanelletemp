@@ -140,9 +140,14 @@
         </a>
       {%- endif -%}
 
+      <span class="button-back">
+      
+      </span>
+              
       <button class="btn btn-primary-outline">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
+              
 
       <a href="{{ routes.account_register_url }}">
         {{ 'customer.login_page.create_account' | t }}
@@ -163,9 +168,7 @@
     </div>
   {%- endif -%}
 </div>
-<div class="button-back">
 
-</div>
 <script>
   /* 
     Si esta establecido type_page_favorite en el local Storage
