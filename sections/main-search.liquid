@@ -100,7 +100,7 @@
         placeholder="{{ 'general.search.search' | t }}"
 
       >
-      <input type="hidden" name="q" value="{{ search.terms | escape }}">
+     
       <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
       <input name="options[prefix]" type="hidden" value="last">
       <input name="view" type="hidden" value="{{ type }}">
@@ -134,16 +134,21 @@
 
   document.addEventListener("DOMContentLoaded", function(){
       let word = "women";
-      let input = document.querySelector('input[name="q"]');
+
       let p = document.querySelector('input[name="p"]');
 
       p.addEventListener('input', function(e) {
           let value = e.target.value;
           input.value = value + "+"+word;
+          let input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = 'q';
+          input.value = value + "+"+word;
+          if (document.querySelector('input[name="q"]')) {
+              document.querySelector('input[name="q"]').remove();
+          }
+          document.querySelector('form.search').appendChild(input);
           console.log(input.value);
-           input.dispatchEvent(new Event('change'));
-          input.dispatchEvent(new Event('keyup'));
-          input.dispatchEvent(new Event('input'));
       });
 
 
