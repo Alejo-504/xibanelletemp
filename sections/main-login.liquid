@@ -69,7 +69,22 @@
       </a>
     {%- endform -%}
   </div>
-
+  <div class="logo">
+      <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
+  </div>
+  <style>
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 100px;
+      
+    }
+  </style>
+              
   <h1 id="login" tabindex="-1">
    {{ section.settings.title }}
   </h1>
@@ -220,6 +235,11 @@
 {
   "name": "t:sections.main-login.name",
   "settings": [
+    {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+     },
      {
         "type": "image_picker",
         "id": "background",
