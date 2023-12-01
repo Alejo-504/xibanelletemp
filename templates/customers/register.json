@@ -4,7 +4,7 @@
       "type": "main-register",
       "custom_css": [
         "* {color: white; text-decoration: none;}",
-        ".bg-login {background: rgb(var(--color-background)); color: rgb(var(--color-foreground_2));}",
+        ".bg-login {color: rgb(var(--color-foreground_2));}",
         "input {background: white; color: black;}",
         "label {color: gray;}",
         ".bg-login > div {padding: 50px 50px;}",
