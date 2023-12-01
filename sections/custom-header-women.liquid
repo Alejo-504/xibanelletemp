@@ -388,7 +388,7 @@
         {%- endcase -%}
       {%- endfor -%}
 
-       <a  class="header__icon  d-flex d-md-none"  href="/account/login">
+       <a  class="header__icon  d-flex d-md-none"  href="{% if customer %}/account{% else %}/account/login{% endif %}">
           <i class="fa fa-user" style="font-size: 2rem;color: white;"></i>
         </a>
   
@@ -419,7 +419,6 @@
       <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login" style="min-width:120px;">
        <span class="d-none d-md-block">Login</span>
       </a>
-       
     {% endif %} 
       
   
