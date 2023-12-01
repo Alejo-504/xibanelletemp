@@ -141,6 +141,9 @@
           let value = e.target.value;
           input.value = value + "+"+word;
           console.log(input.value);
+           input.dispatchEvent(new Event('change'));
+          input.dispatchEvent(new Event('keyup'));
+          input.dispatchEvent(new Event('input'));
       });
 
 
