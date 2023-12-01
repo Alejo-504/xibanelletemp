@@ -8,7 +8,7 @@
       }
     },
     "main": {
-      "type": "main-register",
+      "type": "main-register-extra",
       "settings": {
         "scheme_selector": "background-2",
         "title": "Register",
