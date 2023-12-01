@@ -15,8 +15,8 @@
         "input {background: white; color: black;}",
         "label {color: gray;}",
         ".bg-login > div {padding: 50px 50px;}",
-        "a{transition:all .3s ease;}",
-        "a:hover{color:rgb(var(--color-foreground_3));}"
+        "a {transition: all 0.3s ease;}",
+        "a:hover {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "scheme_selector": "",
@@ -53,6 +53,8 @@
         "template--21759101731120__95e43f48-dbff-460e-adf3-1dac84924db4-email_form-1"
       ],
       "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/0656e7ca-d465-4e3c-86fb-e709f556e2b9_1c2d891a-540d-4e65-b25e-ffa5cb19a2dc.webp",
+        "lateral_2": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
         "color_background": "#f5f5f5",
         "color_text": "#6b6559",
         "color_scheme": "",
