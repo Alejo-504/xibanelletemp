@@ -135,24 +135,25 @@
           </form>
         </main-search>
         <script>
+
         
-        document.addEventListener("DOMContentLoaded", function(){
-            let form = document.querySelector('.search');
-            form.addEventListener('submit', function(event) {
-              let input = form.querySelector('input[name="q"]');
-              input.value += ' + women';
-            });
+          let form = document.querySelector('.search');
+          form.addEventListener('submit', function(event) {
             let input = form.querySelector('input[name="q"]');
-            let value = input.value;
-            let word = "women";
-            if (value.endsWith(word)) {
-              input.value = value.substring(0, value.length - word.length);
-              console.log(input.value);
-            }
-            console.log("hola", value, value.endsWith(word), input);
-        });
-        
-      </script>
+            input.value += ' + women';
+          });
+          document.addEventListener("DOMContentLoaded", function(){
+              let input = form.querySelector('input[name="q"]');
+              let value = input.value;
+              let word = "women";
+              if (value.endsWith(word)) {
+                input.value = value.substring(0, value.length - word.length);
+                input.value = input.value.trim();
+                input.dispatchEvent(new Event('change'));
+              }
+          });
+          
+        </script>
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
         {%- endif -%}
