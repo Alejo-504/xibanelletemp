@@ -411,7 +411,13 @@
         {%- endif -%}
       </a>
 
-      <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login"  style="min-width:120px;">Sign In</a>
+      <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login" style="min-width:120px;">
+          {% if customer %}
+            <span class="d-none d-md-block">My Account</span>
+          {% else %}
+            <span class="d-none d-md-block">Login</span>
+          {% endif %} 
+        </a>
       
   
     </div>
