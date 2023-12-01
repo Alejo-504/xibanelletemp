@@ -147,25 +147,16 @@
                 let p = document.querySelector('input[name="p"]');
               
                 p.addEventListener('input', function(e) {
-                  if (!p.value.endsWith(word)) {
+                
                     q.value = value + "+"+word;
                     q.dispatchEvent(new Event('change'));
                     q.dispatchEvent(new Event('keyup'));
                     q.dispatchEvent(new Event('input'));
                     console.log(q.value);
-                  }
+                  
                 });
           
-                let value = p.value;
-              
-                if (value.endsWith(word)) {
-                  p.value = value.substring(0, value.length - word.length);
-                  p.value = input.value.trim();
-                  p.dispatchEvent(new Event('change'));
-                  p.dispatchEvent(new Event('keyup'));
-                  p.dispatchEvent(new Event('input'));
-                  console.log(input.value);
-                }
+             
           
             });
             
