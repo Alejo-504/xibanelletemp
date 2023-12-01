@@ -163,6 +163,29 @@
     </div>
   {%- endif -%}
 </div>
+<div class="button-back">
+
+</div>
+<script>
+  /* 
+    Si esta establecido type_page_favorite en el local Storage
+    Crear el boton de volver
+  */
+  let type = localStorage.getItem('type_page_favorite');
+    let button = document.createElement('button');
+    button.classList.add('btn');
+    button.classList.add('btn-primary-outline');
+    button.classList.add('btn-back');
+    button.innerHTML = 'Back to Home';
+    button.addEventListener('click', () => {
+      if(type){
+          window.location.href = '/pages/'+type+'/index';
+      }else{
+          window.location.href = '/';
+      }
+  });
+  document.querySelector('.button-back').appendChild(button);
+</script>
 </div>
 <style>
   .bg-login {
