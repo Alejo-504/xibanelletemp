@@ -132,16 +132,16 @@
 
 
             {% include "getTypePage" %}
-          aaaa
+         
               {{ type }}
             {% if type == "men" %}
-                sss
+              
 
               {% assign products_filtered = predictive_search.resources.products | where: "product_type", "men" %}
         
 
             {% elsif type == "women" %}
-                vvvv
+                
               {% assign products_filtered = predictive_search.resources.products | where: "product_type", "women" %}
 
               {% else %}
