@@ -148,7 +148,7 @@
               
                 p.addEventListener('change', function(e) {
                 
-                    q.value = value + "+"+word;
+                    q.value = p.value + "+"+word;
                     q.dispatchEvent(new Event('change'));
                     q.dispatchEvent(new Event('keyup'));
                     q.dispatchEvent(new Event('input'));
