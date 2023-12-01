@@ -168,10 +168,6 @@
 </div>
 
 <script>
-  /* 
-    Si esta establecido type_page_favorite en el local Storage
-    Crear el boton de volver
-  */
   let type = localStorage.getItem('type_page_favorite');
     let button = document.createElement('button');
     button.classList.add('btn');
@@ -201,7 +197,7 @@
     width: 100%;
   }
   .bg-login::before {
-    background-color: {{ section.settings.background_overlay }};
+    background: {{ section.settings.background_overlay }};
     position: absolute;
     content: "";
     top: 0;
