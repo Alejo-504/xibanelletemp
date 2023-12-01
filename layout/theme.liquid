@@ -294,6 +294,10 @@
       }
     {% endstyle %}
 
+
+
+
+
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
@@ -363,6 +367,17 @@
     {% endif %}
 
 
+
+    <script>
+      /* 
+        si el type esta establecio sincronizar en el local sotrage
+      */
+     let type = "{{ type }}";
+      if(type){
+        localStorage.setItem("type", type);
+      }
+
+    </script>
 
 
 
