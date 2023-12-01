@@ -172,13 +172,13 @@
     let button = document.createElement('a');
     button.classList.add('btn-back');
     button.innerHTML = 'Back to Home';
-    button.addEventListener('click', () => {
+  
       if(type){
         button.setAttribute('href',  '/pages/'+type+'/index');
       }else{
         button.setAttribute('href',  '/');
       }
-  });
+
   document.querySelector('.button-back').appendChild(button);
 </script>
 </div>
