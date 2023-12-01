@@ -3,6 +3,8 @@
     "main": {
       "type": "main-register",
       "settings": {
+        "scheme_selector": "background-2",
+        "title": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
