@@ -176,9 +176,9 @@
     button.innerHTML = 'Back to Home';
     button.addEventListener('click', () => {
       if(type){
-        button.href = '/pages/'+type+'/index';
+        button.setAttribute('href',  '/pages/'+type+'/index');
       }else{
-        button.href = '/';
+        button.setAttribute('href',  '/');
       }
   });
   document.querySelector('.button-back').appendChild(button);
