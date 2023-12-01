@@ -1,0 +1,323 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "6218b202-c6a3-4fb5-b927-212022abe1f5": {
+      "type": "custom-hero",
+      "blocks": {
+        "864ca981-9890-4c6b-95dc-1560b26d10de": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-1"
+          }
+        },
+        "6cfd4113-eeaa-4c6d-9c29-bc92eeed0d84": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-2"
+          }
+        }
+      },
+      "block_order": [
+        "864ca981-9890-4c6b-95dc-1560b26d10de",
+        "6cfd4113-eeaa-4c6d-9c29-bc92eeed0d84"
+      ],
+      "custom_css": [
+        ".hero-carousel .item img {object-fit: contain;}"
+      ],
+      "settings": {
+        "scheme_selector": "",
+        "heading": "Timeless Elegance",
+        "description": "Explore the essence of sophistication with our Classic Handbag 2023. Crafted for the contemporary woman, it blends functionality with effortless style.",
+        "button_1_link": "shopify:\/\/metaobjects\/women\/shop",
+        "button_1_text": "Shop Now",
+        "button_2_link": "shopify:\/\/metaobjects\/women\/about-us",
+        "button_2_text": "Learn More",
+        "promo_text": "New Collection 2023",
+        "promo_color": "#e1cb8a",
+        "promo_color_text": "#5b5b5b"
+      }
+    },
+    "woman-best-seller": {
+      "type": "custom-best-seller",
+      "blocks": {
+        "23002965-cef3-45a1-911f-450ffe7fbbef": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-1"
+          }
+        },
+        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7": {
+          "type": "product",
+          "settings": {
+            "product": "example-belt-women-1"
+          }
+        },
+        "74bd58be-b205-435f-bb5a-440f9aae8de4": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-1"
+          }
+        },
+        "0ce2817f-dcee-4521-9409-3bd74e26d82f": {
+          "type": "product",
+          "settings": {
+            "product": "example-belt-women-2"
+          }
+        },
+        "f7a2df54-b3b0-4431-9647-a275d5364571": {
+          "type": "product",
+          "settings": {
+            "product": "example-belt-women-1"
+          }
+        }
+      },
+      "block_order": [
+        "23002965-cef3-45a1-911f-450ffe7fbbef",
+        "88a7a64e-b06c-4e17-af6f-6694b8d89ea7",
+        "74bd58be-b205-435f-bb5a-440f9aae8de4",
+        "0ce2817f-dcee-4521-9409-3bd74e26d82f",
+        "f7a2df54-b3b0-4431-9647-a275d5364571"
+      ],
+      "settings": {
+        "scheme_selector": "background-1",
+        "title": "Best Sellers",
+        "description": "<p>Discover favorites that capture hearts and gazes. Our best sellers selection is a celebration of fashion and functionality, each piece reflecting the quality and exclusive design that only Xinabelle Store offers.<\/p>"
+      }
+    },
+    "woman-about-home": {
+      "type": "custom-about-home",
+      "blocks": {
+        "293347a5-5bcc-4011-81f6-a9764327b0c1": {
+          "type": "icons",
+          "settings": {
+            "icon": "truck",
+            "title": "Free Shipping",
+            "description": "Enjoy the convenience of fast, cost-free delivery on all your purchases."
+          }
+        },
+        "c9931cec-23ab-4291-86e8-b1c80ca866df": {
+          "type": "icons",
+          "settings": {
+            "icon": "shield",
+            "title": "Secure Payment",
+            "description": "Your personal and payment information is always safe."
+          }
+        },
+        "3f02743a-2e58-4226-8262-aecef86d2440": {
+          "type": "icons",
+          "settings": {
+            "icon": "money",
+            "title": "Money Return",
+            "description": "If you're not satisfied with your purchase, return it for a full refund within the specified period."
+          }
+        },
+        "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c": {
+          "type": "icons",
+          "settings": {
+            "icon": "support",
+            "title": "24\/7 Support",
+            "description": "Our dedicated support team is available 24\/7 to answer your questions."
+          }
+        }
+      },
+      "block_order": [
+        "293347a5-5bcc-4011-81f6-a9764327b0c1",
+        "c9931cec-23ab-4291-86e8-b1c80ca866df",
+        "3f02743a-2e58-4226-8262-aecef86d2440",
+        "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c"
+      ],
+      "settings": {
+        "scheme_selector": "background-1",
+        "heading": "Luxury For Every Lifestyle",
+        "text": "<p>Crafting exquisite leather goods, we merge timeless design with modern elegance. Our commitment to quality and innovation ensures each piece is a testament to luxury that complements every lifestyle. Discover the journey behind our passion for perfection.<\/p>",
+        "image": "shopify:\/\/shop_images\/97ceb2cd-1626-44fe-8738-d1576927b3f3.webp",
+        "overlay_logo": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png",
+        "button_url": "shopify:\/\/metaobjects\/women\/about-us",
+        "button_label": "Read More"
+      }
+    },
+    "woman-discount-counter": {
+      "type": "custom-discount-counter",
+      "settings": {
+        "color_time": "#c5b4c6",
+        "color_text": "#ffffff",
+        "heading": "Deal of the Monthly Flash Sale",
+        "text": "<p>Get 50% off your order form $100 and check out all fashion\ncollection during monthly flash sale<\/p>",
+        "button_url": "shopify:\/\/collections\/women",
+        "button_label": "Shop Now",
+        "image_left": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
+        "image_right": "shopify:\/\/shop_images\/pexels-photo-1039518.jpg",
+        "scheme_selector": "background-1"
+      }
+    },
+    "woman-categories": {
+      "type": "custom-categories",
+      "blocks": {
+        "22d50b95-6fc6-431e-a73d-f84b9f3cf69e": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/614r-BbfVFL._SX679.jpg",
+            "title_category": "Belts",
+            "title": "Women's",
+            "link": "shopify:\/\/collections\/womens-belts",
+            "button_text": "View All"
+          }
+        },
+        "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Borse-in-PU-da-donna-borse-in-pelle-da-donna-di-alta-qualit-borse-firmate-di_jpg.jpg",
+            "title_category": "Bags",
+            "title": "Women's",
+            "link": "shopify:\/\/collections\/womens-bags",
+            "button_text": "View All"
+          }
+        },
+        "e61dc44f-7d8d-4b03-8cf1-67ed8063533b": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-photo-1039518.jpg",
+            "title_category": "Accessories",
+            "title": "Women's",
+            "link": "shopify:\/\/collections\/womens-accessories",
+            "button_text": "View All"
+          }
+        }
+      },
+      "block_order": [
+        "22d50b95-6fc6-431e-a73d-f84b9f3cf69e",
+        "6b8c77a2-b97a-4d8b-93a8-7530c4ccdc3a",
+        "e61dc44f-7d8d-4b03-8cf1-67ed8063533b"
+      ],
+      "settings": {
+        "scheme_selector": "background-1"
+      }
+    },
+    "a794af04-1e89-4d70-8f37-383a4f16256e": {
+      "type": "custom-instafeed",
+      "settings": {
+        "title": "Instagram Feed",
+        "color_scheme": "",
+        "subtitle": "",
+        "description": "Step into our world on Instagram and get inspired! Follow our feed for the latest trends, behind-the-scenes peeks, and snapshots of our stylish community. Join us and be part of the conversation. #XinabelleStyle",
+        "instagram_url": "https:\/\/www.instagram.com",
+        "label_button": "Follow us"
+      }
+    },
+    "woman-testimonials": {
+      "type": "custom-reviews",
+      "blocks": {
+        "d86f5489-16da-4618-b85b-d8cb3cee812d": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Amanda S.",
+            "location": "Las Vegas, Montana",
+            "quote": "Not only is the craftsmanship top-notch, but the customer service was also incredibly helpful and friendly. Definitely a repeat customer here!",
+            "rating": 4.8
+          }
+        },
+        "c79e1352-534f-4efe-b691-1f679e7ab632": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Liam R.",
+            "location": "Las Vegas, Montana",
+            "quote": "As a fashion enthusiast, I'm always on the lookout for pieces that stand out. I found exactly what I was looking for here – unique design, excellent quality, and a seamless shopping experience",
+            "rating": 4.8
+          }
+        },
+        "7f58c469-b5f1-4df2-822d-980c405f7377": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Sophia T.",
+            "location": "Las Vegas, Montana",
+            "quote": "From browsing to unboxing, the entire process was a delight. The attention to detail in the packaging made it feel like I was opening a gift to myself. The product quality is unmatched!",
+            "rating": 4.8
+          }
+        },
+        "703ee8a6-4713-40cd-b419-1b3b3a24da8c": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Ethan K.",
+            "location": "Las Vegas, Montana",
+            "quote": "I needed a last-minute gift, and not only did my order arrive in record time, but it was also perfect in every way. The recipient was thrilled, and I couldn't be happier with the service.",
+            "rating": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "d86f5489-16da-4618-b85b-d8cb3cee812d",
+        "c79e1352-534f-4efe-b691-1f679e7ab632",
+        "7f58c469-b5f1-4df2-822d-980c405f7377",
+        "703ee8a6-4713-40cd-b419-1b3b3a24da8c"
+      ],
+      "settings": {
+        "scheme_selector": "background-1",
+        "title": "What Our Customer Say",
+        "subtitle": "Discover the experiences of our satisfied customers. Their stories highlight the exceptional quality and style that define our brand.",
+        "link_text": "View More",
+        "link_url": "https:\/\/www.google.com\/business\/"
+      }
+    },
+    "woman-newsletter": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up now & get 10% of",
+            "heading_size": "h2"
+          }
+        },
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Last chance to take advantage of our discount!<\/p>"
+          }
+        },
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-heading-1",
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-paragraph-1",
+        "template--21697624801584__05599d10-2590-4ff6-8ddb-92b1a899a065-email_form-1"
+      ],
+      "custom_css": [
+        ".newsletter {border-bottom: white solid 1px;}",
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position: bottom;}"
+      ],
+      "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
+        "lateral_2": "shopify:\/\/shop_images\/0656e7ca-d465-4e3c-86fb-e709f556e2b9.webp",
+        "color_background": "#c5b4c6",
+        "color_text": "#6b6559",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6218b202-c6a3-4fb5-b927-212022abe1f5",
+    "woman-best-seller",
+    "woman-about-home",
+    "woman-discount-counter",
+    "woman-categories",
+    "a794af04-1e89-4d70-8f37-383a4f16256e",
+    "woman-testimonials",
+    "woman-newsletter"
+  ]
+}
