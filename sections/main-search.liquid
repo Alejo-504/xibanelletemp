@@ -130,34 +130,34 @@
     </div>
   </form>
 </main-search>
-<script>
-
-  document.addEventListener("DOMContentLoaded", function(){
-      let word = "women";
-
-      let p = document.querySelector('input[name="p"]');
-      
-
-      p.addEventListener('input', function(e) {
-          let value = e.target.value;
+        <script>
         
-          let input = document.createElement('input');
-          input.value = value + "+"+word;
-          input.type = 'hidden';
-          input.name = 'q';
-          input.value = value + "+"+word;
-          if (document.querySelector('input[name="q"]')) {
-              document.querySelector('input[name="q"]').remove();
-          }
-          document.querySelector('form.search').appendChild(input);
-          console.log(input.value);
-      });
-
-
-
-  });
-  
-</script>
+          document.addEventListener("DOMContentLoaded", function(){
+              let word = "women";
+        
+              let p = document.querySelector('input[name="p"]');
+              
+        
+              p.addEventListener('input', function(e) {
+                  let value = e.target.value;
+                
+                  let input = document.createElement('input');
+                  input.value = value + "+"+word;
+                  input.type = 'hidden';
+                  input.name = 'q';
+                  input.value = value + "+"+word;
+                  if (document.querySelector('input[name="q"]')) {
+                      document.querySelector('input[name="q"]').remove();
+                  }
+                  document.querySelector('form.search').appendChild(input);
+                  console.log( document.querySelector('form.search'));
+              });
+        
+        
+        
+          });
+          
+        </script>
 
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
