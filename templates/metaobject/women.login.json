@@ -52,6 +52,10 @@
         "template--21759101731120__95e43f48-dbff-460e-adf3-1dac84924db4-paragraph-1",
         "template--21759101731120__95e43f48-dbff-460e-adf3-1dac84924db4-email_form-1"
       ],
+      "custom_css": [
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position: bottom;}"
+      ],
       "settings": {
         "lateral_1": "shopify:\/\/shop_images\/0656e7ca-d465-4e3c-86fb-e709f556e2b9_1c2d891a-540d-4e65-b25e-ffa5cb19a2dc.webp",
         "lateral_2": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
