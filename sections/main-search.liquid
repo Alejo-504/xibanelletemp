@@ -139,6 +139,22 @@
             </div>
           </form>
         </main-search>
+        <script>
+        let form = document.querySelector('.search');
+        form.addEventListener('submit', function(event) {
+          let input = form.querySelector('input[name="q"]');
+          input.value += ' + women';
+        });
+        document.addEventListener("DOMContentLoaded", function(){
+            let input = form.querySelector('input[name="q"]');
+            let value = input.value;
+            let word = "women";
+            if (value.endsWith(word)) {
+              input.value = value.substring(0, value.length - word.length);
+            }
+        });
+        
+      </script>
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
         {%- endif -%}
