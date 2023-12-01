@@ -386,8 +386,8 @@
 }
 
 .activate button[name='decline'],
-.addresses li > button,
-.addresses form button[type] {
+.addresses li > button:not(.btn),
+.addresses form button[type]:not(.btn) {
   background-color: rgba(var(--color-background), var(--alpha-button-background));
   color: rgb(var(--color-link));
 }
