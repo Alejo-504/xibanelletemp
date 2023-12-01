@@ -176,7 +176,7 @@
 
   <script>
   document.addEventListener("DOMContentLoaded", function(){
-      $(".testimonials .owl-carousel").owlCarousel({
+          $(".testimonials .owl-carousel").owlCarousel({
             items: 3,
             margin: 30,
             loop: true,
@@ -193,14 +193,18 @@
     
         //crear un script que importe fancybox y abra el video al hacer click en playBtn
         $(".playBtn").click(function(){
-          //importar fancybox 
        
+      
           let video = $(this).parent().find("video");
 
           let script = document.createElement("script");
+          let css = document.createElement("link");
+          css.rel = "stylesheet";
+          css.href = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css";
           script.id = "fancybox";
           if(!document.getElementById("fancybox")){
             script.src = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js";
+           
               script.onload = function(){
                 $.fancybox.open({
                   src: video,
@@ -216,6 +220,7 @@
                   }
                 });
               }
+              document.head.appendChild(css);
               document.body.appendChild(script);
           }else{
             $.fancybox.open({
@@ -233,7 +238,7 @@
             });
           }
         });
- 
+
     });
   </script>
     <style>
