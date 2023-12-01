@@ -131,9 +131,24 @@
             >
 
 
+            {% include "getTypePage" %}
+
+            {% if type == "men" %}
           
 
-              {%- for product in predictive_search.resources.products -%}
+              {% assign products_filtered = predictive_search.resources.products | where: "product_type", "men" %}
+
+
+            {% elsif type == "women" %}
+
+              {% assign products_filtered = predictive_search.resources.products | where: "product_type", "women" %}
+
+              {% else %}
+
+               {% assign products_filtered = predictive_search.resources.products %}
+            {% endif %}
+
+              {%- for product in products_filtered -%}
                 <li
                   id="predictive-search-option-product-{{ forloop.index }}"
                   class="predictive-search__list-item"
