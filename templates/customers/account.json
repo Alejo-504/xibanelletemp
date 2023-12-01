@@ -1,5 +1,10 @@
 {
   "sections": {
+    "header": {
+      "type": "custom-header-portal",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-account",
       "settings": {
@@ -10,6 +15,7 @@
     }
   },
   "order": [
+    "header",
     "main"
   ]
 }
