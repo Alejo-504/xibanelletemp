@@ -6,7 +6,7 @@
         "enabled_top_bar": false,
         "cta_text": "Call to Action",
         "cta_link": "",
-        "logo_position": "top-left",
+        "logo_position": "middle-left",
         "menu": "portal-header",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
