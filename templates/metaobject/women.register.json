@@ -10,6 +10,8 @@
     "main": {
       "type": "main-register",
       "settings": {
+        "scheme_selector": "",
+        "title": "Register",
         "padding_top": 36,
         "padding_bottom": 36
       }
