@@ -282,6 +282,19 @@
           max-width:100vw!important;
           margin:0!important;
           background-image: url({{ settings.challenge_background_image | img_url: 'master' }});
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+
+      }
+      .shopify-challenge__container::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
       }
       .shopify-challenge__container input[type="submit"]{
         margin-top: 25px;
