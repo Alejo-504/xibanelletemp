@@ -391,7 +391,7 @@
 
 
 
-       <a  class="header__icon  d-flex d-md-none"  href="/pages/men/sign-in">
+       <a  class="header__icon  d-flex d-md-none"  href="/account/login">
           <i class="fa fa-user" style="font-size: 2rem;color: white;"></i>
         </a>
 
@@ -415,7 +415,14 @@
         {%- endif -%}
       </a>
 
-        <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login" style="min-width:120px;">Sign In</a>
+
+        <a class="btn btn-primary hero  ms-md-5 d-md-block d-none" href="/account/login" style="min-width:120px;">
+          {% if customer %}
+            <span class="d-none d-md-block">My Account</span>
+          {% else %}
+            <span class="d-none d-md-block">Login</span>
+          {% endif %} 
+        </a>
        
     </div>
     {% render "cart-popup-ajax", type: "men" %}
