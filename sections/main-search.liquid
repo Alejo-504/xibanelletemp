@@ -88,7 +88,7 @@
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
 <main-search>
-  <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+  <form action="{{ routes.search_url }}" method="get" role="search" class="search" id="page_search">
     <div class="field">
       <input
         style="background: rgb(var(--color-background-2));"
@@ -135,7 +135,7 @@
           document.addEventListener("DOMContentLoaded", function(){
               let word = "women";
         
-              let p = document.querySelector('input[name="p"]');
+              let p = document.querySelector('#page_search input[name="p"]');
               
         
               p.addEventListener('input', function(e) {
@@ -146,11 +146,11 @@
                   input.type = 'hidden';
                   input.name = 'q';
                   input.value = value + "+"+word;
-                  if (document.querySelector('input[name="q"]')) {
-                      document.querySelector('input[name="q"]').remove();
+                  if (document.querySelector('#page_search input[name="q"]')) {
+                      document.querySelector('#page_search input[name="q"]').remove();
                   }
-                  document.querySelector('form.search').appendChild(input);
-                  console.log( document.querySelector('form.search'));
+                  document.querySelector('#page_search').appendChild(input);
+                  console.log( document.querySelector('#page_search'));
               });
         
         
