@@ -115,7 +115,23 @@
     border-radius:0!important;
   }
 </style>
+<script>
+  //al abrir una cerrar el resto
+  var acc = document.getElementsByClassName("accordion-button");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      //hacer click en todos
+      let id = this.getAttribute("aria-controls");
+      var acc = document.querySelectorAll("accordion-collapse.show:not(#"+id+")");
+      acc.forEach(function(item){
+        item.classList.remove("show");
+      });
 
+     
+    });
+  }
+</script>
 {% schema %}
 {
   "name": "t:sections.collapsible_content.name",
