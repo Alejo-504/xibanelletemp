@@ -86,6 +86,8 @@
         "container_color_scheme": "background-1",
         "open_first_collapsible_row": false,
         "image": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
+        "button_label": "Contact Us",
+        "button_link": "shopify:\/\/metaobjects\/women\/contact",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 0,
