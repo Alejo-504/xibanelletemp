@@ -94,6 +94,50 @@
         "padding_bottom": 36
       }
     },
+    "a12999ea-d053-497a-9181-172fcfa55dcb": {
+      "type": "custom-reviews",
+      "blocks": {
+        "332432ec-54e7-43e7-b6b6-82fd7460e7ce": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "f92f2c06-f4ae-407c-a871-65d40fa13bbc": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "d10e4fab-9d11-4fe4-9eb4-940ee2772320": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "332432ec-54e7-43e7-b6b6-82fd7460e7ce",
+        "f92f2c06-f4ae-407c-a871-65d40fa13bbc",
+        "d10e4fab-9d11-4fe4-9eb4-940ee2772320"
+      ],
+      "settings": {
+        "scheme_selector": "",
+        "title": "What Our Customer Say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+        "link_text": "View More",
+        "link_url": ""
+      }
+    },
     "custom-newsletter": {
       "type": "custom-newsletter",
       "blocks": {
@@ -140,6 +184,7 @@
   "order": [
     "ed713a08-3d47-47f1-a4e3-83c32cf87120",
     "5cf111d0-6191-4afa-9189-aa41c180bb7e",
+    "a12999ea-d053-497a-9181-172fcfa55dcb",
     "custom-newsletter"
   ]
 }
