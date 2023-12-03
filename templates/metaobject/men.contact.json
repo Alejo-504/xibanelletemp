@@ -20,6 +20,7 @@
       "settings": {
         "color_scheme": "background-2",
         "background-image": "shopify:\/\/shop_images\/70010cfd-9e30-4d83-b2c4-5a545567eeb5.webp",
+        "background-overlay": "linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(209, 224, 249, 0.8) 51.074%, rgba(207, 230, 249, 1) 100%)",
         "email": "info@xinabelle.com",
         "email-link": "info@xinabelle.com",
         "telephone": "(404) 343 8695",
