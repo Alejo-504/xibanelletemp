@@ -94,6 +94,60 @@
         "padding_bottom": 36
       }
     },
+    "d3fa8ee2-196c-48cd-8d2d-747363b63614": {
+      "type": "custom-reviews",
+      "blocks": {
+        "843c08fe-2ed3-4c3d-b8a5-99b2313894b4": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "4d6edc21-9ee1-4495-baf0-7875ebe9f44c": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "d3177356-d661-4bbd-ba2d-fc2912ba0353": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        },
+        "8c2a0dc6-6dbf-4cb0-9339-1a841967c37d": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Alexandro Samsóin",
+            "location": "Las Vegas, Montana",
+            "quote": "Lorem ipsum dolor sit amet consectetur. Maecenas lacus dui integer et tempor sodales varius vulputate elementum. Neque quam.",
+            "rating": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "843c08fe-2ed3-4c3d-b8a5-99b2313894b4",
+        "4d6edc21-9ee1-4495-baf0-7875ebe9f44c",
+        "d3177356-d661-4bbd-ba2d-fc2912ba0353",
+        "8c2a0dc6-6dbf-4cb0-9339-1a841967c37d"
+      ],
+      "settings": {
+        "scheme_selector": "",
+        "title": "What Our Customer Say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur. Mi eros nunc orci facilisi urna. Eu est mi diam odio blandit.",
+        "link_text": "View More",
+        "link_url": ""
+      }
+    },
     "custom-newsletter": {
       "type": "custom-newsletter",
       "blocks": {
@@ -140,6 +194,7 @@
   "order": [
     "d4696897-9805-40b4-bd1e-d66a4f46a762",
     "5cf111d0-6191-4afa-9189-aa41c180bb7e",
+    "d3fa8ee2-196c-48cd-8d2d-747363b63614",
     "custom-newsletter"
   ]
 }
