@@ -34,12 +34,16 @@
         "83b1d883-c5de-42a6-a6b3-943de5caa7e5",
         "3b4feb7b-d9af-40ab-8a47-aaa670b3baa8"
       ],
+      "custom_css": [
+        ".custom-about::before {top: 15%; left: 10%; width: 300px; height: 300px; z-index: 1; opacity: 0.1;}"
+      ],
       "settings": {
         "color_scheme": "background-2",
         "title": "About Us",
         "about": "<h3>Our Mission<\/h3><p>Company dedicated to the manufacture of various Italian leather accessory pieces for ladies and gentlemen, aimed at satisfying the needs of our customers with the highest quality items.<\/p><p><\/p><h3>Our Vision<\/h3><p>To be the leading company in the manufacture of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the best quality finishes.<\/p><h3><\/h3>",
         "link": "shopify:\/\/metaobjects\/men\/contact",
-        "link_text": "Contact Us"
+        "link_text": "Contact Us",
+        "Overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png"
       }
     },
     "custom-values": {
