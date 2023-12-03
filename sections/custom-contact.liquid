@@ -340,46 +340,81 @@ position: relative;
 		</div>
 	</section>
 	<!-- #FIN DE SECCION CONTACT -->
+  <style>
+    .info-wrap{
+      position: relative;
+    }
+    .info-wrap:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url({{ section.settings.background-image | img_url: 'master' }});
+      z-index: -1;
+      transform: translateX(-100%);
+      transition: all 0.6s;
+      z-index: -1;
+    }
+    .info-wrap:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transform: translateX(-100%);
+      transition: all 0.6s;
+      z-index: -1;
+    }
+
+  </style>
 
 {% schema %}
   {
     "name": "custom-contact",
     "settings": [
-      {
+        {
           "type": "color_scheme",
           "id": "color_scheme",
           "label": "Scheme"
         },
         {
+          "type": "image_picker",
+          "id": "background-image",
+          "label": "Image"
+        },
+        {
           "type": "text",
           "id": "email",
           "label": "Email",
-    	  "default": "Email"
+    	    "default": "Email"
         },
-    	{
+    	  {
           "type": "text",
           "id": "email-link",
           "label": "Email Link"
-        }
-    	,
-    	{
+        },
+    	  {
           "type": "text",
           "id": "telephone",
           "label": "Telephone",
     	   "default": "Telephone"
         },
-    	{
+    	  {
           "type": "text",
           "id": "telephone-link",
           "label": "Telephone Link"
         },
-    	{
+    	  {
           "type": "text",
           "id": "address",
           "label": "Address"
     	  
         },
-    	{
+    	  {
           "type": "text",
           "id": "location-link",
           "label": "Location Link"
