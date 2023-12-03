@@ -140,6 +140,12 @@
         "d3177356-d661-4bbd-ba2d-fc2912ba0353",
         "8c2a0dc6-6dbf-4cb0-9339-1a841967c37d"
       ],
+      "custom_css": [
+        ".testimonials {background: rgb(var(--color-background));}",
+        "h1,h2,p {color: white;}",
+        ".testimonial {background: white;}",
+        ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}"
+      ],
       "settings": {
         "scheme_selector": "",
         "title": "What Our Customer Say",
