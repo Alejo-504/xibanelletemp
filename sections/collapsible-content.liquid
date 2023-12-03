@@ -116,22 +116,12 @@
   }
 </style>
 <script>
-  //al abrir una cerrar el resto
-  var acc = document.getElementsByClassName("accordion-button");
-  var i;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      //hacer click en todos
-      let id = this.getAttribute("aria-controls");
-      var acc_ = document.querySelectorAll("accordion-collapse.show:not(#"+id+")");
-      acc_.forEach(function(item){
-        item.classList.remove("show");
-        console.log(item);
-      });
-
-     
+  document.querySelectorAll('.accordion-button').forEach(function(acc) {
+    acc.addEventListener('click', function() {
+      $('.accordion-collapse').collapse('hide');
+      $(this).next('.accordion-collapse').collapse('toggle');
     });
-  }
+  });
 </script>
 {% schema %}
 {
