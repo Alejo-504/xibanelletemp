@@ -134,7 +134,7 @@
         ".testimonials {background: rgb(var(--color-background));}",
         "h1,h2,p {color: white;}",
         ".testimonial {background: white;}",
-        ".testimonial *:not(i) {color: black;}"
+        ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "scheme_selector": "background-2",
