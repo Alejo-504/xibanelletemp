@@ -121,12 +121,12 @@
   var i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
+      //hacer click en todos
       var acc = document.getElementsByClassName("accordion-button");
       var i;
       for (i = 0; i < acc.length; i++) {
-        acc[i].classList.remove("active");
+        acc[i].click();
       }
-      this.classList.toggle("active");
     });
   }
 </script>
