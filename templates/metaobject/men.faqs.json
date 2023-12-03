@@ -130,6 +130,10 @@
         "f92f2c06-f4ae-407c-a871-65d40fa13bbc",
         "d10e4fab-9d11-4fe4-9eb4-940ee2772320"
       ],
+      "custom_css": [
+        ".testimonials{background:rgb(var(--color-background));}",
+        "h1, h2, p{color:white;}"
+      ],
       "settings": {
         "scheme_selector": "background-2",
         "title": "What Our Customer Say",
