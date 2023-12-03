@@ -115,21 +115,7 @@
     border-radius:0!important;
   }
 </style>
-<script>
-  //al abrir una cerrar el resto
-  var acc = document.getElementsByClassName("accordion-button");
-  var i;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      //hacer click en todos
-      var acc = document.getElementsByClassName("accordion-button");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-        acc[i].click();
-      }
-    });
-  }
-</script>
+
 {% schema %}
 {
   "name": "t:sections.collapsible_content.name",
