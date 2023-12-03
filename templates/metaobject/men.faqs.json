@@ -86,6 +86,8 @@
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
+        "button_label": "Contact Us",
+        "button_link": "shopify:\/\/metaobjects\/men\/contact",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 0,
