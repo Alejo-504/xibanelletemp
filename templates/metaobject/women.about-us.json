@@ -34,6 +34,9 @@
         "85a447da-9612-440b-9abc-f38e8771bc19",
         "83b1d883-c5de-42a6-a6b3-943de5caa7e5"
       ],
+      "custom_css": [
+        ".custom-about::before{top: 15%; left: 10%; width: 300px; height: 300px; z-index:1; opacity:0.1 }"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "title": "About Us",
