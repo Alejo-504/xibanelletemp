@@ -123,9 +123,10 @@
     acc[i].addEventListener("click", function() {
       //hacer click en todos
       let id = this.getAttribute("aria-controls");
-      var acc = document.querySelectorAll("accordion-collapse.show:not(#"+id+")");
-      acc.forEach(function(item){
+      var acc_ = document.querySelectorAll("accordion-collapse.show:not(#"+id+")");
+      acc_.forEach(function(item){
         item.classList.remove("show");
+        console.log(item);
       });
 
      
