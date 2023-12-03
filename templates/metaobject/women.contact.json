@@ -19,6 +19,8 @@
       "type": "custom-contact",
       "settings": {
         "color_scheme": "background-1",
+        "background-image": "shopify:\/\/shop_images\/70010cfd-9e30-4d83-b2c4-5a545567eeb5.webp",
+        "background-overlay": "linear-gradient(180deg, rgba(239, 239, 239, 0.84), rgba(238, 238, 238, 0.93) 50.714%, rgba(197, 180, 198, 1) 100%)",
         "email": "info@xinabelle.com",
         "email-link": "info@xinabelle.com",
         "telephone": "(404) 343 8695",
@@ -57,7 +59,7 @@
       ],
       "custom_css": [
         ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: -60px;}",
-        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position:bottom;}"
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: -140px; background-position: bottom;}"
       ],
       "settings": {
         "lateral_1": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
