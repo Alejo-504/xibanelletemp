@@ -126,7 +126,9 @@
                                 <div class="row justify-content-center">
                                   <div class="d-flex justify-content-center align-items-center flex-column col-md-6 col-6 px-0">
                                     {% if block.settings.icon != blank %}
-                                      <i class="icon-benefit {{block.settings.icon}}"></i>
+                                      <div class="icon-benefit">
+                                        {{block.settings.icon}}
+                                      </div>
                                       <p> {{ block.settings.name_benefit }}</p>
                                     {% else %}
                                         <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="">  
@@ -179,9 +181,9 @@
               "label": "image benefit"  
             },
             {
-              "type": "text",
+              "type": "textarea",
               "id": "icon",
-              "label": "Icon Font Awesome",
+              "label": "SVG or HTML",
               "info": "Replace the image with an icon" 
             }
       ]
