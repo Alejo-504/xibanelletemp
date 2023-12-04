@@ -300,7 +300,12 @@
 </script>
 
 <style>
-  @media (min-width: 768px){
+  @media (min-width: 575px){
+    .best-seller-carousel:hover .owl-nav{
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(0px);
+    }
     .best-seller-carousel .owl-nav{
       position: absolute;
       top: 50%;
@@ -310,9 +315,11 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1;
+      opacity: 0;
+      transform: translateY(-25px);
     }
   }
-  
+
   button.owl-prev, button.owl-next {
     background: rgb(var(--color-background))!important;
     width: 35px;
