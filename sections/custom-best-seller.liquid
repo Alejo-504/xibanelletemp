@@ -267,7 +267,7 @@
           </div>
         
           <div class="phone-carousle d-block d-md-none">
-            <div class="owl-carousel best-seller-carousel">
+            <div class="owl-carousel best-seller-carousel-phone">
               {% for block in section.blocks %}
                 {% assign product = all_products[block.settings.product] %}
                   <div class="grid-item grid-item-{{forloop.index}}">
@@ -411,7 +411,7 @@
             </div>
           </div>
           <div class="phone-carousle d-block d-md-none">
-            <div class="owl-carousel best-seller-carousel">
+            <div class="owl-carousel best-seller-carousel-phone">
               {% for block in section.blocks %}
                 {% assign product = all_products[block.settings.product] %}
                   <div class="grid-item grid-item-{{forloop.index}}">
@@ -432,6 +432,20 @@
  <script>
   document.addEventListener("DOMContentLoaded", function() {
     $('.best-seller-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      items: 1,
+      autoplay: !window.matchMedia("(max-width: 767px)").matches,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      autoplayHoverPause: true,
+      autoplayTimeout: 8000,
+      smartSpeed: 1300,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    });
+    $('.best-seller-carousel-phone').owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
