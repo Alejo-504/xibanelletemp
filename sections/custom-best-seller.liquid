@@ -281,13 +281,18 @@
   </div>
 
   <script>
- document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
       $('.best-seller-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        items:1,
-      })
-    })
-</script>
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        items: 1,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000
+      });
+    });
+  </script>
