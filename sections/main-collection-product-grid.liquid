@@ -48,6 +48,7 @@
         padding-left: 5rem;
     }
   }
+  .collection .gradient
   .collection h2{
     color:rgb(var(--color-foreground_3));
   }
@@ -76,9 +77,12 @@
   #FacetFiltersFormMobile span, #FacetFiltersFormMobile h2, #FacetFiltersFormMobile p{
     color: rgb(var(--color-foreground_3));
   }
+  .mobile-facets__inner gradient .gradient{
+    background:rgb(var(--color-background-3));
+  }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}" style="background:rgb(var(--color-background-3));color:rgb(var(--color-foreground_3))">
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}" style="background:rgb(var(--color-background-3));color:rgb(var(--color-foreground_3))">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
