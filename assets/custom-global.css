@@ -4,6 +4,9 @@ body, html{
 .best-sellers-section {
   overflow-x:hidden;
 }
+a{
+  text-decoration:none!important;
+}
 
 /* HERO SUBPAGES */
 
