@@ -76,6 +76,36 @@
           "settings": {
             "product": "example-belt-women-1"
           }
+        },
+        "bb91c96d-84cf-4b0f-8e50-8be23fa5c3e2": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-2"
+          }
+        },
+        "bda014a5-a002-4079-ba51-115c9c8abe25": {
+          "type": "product",
+          "settings": {
+            "product": "example-belt-women-1"
+          }
+        },
+        "9cdc0e3a-432c-4330-9a97-fad242166d63": {
+          "type": "product",
+          "settings": {
+            "product": "example-belt-women-2"
+          }
+        },
+        "ffaf1821-ea83-4988-8e42-601ccc8ee53d": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-1"
+          }
+        },
+        "2eb60876-c498-4571-8538-3f80c9bda714": {
+          "type": "product",
+          "settings": {
+            "product": "example-bag-woman-2"
+          }
         }
       },
       "block_order": [
@@ -83,7 +113,12 @@
         "88a7a64e-b06c-4e17-af6f-6694b8d89ea7",
         "74bd58be-b205-435f-bb5a-440f9aae8de4",
         "0ce2817f-dcee-4521-9409-3bd74e26d82f",
-        "f7a2df54-b3b0-4431-9647-a275d5364571"
+        "f7a2df54-b3b0-4431-9647-a275d5364571",
+        "bb91c96d-84cf-4b0f-8e50-8be23fa5c3e2",
+        "bda014a5-a002-4079-ba51-115c9c8abe25",
+        "9cdc0e3a-432c-4330-9a97-fad242166d63",
+        "ffaf1821-ea83-4988-8e42-601ccc8ee53d",
+        "2eb60876-c498-4571-8538-3f80c9bda714"
       ],
       "settings": {
         "scheme_selector": "background-1",
