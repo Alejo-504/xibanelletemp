@@ -64,7 +64,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
       let collection = document.getElementById("collection-card-{{ card_collection.id }}");
-      let image_principal = document.querySelector("#collection-card-{{ card_collection.id }} .category-image img");
+      let image_principal = collection.querySelector(".category-image img:first-child");
       let interval = null;
 
 
@@ -74,7 +74,7 @@
             return;
         }
 
-        let images = collection.querySelectorAll("#collection-card-{{ card_collection.id }} .category-image img");
+        let images = collection.querySelectorAll(".category-image img");
         let imagens_count = images.length;
         let index = 0;
         interval = setInterval(function() {
