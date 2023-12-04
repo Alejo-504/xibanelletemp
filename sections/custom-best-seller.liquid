@@ -293,7 +293,21 @@
       animateIn: 'fadeIn',
       autoplayHoverPause: true,
       autoplayTimeout: 5000,
-      smartSpeed: 1300 
+      smartSpeed: 1300,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     });
   });
 </script>
+
+<stlye>
+  .best-seller-carousel .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+</stlye>
