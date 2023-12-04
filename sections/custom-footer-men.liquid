@@ -235,12 +235,7 @@
       text-decoration:none;
       /*font-weight:900;*/
     }
-    @media screen(min-width: 959px){
-      .copyright > .container {
-          padding-right: 10.3vw;
-          padding-left: 7.3vw;
-      }
-    }
+    
     li.with-icon {
         display: grid;
         grid-template-columns: 16px 1fr;
@@ -272,6 +267,12 @@
         #shopify-section-{{section.id}}::before {
             display: none;
         }
+    }
+    @media (min-width: 959px){
+      .copyright > .container {
+          padding-right: 10.3vw;
+          padding-left: 7.3vw;
+      }
     }
 </style>
 </div>
