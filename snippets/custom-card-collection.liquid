@@ -82,11 +82,15 @@
             index = 0;
           }
         }, 1000);
-          
-        }, 1000);
       });
-       
+
+      collection.addEventListener("mouseout", function() {
+        clearInterval(interval);
+        image_principal.classList.add("active");
+      });
   });
+       
+
 </script>
 
 
