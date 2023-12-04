@@ -300,14 +300,33 @@
 </script>
 
 <style>
-  .best-seller-carousel .owl-nav{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
+  @media (min-width: 768px){
+    .best-seller-carousel .owl-nav{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
   }
+  
+  button.owl-prev, button.owl-next {
+    background: rgb(var(--color-background))!important;
+    width: 35px;
+    height: 35px;
+    z-index: 2323;
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px -7px black;
+    color: white!important;
+  }
+  button.owl-prev{
+    margin-left: -20px;
+  }
+  button.owl-next{
+    margin-right: -20px;
+  }
+  
 </style>
