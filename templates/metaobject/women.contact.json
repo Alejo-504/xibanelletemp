@@ -20,7 +20,7 @@
       "settings": {
         "color_scheme": "background-1",
         "background-image": "shopify:\/\/shop_images\/pexels-cats-coming-1204464.jpg",
-        "background-overlay": "linear-gradient(270deg, rgba(255, 255, 255, 0.84), rgba(238, 238, 238, 0.86) 23%, rgba(197, 180, 198, 1) 100%)",
+        "background-overlay": "linear-gradient(270deg, rgba(255, 255, 255, 0.86), rgba(228, 228, 228, 1) 100%)",
         "email": "info@xinabelle.com",
         "email-link": "info@xinabelle.com",
         "telephone": "(404) 343 8695",
