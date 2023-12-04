@@ -29,7 +29,7 @@
             "label": "Product"
           }
         ],
-        "limit": 20
+        "limit": 15
       }
     ],
     "presets": [
@@ -175,7 +175,8 @@
         </div>
       
       
-      {% elsif section.blocks.size == 10 %}
+      {% elsif section.blocks.size > 5 and  section.blocks.size  <= 10 %}
+        <div class="desktop-carousel d-md-block d-none">
           <div class="owl-carousel best-seller-carousel">
            
             <div class=" grid-container-product w-100">
@@ -264,17 +265,166 @@
               {% endfor %}
             </div>
           </div>
+        </div>
+        <div class="phone-carousle d-block d-md-none">
+          <div class="owl-carousel best-seller-carousel">
+            {% for block in section.blocks %}
+              {% assign product = all_products[block.settings.product] %}
+                <div class="grid-item grid-item-{{forloop.index}}">
+                   
+                     {% render "custom-card-product", product:product, size:"normal" %}
+                  
+                </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% elsif section.blocks.size > 10 and  section.blocks.size  <= 15 %}
+        <div class="desktop-carousel d-md-block d-none">
+          <div class="owl-carousel best-seller-carousel">
+            <div class=" grid-container-product w-100">
+              {% for block in section.blocks limit:5 %}
+                {% assign product = all_products[block.settings.product] %}
+                  {%  assign direction = "" %} 
+                  {% if forloop.index <= 3 %}
+                    {% assign direction = "right" %}
+                  {% else %}
+                    {% assign direction = "left" %}
+                  {% endif %}
+                  <div class="grid-item grid-item-{{forloop.index}}" 
+                    data-aos="fade-{{direction}}"
+                    data-aos-delay="{{forloop.index | minus:1}}00" 
+                    data-aos-duration="600" 
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="-50"
+                    >
+      
+                      {% if forloop.index == 2 %}
+                        
+                        <div class="d-sm-block d-none w-100">
+                        {% render "custom-card-product", product:product, size:"large" %}
+                        </div>
+                        <div class="d-sm-none d-block w-100">
+                          {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                    
+                      {% elsif forloop.index == 5 %}
+                        <div class="d-md-block d-none w-100">
+                          {% render "custom-card-product", product:product, size:"medium" %}
+                        </div>
+                        <div class="d-md-none d-block w-100">
+                            {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                      {% else %}
+                        
+                        {% render "custom-card-product", product:product, size:"normal" %}
+                      {% endif %}
+                    
+                  </div>
+                
+              {% endfor %}
+            </div>
+
+            <div class=" grid-container-product w-100">
+              {% for block in section.blocks limit:5 offset:5 %}
+                {% assign product = all_products[block.settings.product] %}
+                  {%  assign direction = "" %} 
+                  {% if forloop.index <= 3 %}
+                    {% assign direction = "right" %}
+                  {% else %}
+                    {% assign direction = "left" %}
+                  {% endif %}
+                  <div class="grid-item grid-item-{{forloop.index}}" 
+                    data-aos="fade-{{direction}}"
+                    data-aos-delay="{{forloop.index | minus:1}}00" 
+                    data-aos-duration="600" 
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="-50"
+                    >
+      
+                      {% if forloop.index == 2 %}
+                        
+                        <div class="d-sm-block d-none w-100">
+                        {% render "custom-card-product", product:product, size:"large" %}
+                        </div>
+                        <div class="d-sm-none d-block w-100">
+                          {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                    
+                      {% elsif forloop.index == 5 %}
+                        <div class="d-md-block d-none w-100">
+                          {% render "custom-card-product", product:product, size:"medium" %}
+                        </div>
+                        <div class="d-md-none d-block w-100">
+                            {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                      {% else %}
+                        
+                        {% render "custom-card-product", product:product, size:"normal" %}
+                      {% endif %}
+                    
+                  </div>
+                
+              {% endfor %}
+            </div>
+
+            <div class=" grid-container-product w-100">
+              {% for block in section.blocks limit:5 offset:10 %}
+                {% assign product = all_products[block.settings.product] %}
+                  {%  assign direction = "" %} 
+                  {% if forloop.index <= 3 %}
+                    {% assign direction = "right" %}
+                  {% else %}
+                    {% assign direction = "left" %}
+                  {% endif %}
+                  <div class="grid-item grid-item-{{forloop.index}}" 
+                    data-aos="fade-{{direction}}"
+                    data-aos-delay="{{forloop.index | minus:1}}00" 
+                    data-aos-duration="600" 
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="-50"
+                    >
+      
+                      {% if forloop.index == 2 %}
+                        
+                        <div class="d-sm-block d-none w-100">
+                        {% render "custom-card-product", product:product, size:"large" %}
+                        </div>
+                        <div class="d-sm-none d-block w-100">
+                          {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                    
+                      {% elsif forloop.index == 5 %}
+                        <div class="d-md-block d-none w-100">
+                          {% render "custom-card-product", product:product, size:"medium" %}
+                        </div>
+                        <div class="d-md-none d-block w-100">
+                            {% render "custom-card-product", product:product, size:"normal" %}
+                        </div>
+                      {% else %}
+                        
+                        {% render "custom-card-product", product:product, size:"normal" %}
+                      {% endif %}
+                    
+                  </div>
+                
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="phone-carousle d-block d-md-none">
+          <div class="owl-carousel best-seller-carousel">
+            {% for block in section.blocks %}
+              {% assign product = all_products[block.settings.product] %}
+                <div class="grid-item grid-item-{{forloop.index}}">
+                   
+                     {% render "custom-card-product", product:product, size:"normal" %}
+                  
+                </div>
+            {% endfor %}
+          </div>
+        </div>
+
       {% endif %}
-
-
-     
-     
-
-
-
-
-
-
 
 
     </div>
@@ -292,7 +442,7 @@
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       autoplayHoverPause: true,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 8000,
       smartSpeed: 1300,
       navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     });
