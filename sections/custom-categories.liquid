@@ -3,7 +3,9 @@
     {% for block in section.blocks %}
     <div class="col-md-4 ">
       <div class="card d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
-        <div class="category-image w-100 d-flex justify-content-center align-items-center" style="background-image: url('{{ block.settings.image | img_url: '1024x' }}'); height: 200px; background-size: cover; background-position: center;">
+        <div class="category-image w-100 d-flex justify-content-center align-items-center position-relative" style="height: 200px; background-size: cover; background-position: center;">
+          <img class="position-absolute img-hover" src="{{ block.settings.image | img_url: '600x' }}" alt="" style="top:0;left:0;width:100%;height:100%;object-fit:cover;">
+    
           <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
         </div>
         <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
@@ -21,11 +23,16 @@
   </div>
 </div>
 <style>
+  .category-image:hover .img-hover{
+    transform: scale(1.2);
+  }
+  .img-hover{
+    transition: all 0.3s ease-in-out;
+  }
   #categories-section{
     background: rgb(var(--color-background-4));
     color: rgb(var(--color-foreground_3));
     padding: 70px 0;
-    
   }
    #categories-section .category-title, #categories-section .category-info span{
      color:rgb(var(--color-foreground_3));
