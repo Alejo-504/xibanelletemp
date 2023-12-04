@@ -639,7 +639,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .mobile-facets__inner {
-  background-color: rgb(var(--color-background));
+  background-color: rgb(var(--color-background-3));
   width: calc(100% - 5rem);
   margin-left: auto;
   height: 100%;
