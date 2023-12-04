@@ -178,7 +178,6 @@
       {% elsif section.blocks.size > 5 and  section.blocks.size  <= 10 %}
        
           <div class="owl-carousel best-seller-carousel d-md-block d-none">
-           
             <div class=" grid-container-product w-100">
               {% for block in section.blocks limit:5 %}
                 {% assign product = all_products[block.settings.product] %}
@@ -221,7 +220,6 @@
                 
               {% endfor %}
             </div>
-
             <div class=" grid-container-product w-100">
               {% for block in section.blocks limit:5 offset:5 %}
                 {% assign product = all_products[block.settings.product] %}
@@ -265,18 +263,15 @@
               {% endfor %}
             </div>
           </div>
-        
-          <div class="phone-carousle d-block d-md-none">
-            <div class="owl-carousel best-seller-carousel-phone">
-              {% for block in section.blocks %}
-                {% assign product = all_products[block.settings.product] %}
-                  <div class="grid-item grid-item-{{forloop.index}}">
+          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none">
+            {% for block in section.blocks %}
+              {% assign product = all_products[block.settings.product] %}
+                <div class="grid-item grid-item-{{forloop.index}}">
                     
-                      {% render "custom-card-product", product:product, size:"normal" %}
+                {% render "custom-card-product", product:product, size:"normal" %}
                     
-                  </div>
-              {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
           </div>
       {% elsif section.blocks.size > 10 and  section.blocks.size  <= 15 %}
        
@@ -410,8 +405,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="phone-carousle d-block d-md-none">
-            <div class="owl-carousel best-seller-carousel-phone">
+          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none">
               {% for block in section.blocks %}
                 {% assign product = all_products[block.settings.product] %}
                   <div class="grid-item grid-item-{{forloop.index}}">
@@ -420,8 +414,8 @@
                     
                   </div>
               {% endfor %}
-            </div>
           </div>
+      
 
       {% endif %}
 
