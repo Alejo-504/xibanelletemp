@@ -164,6 +164,9 @@ body, html{
 .fade {
   animation: fade 1.5s ease-in-out infinite alternate;
 }
+.fade-simple{
+   animation: fade .5s ease-in-out;
+}
 @keyframes slideRight {
   from {
     transform: translateX(-100%);
