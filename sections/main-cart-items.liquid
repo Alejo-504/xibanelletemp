@@ -73,7 +73,7 @@
   <div class="page-width">
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline hero">
+      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-block d-none hero continue-shopping">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
@@ -491,6 +491,12 @@
         {{ 'accessibility.loading' | t }}
       </p>
     </form>
+
+    <div class="d-flex justify-content-center">
+      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-none d-block hero continue-shopping">
+        {{- 'general.continue_shopping' | t -}}
+      </a>
+    </div>
   </div>
 </cart-items>
 
