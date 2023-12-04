@@ -288,7 +288,7 @@
       nav: true,
       dots: true,
       items: 1,
-      autoplay: true,
+      autoplay: !window.matchMedia("(max-width: 767px)").matches,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       autoplayHoverPause: true,
@@ -298,16 +298,6 @@
     });
   });
 
-    function toggleAutoplay() {
-      if ($(window).width() < 768) {
-        owlCarousel.trigger('stop.owl.autoplay');
-      } else {
-        owlCarousel.trigger('play.owl.autoplay', [3000]);
-      }
-    }
-
-    toggleAutoplay();
-    $(window).resize(toggleAutoplay);
 </script>
 
 <style>
