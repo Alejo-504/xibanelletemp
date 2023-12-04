@@ -263,7 +263,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none">
+          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none owl-theme">
             {% for block in section.blocks %}
               {% assign product = all_products[block.settings.product] %}
                 <div class="grid-item grid-item-{{forloop.index}}">
@@ -405,7 +405,7 @@
               {% endfor %}
             </div>
           </div>
-          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none">
+          <div class="owl-carousel best-seller-carousel-phone d-block d-md-none owl-theme">
               {% for block in section.blocks %}
                 {% assign product = all_products[block.settings.product] %}
                   <div class="grid-item grid-item-{{forloop.index}}">
