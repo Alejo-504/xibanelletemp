@@ -4,6 +4,7 @@ body, html{
 .best-sellers-section {
   overflow-x:hidden;
 }
+
 /* HERO SUBPAGES */
 
 .breadcrumb-area.bg-overlay {
@@ -207,42 +208,42 @@ body, html{
 
 /* CARD PRODUCTS*/
 
-     .title-card strong{
-      color:rgb(var(--color-foreground_3));
-      font-size: 1.4rem;
-      line-height:1;
-    }
-    .price-card{
-      color: rgb(var(--color-background-2));
-      font-weight: 400;
-      font-family: 'Assistant';
+ .title-card strong{
+  color:rgb(var(--color-foreground_3));
+  font-size: 1.4rem;
+  line-height:1;
+}
+.price-card{
+  color: rgb(var(--color-background-2));
+  font-weight: 400;
+  font-family: 'Assistant';
 
-    }
-     .item-cart {
-      background: rgb(var(--color-background-2));
-      border-radius: 50%;
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgb(var(--color-foreground));
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-     .item-cart[disabled] {
-       background:#a1a1a1;
-       border:none;
-       pointer-events:none;
-     }
-    
-    .item-cart:hover {
-      transform: scale(1.1);
-    
-    }
-    .item-cart:active {
-      transform: scale(0.9); 
-    }
+}
+ .item-cart {
+  background: rgb(var(--color-background-2));
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+ .item-cart[disabled] {
+   background:#a1a1a1;
+   border:none;
+   pointer-events:none;
+ }
+
+.item-cart:hover {
+  transform: scale(1.1);
+
+}
+.item-cart:active {
+  transform: scale(0.9); 
+}
 
 
 
