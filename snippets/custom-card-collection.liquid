@@ -68,7 +68,8 @@
       let interval = null;
 
 
-      collection.addEventListener("mouseentered", function() {
+      collection.addEventListener("mouseenter", function() {
+        console.log("enter");
         if (interval) {
             return;
         }
