@@ -357,7 +357,8 @@
           "59cb1044-8f79-48d4-9a8b-88de64d95b20"
         ],
         "custom_css": [
-          "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}"
+          "footer ul {max-width: 126px; line-height: 1.5; letter-spacing: normal;}",
+          ".copyright>.container {max-width: 820px;}"
         ],
         "settings": {
           "scheme_selector": "background-2",
