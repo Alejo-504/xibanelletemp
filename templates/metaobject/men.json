@@ -283,13 +283,22 @@
             "quote": "I needed a last-minute gift, and not only did my order arrive in record time, but it was also perfect in every way. The recipient was thrilled, and I couldn't be happier with the service.",
             "rating": 4.8
           }
+        },
+        "f04c7bea-d521-4c61-ab21-803d0c8d26ce": {
+          "type": "Video",
+          "settings": {
+            "name_costumer": "Jhon Doe",
+            "link_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/672041f4578b4abaa0481d678d76e204.mp4",
+            "rating": 4.8
+          }
         }
       },
       "block_order": [
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "f04c7bea-d521-4c61-ab21-803d0c8d26ce"
       ],
       "settings": {
         "scheme_selector": "background-2",
