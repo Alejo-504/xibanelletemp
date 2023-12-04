@@ -67,9 +67,13 @@
       let image_principal = document.querySelector(".category-image img:first-child");
       let interval = null;
 
+
       collection.addEventListener("mouseover", function() {
+        if (interval) {
+            return;
+        }
+
         let images = collection.querySelectorAll(".category-image img");
-        console.log(images);
         let imagens_count = images.length;
         let index = 0;
         interval = setInterval(function() {
@@ -82,10 +86,14 @@
             index = 0;
           }
         }, 1000);
+
+
+
       });
 
       collection.addEventListener("mouseout", function() {
         clearInterval(interval);
+        interval = null;
         image_principal.classList.add("active");
       });
   });
