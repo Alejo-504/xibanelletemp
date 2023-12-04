@@ -3,11 +3,12 @@
     {% for block in section.blocks %}
     <div class="col-md-4 ">
       <div class="card d-flex {% if forloop.index == 2 %}flex-column-reverse{% else %} flex-column{% endif %} align-items-center">
-        <div class="category-image w-100 d-flex justify-content-center align-items-center position-relative" style="height: 200px; background-size: cover; background-position: center;">
+        <a href="{{ block.settings.link }}" 
+        class="category-image w-100 d-flex justify-content-center align-items-center position-relative" style="height: 200px; background-size: cover; background-position: center;">
           <img class="position-absolute img-hover" src="{{ block.settings.image | img_url: '600x' }}" alt="" style="top:0;left:0;width:100%;height:100%;object-fit:cover;">
     
           <i class="fa {{ block.settings.icon }}" style="font-size: 24px; color: white;"></i>
-        </div>
+        </a>
         <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
           {%  if block.settings.title %}
             <span>{{ block.settings.title }}</span>
@@ -24,7 +25,7 @@
 </div>
 <style>
   .category-image:hover .img-hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .img-hover{
     transition: all 0.3s ease-in-out;
