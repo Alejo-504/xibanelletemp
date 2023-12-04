@@ -470,14 +470,20 @@
     margin: 0 5px;
   }
     @media (max-width: 575px){
-      .owl-item {
+      .best-sellers-section .owl-item {
         padding: 10px;
+      }
+      .best-sellers-section .owl-theme .owl-nav{
+        display:none!important;
       }
     }
   @media (min-width: 575px){
     .best-seller-carousel:hover .owl-nav{
       opacity: 1;
       transform: translateY(0px);
+    }
+    .best-sellers-section .owl-theme .owl-dots{
+        display:none!important;
     }
     .best-seller-carousel .owl-nav{
       position: absolute;
