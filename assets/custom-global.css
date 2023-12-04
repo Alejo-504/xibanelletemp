@@ -256,3 +256,12 @@ body, html{
   color: gray;
 }
 
+/* CATEGORIES */
+.collection .category-image img{
+  display:none;
+}
+.collection .category-image img.active{
+  display:block;
+}
+
+
