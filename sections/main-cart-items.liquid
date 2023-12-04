@@ -56,6 +56,11 @@
   .cart-item__price-wrapper{
      margin-right: 10px;
   }
+   @media screen and (max-width: 768px) {
+     .cart-principal h2{
+       text-align:center;
+     }
+   }
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
@@ -80,6 +85,11 @@
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
       <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-block d-none hero continue-shopping">
+        {{- 'general.continue_shopping' | t -}}
+      </a>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-none d-block hero continue-shopping">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
@@ -498,11 +508,7 @@
       </p>
     </form>
 
-    <div class="d-flex justify-content-center">
-      <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-none d-block hero continue-shopping">
-        {{- 'general.continue_shopping' | t -}}
-      </a>
-    </div>
+ 
   </div>
 </cart-items>
 
