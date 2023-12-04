@@ -37,22 +37,8 @@
           class="category-image w-100 d-flex justify-content-center align-items-center owl-carousel">
 
             <img  class="active fade-simple" src="{{ card_collection.featured_image | img_url: '450x450' }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-            {% if card_collection.products[0].featured_image %}
-            <img class="fade-simple" src="{{ card_collection.products[0].featured_image | img_url: '450x450' }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
-            {% endif  %}
-            {% if card_collection.products[1].featured_image %}
-            <img class="fade-simple" src="{{ card_collection.products[1].featured_image | img_url: '450x450'  }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
-            {% endif  %}
-            {% if card_collection.products[2].featured_image %}
-            <img class="fade-simple" src="{{ card_collection.products[2].featured_image | img_url: '450x450'  }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
-            {% endif  %}  
-            {% if card_collection.products[3].featured_image %}
-            <img class="fade-simple" src="{{ card_collection.products[3].featured_image | img_url: '450x450'  }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
-            {% endif  %}
-            {% if card_collection.products[4].featured_image %}
-            <img class="fade-simple" src="{{ card_collection.products[4].featured_image | img_url: '450x450' }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
-            {% endif  %}
-            </div>
+            
+        </div>
 
         <div class="category-info text-center" style="background:rgb(var(--color-background)); padding: 10px; width: 100%;height:110px;">
           {% if card_collection.title != blank %}
@@ -62,27 +48,5 @@
         </div>
       </div>
 </div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    $('#collection-card-{{ card_collection.id }} .owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:1
-          }
-      }
-    })
-  });
-</script>
+
 
