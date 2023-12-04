@@ -86,7 +86,8 @@
     "related-products": {
       "type": "related-products",
       "custom_css": [
-        ".grid__item {background: white; padding: 10px;}"
+        ".grid__item {background: white; padding: 10px;}",
+        " @media screen and (max-width: 768px) {*{text-align:center; } }"
       ],
       "settings": {
         "heading": "You may also like",
