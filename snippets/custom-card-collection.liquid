@@ -70,22 +70,20 @@
       collection.addEventListener("mouseover", function() {
         let images = collection.querySelectorAll(".category-image img");
         console.log(images);
-        let index = 1;
+        let imagens_count = images.length;
+        let index = 0;
         interval = setInterval(function() {
           images.forEach(function(image) {
             image.classList.remove("active");
           });
           images[index].classList.add("active");
           index++;
-          if (index >= images.length) {
+          if (index == imagens_count) {
             index = 0;
           }
         }, 1000);
       });
-      collection.addEventListener("mouseout", function() {
-        clearInterval(interval);
-        image_principal.classList.add("active");
-      });
+       
   });
 </script>
 
