@@ -75,6 +75,36 @@
           "settings": {
             "product": "example-men-belt-2"
           }
+        },
+        "d41a9989-2453-4b1d-b8db-e865461b0705": {
+          "type": "product",
+          "settings": {
+            "product": "example-men-belt-2"
+          }
+        },
+        "8b9478a2-715b-4e6f-b073-9cde32118e3a": {
+          "type": "product",
+          "settings": {
+            "product": "example-men-bag-2"
+          }
+        },
+        "cf804f96-9eef-4743-a6d1-abcb50a320a0": {
+          "type": "product",
+          "settings": {
+            "product": "example-accessories-men-1"
+          }
+        },
+        "0f73a2bc-20ed-4f31-81b7-81400b5cd548": {
+          "type": "product",
+          "settings": {
+            "product": "example-men-bag-1"
+          }
+        },
+        "3dd8b600-f0aa-4ca3-aeb4-fcd5ca713ae7": {
+          "type": "product",
+          "settings": {
+            "product": "example-men-belt-1"
+          }
         }
       },
       "block_order": [
@@ -82,7 +112,12 @@
         "88a7a64e-b06c-4e17-af6f-6694b8d89ea7",
         "74bd58be-b205-435f-bb5a-440f9aae8de4",
         "0ce2817f-dcee-4521-9409-3bd74e26d82f",
-        "f7a2df54-b3b0-4431-9647-a275d5364571"
+        "f7a2df54-b3b0-4431-9647-a275d5364571",
+        "d41a9989-2453-4b1d-b8db-e865461b0705",
+        "8b9478a2-715b-4e6f-b073-9cde32118e3a",
+        "cf804f96-9eef-4743-a6d1-abcb50a320a0",
+        "0f73a2bc-20ed-4f31-81b7-81400b5cd548",
+        "3dd8b600-f0aa-4ca3-aeb4-fcd5ca713ae7"
       ],
       "settings": {
         "scheme_selector": "background-2",
