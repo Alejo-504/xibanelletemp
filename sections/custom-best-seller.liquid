@@ -16,6 +16,16 @@
           "type": "richtext",
           "id": "description",
           "label": "Lorem  ipsum dolor sit amit"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
         }
     ],
     "blocks": [
@@ -418,8 +428,9 @@
       
 
       {% endif %}
-
-
+<div class="d-flex justify-content-center">
+      <a href="{{ section.settings.button_link }}" class="btn btn-primary" style="margin-top:45px;">{{ section.settings.button_text }}</a>
+</div>
     </div>
   </div>
 
