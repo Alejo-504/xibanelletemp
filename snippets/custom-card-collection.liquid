@@ -32,9 +32,9 @@
 -%}
 <div class="w-100 collection" id="collection-card-{{ card_collection.id }}">
       <div class="card d-flex flex-column align-items-center">
-        <div  style="cursor: pointer;"
+        <div  style="cursor: pointer;height:250px;"
           onclick="window.location.href='{{card_collection.url }}'"
-          class="category-image w-100 d-flex justify-content-center align-items-center" style="height:250px">
+          class="category-image w-100 d-flex justify-content-center align-items-center">
             <img  class="active fade-simple" src="{{ card_collection.featured_image | img_url: '450x450' }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
             {% if card_collection.products[0].featured_image %}
             <img class="fade-simple" src="{{ card_collection.products[0].featured_image | img_url: '450x450' }}" alt="{{ card_collection.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" class="lazyload">
