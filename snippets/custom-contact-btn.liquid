@@ -6,7 +6,7 @@
             
         {% if settings.store-email != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{settings.store-email}}" data-toggle="tooltip" data-placement="right"
+            <a title="{{settings.store-email}}" data-bs-toggle="tooltip" data-bs-placement="right"
                 href="mailto:{{ settings.store-email }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
