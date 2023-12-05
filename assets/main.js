@@ -3,7 +3,9 @@ class Page {
       this.params = {
           scroll: { 
               top: 150, 
-              bottom: () => document.querySelector(".footer-custom"),
+              bottom: function() {
+                  return document.querySelector(".footer-custom");
+              },
               on: "",
           },
           class_play_video_btn: "playBtn"
@@ -63,27 +65,7 @@ class Page {
                   html: true
               }));
              
-          const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
-          if (!popovers) {
-              return;
-          }
-          [...popovers].map(popoverEl, ()=> { 
-              const trigger = popoverEl.getAttribute('data-trigger');
-              const strategy = popoverEl.getAttribute('data-strategy');
-              let pop = new bootstrap.Popover(popoverEl, {
-                  html: true,
-                  trigger: trigger | "hover" , // 'click' | 'hover' | 'focus' | 'manual'
-                  ppopperConfig: {
-                      strategy: strategy | "absolute" // 'absolute' | 'fixed'
-                  }
-              });
-              popoverEl.popover = pop;
-          });
-          window.addEventListener("click", (event) => {
-              if(!popovers.contains(event.target)){
-                  pop.hide();
-              }
-          }, false);
+         
       }else{
           document.addEventListener("ready:bootstrap", () => {
               this.initTooltips();
