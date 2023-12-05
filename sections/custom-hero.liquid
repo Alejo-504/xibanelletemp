@@ -126,11 +126,16 @@
   {% endstylesheet %}
   
   <section class="section-hero color-{{ section.settings.scheme_selector }} d-flex align-items-md-center align-items-md-start position-relative" >
-    <div class="video-background">
-        <video autoplay muted loop id="hero_video" poster="{{ section.settings.video_background }}" playsinline>
-          <source src="{{ section.settings.video_background }}" type="video/mp4">
-        </video>
-    </div>
+
+    {%  if section.settings.video_background != blank  %}
+      <div class="video-background">
+          <video autoplay muted loop id="hero_video" poster="{{ section.settings.video_background }}" playsinline>
+            <source src="{{ section.settings.video_background }}" type="video/mp4">
+          </video>
+      </div>
+    {%  endif %}
+
+    
     <div class="container-fluid me-md-0 pe-md-0">
       <div class="row me-md-0 p-0">
         <div class="col-md-6  slide-right col-content col-md-6  page-width ">
