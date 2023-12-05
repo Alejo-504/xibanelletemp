@@ -91,6 +91,9 @@
           </div>
         </div>
       </div>
+          <div class="d-flex justify-content-center my-4">
+      <a href="{{ section.settings.button_url }}" class="btn btn-primary d-block d-md-none">{{ section.settings.button_label }}</a>
+    </div>
       <div class="row icons-row px-5 ">
         {% for block in section.blocks %}
           <div class="col-md-3 col-sm-6 d-grid item-icon"  
@@ -108,9 +111,7 @@
         {% endfor %}
       
     </div>
-    <div class="d-flex justify-content-center my-4">
-      <a href="{{ section.settings.button_url }}" class="btn btn-primary d-block d-md-none">{{ section.settings.button_label }}</a>
-    </div>
+
   </div>
 </div>
 
