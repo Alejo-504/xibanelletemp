@@ -8,21 +8,6 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
-    "name": "Float Button",
-    "settings": [
-      {
-        "type": "text",
-        "id": "label-float-btn",
-        "label": "Label Float Button"
-      },
-      {
-        "type": "url",
-        "id": "link-float-btn",
-        "label": "Link Float Button"
-      }
-    ]
-  },
-  {
     "name": "Store",
     "settings": [
       {
