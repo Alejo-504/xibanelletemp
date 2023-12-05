@@ -1386,9 +1386,19 @@
       },
       {
         "type": "text",
+        "id": "user-facebook",
+        "label": "Username"
+      },
+      {
+        "type": "text",
         "id": "social_instagram_link",
         "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "user-instagram",
+        "label": "Username"
       },
       {
         "type": "text",
@@ -1398,9 +1408,19 @@
       },
       {
         "type": "text",
+        "id": "user-youtube",
+        "label": "Username"
+      },
+      {
+        "type": "text",
         "id": "social_tiktok_link",
         "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "user-tiktok",
+        "label": "Username"
       },
       {
         "type": "text",
@@ -1410,9 +1430,19 @@
       },
       {
         "type": "text",
+        "id": "user-twitter",
+        "label": "Username"
+      },
+      {
+        "type": "text",
         "id": "social_snapchat_link",
         "label": "t:settings_schema.social-media.settings.social_snapchat_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_snapchat_link.info"
+      },
+      {
+        "type": "text",
+        "id": "user-snapchat",
+        "label": "Username"
       },
       {
         "type": "text",
@@ -1422,15 +1452,30 @@
       },
       {
         "type": "text",
+        "id": "user-pinterest",
+        "label": "Username"
+      },
+      {
+        "type": "text",
         "id": "social_tumblr_link",
         "label": "t:settings_schema.social-media.settings.social_tumblr_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_tumblr_link.info"
       },
       {
         "type": "text",
+        "id": "user-tumbrl",
+        "label": "Username"
+      },
+      {
+        "type": "text",
         "id": "social_vimeo_link",
         "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "text",
+        "id": "user-vimeo",
+        "label": "Username"
       }
     ]
   },
