@@ -30,7 +30,7 @@ class Page {
 
   #dispatch_scroll_events(header=true, body=true, footer=true){
       let scroll = window.scrollY;
-      console.log(this.params.scroll.bottom(), scroll, window.innerHeight);
+
       if (scroll <= this.params.scroll.top && header) {
           this.emit("scroll:header");
       }
@@ -43,6 +43,7 @@ class Page {
       if(header || body || footer){
           window.addEventListener("scroll", () => {
               let scroll = window.scrollY;
+              console.log(this.params.scroll.bottom(), scroll, window.innerHeight);
               if (scroll <= this.params.scroll.top && header) {
                   this.emit("scroll:header");
               }
