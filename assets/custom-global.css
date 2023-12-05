@@ -292,3 +292,6 @@ p{
 .section-header span, .section-header a{
     transition: all .3s ease-in-out;
   }
+.section-header span:hover, .section-header a:hover{
+   color: rgb(var(--color-foreground-2));
+  }
