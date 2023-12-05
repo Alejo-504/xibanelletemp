@@ -369,12 +369,14 @@
         id: "social-btn"
       %}
       {% render "custom-contact-btn"  
-        bottom: "0px" 
         background: "rgb(var(--color-background-2))",
         text_color: "white",
         right: true, 
         id: "info",
+        bottom: "65px"
       %}
+
+      {% include "float-btn" label: section.settings.btn-fixed-1-label, link: section.settings.btn-fixed-1-link  %}
     </main>
 
 
