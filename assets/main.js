@@ -28,6 +28,7 @@ class Page {
 
   #dispatch_scroll_events(header=true, body=true, footer=true){
       let scroll = window.scrollY;
+      console.log(this.params.scroll.bottom().offsetTop, scroll, window.innerHeight);
       if (scroll <= this.params.scroll.top && header) {
           this.emit("scroll:header");
       }
@@ -62,7 +63,27 @@ class Page {
                   html: true
               }));
              
-          
+          const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
+          if (!popovers) {
+              return;
+          }
+          [...popovers].map(popoverEl, ()=> { 
+              const trigger = popoverEl.getAttribute('data-trigger');
+              const strategy = popoverEl.getAttribute('data-strategy');
+              let pop = new bootstrap.Popover(popoverEl, {
+                  html: true,
+                  trigger: trigger | "hover" , // 'click' | 'hover' | 'focus' | 'manual'
+                  ppopperConfig: {
+                      strategy: strategy | "absolute" // 'absolute' | 'fixed'
+                  }
+              });
+              popoverEl.popover = pop;
+          });
+          window.addEventListener("click", (event) => {
+              if(!popovers.contains(event.target)){
+                  pop.hide();
+              }
+          }, false);
       }else{
           document.addEventListener("ready:bootstrap", () => {
               this.initTooltips();
