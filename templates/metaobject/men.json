@@ -31,6 +31,7 @@
         ".hero-carousel .item img {object-fit: contain !important;}"
       ],
       "settings": {
+        "video_background": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/33c85f0588244ab194a393f43236c34c.mp4",
         "scheme_selector": "background-2",
         "heading": "Redefining Masculine Elegance",
         "description": "Explore our unique collection of leather goods for men, where each piece perfectly blends classic style with modern flair. A world of sophistication and quality awaits you.",
