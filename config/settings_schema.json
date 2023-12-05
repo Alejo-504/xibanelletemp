@@ -27,6 +27,18 @@
         "id": "store-phone-label",
         "label": "Store Phone Label",
         "placeholder": "(000) 000 000"
+      },
+      {
+        "type": "text",
+        "id": "store-location",
+        "label": "Store Location",
+        "default": "Forest Park, Georgia, 30297"
+      },
+      {
+        "type": "text",
+        "id": "store-location-link",
+        "label": "Store Location Link",
+        "default": "https:\/\/www.google.com\/maps\/place\/GILLEM+ENCLAVE,+GA+30297,+USA\/@33.616785,-84.3928436,13z\/data=!4m6!3m5!1s0x88f4fc263257f97f:0x87190d6fe9db9f11!8m2!3d33.6134652!4d-84.3857442!16s%2Fm%2F01_2fvk?entry=ttu"
       }
     ]
   },
