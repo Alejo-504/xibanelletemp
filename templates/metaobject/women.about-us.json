@@ -52,8 +52,8 @@
         "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Mision",
+            "text": "<p>A company dedicated to the manufacturing of various pieces of Italian leather accessories for ladies and gentlemen, aimed at satisfying our customers' needs with the highest quality items.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -61,8 +61,8 @@
         "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Vision",
+            "text": "<p>To be the leading company in the manufacturing of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the finest quality finishes.<\/p>",
             "link_label": "",
             "link": ""
           }
