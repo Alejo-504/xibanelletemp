@@ -226,5 +226,6 @@ document.addEventListener('DOMContentLoaded', function () {
     page.lazy_backgrounds = ".lazy-background";
     page.scroll_to_section= getParameterByName();
     document.body.classList.add('dom-load');
+    page.initTooltips();
 })
 
