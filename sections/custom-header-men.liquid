@@ -592,12 +592,13 @@
   </script>
 {%- endif -%}
 
+{% unless template contains "shop" %}
 <div class="color-{{ section.settings.color_scheme }}">
   {%  if section.settings.label-float-btn != blank and section.settings.link-float-btn != blank  %}
         {% render "custom-float-btn" label: section.settings.label-float-btn, link: section.settings.link-float-btn  %}
   {% endif %}
 </div>
-
+{% endunless %}
   
 {% schema %}
 {
