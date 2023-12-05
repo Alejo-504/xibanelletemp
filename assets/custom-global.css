@@ -288,4 +288,7 @@ p{
     height: 100%;
     overflow: hidden;
   }
-
+/* HEADER */
+.section-header span, .section-header a{
+    transition: all .3s ease-in-out;
+  }
