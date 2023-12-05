@@ -283,6 +283,7 @@
                 </div>
             {% endfor %}
           </div>
+
       {% elsif section.blocks.size > 10 and  section.blocks.size  <= 15 %}
        
           <div class="owl-carousel best-seller-carousel d-md-block d-none">
@@ -428,7 +429,7 @@
       
 
       {% endif %}
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center d-md-none d-block">
       <a href="{{ section.settings.button_link }}" class="btn btn-primary">{{ section.settings.button_text }}</a>
 </div>
     </div>
