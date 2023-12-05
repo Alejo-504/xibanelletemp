@@ -76,7 +76,7 @@ class Page {
           
               new bootstrap.Tooltip(tooltipTriggerEl, {
                   html: true,
-                  boundary: document.body
+                  strategy: 'fixed',
               }));
              
          
