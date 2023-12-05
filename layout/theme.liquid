@@ -332,7 +332,11 @@
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
      {% unless template contains "contact" %}
 
-    {% render "custom-social-btn" %}
+    {% render "custom-social-btn"  
+      bottom: "0px" 
+      background: "var(--primary)", 
+      text_color: "white"
+    %}
 
       {% endunless %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
