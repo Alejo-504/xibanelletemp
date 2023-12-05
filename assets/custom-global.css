@@ -321,3 +321,7 @@ p{
 sticky-header {
     box-shadow: 1px -7px 16px 0px #3a3939;
 }
+details[open]>.header__menu-item{
+  text-decoration:none!important;
+  color: rgb(var(--color-foreground_2));
+}
