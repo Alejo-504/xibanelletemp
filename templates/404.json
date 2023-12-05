@@ -1,5 +1,13 @@
 {
   "sections": {
+    "main": {
+      "type": "main-404",
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
     "c255e5e5-91db-4d2f-b212-bb66c915c7aa": {
       "type": "image-banner",
       "blocks": {
@@ -51,6 +59,7 @@
     }
   },
   "order": [
+    "main",
     "c255e5e5-91db-4d2f-b212-bb66c915c7aa"
   ]
 }
