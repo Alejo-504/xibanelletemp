@@ -52,8 +52,7 @@
         "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png",
-            "title": "<strong>Company's Mission<\/strong>",
+            "title": "<strong>Mission<\/strong>",
             "text": "<p>A company dedicated to the manufacturing of various pieces of Italian leather accessories for ladies and gentlemen, aimed at satisfying our customers' needs with the highest quality items.<\/p>",
             "link_label": "",
             "link": ""
@@ -74,9 +73,12 @@
         "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-1",
         "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-2"
       ],
+      "custom_css": [
+        "h3 {font-size: 30px;}"
+      ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 2,
