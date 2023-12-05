@@ -357,26 +357,30 @@
     {% endif %}
 
 
-    <main id="MainContent" class="content-for-layout focus-none color-{{ scheme }}"
-      role="main" tabindex="-1">
-     
-      {{ content_for_layout }}
+<main id="MainContent" class="content-for-layout focus-none color-{{ scheme }}"
+role="main" tabindex="-1">
 
-      {% render "custom-social-btn"  
-        bottom: "0px" 
-        background: "rgb(var(--color-background-2))",
-        text_color: "white",
-        id: "social-btn"
-      %}
-      {% render "custom-contact-btn"  
-        background: "rgb(var(--color-background-2))",
-        text_color: "white",
-        right: true, 
-        id: "info",
-        bottom: "75px"
-      %}
+{{ content_for_layout }}
 
-    </main>
+{% unless template == 'contact' %}
+  {% render "custom-social-btn"  
+    bottom: "0px" 
+    background: "rgb(var(--color-background-2))",
+    text_color: "white",
+    id: "social-btn"
+  %}
+  {% render "custom-contact-btn"  
+    background: "rgb(var(--color-background-2))",
+    text_color: "white",
+    right: true, 
+    id: "info",
+    bottom: "75px"
+  %}
+{% endunless %
+
+%}
+
+</main>
 
 
 
