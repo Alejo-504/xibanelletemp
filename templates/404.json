@@ -40,7 +40,7 @@
         ".banner__box {box-shadow: none !important;}",
         ".banner__buttons {max-width: 100vw;}",
         ".male {background: #728d82;}",
-        "a{max-width:50px;}"
+        ".btn {max-width: 50px!important;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Anotacion_2023-11-30_012735.png",
