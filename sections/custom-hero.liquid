@@ -123,6 +123,16 @@
     /* overflow: hidden; */
     z-index: 1;
   }
+  .section-hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+  }
 
   {% endstylesheet %}
   
@@ -143,14 +153,14 @@
           </div>
         </div>
         <div class="col-md-6 text-right ps-md-4 pe-md-0 ps-4 pe-4 position-relative" >
-       <!--
+       
           {% assign products = section.blocks %}
           {% render "custom-carousel-owl-two-items" , blocks:products %}
   
           <div class="position-absolute promo_text  d-md-flex  d-none" style="background: {{section.settings.promo_color }};color:{{ section.settings.promo_color_text }};">
              {{ section.settings.promo_text }} 
           </div>
-      -->
+      
         </div>
       </div>
   
