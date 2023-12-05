@@ -24,10 +24,10 @@
             </a>
         {% endif %}
 
-        {% if settings.stre-location != blank  and settings.stroe-location != blank  %}
+        {% if settings.store-location != blank  and settings.store-location != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{settings.stroe-location}}" data-toggle="tooltip" data-placement="right"
-                href="{{ settings.stroe-location-link }}" target="_blank"
+            <a title="{{settings.store-location}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.store-location-link }}" target="_blank"
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-map-marker" style="color:{{text_color}};"></i>
