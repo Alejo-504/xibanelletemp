@@ -132,31 +132,21 @@ p{
   animation-delay: 0.3s;
 }
 
-
+.tooltip{
+  --bs-tooltip-bg: white;
+  --bs-tooltip-color: black;
+}
 .tooltip-inner{
   max-width:300px;
   font-size: 13px;
-  color: white !important;
-  background: rgb(var(--color-background)) !important;
-      padding: 10px;
+    padding: 10px;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
   border-radius: 10px;
 }
-.bs-tooltip-top .arrow::before{
-  border-top-color:rgb(var(--color-background)) !important;
-}
-.bs-tooltip-bottom .arrow::before{
-  border-bottom-color:rgb(var(--color-background)) !important;
-}
-.bs-tooltip-right .arrow::before{
-  border-right-color:rgb(var(--color-background)) !important;
-}
-.bs-tooltip-left .arrow::before{
-  border-left-color:rgb(var(--color-background)) !important;
-}
+
 
 
 
