@@ -376,7 +376,7 @@
       "custom-header-men": {
         "type": "custom-header-men",
         "settings": {
-          "label-float-btn": "Shop No",
+          "label-float-btn": "<i class=\"fa fa-home\"><\/i> Shop Now",
           "link-float-btn": "shopify:\/\/metaobjects\/men\/shop",
           "enabled_top_bar": true,
           "cta_text": "Affiliate Program",
