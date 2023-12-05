@@ -2,159 +2,76 @@
     <div class="floating-button"><i class="fa fa-plus"></i></div>
     <div class="element-container">
 
-    {% assign count = 0 %}
-         
-    {% if settings.user-facebook != blank  and settings.social_facebook_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-facebook}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_facebook_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-facebook" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-instagram != blank  and settings.social_instagram_link != blank  %}
-        {% assign count = count | plus: 1 %}
+        {% assign count = 0 %}
+            
+        {% if settings.user-facebook != blank  and settings.social_facebook_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-facebook}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_facebook_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-facebook" style="color:{{text_color}};"></i>
+            </a>
+        {% endif %}
+        {% if settings.user-instagram != blank  and settings.social_instagram_link != blank  %}
+            {% assign count = count | plus: 1 %}
 
-        <a title="{{settings.user-instagram}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_instagram_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-instagram" style="color:{{text_color}};"></i>
-        </a>                                  
-    {% endif %}
-    {% if settings.user-linkedin != blank  and settings.social_linkedin_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-linkedin}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_linkedin_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-linkedin" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-twitter != blank  and settings.social_twitter_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-twitter}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_twitter_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-twitter" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-youtube != blank  and settings.social_youtube_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-youtube}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_youtube_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-youtube" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-pinterest != blank  and settings.social_pinterest_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-pinterest}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_pinterest_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-pinterest" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-tiktok != blank  and settings.social_tiktok_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-tiktok}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_tiktok_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <div class="d-none d-md-block floating-container-{{id}} float-button btn-social scroll-tracking">
-    <div class="floating-button"><i class="fa fa-plus"></i></div>
-    <div class="element-container">
+            <a title="{{settings.user-instagram}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_instagram_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-instagram" style="color:{{text_color}};"></i>
+            </a>                                  
+        {% endif %}
+        {% if settings.user-linkedin != blank  and settings.social_linkedin_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-linkedin}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_linkedin_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-linkedin" style="color:{{text_color}};"></i>
+            </a>
+        {% endif %}
+        {% if settings.user-twitter != blank  and settings.social_twitter_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-twitter}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_twitter_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-twitter" style="color:{{text_color}};"></i>
+            </a>
+        {% endif %}
+        {% if settings.user-tiktok != blank  and settings.social_tiktok_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-tiktok}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_tiktok_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                 <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"></path>
+                   
+              </svg>
+            </a>
+        {% endif %}
+        {% if settings.user-youtube != blank  and settings.social_youtube_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-youtube}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_youtube_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-youtube" style="color:{{text_color}};"></i>
+            </a>
+        {% endif %}
+        {% if settings.user-pinterest != blank  and settings.social_pinterest_link != blank  %}
+            {% assign count = count | plus: 1 %}
+            <a title="{{settings.user-pinterest}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.social_pinterest_link }}" target="_blank"
+                class="float-element tooltip-left " style="
+                background: {{background}};">
+                <i class="fa fa-pinterest" style="color:{{text_color}};"></i>
+            </a>
+        {% endif %}
 
-    {% assign count = 0 %}
-         
-    {% if settings.user-facebook != blank  and settings.social_facebook_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-facebook}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_facebook_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-facebook" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-instagram != blank  and settings.social_instagram_link != blank  %}
-        {% assign count = count | plus: 1 %}
-
-        <a title="{{settings.user-instagram}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_instagram_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-instagram" style="color:{{text_color}};"></i>
-        </a>                                  
-    {% endif %}
-    {% if settings.user-linkedin != blank  and settings.social_linkedin_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-linkedin}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_linkedin_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-linkedin" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-twitter != blank  and settings.social_twitter_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-twitter}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_twitter_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-twitter" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-youtube != blank  and settings.social_youtube_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-youtube}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_youtube_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-youtube" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-pinterest != blank  and settings.social_pinterest_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-pinterest}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_pinterest_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-pinterest" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-tiktok != blank  and settings.social_tiktok_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-tiktok}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_tiktok_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-           <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
-        </a>
-    {% endif %}
-    {% if settings.user-snapchat != blank  and settings.social_snapchat_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-snapchat}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_snapchat_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-snapchat-ghost" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-whatsapp != blank  and settings.social_whatsapp_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-whatsapp}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_whatsapp_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-whatsapp" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    
-        
         {% if email != blank  %}
           {% assign count = count | plus: 1 %}
             <a title="{{email}}" data-toggle="tooltip" data-placement="right"
@@ -163,7 +80,7 @@
                 background: {{background}};">
                 <i class="fa fa-envelope" style="color:{{text_color}};"></i>
             </a>
-            {% endif %} 
+        {% endif %} 
 
         {% if phone != blank  %}
           {% assign count = count | plus: 1 %}
@@ -173,7 +90,7 @@
                 background: {{background}};">
                 <i class="fa fa-phone" style="color:{{text_color}};"></i>
             </a>
-            {% endif %}
+        {% endif %}
 
         {% if location != blank  and location_tooltip != blank  %}
           {% assign count = count | plus: 1 %}
@@ -187,383 +104,169 @@
         {% endif %}
                                      
     </div>
-    
     <style>
-    @-webkit-keyframes come-in {
-        0% {
-            -webkit-transform: translatey(100px);
-            transform: translatey(100px);
-            opacity: 0;
-        }
+      @-webkit-keyframes come-in {
+          0% {
+              -webkit-transform: translatey(100px);
+              transform: translatey(100px);
+              opacity: 0;
+          }
 
-        30% {
-            -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
-        }
+          30% {
+              -webkit-transform: translateX(-50px) scale(0.4);
+              transform: translateX(-50px) scale(0.4);
+          }
 
-        70% {
-            -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
-        }
+          70% {
+              -webkit-transform: translateX(0px) scale(1.2);
+              transform: translateX(0px) scale(1.2);
+          }
 
-        100% {
-            -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
-            opacity: 1;
-        }
-    }
+          100% {
+              -webkit-transform: translatey(0px) scale(1);
+              transform: translatey(0px) scale(1);
+              opacity: 1;
+          }
+      }
 
-    @keyframes come-in {
-        0% {
-            -webkit-transform: translatey(100px);
-            transform: translatey(100px);
-            opacity: 0;
-        }
+      @keyframes come-in {
+          0% {
+              -webkit-transform: translatey(100px);
+              transform: translatey(100px);
+              opacity: 0;
+          }
 
-        30% {
-            -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
-        }
+          30% {
+              -webkit-transform: translateX(-50px) scale(0.4);
+              transform: translateX(-50px) scale(0.4);
+          }
 
-        70% {
-            -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
-        }
+          70% {
+              -webkit-transform: translateX(0px) scale(1.2);
+              transform: translateX(0px) scale(1.2);
+          }
 
-        100% {
-            -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
-            opacity: 1;
-        }
-    }
-    .floating-container-{{id}} *{
-      text-decoration:none!important;
-    }
-    .floating-container-{{id}}.in-top, .floating-container-{{id}}.in-footer{
-        transform: translateY(200px);
-       
-    }
+          100% {
+              -webkit-transform: translatey(0px) scale(1);
+              transform: translatey(0px) scale(1);
+              opacity: 1;
+          }
+      }
+      .floating-container-{{id}} *{
+        text-decoration:none!important;
+      }
+      .floating-container-{{id}}.in-top, .floating-container-{{id}}.in-footer{
+          transform: translateY(200px);
+        
+      }
 
 
-    .floating-container-{{id}} {
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        bottom: {{bottom}};
-        left: 0;
-        {% if right %}
-        left: auto;
-        right: 0;
-        {% endif %}
-        transition: transform .4s ease-in-out;
-        margin: 20px 0px;
-        z-index: 10;
+      .floating-container-{{id}} {
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          bottom: {{bottom}};
+          left: 0;
+          {% if right %}
+          left: auto;
+          right: 0;
+          {% endif %}
+          transition: transform .4s ease-in-out;
+          margin: 20px 0px;
+          z-index: 10;
 
-    }
-    .floating-container-{{id}} .floating-button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .floating-container-{{id}} .floating-button i{
-        font-size: 25px;
-    }
-    .floating-container-{{id}} .floating-button svg{
-      height:25px;
-    }
-    .floating-container-{{id}}:hover {
-        height: calc(55px + (70px * {{count}})); 
-    }
+      }
+      .floating-container-{{id}} .floating-button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .floating-container-{{id}} .floating-button i{
+          font-size: 25px;
+      }
+      .floating-container-{{id}} .floating-button svg{
+        height:25px;
+      }
+      .floating-container-{{id}}:hover {
+          height: calc(55px + (70px * {{count}})); 
+      }
 
-    .floating-container-{{id}}:hover .floating-button {
-        -webkit-transform: translatey(5px);
-        transform: translatey(5px);
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
+      .floating-container-{{id}}:hover .floating-button {
+          -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+          -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+      }
 
-    {% for i in (1..count) %}
-    .floating-container-{{id}}:hover .element-container .float-element:nth-child({{i}}) {
-    
-        animation: come-in 0.{{i}}s ease-in-out forwards;
-    }
-    {% endfor %}
-
-    
-   
-
-    .floating-container-{{id}} .floating-button {
-        --size: 1.4rem;
-        height: calc(var(--size) * 4);
-        width: calc(var(--size) * 4);
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: {{background}};
-        bottom: 0px;
-        border-radius: 50%;
-        left: 0;
-        right: 0;
-        margin: auto 20px;
-        ;
-        color: white;
-        line-height: 65px;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 500;
-        z-index: 100;
-        cursor: pointer;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-
-    .floating-container-{{id}} .float-element {
-        position: relative;
-        display: block;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        margin: 15px auto;
-        color: white;
-        font-weight: 500;
-        text-align: center;
-        line-height: 50px;
-        z-index: 0;
-        opacity: 0;
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
-    }
-
-    .floating-container-{{id}} .float-element i {
-        font-size: 19px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .floating-container-{{id}} .float-element svg{
-      height:19px;
+      {% for i in (1..count) %}
+      .floating-container-{{id}}:hover .element-container .float-element:nth-child({{i}}) {
       
-    }
+          animation: come-in 0.{{i}}s ease-in-out forwards;
+      }
+      {% endfor %}
 
-    .floating-container-{{id}} .float-element .material-icons {
-        vertical-align: middle;
-        font-size: 16px;
-    }
-    </style>
-</div>
-        </a>
-    {% endif %}
-    {% if settings.user-snapchat != blank  and settings.social_snapchat_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-snapchat}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_snapchat_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-snapchat-ghost" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
-    {% if settings.user-whatsapp != blank  and settings.social_whatsapp_link != blank  %}
-        {% assign count = count | plus: 1 %}
-        <a title="{{settings.user-whatsapp}}" data-toggle="tooltip" data-placement="right"
-            href="{{ settings.social_whatsapp_link }}" target="_blank"
-            class="float-element tooltip-left " style="
-            background: {{background}};">
-            <i class="fa fa-whatsapp" style="color:{{text_color}};"></i>
-        </a>
-    {% endif %}
+      
     
-        
-        {% if email != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{email}}" data-toggle="tooltip" data-placement="right"
-                href="mailto:{{ email }}" 
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-envelope" style="color:{{text_color}};"></i>
-            </a>
-            {% endif %} 
 
-        {% if phone != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{phone_tooltip}}" data-toggle="tooltip" data-placement="right"
-                href="tel:{{ phone }}" 
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-phone" style="color:{{text_color}};"></i>
-            </a>
-            {% endif %}
+      .floating-container-{{id}} .floating-button {
+          --size: 1.4rem;
+          height: calc(var(--size) * 4);
+          width: calc(var(--size) * 4);
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: {{background}};
+          bottom: 0px;
+          border-radius: 50%;
+          left: 0;
+          right: 0;
+          margin: auto 20px;
+          ;
+          color: white;
+          line-height: 65px;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 500;
+          z-index: 100;
+          cursor: pointer;
+          -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+      }
 
-        {% if location != blank  and location_tooltip != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{location_tooltip}}" data-toggle="tooltip" data-placement="right"
-                href="{{ location }}" target="_blank"
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-map-marker" style="color:{{text_color}};"></i>
-            </a>
-           
-        {% endif %}
-                                     
-    </div>
-    
-    <style>
-    @-webkit-keyframes come-in {
-        0% {
-            -webkit-transform: translatey(100px);
-            transform: translatey(100px);
-            opacity: 0;
-        }
+      .floating-container-{{id}} .float-element {
+          position: relative;
+          display: block;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 15px auto;
+          color: white;
+          font-weight: 500;
+          text-align: center;
+          line-height: 50px;
+          z-index: 0;
+          opacity: 0;
+          -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+      }
 
-        30% {
-            -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
-        }
+      .floating-container-{{id}} .float-element i {
+          font-size: 19px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .floating-container-{{id}} .float-element svg{
+        height:19px;
 
-        70% {
-            -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
-        }
+      }
 
-        100% {
-            -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes come-in {
-        0% {
-            -webkit-transform: translatey(100px);
-            transform: translatey(100px);
-            opacity: 0;
-        }
-
-        30% {
-            -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
-        }
-
-        70% {
-            -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
-        }
-
-        100% {
-            -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
-            opacity: 1;
-        }
-    }
-    .floating-container-{{id}} *{
-      text-decoration:none!important;
-    }
-    .floating-container-{{id}}.in-top, .floating-container-{{id}}.in-footer{
-        transform: translateY(200px);
-       
-    }
-
-
-    .floating-container-{{id}} {
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        bottom: {{bottom}};
-        left: 0;
-        {% if right %}
-        left: auto;
-        right: 0;
-        {% endif %}
-        transition: transform .4s ease-in-out;
-        margin: 20px 0px;
-        z-index: 10;
-
-    }
-    .floating-container-{{id}} .floating-button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .floating-container-{{id}} .floating-button i{
-        font-size: 25px;
-    }
-    .floating-container-{{id}}:hover {
-        height: calc(55px + (70px * {{count}})); 
-    }
-
-    .floating-container-{{id}}:hover .floating-button {
-        -webkit-transform: translatey(5px);
-        transform: translatey(5px);
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-
-    {% for i in (1..count) %}
-    .floating-container-{{id}}:hover .element-container .float-element:nth-child({{i}}) {
-    
-        animation: come-in 0.{{i}}s ease-in-out forwards;
-    }
-    {% endfor %}
-
-    
-   
-
-    .floating-container-{{id}} .floating-button {
-        --size: 1.4rem;
-        height: calc(var(--size) * 4);
-        width: calc(var(--size) * 4);
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: {{background}};
-        bottom: 0px;
-        border-radius: 50%;
-        left: 0;
-        right: 0;
-        margin: auto 20px;
-        color: white;
-        line-height: 65px;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 500;
-        z-index: 100;
-        cursor: pointer;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-
-    .floating-container-{{id}} .float-element {
-        position: relative;
-        display: block;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        margin: 15px auto;
-        color: white;
-        font-weight: 500;
-        text-align: center;
-        line-height: 50px;
-        z-index: 0;
-        opacity: 0;
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
-    }
-
-    .floating-container-{{id}} .float-element i {
-        font-size: 19px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .floating-container-{{id}} .float-element .material-icons {
-        vertical-align: middle;
-        font-size: 16px;
-    }
+      .floating-container-{{id}} .float-element .material-icons {
+          vertical-align: middle;
+          font-size: 16px;
+      }
     </style>
 </div>
