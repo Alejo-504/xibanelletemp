@@ -2,10 +2,17 @@
   Renders a standard dropdown style menu for the header.
 
   Usage:
-  {% render 'header-dropdown-menu' %}
-{% endcomment %}
+  {% render 'header-dropdown-menu'  %}
 
-<nav class="header__inline-menu">
+{%  endcomment %}
+
+{% assign current_time = 'now' | date: '%s' %}
+{% assign random_number = current_time | modulo: 100 %}
+
+{%  assign id = 'NAV-' | append: random_number %}
+
+
+<nav class="header__inline-menu" id="{{ id }}" >
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
@@ -101,3 +108,17 @@
     {%- endfor -%}
   </ul>
 </nav>
+<script>
+  //abrir al hacer hover
+  var headerMenu = document.querySelector('#{{ id }} header-menu');
+  var headerMenuDetails = headerMenu.querySelector('details');
+
+  headerMenu.addEventListener('mouseenter', function() {
+    headerMenuDetails.setAttribute('open', 'open');
+  });
+
+  headerMenu.addEventListener('mouseleave', function() {
+    headerMenuDetails.removeAttribute('open');
+  });
+
+</script>
