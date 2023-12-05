@@ -35,7 +35,7 @@
         "83b1d883-c5de-42a6-a6b3-943de5caa7e5"
       ],
       "custom_css": [
-        ".custom-about::before{top: 15%; left: 10%; width: 300px; height: 300px; z-index:1; opacity:0.1 }"
+        ".custom-about::before {top: 15%; left: 10%; width: 300px; height: 300px; z-index: 1; opacity: 0.1;}"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -44,6 +44,49 @@
         "link": "shopify:\/\/metaobjects\/women\/contact",
         "link_text": "Contact Us",
         "Overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png"
+      }
+    },
+    "2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-1",
+        "template--21747314655536__2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57-column-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom-values": {
@@ -202,6 +245,7 @@
   "order": [
     "428ac75e-ebd0-4618-ac0c-bcd5230bd7b8",
     "custom-about",
+    "2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57",
     "custom-values",
     "custom-reviews",
     "custom-newsletter"
