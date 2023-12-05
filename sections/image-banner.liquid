@@ -142,7 +142,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="btn {% if block.settings.button_style_secondary_1 %} btn-primary male hero {% else %} {% endif %}"
+                  class="btn btn-primary male hero  {% if block.settings.button_style_secondary_1 %} {% else %} {% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -154,7 +154,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="btn {% if block.settings.button_style_secondary_2 %} btn-primary female hero {% else %} {% endif %}"
+                  class="btn btn-primary female hero {% if block.settings.button_style_secondary_2 %}  {% else %} {% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
