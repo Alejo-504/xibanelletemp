@@ -6,7 +6,7 @@
             
         {% if settings.store-email != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{settings.store-email}}" data-bs-toggle="tooltip" data-bs-placement="right"
+            <a title="{{settings.store-email}}" data-bs-toggle="tooltip"  data-bs-placement="right" data-strategy="fixed"
                 href="mailto:{{ settings.store-email }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
@@ -16,7 +16,7 @@
 
         {% if settings.store-phone != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{settings.store-phone-label}}" data-bs-toggle="tooltip" data-bs-placement="right"
+            <a title="{{settings.store-phone-label}}" data-bs-toggle="tooltip"  data-bs-placement="right" data-strategy="fixed"
                 href="tel:{{ settings.store-phone }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
@@ -26,7 +26,7 @@
 
         {% if settings.store-location != blank  and settings.store-location != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{settings.store-location}}" data-bs-toggle="tooltip" data-bs-placement="right"
+            <a title="{{settings.store-location}}" data-bs-toggle="tooltip"  data-bs-placement="right" data-strategy="fixed"
                 href="{{ settings.store-location-link }}" target="_blank"
                 class="float-element tooltip-left " style="
                 background: {{background}};">
