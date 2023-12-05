@@ -89,7 +89,7 @@ p{
 }
 .btn-primary-outline:hover, .button--secondary:hover {
    color: #fff;
-  border:solid 1px white;
+  border:solid 1px rgb(var(--color-button));
 }
 .btn-primary-outline:hover::after, .button--secondary:hover:after {
   width: 100%;
