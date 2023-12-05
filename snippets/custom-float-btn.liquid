@@ -1,0 +1,23 @@
+<a href="{{ link }}" class="btn btn-fixed-1 position-fixed scroll-tracking"> 
+    {{  label }}
+</a>
+
+
+<style>
+  .btn-fixed-1{
+    {% if left %}
+      right: auto;
+      left: 20px;
+     {% else %}
+      right: 20px;
+      left: auto;
+    {%  endif %}
+    bottom:20px;
+    transform: translateY(0);
+    transition: all .2s ease-in-out;
+    z-index: 100;
+  }
+  .btn-fixed-1.in-footer, .btn-fixed-1.in-top{
+    transform: translateY(200%);
+  }
+</style>
