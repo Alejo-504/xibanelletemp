@@ -70,10 +70,13 @@ class Page {
   initTooltips(){ // Bootstrap 5
       if(this.dispatch_register["ready:bootstrap"]){
           const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          
           const tooltipList = [...tooltipTriggerList].map(
               tooltipTriggerEl => 
+          
               new bootstrap.Tooltip(tooltipTriggerEl, {
-                  html: true
+                  html: true,
+                  boundary: document.body
               }));
              
          
