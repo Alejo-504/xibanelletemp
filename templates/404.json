@@ -37,6 +37,7 @@
       "custom_css": [
         ".banner {height: 100vh;}",
         ".banner__box {background: black;}",
+        ".banner__box{box-shadow:}",
         ".banner__buttons {max-width: 100vw;}",
         ".male {background: #728d82;}"
       ],
