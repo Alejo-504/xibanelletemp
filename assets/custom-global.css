@@ -69,8 +69,6 @@ p{
   overflow: hidden;
   font-weight: 600;
 }
-
-
 .btn-primary-outline::after, .button--secondary::after {
   content: '';
   position: absolute;
