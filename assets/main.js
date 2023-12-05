@@ -43,7 +43,7 @@ class Page {
       if(header || body || footer){
           window.addEventListener("scroll", () => {
               let scroll = window.scrollY;
-              console.log(this.params.scroll.bottom(), scroll, window.innerHeight);
+              console.log(this.params.scroll.bottom().offsetTop, scroll, window.innerHeight);
               if (scroll <= this.params.scroll.top && header) {
                   this.emit("scroll:header");
               }
