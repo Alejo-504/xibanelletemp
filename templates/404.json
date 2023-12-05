@@ -42,6 +42,9 @@
         "template--21688899338544__c255e5e5-91db-4d2f-b212-bb66c915c7aa-text-1",
         "template--21688899338544__c255e5e5-91db-4d2f-b212-bb66c915c7aa-buttons-1"
       ],
+      "custom_css": [
+        ".banner{height:100vh;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Anotacion_2023-11-30_012735.png",
         "image_2": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
