@@ -79,7 +79,7 @@ class Page {
                   popperConfig: {
                    strategy: 'fixed',
                   },
-              }));
+              })); 
              
          
       }else{
