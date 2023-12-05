@@ -4,23 +4,80 @@
 
                
          
-        {% if facebook_user != blank  and facebook_link != blank  %}
-        <a title="{{facebook_user}}" data-toggle="tooltip" data-placement="right"
-            href="{{ facebook_link }}" target="_blank"
+    {% if settings.user-facebook != blank  and settings.social_facebook_link != blank  %}
+        <a title="{{settings.user-facebook}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
             background: {{background}};">
             <i class="fa-brands fa-facebook-f" style="color:{{text_color}};"></i>
         </a>
     {% endif %}
-        {% if instagram_user != blank  and instagram_link != blank  %}
+    {% if settings.user-instagram != blank  and settings.social_instagram_link != blank  %}
 
-        <a title="{{instagram_user}}" data-toggle="tooltip" data-placement="right"
-            href="{{ instagram_link }}" target="_blank"
+        <a title="{{settings.user-instagram}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_instagram_link }}" target="_blank"
             class="float-element tooltip-left " style="
             background: {{background}};">
             <i class="fa-brands fa-instagram" style="color:{{text_color}};"></i>
         </a>                                  
     {% endif %}
+    {% if settings.user-linkedin != blank  and settings.social_linkedin_link != blank  %}
+        <a title="{{settings.user-linkedin}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_linkedin_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-linkedin-in" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-twitter != blank  and settings.social_twitter_link != blank  %}
+        <a title="{{settings.user-twitter}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_twitter_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-twitter" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-youtube != blank  and settings.social_youtube_link != blank  %}
+        <a title="{{settings.user-youtube}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_youtube_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-youtube" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-pinterest != blank  and settings.social_pinterest_link != blank  %}
+        <a title="{{settings.user-pinterest}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_pinterest_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-pinterest" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-tiktok != blank  and settings.social_tiktok_link != blank  %}
+        <a title="{{settings.user-tiktok}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_tiktok_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-tiktok" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-snapchat != blank  and settings.social_snapchat_link != blank  %}
+        <a title="{{settings.user-snapchat}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_snapchat_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-snapchat-ghost" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    {% if settings.user-whatsapp != blank  and settings.social_whatsapp_link != blank  %}
+        <a title="{{settings.user-whatsapp}}" data-toggle="tooltip" data-placement="right"
+            href="{{ settings.social_whatsapp_link }}" target="_blank"
+            class="float-element tooltip-left " style="
+            background: {{background}};">
+            <i class="fa-brands fa-whatsapp" style="color:{{text_color}};"></i>
+        </a>
+    {% endif %}
+    
         
         {% if email != blank  %}
             <a title="{{email}}" data-toggle="tooltip" data-placement="right"
