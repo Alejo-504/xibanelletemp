@@ -592,7 +592,9 @@
     }
   </script>
 {%- endif -%}
-
+      {%  if section.settings.label-float-btn != blank and section.settings.link-float-btn != blank  %}
+        {% render "custom-float-btn" label: settings.label-float-btn, link: settings.link-float-btn  %}
+      {% endif %}
 {% schema %}
 {
   "name": "Custom Header Women",
