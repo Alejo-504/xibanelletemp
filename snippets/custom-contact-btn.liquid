@@ -4,30 +4,30 @@
 
         {% assign count = 0 %}
             
-        {% if email != blank  %}
+        {% if settings.store-email != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{email}}" data-toggle="tooltip" data-placement="right"
-                href="mailto:{{ email }}" 
+            <a title="{{settings.store-email}}" data-toggle="tooltip" data-placement="right"
+                href="mailto:{{ settings.store-email }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-envelope" style="color:{{text_color}};"></i>
             </a>
         {% endif %} 
 
-        {% if phone != blank  %}
+        {% if settings.store-phone != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{phone_tooltip}}" data-toggle="tooltip" data-placement="right"
-                href="tel:{{ phone }}" 
+            <a title="{{settings.store-phone-label}}" data-toggle="tooltip" data-placement="right"
+                href="tel:{{ settings.store }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-phone" style="color:{{text_color}};"></i>
             </a>
         {% endif %}
 
-        {% if location != blank  and location_tooltip != blank  %}
+        {% if settings.stre-location != blank  and settings.stroe-location != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{location_tooltip}}" data-toggle="tooltip" data-placement="right"
-                href="{{ location }}" target="_blank"
+            <a title="{{settings.stroe-location}}" data-toggle="tooltip" data-placement="right"
+                href="{{ settings.stroe-location-link }}" target="_blank"
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-map-marker" style="color:{{text_color}};"></i>
