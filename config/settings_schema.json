@@ -20,13 +20,13 @@
         "type": "text",
         "id": "store-phone",
         "label": "Store Phone",
-        "placeholder": "+100000000"
+        "default": "+14043438695"
       },
       {
         "type": "text",
         "id": "store-phone-label",
         "label": "Store Phone Label",
-        "placeholder": "(000) 000 000"
+        "default": "(404) 343 8695"
       },
       {
         "type": "text",
