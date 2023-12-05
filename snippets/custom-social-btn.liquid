@@ -2,9 +2,10 @@
     <div class="floating-button"><i class="fa-solid fa-plus"></i></div>
     <div class="element-container">
 
-               
+    {% assign count = 0 %}
          
     {% if settings.user-facebook != blank  and settings.social_facebook_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-facebook}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_facebook_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -13,6 +14,7 @@
         </a>
     {% endif %}
     {% if settings.user-instagram != blank  and settings.social_instagram_link != blank  %}
+        {% assign count = count | plus: 1 %}
 
         <a title="{{settings.user-instagram}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_instagram_link }}" target="_blank"
@@ -22,6 +24,7 @@
         </a>                                  
     {% endif %}
     {% if settings.user-linkedin != blank  and settings.social_linkedin_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-linkedin}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_linkedin_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -30,6 +33,7 @@
         </a>
     {% endif %}
     {% if settings.user-twitter != blank  and settings.social_twitter_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-twitter}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_twitter_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -38,6 +42,7 @@
         </a>
     {% endif %}
     {% if settings.user-youtube != blank  and settings.social_youtube_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-youtube}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_youtube_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -46,6 +51,7 @@
         </a>
     {% endif %}
     {% if settings.user-pinterest != blank  and settings.social_pinterest_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-pinterest}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_pinterest_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -54,6 +60,7 @@
         </a>
     {% endif %}
     {% if settings.user-tiktok != blank  and settings.social_tiktok_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-tiktok}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_tiktok_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -62,6 +69,7 @@
         </a>
     {% endif %}
     {% if settings.user-snapchat != blank  and settings.social_snapchat_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-snapchat}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_snapchat_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -70,6 +78,7 @@
         </a>
     {% endif %}
     {% if settings.user-whatsapp != blank  and settings.social_whatsapp_link != blank  %}
+        {% assign count = count | plus: 1 %}
         <a title="{{settings.user-whatsapp}}" data-toggle="tooltip" data-placement="right"
             href="{{ settings.social_whatsapp_link }}" target="_blank"
             class="float-element tooltip-left " style="
@@ -80,6 +89,7 @@
     
         
         {% if email != blank  %}
+          {% assign count = count | plus: 1 %}
             <a title="{{email}}" data-toggle="tooltip" data-placement="right"
                 href="mailto:{{ email }}" 
                 class="float-element tooltip-left " style="
@@ -89,6 +99,7 @@
             {% endif %} 
 
         {% if phone != blank  %}
+          {% assign count = count | plus: 1 %}
             <a title="{{phone_tooltip}}" data-toggle="tooltip" data-placement="right"
                 href="tel:{{ phone }}" 
                 class="float-element tooltip-left " style="
@@ -98,6 +109,7 @@
             {% endif %}
 
         {% if location != blank  and location_tooltip != blank  %}
+          {% assign count = count | plus: 1 %}
             <a title="{{location_tooltip}}" data-toggle="tooltip" data-placement="right"
                 href="{{ location }}" target="_blank"
                 class="float-element tooltip-left " style="
@@ -188,7 +200,7 @@
         font-size: 25px;
     }
     .floating-container-{{id}}:hover {
-        height: calc(55px + (70px * {{nr_items}})); 
+        height: calc(55px + (70px * {{count}})); 
     }
 
     .floating-container-{{id}}:hover .floating-button {
