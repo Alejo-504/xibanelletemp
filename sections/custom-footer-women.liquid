@@ -187,9 +187,20 @@
   </div>
 </div>
   <style>
-    @media (max-width:768px){
+   
+      @media (max-width:768px){
+      li.with-icon {
+        display: flow!important;
+      }
       #shopify-section-{{section.id}} ul{
-        width:126px;
+        width:100%;
+        max-width: 95%!important;
+      }
+      .footer-custom ul{
+        text-align:center;
+      }
+      .copyright svg{
+        height:35px;
       }
     }
     #shopify-section-{{section.id}}{
