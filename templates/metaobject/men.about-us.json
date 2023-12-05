@@ -62,7 +62,7 @@
           "type": "column",
           "settings": {
             "title": "Vision",
-            "text": "<p>To be the leading company in the manufacturing of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the finest quality finishes.<\/p>",
+            "text": "<p>&lt;i class=\"fa fa-quote\"&gt;&lt;\/i&gt;To be the leading company in the manufacturing of leather accessories, focused on innovation and the creation of products never seen before with multiple uses, always providing the finest quality finishes.<\/p>",
             "link_label": "",
             "link": ""
           }
