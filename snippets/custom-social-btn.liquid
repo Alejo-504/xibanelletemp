@@ -74,7 +74,7 @@
 
         {% if email != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{email}}" data-toggle="tooltip" data-placement="right"
+            <a title="{{email}}" data-toggle="tooltip"  data-bs-placement="right"
                 href="mailto:{{ email }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
@@ -84,7 +84,7 @@
 
         {% if phone != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{phone_tooltip}}" data-toggle="tooltip" data-placement="right"
+            <a title="{{phone_tooltip}}" data-toggle="tooltip"  data-bs-placement="right"
                 href="tel:{{ phone }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
@@ -94,7 +94,7 @@
 
         {% if location != blank  and location_tooltip != blank  %}
           {% assign count = count | plus: 1 %}
-            <a title="{{location_tooltip}}" data-toggle="tooltip" data-placement="right"
+            <a title="{{location_tooltip}}" data-toggle="tooltip"  data-bs-placement="right"
                 href="{{ location }}" target="_blank"
                 class="float-element tooltip-left " style="
                 background: {{background}};">
