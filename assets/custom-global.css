@@ -318,3 +318,6 @@ p{
 .section-header ul span:hover, .section-header ul a:hover{
    color: rgb(var(--color-foreground_2));
   }
+sticky-header {
+    box-shadow: 1px -7px 16px 0px #3a3939;
+}
