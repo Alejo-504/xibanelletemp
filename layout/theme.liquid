@@ -362,7 +362,7 @@ role="main" tabindex="-1">
 
 {{ content_for_layout }}
 
-{% unless template == 'contact' %}
+{% unless template contains 'contact' %}
   {% render "custom-social-btn"  
     bottom: "0px" 
     background: "rgb(var(--color-background-2))",
