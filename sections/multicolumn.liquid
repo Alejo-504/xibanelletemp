@@ -13,6 +13,15 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+   .multicolumn-card__info {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .multicolumn-card__info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5);
+  }
 {%- endstyle -%}
 
 {%- liquid
