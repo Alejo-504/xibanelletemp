@@ -27,14 +27,21 @@ class Page {
   emit(name){
       document.dispatchEvent(this.events[name]);
   }
-
+  getOffsetTop(element) {
+    var offsetTop = 0;
+    while(element) {
+        offsetTop += element.offsetTop;
+        element = element.offsetParent;
+    }
+    return offsetTop;
+  }
   #dispatch_scroll_events(header=true, body=true, footer=true){
       let scroll = window.scrollY;
-
+      let footerPos = this.getOffsetTop(this.params.scroll.bottom());
       if (scroll <= this.params.scroll.top && header) {
           this.emit("scroll:header");
       }
-      else if(this.params.scroll.bottom().offsetTop - scroll <= window.innerHeight && footer){
+      else if(footerPos - scroll <= window.innerHeight && footer){
           this.emit("scroll:footer");
       }
       else if(scroll > this.params.scroll.top && body){
@@ -43,11 +50,14 @@ class Page {
       if(header || body || footer){
           window.addEventListener("scroll", () => {
               let scroll = window.scrollY;
-              console.log(this.params.scroll.bottom().offsetTop, scroll, window.innerHeight);
+
+             footerPos = this.getOffsetTop(this.params.scroll.bottom());
+
+
               if (scroll <= this.params.scroll.top && header) {
                   this.emit("scroll:header");
               }
-              else if(this.params.scroll.bottom().offsetTop - scroll <= window.innerHeight && footer){
+              else if(footerPos - scroll <= window.innerHeight && footer){
                   this.emit("scroll:footer");
               }
               else if(scroll > this.params.scroll.top && body){
