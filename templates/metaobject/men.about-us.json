@@ -46,6 +46,49 @@
         "Overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-147_39819737-622f-47f2-9f1b-086eea213e08.png"
       }
     },
+    "ab824878-045c-4ce1-adce-3e2b27dd182e": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-1",
+        "template--21747174310192__ab824878-045c-4ce1-adce-3e2b27dd182e-column-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom-values": {
       "type": "custom-values",
       "blocks": {
@@ -193,6 +236,7 @@
   "order": [
     "5bc4b909-8e72-4b0a-849b-2f2659276c21",
     "custom-about",
+    "ab824878-045c-4ce1-adce-3e2b27dd182e",
     "custom-values",
     "custom-reviews",
     "custom-newsletter"
