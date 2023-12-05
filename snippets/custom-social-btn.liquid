@@ -72,37 +72,8 @@
             </a>
         {% endif %}
 
-        {% if email != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{email}}" data-toggle="tooltip"  data-bs-placement="right"
-                href="mailto:{{ email }}" 
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-envelope" style="color:{{text_color}};"></i>
-            </a>
-        {% endif %} 
-
-        {% if phone != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{phone_tooltip}}" data-toggle="tooltip"  data-bs-placement="right"
-                href="tel:{{ phone }}" 
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-phone" style="color:{{text_color}};"></i>
-            </a>
-        {% endif %}
-
-        {% if location != blank  and location_tooltip != blank  %}
-          {% assign count = count | plus: 1 %}
-            <a title="{{location_tooltip}}" data-toggle="tooltip"  data-bs-placement="right"
-                href="{{ location }}" target="_blank"
-                class="float-element tooltip-left " style="
-                background: {{background}};">
-                <i class="fa fa-map-marker" style="color:{{text_color}};"></i>
-            </a>
-           
-        {% endif %}
-                                     
+ 
+                              
     </div>
     <style>
       @-webkit-keyframes come-in {
