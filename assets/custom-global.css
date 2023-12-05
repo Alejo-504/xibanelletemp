@@ -348,3 +348,20 @@ details[open]>.header__menu-item{
   text-decoration:none!important;
   color: rgb(var(--color-foreground_2));
 }
+
+/* floritura */
+
+.floritura-left{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.floritura-left::before{
+  content: '';
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url({{ 'floritura.png' | asset_url }});
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
