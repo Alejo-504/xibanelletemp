@@ -135,7 +135,11 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background: {{ section.settings.color_overlay }};
+    {% if section.settings.color_overlay == blank %} 
+      background: linear-gradient(91deg, rgba(var(--color-background), 1), rgba(var(--color-background), 01) 49%, rgba(var(--color-background), 0.1) 100%);
+    {% else %}
+      background: {{ section.settings.color_overlay }};
+    {% endif %}
     z-index: 2;
   }
   </style>
