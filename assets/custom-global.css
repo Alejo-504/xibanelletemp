@@ -315,6 +315,6 @@ p{
 .section-header span, .section-header a{
     transition: all .3s ease-in-out!important;
   }
-.section-header span:hover, .section-header a:hover{
+.section-header ul span:hover, .section-header ul a:hover{
    color: rgb(var(--color-foreground_2));
   }
