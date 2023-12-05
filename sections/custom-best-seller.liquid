@@ -198,11 +198,7 @@
                     {% assign direction = "left" %}
                   {% endif %}
                   <div class="grid-item grid-item-{{forloop.index}}" 
-                    data-aos="fade-{{direction}}"
-                    data-aos-delay="{{forloop.index | minus:1}}00" 
-                    data-aos-duration="600" 
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="-50"
+                   
                     >
       
                       {% if forloop.index == 2 %}
@@ -240,11 +236,7 @@
                     {% assign direction = "left" %}
                   {% endif %}
                   <div class="grid-item grid-item-{{forloop.index}}" 
-                    data-aos="fade-{{direction}}"
-                    data-aos-delay="{{forloop.index | minus:1}}00" 
-                    data-aos-duration="600" 
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="-50"
+                   
                     >
       
                       {% if forloop.index == 2 %}
@@ -288,7 +280,7 @@
        
           <div class="owl-carousel best-seller-carousel d-md-block d-none">
             <div class=" grid-container-product w-100">
-              {% for block in section.blocks limit:5 %}
+              {% for block in section.blocks limit:5 offset:0 %}
                 {% assign product = all_products[block.settings.product] %}
                   {%  assign direction = "" %} 
                   {% if forloop.index <= 3 %}
@@ -297,11 +289,7 @@
                     {% assign direction = "left" %}
                   {% endif %}
                   <div class="grid-item grid-item-{{forloop.index}}" 
-                    data-aos="fade-{{direction}}"
-                    data-aos-delay="{{forloop.index | minus:1}}00" 
-                    data-aos-duration="600" 
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="-50"
+                   
                     >
       
                       {% if forloop.index == 2 %}
@@ -340,11 +328,7 @@
                     {% assign direction = "left" %}
                   {% endif %}
                   <div class="grid-item grid-item-{{forloop.index}}" 
-                    data-aos="fade-{{direction}}"
-                    data-aos-delay="{{forloop.index | minus:1}}00" 
-                    data-aos-duration="600" 
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="-50"
+                    
                     >
       
                       {% if forloop.index == 2 %}
@@ -383,11 +367,7 @@
                     {% assign direction = "left" %}
                   {% endif %}
                   <div class="grid-item grid-item-{{forloop.index}}" 
-                    data-aos="fade-{{direction}}"
-                    data-aos-delay="{{forloop.index | minus:1}}00" 
-                    data-aos-duration="600" 
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="-50"
+                   
                     >
       
                       {% if forloop.index == 2 %}
