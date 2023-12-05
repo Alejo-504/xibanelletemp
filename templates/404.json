@@ -36,8 +36,9 @@
       ],
       "custom_css": [
         ".banner {height: 100vh;}",
+        ".banner__box {background: black;}",
         ".banner__buttons {max-width: 100vw;}",
-        ".male {background: #728D82;}"
+        ".male {background: #728d82;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Anotacion_2023-11-30_012735.png",
@@ -47,7 +48,7 @@
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-0aa986c7-68aa-4f09-8a6d-a62fdc39fce6",
+        "color_scheme": "background-1",
         "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
