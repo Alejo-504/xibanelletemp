@@ -210,20 +210,15 @@
         transition: all 0.2s;
     }
 
-    .floating-container-{{id}}:hover .element-container .float-element:nth-child(1) {
-        -webkit-animation: come-in 0.2s forwards 0.2s;
-        animation: come-in 0.2s forwards 0.2s;
+    {% for i in (1..count) %}
+    .floating-container-{{id}}:hover .element-container .float-element:nth-child({{i}}) {
+    
+        animation: come-in 0.{{i}}s ease-in-out forwards;
     }
+    {% endfor %}
 
-    .floating-container-{{id}}:hover .element-container .float-element:nth-child(2) {
-        -webkit-animation: come-in 0.2s forwards 0.2s;
-        animation: come-in 0.2s forwards 0.3s;
-    }
-
-    .floating-container-{{id}}:hover .element-container .float-element:nth-child(3) {
-        -webkit-animation: come-in 0.2s forwards 0.4s;
-        animation: come-in 0.2s forwards 0.5s;
-    }
+    
+   
 
     .floating-container-{{id}} .floating-button {
         --size: 1.4rem;
