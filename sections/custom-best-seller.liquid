@@ -428,7 +428,7 @@
       
 
       {% endif %}
-<div class="d-flex justify-content-center py-5">
+<div class="d-flex justify-content-center">
       <a href="{{ section.settings.button_link }}" class="btn btn-primary" style="margin-top:45px;">{{ section.settings.button_text }}</a>
 </div>
     </div>
@@ -440,7 +440,7 @@
       loop: true,
       margin: 10,
       nav: true,
-      dots: true,
+      dots: false,
       items: 1,
       autoplay: !window.matchMedia("(max-width: 767px)").matches,
       animateOut: 'fadeOut',
@@ -453,7 +453,7 @@
     $('.best-seller-carousel-phone').owlCarousel({
       loop: true,
       margin: 10,
-      nav: true,
+      nav: false,
       dots: true,
       items: 1,
       autoplay: !window.matchMedia("(max-width: 767px)").matches,
