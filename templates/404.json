@@ -8,48 +8,6 @@
       "settings": {
       }
     },
-    "fbfabc06-209d-4d31-9015-95fc4ce3902b": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "404 NOT FOUND",
-            "heading_size": "h1"
-          }
-        },
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Return to Store",
-            "button_link": "\/",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-heading-1",
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-text-1",
-        "template--21688899338544__fbfabc06-209d-4d31-9015-95fc4ce3902b-button-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "inverse",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "c255e5e5-91db-4d2f-b212-bb66c915c7aa": {
       "type": "image-banner",
       "blocks": {
@@ -70,8 +28,8 @@
         "template--21688899338544__c255e5e5-91db-4d2f-b212-bb66c915c7aa-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "MEN'S STORE",
+            "button_link_1": "shopify:\/\/metaobjects\/men\/shop",
             "button_style_secondary_1": false,
             "button_label_2": "WOMEN'S STORE",
             "button_link_2": "shopify:\/\/metaobjects\/women\/shop",
@@ -102,7 +60,6 @@
   },
   "order": [
     "main",
-    "fbfabc06-209d-4d31-9015-95fc4ce3902b",
     "c255e5e5-91db-4d2f-b212-bb66c915c7aa"
   ]
 }
