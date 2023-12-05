@@ -361,7 +361,11 @@
 role="main" tabindex="-1">
 
 {{ content_for_layout }}
-
+{% assign exist_shop_button  = "75px" %}
+{% if template contains 'shop' %}
+  {% assign  exist_shop_button = "0px" %}
+{% endif %}
+  
 {% unless template contains 'contact' %}
   {% render "custom-social-btn"  
     bottom: "0px" 
@@ -374,7 +378,7 @@ role="main" tabindex="-1">
     text_color: "white",
     right: true, 
     id: "info",
-    bottom: "75px"
+    bottom: exist_shop_button
   %}
 {% endunless %
 
