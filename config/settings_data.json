@@ -1,7 +1,5 @@
 {
   "current": {
-    "label-float-btn": "Shop Now",
-    "link-float-btn": "",
     "store-email": "info@xinabelle.com",
     "subpage_hero_overlay_color_men": "linear-gradient(3deg, rgba(0, 0, 0, 0.51) 8%, rgba(175, 175, 175, 0.24) 78%)",
     "subpage_hero_background_men": "shopify:\/\/shop_images\/DALL_E_2023-11-30_16.10.59_-_Create_a_refined_and_modern_website_header_image_for_a_men_s_fashion_leather_goods_company_with_a_brighter_and_lighter_aesthetic._The_image_should_in.png",
@@ -132,6 +130,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
+    "label-float-btn": "Shop Now",
+    "link-float-btn": "",
     "subpage_hero_overlay_color": "linear-gradient(180deg, rgba(18, 18, 18, 0.34), rgba(18, 18, 18, 0.39) 94.94%)",
     "subpage_hero_background": "shopify:\/\/shop_images\/561443069dd7cc1a008bfbd4.webp",
     "sections": {
@@ -376,6 +376,8 @@
       "custom-header-men": {
         "type": "custom-header-men",
         "settings": {
+          "label-float-btn": "Shop No",
+          "link-float-btn": "shopify:\/\/metaobjects\/men\/shop",
           "enabled_top_bar": true,
           "cta_text": "Affiliate Program",
           "cta_link": "https:\/\/xibanelle.affiliatery.staqlab.com\/partner\/signIn",
