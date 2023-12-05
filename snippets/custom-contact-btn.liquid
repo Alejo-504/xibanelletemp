@@ -17,7 +17,7 @@
         {% if settings.store-phone != blank  %}
           {% assign count = count | plus: 1 %}
             <a title="{{settings.store-phone-label}}" data-toggle="tooltip" data-placement="right"
-                href="tel:{{ settings.store }}" 
+                href="tel:{{ settings.store-phone }}" 
                 class="float-element tooltip-left " style="
                 background: {{background}};">
                 <i class="fa fa-phone" style="color:{{text_color}};"></i>
