@@ -76,7 +76,9 @@ class Page {
           
               new bootstrap.Tooltip(tooltipTriggerEl, {
                   html: true,
-                  strategy: 'fixed',
+                  popperConfig: {
+                   strategy: 'fixed',
+                  },
               }));
              
          
