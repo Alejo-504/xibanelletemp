@@ -16,7 +16,7 @@
         "label": "Label Float Button"
       },
       {
-        "type": "text",
+        "type": "url",
         "id": "link-float-btn",
         "label": "Link Float Button"
       }
