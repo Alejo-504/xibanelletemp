@@ -77,9 +77,9 @@ class Page {
               new bootstrap.Tooltip(tooltipTriggerEl, {
                   html: true,
                   popperConfig: {
-                   strategy: 'fixed',
+                   strategy: tooltipTriggerEl.dataset.strategy || 'absolute',
                   },
-              })); 
+              }));
              
          
       }else{
