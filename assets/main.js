@@ -63,7 +63,9 @@ class Page {
               }));
              
           const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
-         
+          if (!popovers) {
+              return;
+          }
           [...popovers].map(popoverEl, ()=> { 
               const trigger = popoverEl.getAttribute('data-trigger');
               const strategy = popoverEl.getAttribute('data-strategy');
