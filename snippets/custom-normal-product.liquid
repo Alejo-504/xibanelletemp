@@ -25,26 +25,27 @@
           <span class="badge" style="background:#a1a1a1;">Unavailable</span>
         </div>
     {% endif %}
-      
-    <div class="price-card">
-      {% if product.compare_at_price > product.price %}
-        <span class="price-original" style="text-decoration: line-through;color:red!important;">
-          {{ product.compare_at_price | money }} </span
-        >&nbsp;
-        <span class="price-sale">
-          {{ product.price | money }}
-        </span>
-      {% else %}
-        {{ product.price | money }}
-      {% endif %}
-    </div>
   </div>
-  {% if product.available %}
-    <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
-  {% else %}
-      <button disabled class="item-cart">
-        <i class="fa fa-shopping-cart"></i>
-      </button>
-  {%  endif %}
+    <div class="footer-card">
+      <div class="price-card">
+        {% if product.compare_at_price > product.price %}
+          <span class="price-original" style="text-decoration: line-through;color:red!important;">
+            {{ product.compare_at_price | money }} </span
+          >&nbsp;
+          <span class="price-sale">
+            {{ product.price | money }}
+          </span>
+        {% else %}
+          {{ product.price | money }}
+        {% endif %}
+      </div>
+      {% if product.available %}
+          <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
+      {% else %}
+          <button disabled class="item-cart">
+            <i class="fa fa-shopping-cart"></i>
+          </button>
+      {%  endif %}
+    </div>
   </div>
 </div>
