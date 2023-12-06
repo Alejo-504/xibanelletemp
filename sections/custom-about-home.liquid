@@ -76,7 +76,7 @@
   }
   {% endschema %}
   
-  <div class="split-section py-5  color-{{ section.settings.scheme_selector }} gradient-primary">
+  <div class="split-section py-5  color-{{ section.settings.scheme_selector }} gradient-primary position-relative">
     <div class="rectangle-1 rectangle"></div>
      <div class="rectangle-2 rectangle"></div>
      <div class="rectangle-3 rectangle"></div>
@@ -122,6 +122,48 @@
 </div>
 
   <style>
+    
+.rectangle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1); /* This is white with transparency, change as needed */
+  display: block !important;
+}
+
+.rectangle-1 {
+  top: 10%;
+  left: 5%;
+  width: 15%;
+  height: 20%;
+}
+
+.rectangle-2 {
+  top: 30%;
+  right: 10%;
+  width: 20%;
+  height: 25%;
+}
+
+.rectangle-3 {
+  bottom: 15%;
+  left: 8%;
+  width: 10%;
+  height: 15%;
+}
+
+.rectangle-4 {
+  bottom: 10%;
+  right: 5%;
+  width: 18%;
+  height: 22%;
+}
+
+.rectangle-5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 30%;
+}
     .row-content{
       border: solid 1px white;
       margin-bottom: 50px;
