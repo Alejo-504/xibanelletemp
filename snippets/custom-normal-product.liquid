@@ -27,7 +27,9 @@
         </div>
     {% endif %}
   </div>
-    <div class="footer-card">
+    <div class="footer-card" style="display: flex;
+    justify-content: space-between;
+    align-items: center;">
       <div class="price-card">
         {% if product.compare_at_price > product.price %}
           <span class="price-original" style="text-decoration: line-through;color:red!important;">
