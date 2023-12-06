@@ -567,7 +567,7 @@ role="main" tabindex="-1">
     
     {% if scheme.settings.custom_gradient != blank %}
       
-      .color-{{scheme.id}}  .gradient-primary{
+      .color-{{scheme.id}}  .gradient-primary, .color-{{scheme.id}}.gradient-primary{
           background:var(--color-background-gradient);
       }
     
