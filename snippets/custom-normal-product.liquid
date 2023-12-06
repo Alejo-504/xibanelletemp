@@ -22,7 +22,11 @@
     </div>
     {% if product.available %}
     {% else %}
-        <div class="available-card">
+        <div class="available-card" style="
+          position: absolute;
+          top: 7%;
+          left: 10%;
+        ">
           <span class="badge" style="background:#a1a1a1;">Unavailable</span>
         </div>
     {% endif %}
