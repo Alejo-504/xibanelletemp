@@ -108,7 +108,7 @@ p{
   overflow: hidden; 
   border: 1px solid #d9d8d8a6;
 }
-
+/* TOOLTIPS */
 .tooltip{
   --bs-tooltip-bg:  #d9d8d8;
   --bs-tooltip-color: black;
