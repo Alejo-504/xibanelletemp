@@ -156,7 +156,7 @@ p{
 }
 
 .tooltip{
-  --bs-tooltip-bg: white;
+  --bs-tooltip-bg:  #d9d8d8;
   --bs-tooltip-color: black;
   box-shadow: -2px 1px 6px 0px #d1cece;
   border-radius: 10px;
@@ -172,7 +172,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px #d9d8d8;
+  border: solid 1px var(--bs-tooltip-bg);
   background:white;
 }
 
