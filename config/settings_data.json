@@ -834,7 +834,7 @@
           "background_2": "#88bdcf",
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
-          "custom_gradient": "linear-gradient(180deg, rgba(124, 167, 150, 1), rgba(130, 163, 149, 1) 42%, rgba(137, 186, 174, 1) 80%, rgba(154, 204, 183, 1) 100%)",
+          "custom_gradient": "linear-gradient(278deg, rgba(124, 167, 150, 1), rgba(130, 163, 149, 1) 34%, rgba(137, 186, 174, 1) 66%, rgba(154, 204, 183, 1) 100%)",
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#121212",
