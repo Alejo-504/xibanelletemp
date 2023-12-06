@@ -830,16 +830,16 @@
       "background-2": {
         "settings": {
           "background": "#728d82",
-          "background_2": "#9cb0b7",
+          "background_2": "#88bdcf",
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
-          "background_gradient": "",
+          "background_gradient": "linear-gradient(57deg, rgba(114, 141, 130, 1) 8%, rgba(114, 141, 130, 1) 47%, rgba(78, 146, 126, 1) 83%)",
           "text": "#ffffff",
-          "text_2": "#9cb0b7",
+          "text_2": "#121212",
           "text_3": "#6b6559",
-          "button": "#9cb0b7",
-          "button_label": "#e4e4e4",
-          "secondary_button_label": "#9cb0b7",
+          "button": "#67abc3",
+          "button_label": "#fcfcfc",
+          "secondary_button_label": "#93c6d8",
           "shadow": "#e4e4e4"
         }
       },
