@@ -111,6 +111,11 @@
         "id": "color_schemes",
         "definition": [
           {
+            "type": "color_background",
+            "id": "custom_gradient",
+            "label": "t:settings_schema.colors.settings.background_gradient.label"
+          },
+          {
             "type": "color",
             "id": "background",
             "label": "Background 1",
@@ -133,11 +138,6 @@
             "id": "background_4",
             "label": "Background 4",
             "default": "#f8f8f8"
-          },
-          {
-            "type": "color_background",
-            "id": "custom_gradient",
-            "label": "t:settings_schema.colors.settings.background_gradient.label"
           },
           {
             "type": "color_background",
