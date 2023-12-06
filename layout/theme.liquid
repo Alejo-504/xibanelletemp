@@ -558,10 +558,25 @@ role="main" tabindex="-1">
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
     }
-   
-    .gradient-primary{
-      background:var(--color-background-gradient);
-    }
-   
+
+
+
+    {% for scheme in settings.color_schemes -%}
+
+
+    
+    {% if scheme.settings.custom_gradient != blank %}
+      
+      .color-{{scheme.id}}  .gradient-primary{
+          background:var(--color-background-gradient);
+      }
+    
+    {%  endif %}
+
+    {% endfor %}
+
+
+
+    
   </style>
 </html>
