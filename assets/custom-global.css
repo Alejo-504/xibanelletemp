@@ -348,5 +348,8 @@ details[open]>.header__menu-item{
   text-decoration:none!important;
   color: rgb(var(--color-foreground_2));
 }
-
+.floating-button {
+    border-radius: 0!important;
+    border: solid 1px;
+}
 
