@@ -249,8 +249,12 @@ p{
 .item-cart:active {
   transform: scale(0.9); 
 }
-
-
+.card-product-custom img{
+  transition: all .3s ease-in-out;
+}
+.card-product-custom:hover img{
+    transform: scale(1.1);
+}
 
 /* INPUT SEARCH */
 .search-modal__form .search__input {
