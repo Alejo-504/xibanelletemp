@@ -109,13 +109,6 @@ p{
   border: 1px solid #d9d8d8a6;
 }
 
-.btn-primary.hero:hover::after {
-  height: 100%;
-  bottom:0;
-  animation: boxshadowtop 0.3s forwards;
-  animation-delay: 0.3s;
-}
-
 .tooltip{
   --bs-tooltip-bg:  #d9d8d8;
   --bs-tooltip-color: black;
