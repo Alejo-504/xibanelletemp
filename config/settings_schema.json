@@ -113,12 +113,12 @@
           {
             "type": "color_background",
             "id": "custom_gradient",
-            "label": "t:settings_schema.colors.settings.background_gradient.label"
+            "label": "Background Primary"
           },
           {
             "type": "color",
             "id": "background",
-            "label": "Background 1",
+            "label": "Background Primary",
             "default": "#FFFFFF"
           },
           {
