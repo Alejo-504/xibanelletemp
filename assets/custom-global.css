@@ -171,6 +171,7 @@ p{
   justify-content: center;
   border: solid 1px var(--bs-tooltip-bg);
   background:white;
+  border-radius:0;
 }
 
 
