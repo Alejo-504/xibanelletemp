@@ -63,8 +63,8 @@
           :root,
         {%- endif %}
         .color-{{ scheme.id }} {
-          --color-background:  {{ scheme.settings.custom_gradient.red }},{{ scheme.settings.custom_gradient.green }},{{ scheme.settings.custom_gradient.blue }};
-          --color-background-1:  {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+          --color-background-gradient: {{ scheme.settings.custom_gradient.red }};
+          --color-background:  {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
           --color-background-2: {{ scheme.settings.background_2.red }},{{ scheme.settings.background_2.green }},{{ scheme.settings.background_2.blue }};
           --color-background-3: {{ scheme.settings.background_3.red }},{{ scheme.settings.background_3.green }},{{ scheme.settings.background_3.blue }};
           --color-background-4: {{ scheme.settings.background_4.red }},{{ scheme.settings.background_4.green }},{{ scheme.settings.background_4.blue }};
