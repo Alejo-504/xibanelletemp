@@ -56,13 +56,16 @@
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
-
+      {% assign grdient_primary_exist = false %}
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}
           :root,
         {%- endif %}
+
+     
         .color-{{ scheme.id }} {
+          
           --color-background-gradient: {{ scheme.settings.custom_gradient }};
           --color-background:  {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
           --color-background-2: {{ scheme.settings.background_2.red }},{{ scheme.settings.background_2.green }},{{ scheme.settings.background_2.blue }};
@@ -555,10 +558,10 @@ role="main" tabindex="-1">
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
     }
-    {% if scheme.settings.custom_gradient != blank %}
+   
     .gradient-primary{
       background:var(--color-background-gradient);
     }
-    {%  endif %}
+   
   </style>
 </html>
