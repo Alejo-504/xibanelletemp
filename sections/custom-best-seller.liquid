@@ -226,18 +226,11 @@
                 
               {% endfor %}
             </div>
-            <div class=" grid-container-product w-100">
+            <div class=" grid-container-product w-100" style="display:none;">
               {% for block in section.blocks limit:5 offset:5 %}
                 {% assign product = all_products[block.settings.product] %}
-                  {%  assign direction = "" %} 
-                  {% if forloop.index <= 3 %}
-                    {% assign direction = "right" %}
-                  {% else %}
-                    {% assign direction = "left" %}
-                  {% endif %}
-                  <div class="grid-item grid-item-{{forloop.index}}" 
-                   
-                    >
+                  
+                  <div class="grid-item grid-item-{{forloop.index}}">
       
                       {% if forloop.index == 2 %}
                         
@@ -279,6 +272,7 @@
       {% elsif section.blocks.size > 10 and  section.blocks.size  <= 15 %}
        
           <div class="owl-carousel best-seller-carousel d-md-block d-none">
+
             <div class=" grid-container-product w-100">
               {% for block in section.blocks limit:5 offset:0 %}
                 {% assign product = all_products[block.settings.product] %}
@@ -318,7 +312,7 @@
               {% endfor %}
             </div>
 
-            <div class=" grid-container-product w-100">
+            <div class=" grid-container-product w-100" style="display:none;">
               {% for block in section.blocks limit:5 offset:5 %}
                 {% assign product = all_products[block.settings.product] %}
                   {%  assign direction = "" %} 
@@ -357,7 +351,7 @@
               {% endfor %}
             </div>
 
-            <div class=" grid-container-product w-100">
+            <div class=" grid-container-product w-100" style="display:none;">
               {% for block in section.blocks limit:5 offset:10 %}
                 {% assign product = all_products[block.settings.product] %}
                   {%  assign direction = "" %} 
@@ -395,7 +389,9 @@
                 
               {% endfor %}
             </div>
+
           </div>
+
           <div class="owl-carousel best-seller-carousel-phone d-block d-md-none owl-theme">
               {% for block in section.blocks %}
                 {% assign product = all_products[block.settings.product] %}
@@ -409,9 +405,9 @@
       
 
       {% endif %}
-<div class="d-flex justify-content-center d-md-none d-block">
-      <a href="{{ section.settings.button_link }}" class="btn btn-primary">{{ section.settings.button_text }}</a>
-</div>
+		<div class="d-flex justify-content-center d-md-none d-block">
+			<a href="{{ section.settings.button_link }}" class="btn btn-primary">{{ section.settings.button_text }}</a>
+		</div>
     </div>
   </div>
 
@@ -445,6 +441,11 @@
       smartSpeed: 1300,
       navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     });
+
+	let grids = document.querySelectorAll(".grid-container-product");
+	grids.forEach((grid) => {
+		grid.style.display = "grid";
+	});
   });
 
 </script>
