@@ -830,8 +830,8 @@
       },
       "background-2": {
         "settings": {
-          "custom_gradient": "linear-gradient(90deg, rgba(71, 88, 81, 1), rgba(79, 98, 90, 1) 9.09%, rgba(87, 107, 99, 1) 18.18%, rgba(95, 117, 108, 1) 27.27%, rgba(103, 127, 117, 1) 36.36%, rgba(108, 134, 123, 1) 45.45%, rgba(113, 141, 130, 1) 54.55%, rgba(118, 148, 136, 1) 63.64%, rgba(121, 153, 140, 1) 72.73%, rgba(124, 158, 144, 1) 81.82%, rgba(128, 163, 149, 1) 90.91%, rgba(131, 168, 153, 1) 100%)",
-          "background": "#66b2b2",
+          "custom_gradient": "",
+          "background": "#728d82",
           "background_2": "#66b2b2",
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
