@@ -100,7 +100,9 @@
           <div class="d-flex justify-content-center mt-3  mb-4 pb-2">
             <a href="{{ section.settings.button_url }}" class="btn btn-primary d-block d-md-none">{{ section.settings.button_label }}</a>
           </div>
-      <div class="row icons-row px-5 ">
+    </div>
+     <div class="container-fluid">
+    <div class="row icons-row page-width">
         {% for block in section.blocks %}
           <div class="col-md-3 col-sm-6 d-grid item-icon"  
             data-aos-delay="{{forloop.index  | minus:1}}00" 
@@ -115,10 +117,8 @@
             </div>
           </div>
         {% endfor %}
-      
-    </div>
-
-  </div>
+      </div>
+     </div>
 </div>
 
   <style>
