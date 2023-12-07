@@ -76,6 +76,7 @@
         "h3 {font-size: 30px;}"
       ],
       "settings": {
+        "color_background": "linear-gradient(180deg, rgba(245, 245, 245, 1), rgba(245, 245, 245, 1) 100%)",
         "title": "",
         "heading_size": "h0",
         "image_width": "third",
