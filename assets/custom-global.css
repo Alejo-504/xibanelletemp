@@ -324,7 +324,7 @@ p{
     overflow: hidden;
   }
 /* HEADER */
-.section-header *:not(.btn) span, .section-header a:not(.btn){
+.header__inline-menu span, .header__inline-menu a:not(.btn){
     transition: all .3s ease-in-out!important;
   }
 .section-header ul span:hover, .section-header ul a:hover{
