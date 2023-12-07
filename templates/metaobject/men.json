@@ -353,6 +353,19 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "51b3e71d-6ba8-48d5-b874-4e39c2b811e5": {
+      "type": "my-sales-popup",
+      "settings": {
+        "popup_product_list": [
+          "example-accessories-men-1",
+          "example-belt-women-1",
+          "example-men-bag-1",
+          "example-men-bag-2",
+          "example-men-belt-1",
+          "example-men-belt-2"
+        ]
+      }
     }
   },
   "order": [
@@ -363,6 +376,7 @@
     "2d815898-f026-4f1f-a730-ee54d39d4994",
     "fef94706-1919-4406-a287-29fa14c5e441",
     "ea03ccd6-2366-4f9c-9ab8-31a092059969",
-    "05599d10-2590-4ff6-8ddb-92b1a899a065"
+    "05599d10-2590-4ff6-8ddb-92b1a899a065",
+    "51b3e71d-6ba8-48d5-b874-4e39c2b811e5"
   ]
 }
