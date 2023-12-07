@@ -20,12 +20,6 @@
   .multicolumn{
       background: {{section.settings.color_background}};
   }
-  .grid__item {
-     transition: all .3s ease-in-out;
-  }
-  .grid__item:hover{
-     transform:scale(0.9);
-  }
   .multicolumn h3 {
     font-size: 30px;
      color: rgb(var(--color-foreground_3));
@@ -143,7 +137,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="multicolumn-card__info" data-aos="fade-left">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
