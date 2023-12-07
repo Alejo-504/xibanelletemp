@@ -402,6 +402,8 @@
       "custom-header-women": {
         "type": "custom-header-women",
         "settings": {
+          "label-float-btn": "",
+          "link-float-btn": "",
           "enabled_top_bar": true,
           "cta_text": "Affiliate Program",
           "cta_link": "https:\/\/xibanelle.affiliatery.staqlab.com\/partner\/signIn",
@@ -827,7 +829,7 @@
           "text_3": "#6b6559",
           "button": "#e1cb8a",
           "button_label": "#ffffff",
-          "secondary_button_label": "#6b6559",
+          "secondary_button_label": "#e1cb8a",
           "shadow": "#67ef00"
         }
       },
