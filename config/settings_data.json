@@ -376,7 +376,7 @@
       "custom-header-men": {
         "type": "custom-header-men",
         "custom_css": [
-
+          ".header-bar *{color:rgb(var(--color-background));}"
         ],
         "settings": {
           "label-float-btn": "Shop Now",
