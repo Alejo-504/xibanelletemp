@@ -325,11 +325,11 @@ p{
   }
 /* HEADER */
 .header__inline-menu span, .header__inline-menu a:not(.btn), .header-bar a{
-    transition: all .3s ease-in-out!important;
-  }
-  .section-header ul span:hover, .section-header ul a:hover{
-   color: rgb(var(--color-foreground_2));
-  }
+  transition: all .3s ease-in-out!important;
+}
+.section-header ul span:hover, .section-header ul a:hover{
+  color: rgb(var(--color-foreground_2));
+}
 sticky-header {
     box-shadow: 1px -7px 16px 0px #3a3939;
 }
