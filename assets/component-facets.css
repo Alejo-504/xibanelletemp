@@ -241,19 +241,19 @@
 }
 
 .facets__display {
-  border-width: var(--popup-border-width);
-  border-style: solid;
-  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
-  border-radius: var(--popup-corner-radius);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--popup-shadow-opacity));
-  background-color: rgb(var(--color-background));
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  left: -1.2rem;
-  width: 35rem;
-  max-height: 55rem;
-  overflow-y: auto;
+    border-width: var(--popup-border-width);
+    border-style: solid;
+    border-color: rgba(var(--color-foreground),var(--popup-border-opacity));
+    border-radius: var(--popup-corner-radius);
+    box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow),var(--popup-shadow-opacity));
+    background-color: rgb(var(--color-background-4));
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: -1.2rem;
+    width: 35rem;
+    max-height: 55rem;
+    overflow-y: auto;
+    box-shadow: 0 0 16px 2px #00000045;
 }
 
 .facets__header {
