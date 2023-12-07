@@ -369,14 +369,14 @@
         ],
         "settings": {
           "scheme_selector": "background-2",
-          "text_color": "#ffffff",
+          "text_color": "#000000",
           "overlay": "shopify:\/\/shop_images\/Xibanelle_Logo-21_4a38d701-2024-4cfe-bb95-6e6a983a91fb.png"
         }
       },
       "custom-header-men": {
         "type": "custom-header-men",
         "custom_css": [
-          ".header-bar * {color: #6B6559;}"
+
         ],
         "settings": {
           "label-float-btn": "Shop Now",
