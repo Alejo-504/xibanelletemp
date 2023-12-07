@@ -132,8 +132,7 @@
       ],
       "custom_css": [
         ".testimonials {background: rgb(var(--color-background-4));}",
-        "h1,h2,p {color: rgb(var(--color-foreground_3));}",
-        ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}"
+        "h1,h2,p {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "scheme_selector": "background-2",
