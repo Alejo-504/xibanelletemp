@@ -464,7 +464,7 @@
             {%- endfor -%}
             <noscript>
               <button type="submit" class="btn btn-primary hero">
-                {{ 'products.facets.filter_button' | t }}
+                <span>{{ 'products.facets.filter_button' | t }}</span>
               </button>
             </noscript>
           </div>
@@ -832,11 +832,11 @@
                               class="no-js-hidden btn btn-primary"
                               onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                             >
-                              {{ 'products.facets.apply' | t }}
+                              <span> {{ 'products.facets.apply' | t }}</span>
                             </button>
                             <noscript
                               ><button class="btn btn-primary">
-                                {{ 'products.facets.apply' | t }}
+                                <span>{{ 'products.facets.apply' | t }}</span>
                               </button></noscript
                             >
                           </div>
