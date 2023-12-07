@@ -830,7 +830,7 @@
       },
       "background-2": {
         "settings": {
-          "custom_gradient": "",
+          "custom_gradient": "linear-gradient(to bottom, #728d82, #739386, #74998a, #75a08f, #76a693)",
           "background": "#728d82",
           "background_2": "#4dafaf",
           "background_3": "#ffffff",
