@@ -131,8 +131,8 @@
         "d10e4fab-9d11-4fe4-9eb4-940ee2772320"
       ],
       "custom_css": [
-        ".testimonials {background: rgb(var(--color-background));}",
-        "h1,h2,p {color: white;}",
+        ".testimonials {background: rgb(var(--color-background-4));}",
+        "h1,h2,p {color: rgb(var(--color-foreground_3));}",
         ".testimonial {background: white;}",
         ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}"
       ],
