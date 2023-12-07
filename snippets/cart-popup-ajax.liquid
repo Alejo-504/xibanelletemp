@@ -16,8 +16,8 @@
             justify-content: center;
           " action="{{ routes.cart_url }}" method="post" class="my-cart">
       
-            <button  class="btn btn-primary hero" type="submit" name="checkout" style="font-size:1.2rem;">
-              Checkout —&nbsp;<span data-ajax-cart-bind-state="cart.total_price | money_with_currency" > {{ cart.total_price | money_with_currency }}</span>
+            <button  class="btn btn-primary hero" type="submit" name="checkout" style="font-size:1.2rem;"><span>
+              Checkout —&nbsp;<span data-ajax-cart-bind-state="cart.total_price | money_with_currency" > {{ cart.total_price | money_with_currency }}</span></span>
             </button> 
         </form>
   
