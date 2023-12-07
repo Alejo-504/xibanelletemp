@@ -33,9 +33,11 @@
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
+            <div class="d-flex jsutify-content-md-start justify-content-center">
             <h2 class="adorno adorno-left collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
               {{ section.settings.heading }}
             </h2>
+            </div>
           {%- else -%}
             <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
           {% endif %}
