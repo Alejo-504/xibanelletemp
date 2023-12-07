@@ -184,8 +184,8 @@
     "9b5fbd87-7ba7-40dc-a619-c06462d34570": {
       "type": "custom-discount-counter",
       "settings": {
-        "color_time": "#434343",
-        "color_text": "#434343",
+        "color_time": "#7f969e",
+        "color_text": "#6b6559",
         "heading": "Deal of the Monthly Flash Sale",
         "text": "<p>Get 50% off your order form $100 and check out all fashion\ncollection during monthly flash sale<\/p>",
         "button_url": "shopify:\/\/collections\/men",
