@@ -186,7 +186,7 @@
       "type": "custom-discount-counter",
       "settings": {
         "color_time": "#c5b4c6",
-        "color_text": "#ffffff",
+        "color_text": "#6b6559",
         "heading": "Deal of the Monthly Flash Sale",
         "text": "<p>Get 50% off your order form $100 and check out all fashion\ncollection during monthly flash sale<\/p>",
         "button_url": "shopify:\/\/collections\/women",
