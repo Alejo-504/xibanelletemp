@@ -20,7 +20,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden" style="background:rgb(var(--color-background-2))">
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden" style="background:{{ section.settings.background }};color: rgb(var(--color-foreground_3));">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
@@ -55,6 +55,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+     {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.related-products.settings.paragraph__1.content"
