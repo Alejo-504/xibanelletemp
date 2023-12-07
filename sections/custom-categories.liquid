@@ -11,7 +11,7 @@
         </a>
         <div class="category-info text-center" style="background-color: #f7f7f7; padding: 20px; width: 100%;">
           {%  if block.settings.title %}
-            <span>{{ block.settings.title }}</span>
+            <label>{{ block.settings.title }}</label>
           {%  endif %}
           {% if block.settings.title_category %}
             <h3 class="category-title" style="margin: 15px 0;">{{ block.settings.title_category }}</h3>
@@ -35,7 +35,7 @@
     color: rgb(var(--color-foreground_3));
     padding: 70px 0;
   }
-   #categories-section .category-title, #categories-section .category-info span{
+   #categories-section .category-title, #categories-section .category-info label{
      color:rgb(var(--color-foreground_3));
      
    }
