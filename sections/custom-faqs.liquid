@@ -103,7 +103,7 @@
                     {% if block.type == 'button_action' %}
                         <div class=" w-100 justify-content-{{block.settings.align}} d-flex">    
                             <a style="text-transform:capitalize;" class="btn btn-primary mt-5 mx-0 hero" href="{{ block.settings.link }}">
-                                {{ block.settings.label }}
+                                <span>{{ block.settings.label }}</span>
                             </a>
                         </div>
                     {% endif %}
