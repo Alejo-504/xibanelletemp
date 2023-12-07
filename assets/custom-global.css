@@ -126,7 +126,12 @@ p{
   transform: skewX(-45deg) scale(1, 1);
 }
 
-
+.btn-primary.hover-white:hover{
+  color:rgb(var(--color-background));
+}
+.btn-primary.hover-white:after{
+  background:white;
+}
 
 
 .btn-primary span {
