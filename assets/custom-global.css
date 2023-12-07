@@ -31,7 +31,7 @@ p{
   content: "";
 }
 .breadcrumb-item.not-active:hover a{
-  color:rgb(var(--color-foreground_3))!important;
+  color:rgb(var(--color-foreground_2))!important;
 }
 .women.breadcrumb-area.bg-overlay::after {
   background: var(--subpage-overlay_women);
