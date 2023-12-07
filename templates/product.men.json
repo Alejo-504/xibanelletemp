@@ -90,6 +90,7 @@
         "@media screen and (max-width: 768px) {* {text-align: center; }}"
       ],
       "settings": {
+        "background": "linear-gradient(54deg, rgba(232, 232, 232, 1) 14%, rgba(228, 228, 228, 1) 95%)",
         "heading": "You may also like",
         "heading_size": "h2",
         "products_to_show": 4,
