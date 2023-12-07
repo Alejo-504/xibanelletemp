@@ -42,6 +42,20 @@
     color: rgb(var(--color-button));
     text-decoration: none;
 }
+.hide-popup{
+    animation: hide-popup 1s forwards;
+}
+@keyframes hide-popup{
+    0%{
+        left: 90px;
+    }
+    99%{
+        left: -350px;
+    }
+    100%{
+        display: none;
+    }
+}
 </style>
 
 <div class="my-popup-modal" id="my-popup-modal">
@@ -80,6 +94,7 @@
     document.querySelector('.my-popup-modal__name').innerHTML = objectProduct.name;
     document.querySelector('.my-popup-modal__link').href = objectProduct.link;
     myPopup.style.left = '90px';
+    myPopup.classList.remove('hide-popup');
     setTimeout(() => {
       myPopup.style.left = '-350px';
     }, 155555000); 
@@ -95,7 +110,8 @@
 
   scheduleModal();
   popupclose.addEventListener('click',()=>{
-    myPopup.style.bottom = '-100%'
+    myPopup.classList.add('hide-popup');
+    
   })
 </script>
 
