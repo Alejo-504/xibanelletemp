@@ -98,7 +98,27 @@ p{
   top: 50%;
   left: 50%;
 }
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+   border-color: var(--hover);
+  color: #fff;
+}
 
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
 
 .btn-primary {
   background-color: rgb(var(--color-button));
