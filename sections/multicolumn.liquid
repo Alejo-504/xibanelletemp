@@ -17,10 +17,13 @@
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+    .multicolumn{
+      background: #e6e6e6;
+    }
   .multicolumn h3 {
-  font-size: 30px;
+    font-size: 30px;
      color: rgb(var(--color-foreground_3));
-}
+  }
   .multicolumn-card__info {
     box-shadow: -2px 1px 3px 1px #9595951f;
     border-top: solid 4px rgb(var(--color-background-2));
@@ -213,6 +216,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+     {
+      "type": "color_background",
+      "id": "color_background",
+      "label": "Color Background"
+    },
     {
       "type": "inline_richtext",
       "id": "title",
