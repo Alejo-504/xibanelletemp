@@ -40,11 +40,12 @@ text-align: start;
 </div>
 <div class="btn-group mt-5">
 <a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;" >
-  {% if product.available %}
+ <span>{% if product.available %}
   Get Now 
   {% else %}
   View Product
   {% endif %}
+  </span> 
 </a>
 </div>
 </div>
