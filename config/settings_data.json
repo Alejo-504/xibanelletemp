@@ -835,7 +835,7 @@
         "settings": {
           "custom_gradient": "linear-gradient(180deg, rgba(114, 141, 130, 1), rgba(115, 147, 134, 1) 25%, rgba(116, 153, 138, 1) 50%, rgba(117, 160, 143, 1) 75%, rgba(118, 166, 147, 1) 100%)",
           "background": "#728d82",
-          "background_2": "#fafafa",
+          "background_2": "#e4e4e4",
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
           "background_gradient": "",
