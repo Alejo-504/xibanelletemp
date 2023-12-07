@@ -402,8 +402,8 @@
       "custom-header-women": {
         "type": "custom-header-women",
         "settings": {
-          "label-float-btn": "",
-          "link-float-btn": "",
+          "label-float-btn": "Shop Now",
+          "link-float-btn": "shopify:\/\/metaobjects\/women\/shop",
           "enabled_top_bar": true,
           "cta_text": "Affiliate Program",
           "cta_link": "https:\/\/xibanelle.affiliatery.staqlab.com\/partner\/signIn",
