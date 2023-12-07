@@ -106,6 +106,33 @@ p{
   overflow: hidden; 
   border: 1px solid #d9d8d8a6;
 }
+
+.btn-primary::after {
+  content: "";
+  background: rgb(var(--color-background));
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+
+
+
+
+
+
+
 /* TOOLTIPS */
 .tooltip{
   --bs-tooltip-bg:  #d9d8d8;
