@@ -127,7 +127,7 @@ p{
 }
 
 .btn-primary.hover-white:hover{
-  color:rgb(var(--color-background));
+  color:rgb(var(--color-button));
 }
 .btn-primary.hover-white:after{
   background:white;
