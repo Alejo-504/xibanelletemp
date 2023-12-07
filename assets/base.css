@@ -1580,20 +1580,20 @@ details[open] > .share-button__fallback {
 .select__select,
 .customer .field input,
 .customer select {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
-  width: 100%;
-  box-sizing: border-box;
-  transition: box-shadow var(--duration-short) ease;
-  border-radius: var(--inputs-radius);
-  height: 4.5rem;
-  min-height: calc(var(--inputs-border-width) * 2);
-  min-width: calc(7rem + (var(--inputs-border-width) * 2));
-  position: relative;
-  border: 0;
+ -webkit-appearance: none;
+    appearance: none;
+    background-color: #dfdfdf;
+    color: rgb(var(--color-foreground));
+    font-size: 1.6rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow var(--duration-short) ease;
+    border-radius: var(--inputs-radius);
+    height: 4.5rem;
+    min-height: calc(var(--inputs-border-width) * 2);
+    min-width: calc(7rem + (var(--inputs-border-width) * 2));
+    position: relative;
+    border: 0;
 }
 
 .field:before,
