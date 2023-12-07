@@ -129,10 +129,10 @@ p{
 
 
 
-.btn-primary span{
-  z-index:1;
+.btn-primary span {
+    z-index: 1;
+    position: relative;
 }
-
 
 
 
