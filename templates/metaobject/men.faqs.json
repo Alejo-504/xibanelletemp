@@ -131,8 +131,10 @@
         "d10e4fab-9d11-4fe4-9eb4-940ee2772320"
       ],
       "custom_css": [
-        ".testimonials {background: rgb(var(--color-background)); color:white;}",
-        "h1,h2 {color: white;}"
+        ".testimonials {background: rgb(var(--color-background)); color: white;}",
+        "h1,h2 {color: white;}",
+        ".adorno:before {border-left-color: white; border-right-color: white;}",
+        ".adorno:after {border-left-color: white; border-right-color: white;}"
       ],
       "settings": {
         "scheme_selector": "background-2",
