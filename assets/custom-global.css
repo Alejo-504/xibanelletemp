@@ -119,7 +119,7 @@ p{
   top: 0;
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .btn-primary:hover::after {
   transition: all 0.3s ease-out;
