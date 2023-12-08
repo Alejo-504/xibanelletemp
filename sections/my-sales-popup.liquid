@@ -45,6 +45,11 @@
   a.my-popup-modal__link:hover {
     color: rgb(var(--color-background));
   }
+  @media screen (max-width:575px){
+    .my-popup-modal{
+      display:none!important;
+    }
+  }
 .hide-popup{
     animation: hide-popup 1s forwards;
 }
