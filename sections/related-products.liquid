@@ -24,8 +24,7 @@
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
-  >
-    {% if recommendations.performed and recommendations.products_count > 0 %}
+  >{% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}" style="color: rgb(var(--color-foreground_3));">
         {{ section.settings.heading }}
       </h2>
@@ -42,8 +41,7 @@
           </li>
         {% endfor %}
       </ul>
-    {% endif %}
-  </product-recommendations>
+    {% endif %}</product-recommendations>
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}
   {%- endif -%}
