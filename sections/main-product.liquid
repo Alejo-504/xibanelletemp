@@ -725,7 +725,7 @@
             console.log(payment_btn.querySelector(".btn-primary span"), "aa");
             if(!payment_btn.querySelector(".btn-primary span")){
               let btn = payment_btn.querySelector(".btn-primary");
-
+              if(!btn) return;
               btn.innerHTML =  "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'>"+btn.innerHTML+"</span>";
               console.log(btn, "btn");
             }
