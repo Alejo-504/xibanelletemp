@@ -721,10 +721,10 @@
         if(firstButton && payment_btn){
          
             firstButton.setAttribute('class', 'my-4 mx-0 w-100 btn btn-primary-outline'); 
-            payment_btn.setAttribute("class", "mx-0 btn w-100 btn-primary hero"); 
-            console.log(payment_btn.querySelector(".btn-primary span"), "aa");
-            if(!payment_btn.querySelector(".btn-primary span")){
-              let btn = payment_btn.querySelector(".btn-primary");
+            payment_btn.setAttribute("class", "mx-0 btn w-100 btn-primary"); 
+
+            console.log(payment_btn.querySelector("span"), "aa");
+            if(!payment_btn.querySelector("span")){
               if(!btn) return;
               btn.innerHTML =  "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'>"+btn.innerHTML+"</span>";
               console.log(btn, "btn");
