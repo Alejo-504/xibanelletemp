@@ -29,11 +29,11 @@
       ],
       "custom_css": [
         ".hero-carousel .item img {object-fit: contain !important;}",
-        ".section-hero h1, .section-hero p {color: rgb(var(--color-foreground_3));}"
+        ".section-hero h1,.section-hero p {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "video_background": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/89589ac80c2c43b6855c09de2dc24629.mp4",
-        "color_overlay": "linear-gradient(89deg, rgba(255, 255, 255, 0.57) 7%, rgba(241, 240, 242, 1) 58%, rgba(241, 240, 242, 1) 78.06%, rgba(240, 240, 242, 1) 100%)",
+        "color_overlay": "linear-gradient(89deg, rgba(255, 255, 255, 0.74) 7%, rgba(241, 240, 242, 1) 58%, rgba(241, 240, 242, 1) 78.06%, rgba(240, 240, 242, 1) 100%)",
         "scheme_selector": "background-2",
         "heading": "Redefining Masculine Elegance",
         "description": "Explore our unique collection of leather goods for men, where each piece perfectly blends classic style with modern flair. A world of sophistication and quality awaits you.",
