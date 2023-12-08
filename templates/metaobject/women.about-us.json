@@ -241,6 +241,17 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "c3722267-5e59-40e8-a56f-3983ff957e7c": {
+      "type": "my-sales-popup",
+      "settings": {
+        "popup_product_list": [
+          "example-belt-women-1",
+          "example-bag-woman-2",
+          "example-bag-woman-1",
+          "example-belt-women-2"
+        ]
+      }
     }
   },
   "order": [
@@ -249,6 +260,7 @@
     "2b2c04d3-5e5f-4c3a-8b84-134c57ee1d57",
     "custom-values",
     "custom-reviews",
-    "custom-newsletter"
+    "custom-newsletter",
+    "c3722267-5e59-40e8-a56f-3983ff957e7c"
   ]
 }
