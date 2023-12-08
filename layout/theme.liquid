@@ -533,11 +533,15 @@ role="main" tabindex="-1">
           if ( requestState.requestType === 'add' ) {
             subscribeToResult( requestState => {
               if ( requestState.responseData?.ok ) {
+
                 let product = requestState.responseData.body;
                 if ( requestState.responseData.body.items?.length === 1 ) {
                   product = requestState.responseData.body.items[0];
                 }
+
                 add_poppu_info( product ? product : "Fail");
+              }else{
+                console.log("error", requestState.responseData);
               }
             });
           }
