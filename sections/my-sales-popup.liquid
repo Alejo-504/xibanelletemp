@@ -97,7 +97,7 @@
     document.querySelector('.my-popup-modal__name').innerHTML = objectProduct.name;
     document.querySelector('.my-popup-modal__link').href = objectProduct.link;
     let social = document.querySelector(".floating-container-social-btn");
-    if(social){
+    if(social && window.getComputedStyle(social, null).display !== 'none')
       myPopup.style.left = '90px';
     }else{
       myPopup.style.left = '10px';
