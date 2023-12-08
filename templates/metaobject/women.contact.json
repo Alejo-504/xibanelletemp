@@ -71,12 +71,23 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0039d101-ad84-49d8-8318-4ed44f24b14f": {
+      "type": "my-sales-popup",
+      "settings": {
+        "popup_product_list": [
+          "example-bag-woman-2",
+          "example-bag-woman-1",
+          "example-belt-women-1"
+        ]
+      }
     }
   },
   "order": [
     "main",
     "39df0256-d664-43be-bf83-9690185d98c8",
     "04682752-769e-4d63-a7d0-49f431d5ef61",
-    "aa79b7f0-ac24-420b-91e5-51f8014f928a"
+    "aa79b7f0-ac24-420b-91e5-51f8014f928a",
+    "0039d101-ad84-49d8-8318-4ed44f24b14f"
   ]
 }
