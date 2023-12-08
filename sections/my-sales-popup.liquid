@@ -96,7 +96,13 @@
     document.querySelector('.my-popup-modal__img').src = objectProduct.image;
     document.querySelector('.my-popup-modal__name').innerHTML = objectProduct.name;
     document.querySelector('.my-popup-modal__link').href = objectProduct.link;
-    myPopup.style.left = '90px';
+    let social = document.querySelector(".floating-container-social-btn");
+    if(social){
+      myPopup.style.left = '90px';
+    }else{
+      myPopup.style.left = '10px';
+    }
+    
     myPopup.classList.remove('hide-popup');
     setTimeout(() => {
       myPopup.style.left = '-350px';
