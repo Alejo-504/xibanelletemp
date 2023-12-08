@@ -724,10 +724,12 @@
             payment_btn.setAttribute("class", "mx-0 btn w-100 btn-primary"); 
 
             console.log(payment_btn.querySelector("span"), "aa");
+
             if(!payment_btn.querySelector("span")){
-              if(!btn) return;
-              btn.innerHTML =  "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'>"+btn.innerHTML+"</span>";
-              console.log(btn, "btn");
+              let btn = payment_btn;
+         
+              payment_btn.innerHTML =  "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'>"+payment_btn.innerHTML+"</span>";
+              console.log(payment_btn, "btn");
             }
             
         }
@@ -2222,7 +2224,7 @@
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
     },
-    { 
+    {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },
