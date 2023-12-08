@@ -28,7 +28,8 @@
         "a8ebab03-6ec8-4964-9765-65f10f008dcb"
       ],
       "custom_css": [
-        ".hero-carousel .item img {object-fit: contain !important;}"
+        ".hero-carousel .item img {object-fit: contain !important;}",
+        ".section-hero h1, .section-hero p {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "video_background": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/89589ac80c2c43b6855c09de2dc24629.mp4",
