@@ -136,7 +136,9 @@
         ".adorno:before {border-left-color: white; border-right-color: white;}",
         ".adorno:after {border-left-color: white; border-right-color: white;}",
         ".testimonial {background: white;}",
-        ".testimonial {color: rgb(var(--color-foreground_3));}"
+        ".testimonial {color: rgb(var(--color-foreground_3));}",
+        ".btn-primary:after {background: white;}",
+        ".btn-primary:hover {color: rgb(var(--color-background-2));}"
       ],
       "settings": {
         "scheme_selector": "background-2",
