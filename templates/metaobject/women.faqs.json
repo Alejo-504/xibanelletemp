@@ -146,7 +146,7 @@
         ".testimonial {background: white;}",
         ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}",
         ".btn-primary:after {background: white;}",
-        ".btn-primary:hover{color:rgb(var(--color-background-2));}"
+        ".btn-primary:hover {color: rgb(var(--color-background-2));}"
       ],
       "settings": {
         "scheme_selector": "",
@@ -197,12 +197,24 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0f3ef071-aa3f-40f3-85e7-b5e13bfa4370": {
+      "type": "my-sales-popup",
+      "settings": {
+        "popup_product_list": [
+          "example-bag-woman-1",
+          "example-bag-woman-2",
+          "example-belt-women-1",
+          "example-belt-women-2"
+        ]
+      }
     }
   },
   "order": [
     "d4696897-9805-40b4-bd1e-d66a4f46a762",
     "5cf111d0-6191-4afa-9189-aa41c180bb7e",
     "d3fa8ee2-196c-48cd-8d2d-747363b63614",
-    "custom-newsletter"
+    "custom-newsletter",
+    "0f3ef071-aa3f-40f3-85e7-b5e13bfa4370"
   ]
 }
