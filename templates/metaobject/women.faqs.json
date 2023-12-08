@@ -145,7 +145,8 @@
         "h1,h2,p {color: white;}",
         ".testimonial {background: white;}",
         ".testimonial *:not(i) {color: rgb(var(--color-foreground_3));}",
-        ".btn-primary:after {background: white;}"
+        ".btn-primary:after {background: white;}",
+        ".btn-primary:hover{color:rgb(var(--color-background-2));}"
       ],
       "settings": {
         "scheme_selector": "",
