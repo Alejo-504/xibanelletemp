@@ -13,7 +13,9 @@
         ".logo img {width: 200px;}",
         ".btn-primary {background: #7f969e;}",
         ".btn-primary:hover:after {background: white;}",
-        "* {border: none;}"
+        "* {border: none;}",
+        ".btn-primary:hover:after {background: white;}",
+        ".btn-primary:hover {color:rgb(var(--color-background))!important;}"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
