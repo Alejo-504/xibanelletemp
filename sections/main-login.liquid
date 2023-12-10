@@ -34,10 +34,7 @@
   
 {%- endstyle -%}
 <div class="container-fluid color-{{ section.settings.scheme_selector }} bg-login">
-<div class="customer login section-{{ section.id }}-padding ">
- <h1 id="recover" tabindex="-1" style="display:none;">
-        Recover your password
-      </h1>
+<div class="customer login section-{{ section.id }}-padding "
     <a class="logo" href="/">
       <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
   </a>
@@ -52,8 +49,8 @@
       
     }
   </style>
-  <div class="recovery-container">
-      <h1 id="recover" tabindex="-1">
+  <div id="recover"  class="recovery-container">
+      <h1 tabindex="-1">
         Recover your password
       </h1>
     <p>
@@ -170,7 +167,7 @@
           </label>
         </div>
 
-        <a href="#recover" onclick="document.querySelector('.recovery-container').style.display = 'block'; document.querySelector('#login').style.display = 'none';">
+        <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
