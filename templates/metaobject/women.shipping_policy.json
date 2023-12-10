@@ -3,6 +3,9 @@
     "main": {
       "type": "main-page",
       "disabled": true,
+      "custom_css": [
+        "body {background: white;}"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 0
@@ -17,6 +20,9 @@
     },
     "32515ac7-be16-4a62-92e9-b72999161524": {
       "type": "policie",
+      "custom_css": [
+
+      ],
       "settings": {
         "policy": "shipping_policy"
       }
