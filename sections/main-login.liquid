@@ -27,14 +27,15 @@
 .btn-primary:hover span{
   color: rgb(var(--color-button));
 }
-.recovery-container {
+#recover {
     padding: 20px;
 }
 
   
 {%- endstyle -%}
 <div class="container-fluid color-{{ section.settings.scheme_selector }} bg-login">
-<div class="customer login section-{{ section.id }}-padding "
+<div class="customer login section-{{ section.id }}-padding ">
+
     <a class="logo" href="/">
       <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
   </a>
@@ -49,7 +50,7 @@
       
     }
   </style>
-  <div id="recover"  class="recovery-container">
+  <div id="recover" >
       <h1 tabindex="-1">
         Recover your password
       </h1>
@@ -95,7 +96,7 @@
         <span>{{ 'customer.login_page.submit' | t }}</span>
       </button>
 
-      <a href="#login" class="btn btn-primary-outline" onclick="document.querySelector('.recovery-container').style.display = 'none'; document.querySelector('#login').style.display = 'block';">
+      <a href="#login" class="btn btn-primary-outline">
          <span>{{ 'customer.login_page.cancel' | t }}</span>
       </a>
     {%- endform -%}
