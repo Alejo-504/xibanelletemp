@@ -25,7 +25,8 @@
       "type": "main-addresses",
       "custom_css": [
         ".container-fluid {background: white;}",
-        "h1,h2,p,input,label,option, select{color: rgb(var(--color-foreground_3));}"
+        "h1,h2,p,input,label,option,select {color: rgb(var(--color-foreground_3));}",
+        ".btn:hover{color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "color_scheme": "background-2",
