@@ -31,18 +31,20 @@
     background: lightgrey;
     padding: 20px;
 }
-.recovery-container p, .recovery-container input, .recovery-container label, .recovery-container .btn:not(.btn-primary){
+.recovery-container p, .recovery-container input, .recovery-container label{
     color: rgb(var(--color-foreground_3))!important;
 }
   
 {%- endstyle -%}
 <div class="container-fluid color-{{ section.settings.scheme_selector }} bg-login">
 <div class="customer login section-{{ section.id }}-padding ">
-
+ <h1 id="recover" tabindex="-1" style="display:none;">
+        Recover your password
+      </h1>
   <div class="recovery-container">
       <h1 id="recover" tabindex="-1">
-    Recover your password
-  </h1>
+        Recover your password
+      </h1>
     <p>
       {{ 'customer.recover_password.subtext' | t }}
     </p>
