@@ -126,8 +126,8 @@
         "scheme_selector": "background-1",
         "title": "Best Sellers",
         "description": "<p>Discover favorites that capture hearts and gazes. Our best sellers selection is a celebration of fashion and functionality, each piece reflecting the quality and exclusive design that only Xinabelle Store offers.<\/p>",
-        "button_text": "",
-        "button_link": ""
+        "button_text": "View All",
+        "button_link": "shopify:\/\/metaobjects\/women\/shop"
       }
     },
     "woman-about-home": {
