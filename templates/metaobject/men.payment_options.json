@@ -50,14 +50,14 @@
         "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "Sign up now & get 10% of",
             "heading_size": "h1"
           }
         },
         "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-paragraph-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Last chance to take advantage of our discount!<\/p>"
           }
         },
         "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-email_form-1": {
