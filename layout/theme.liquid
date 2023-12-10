@@ -458,6 +458,7 @@ role="main" tabindex="-1">
       if(type){
         localStorage.setItem("type_page_favorite", type);
       }
+    
 
 
     </script>
@@ -592,4 +593,12 @@ role="main" tabindex="-1">
 
     
   </style>
+  <script>
+      let swym = document.querySelector("#swym-plugin");
+      if(swym){
+        swym.classList.add("color-{{ scheme }}");
+      }else{
+        console.log("no swym");
+      }
+  </script>
 </html>
