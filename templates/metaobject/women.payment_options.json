@@ -40,10 +40,53 @@
       ],
       "settings": {
       }
+    },
+    "5ab0ea08-5872-48bc-bba8-1a6fa6551831": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up now & get 10% of",
+            "heading_size": "h1"
+          }
+        },
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-heading-1",
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-paragraph-1",
+        "template--21809282384176__5ab0ea08-5872-48bc-bba8-1a6fa6551831-email_form-1"
+      ],
+      "custom_css": [
+        ".lateral-1 {width: 25vw; height: 25vw; max-width: 315px; max-height: 315px; left: 0; margin-top: 60px;}",
+        ".lateral-2 {width: 27vw; height: 18vw; max-width: 380px; max-height: 215px; right: 0; margin-bottom: 140px;}"
+      ],
+      "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/0656e7ca-d465-4e3c-86fb-e709f556e2b9.webp",
+        "lateral_2": "shopify:\/\/shop_images\/d32ab659-c430-4f1a-8ee3-91c74fc3ac24.webp",
+        "color_background": "#e6e6e6",
+        "color_text": "#6b6559",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "ad9a6593-4d5b-4ca6-9500-59440875af45"
+    "ad9a6593-4d5b-4ca6-9500-59440875af45",
+    "5ab0ea08-5872-48bc-bba8-1a6fa6551831"
   ]
 }
