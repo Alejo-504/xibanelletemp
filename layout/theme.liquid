@@ -256,8 +256,6 @@
           transition: transform 0.3s ease-in-out;
           margin-left:13px;
       }
-
-      
       .adorno-right::after {
           content: '';
           width: 0;
@@ -277,6 +275,15 @@
         border-right: 13px solid white;
       }
 
+      @media (max-width:768px){
+        .adorno-right::after{
+          display:none!important;
+        }
+        .adorno-left::before{
+          display:none!important;
+        }
+        
+      }
       *,
       *::before,
       *::after {
