@@ -23,20 +23,12 @@
             "image": "shopify:\/\/shop_images\/paypal-icon-logo-png-transparent.png",
             "Title": "PAYPAL"
           }
-        },
-        "2461bee4-95ae-4de3-ab7c-010812372512": {
-          "type": "payment_method",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/disruption.png",
-            "Title": "Paypal"
-          }
         }
       },
       "block_order": [
         "4436503f-d616-4740-b494-6f607ca50a68",
         "755d3d66-624a-4f0b-a158-78fadbe4f592",
-        "9aa1ac55-1c21-4936-b25b-57d5c6dc1c6f",
-        "2461bee4-95ae-4de3-ab7c-010812372512"
+        "9aa1ac55-1c21-4936-b25b-57d5c6dc1c6f"
       ],
       "custom_css": [
 
