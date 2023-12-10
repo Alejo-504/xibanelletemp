@@ -5,9 +5,13 @@ justify-items: start;
 text-align: start;
 ">
 
-<div class="header-card" style="
+<a  href="{{ product.url }}" 
+class="header-card" style="
   width: 90%;
-  overflow: hidden;"
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  "
 >
 <img
 src="{{ product.featured_image | img_url: 'large' }}"
