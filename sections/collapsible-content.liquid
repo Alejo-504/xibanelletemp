@@ -135,11 +135,13 @@
     }
 </style>
 <script>
-  document.querySelectorAll('.accordion-button').forEach(function(acc) {
-    acc.addEventListener('click', function() {
-      $('.accordion-collapse').collapse('hide');
-      $(this).next('.accordion-collapse').collapse('toggle');
-    });
+  document.addEventListener("DOMContentLoaded", function(){
+      document.querySelectorAll('.accordion-button').forEach(function(acc) {
+          acc.addEventListener('click', function() {
+            $('.accordion-collapse').collapse('hide');
+            $(this).next('.accordion-collapse').collapse('toggle');
+          });
+      });
   });
 </script>
 {% schema %}
