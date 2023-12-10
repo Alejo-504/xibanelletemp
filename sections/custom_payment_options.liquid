@@ -1,35 +1,43 @@
 {% schema %}
-{
-  "name": "Custom Show Payment",
-  "blocks": [
-    {
-      "type": "payment_method",
-      "name": "Método de Pago",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
-    }
-  ],
-  "max_blocks": 4,
-  "presets": [
-    {
-      "name": "Custom Show Payment",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
-<div class="text-center">
-  <h2>Métodos de Pago</h2>
-  <div class="row">
-    {% for block in section.blocks %}
-    <div class="col">
-      <img src="{{ block.settings.image | img_url }}" alt="Método de Pago">
+  {
+    "name": "Custom Show Payment",
+    "blocks": [
+      {
+        "type": "payment_method",
+        "name": "Método de Pago",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "Title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 4,
+    "presets": [
+      {
+        "name": "Custom Show Payment",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
+  <div class="text-center">
+    <h2>Available payment methods</h2>
+    <div class="row">
+      {% for block in section.blocks %}
+        <div class="col-md-3">
+          <div class="payment-method d-flex flex-column align-items-center">
+            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.Title }}">
+            <h3>{{ block.settings.Title }}</h3>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
-</div>
