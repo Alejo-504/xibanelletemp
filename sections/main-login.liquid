@@ -41,6 +41,20 @@
  <h1 id="recover" tabindex="-1" style="display:none;">
         Recover your password
       </h1>
+    <a class="logo" href="/">
+      <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
+  </a>
+  <style>
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .logo img {
+      width: 100px;
+      
+    }
+  </style>
   <div class="recovery-container">
       <h1 id="recover" tabindex="-1">
         Recover your password
@@ -92,20 +106,7 @@
       </a>
     {%- endform -%}
   </div>
-  <a class="logo" href="/">
-      <img src="{{ section.settings.logo | img_url: 'master' }}" alt="">
-  </a>
-  <style>
-    .logo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-    .logo img {
-      width: 100px;
-      
-    }
-  </style>
+
               
   <h1 id="login" tabindex="-1">
    {{ section.settings.title }}
