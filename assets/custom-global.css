@@ -356,3 +356,6 @@ details[open]>.header__menu-item{
 #predictive-search-results-groups-wrapper *{
   color:rgb(var(--color-foreground_2));
 }
+#predictive-search-results-groups-wrapper .link--text:hover{
+  background: #ebebeb!important;
+}
