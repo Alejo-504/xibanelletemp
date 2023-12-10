@@ -172,13 +172,13 @@
         <span class="button-back d-flex align-items-center">
           <i class="fa fa-arrow-left me-2"></i>
         </span> 
-        <button class="btn btn-primary my-0">
+        <button class="btn btn-primary my-0 ">
           <span>{{ 'customer.login_page.sign_in' | t }}</span>
         </button>
      </div>        
 
       <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
+       <span> {{ 'customer.login_page.create_account' | t }}</span>
       </a>
     {%- endform -%}
   </div>
