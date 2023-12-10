@@ -1,21 +1,35 @@
 {% schema %}
 {
-  "name": "Métodos de Pago",
-  "settings": [],
-  "presets": [{
-    "name": "Métodos de Pago",
-    "category": "Tienda"
-  }]
+  "name": "Custom Show Payment",
+  "blocks": [
+    {
+      "type": "payment_method",
+      "name": "Método de Pago",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen del Método de Pago"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Muestra de Métodos de Pago",
+      "category": "Custom"
+    }
+  ]
 }
 {% endschema %}
-
-{% if shop.enabled_payment_types.size > 0 %}
-<div class="payment-methods">
-  {% for type in shop.enabled_payment_types %}
-  <div class="payment-method">
-    <span class="fa fa-{{ type | handleize }}"></span>
-    <p>{{ type | replace: '_', ' ' | capitalize }}</p>
+<div class="text-center">
+  <h2>Métodos de Pago</h2>
+  <div class="row">
+    {% for block in section.blocks %}
+    <div class="col">
+      <img src="{{ block.settings.image | img_url }}" alt="Método de Pago">
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
-{% endif %}
