@@ -25,7 +25,7 @@
       "type": "main-addresses",
       "custom_css": [
         ".container-fluid {background: white;}",
-        "h1,h2,p {color: rgb(var(--color-foreground_3));}"
+        "h1,h2,p, input {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "color_scheme": "background-2",
