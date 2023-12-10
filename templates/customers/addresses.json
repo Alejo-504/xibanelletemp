@@ -24,10 +24,11 @@
     "main": {
       "type": "main-addresses",
       "custom_css": [
-
+        ".container-fluid {background: white;}",
+        "h1,h2,p {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
