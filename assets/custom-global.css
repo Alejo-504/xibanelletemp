@@ -362,3 +362,7 @@ details[open]>.header__menu-item{
 .swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
     background: rgb(var(--color-background));
 }
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
+    background: #f3f3f3;
+    border: 1px solid #f3f3f3;
+}
