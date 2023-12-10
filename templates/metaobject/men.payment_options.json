@@ -6,22 +6,22 @@
         "4436503f-d616-4740-b494-6f607ca50a68": {
           "type": "payment_method",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shopping-bag-2-solid-svgrepo-com.svg",
-            "Title": "Shop"
+            "image": "shopify:\/\/shop_images\/VISA-logo-500x281.png",
+            "Title": "VISA"
           }
         },
         "755d3d66-624a-4f0b-a158-78fadbe4f592": {
           "type": "payment_method",
           "settings": {
-            "image": "shopify:\/\/shop_images\/commitment_f61805d3-8695-45a4-be30-0bbd8feac120.png",
-            "Title": "Mastercards"
+            "image": "shopify:\/\/shop_images\/MasterCard_Logo_svg.png",
+            "Title": "MASTERCARD"
           }
         },
         "9aa1ac55-1c21-4936-b25b-57d5c6dc1c6f": {
           "type": "payment_method",
           "settings": {
-            "image": "shopify:\/\/shop_images\/commitment.png",
-            "Title": "Visa"
+            "image": "shopify:\/\/shop_images\/paypal-icon-logo-png-transparent.png",
+            "Title": "PAYPAL"
           }
         },
         "2461bee4-95ae-4de3-ab7c-010812372512": {
