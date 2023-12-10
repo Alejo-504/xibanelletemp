@@ -35,10 +35,10 @@
     ]
   }
 {% endschema %}
-
+<div class="container-fluid px-0" style="background:white;">
 <div class="container py-5">
   <div class="row">
-    <div class="col-12" style="color:black;background:white;">
+    <div class="col-12" style="color:black;">
       {% if section.settings.policy == 'privacy_policy' %}
        {{ shop.privacy_policy.body }} 
       {% elsif section.settings.policy == 'terms_of_service' %}
@@ -49,4 +49,5 @@
         {{ shop.shipping_policy.body }}
       {% endif %}
   </div>
+</div>
 </div>
