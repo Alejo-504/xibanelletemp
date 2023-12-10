@@ -98,7 +98,7 @@
         <span>{{ 'customer.login_page.submit' | t }}</span>
       </button>
 
-      <a href="#login" class="btn btn-primary-outline">
+      <a href="#login" class="btn btn-primary-outline" onclick="document.querySelector('.recovery-container').style.display = 'none'; document.querySelector('#login').style.display = 'block';">
          <span>{{ 'customer.login_page.cancel' | t }}</span>
       </a>
     {%- endform -%}
@@ -170,7 +170,7 @@
           </label>
         </div>
 
-        <a href="#recover">
+        <a href="#recover" onclick="document.querySelector('.recovery-container').style.display = 'block'; document.querySelector('#login').style.display = 'none';">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
