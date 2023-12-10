@@ -10,7 +10,9 @@
         ".bg-login > div {padding: 50px 50px;}",
         "a {transition: all 0.3s ease;}",
         "a:hover {text-decoration: underline;}",
-        ".logo img {width: 200px;}"
+        ".logo img {width: 200px;}",
+        ".btn-primary{background:#7F969E;}",
+        "*{border:none;}"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
