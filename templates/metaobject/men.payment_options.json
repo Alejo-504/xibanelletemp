@@ -43,9 +43,48 @@
       ],
       "settings": {
       }
+    },
+    "eb921639-b434-41f9-b540-37e9e8251ad1": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-heading-1",
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-paragraph-1",
+        "template--21809276617008__eb921639-b434-41f9-b540-37e9e8251ad1-email_form-1"
+      ],
+      "settings": {
+        "lateral_1": "shopify:\/\/shop_images\/Anotacion_2023-11-30_012735.png",
+        "lateral_2": "shopify:\/\/shop_images\/Anotacion_2023-11-30_013634.png",
+        "color_background": "#f7f0e9",
+        "color_text": "#797575",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "0b24593d-f849-437b-b05d-7a6f4734dc1c"
+    "0b24593d-f849-437b-b05d-7a6f4734dc1c",
+    "eb921639-b434-41f9-b540-37e9e8251ad1"
   ]
 }
