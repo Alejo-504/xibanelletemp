@@ -359,3 +359,6 @@ details[open]>.header__menu-item{
 #predictive-search-results-groups-wrapper .link--text:hover{
   background: #ebebeb!important;
 }
+.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2 {
+    background: rgb(var(--color-background));
+}
