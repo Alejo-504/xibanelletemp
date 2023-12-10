@@ -88,19 +88,19 @@
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
       <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-block d-none hero continue-shopping">
-        {{- 'general.continue_shopping' | t -}}
+       <span> {{- 'general.continue_shopping' | t -}} </span>
       </a>
     </div>
     <div class="title-wrapper-with-link">
       <a href="{{ url_continue_shopping }}" class="btn btn-primary-outline d-md-none d-block hero continue-shopping">
-        {{- 'general.continue_shopping' | t -}}
+        <span> {{- 'general.continue_shopping' | t -}} </span>
       </a>
     </div>
 
     <div class="cart__warnings py-3">
       <h1 class="cart__empty-text my-3">{{ 'sections.cart.empty' | t }}</h1>
       <a href="{{ url_continue_shopping }}" class="btn btn-primary hero">
-        {{ 'general.continue_shopping' | t }}
+          <span> {{ 'general.continue_shopping' | t }}</span>
       </a>
 
       {%- if shop.customer_accounts_enabled and customer == null -%}
