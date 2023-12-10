@@ -202,9 +202,25 @@
     <div class="row">
       <div class="col">
         <ul class="social-links">
-          <li><a href="{{ settings.social_instagram_link }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          {% if settings.social_facebook_link != blank %}
           <li><a href="{{ settings.social_facebook_link }}" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+          {% endif %}
+          {% if settings.social_pinterest_link != blank %}
+          <li><a href="{{ settings.social_instagram_link }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          {% endif %}
+          {% if settings.social_instagram_link != blank %}
           <li><a href="{{ settings.social_twitter_link }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          {% endif %}
+          {% if settings.social_twitter_link != blank %}
+          <li><a href="{{ settings.social_pinterest_link }}" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+          {% endif %}
+          {% if settings.social_tiktok_link != blank %}
+          <li><a href="{{ settings.social_tiktok_link }}" target="_blank"><i class="fa fa-tiktok"></i></a></li>
+          {% endif %}
+          {% if settings.social_youtube_link != blank %}
+            <li><a href="{{ settings.social_youtube_link }}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          {% endif %}
+             
         </ul>
       </div>
       <div class="col text-right d-flex justify-content-end">
