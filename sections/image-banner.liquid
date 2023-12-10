@@ -144,7 +144,7 @@
                   {% endif %}
                   class="btn btn-primary male hero  {% if block.settings.button_style_secondary_1 %} {% else %} {% endif %}"
                 >
-                  {{- block.settings.button_label_1 | escape -}}
+                 <span>{{- block.settings.button_label_1 | escape -}}</span> 
                 </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
