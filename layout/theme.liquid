@@ -594,11 +594,14 @@ role="main" tabindex="-1">
     
   </style>
   <script>
+    let time = setInterval(function(){
       let swym = document.querySelector(".swym-modals-container");
       if(swym){
         swym.classList.add("color-{{ scheme }}");
+        clearInterval(time);
       }else{
         console.log("no swym");
       }
+    }, 4000);
   </script>
 </html>
