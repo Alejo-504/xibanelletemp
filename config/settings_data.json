@@ -899,11 +899,11 @@
           "background_gradient": "",
           "text": "#ffffff",
           "text_2": "#c0c0c0",
-          "text_3": "#121212",
+          "text_3": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#121212",
+          "button_label": "#000000",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#fafafa"
         }
       },
       "accent-2": {
