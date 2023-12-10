@@ -408,7 +408,9 @@
     {% endif %}
 
 
+
 <main id="MainContent" class="content-for-layout focus-none color-{{ scheme }}"
+data-scheme="{{ scheme }}"
 role="main" tabindex="-1">
 
 {{ content_for_layout }}
@@ -452,13 +454,11 @@ role="main" tabindex="-1">
 
 
     <script>
-      /* 
-        si el type esta establecio sincronizar en el local sotrage
-      */
      let type = "{{ type }}";
       if(type){
         localStorage.setItem("type_page_favorite", type);
       }
+
 
     </script>
     <ul hidden>
