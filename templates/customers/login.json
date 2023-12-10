@@ -15,7 +15,7 @@
         ".btn-primary:hover:after {background: white;}",
         "* {border: none;}",
         ".btn-primary:hover:after {background: white;}",
-        ".btn-primary:hover {color:rgb(var(--color-background))!important;}"
+        ".btn-primary:hover span {color: rgb(var(--color-background-2)) !important;}"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
