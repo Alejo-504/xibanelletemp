@@ -74,6 +74,11 @@
         "type": "image_picker",
         "id": "challenge_background_image",
         "label": "CHALLENGE BACKGROUND"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image_reset",
+        "label": "BACKGROUND IMAGE RESET"
       }
     ]
   },
