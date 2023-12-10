@@ -3,14 +3,15 @@
     "main": {
       "type": "main-register",
       "custom_css": [
-        "h1, a:not(.btn) {color: white!important; text-decoration: none; border: none;}",
+        "h1,a:not(.btn) {color: white !important; text-decoration: none; border: none;}",
         ".bg-login {color: rgb(var(--color-foreground_2));}",
         "input {background: white; color: black;}",
         "label {color: gray;}",
         ".bg-login > div {padding: 50px 50px;}",
         "a {transition: all 0.3s ease;}",
         "a:hover {text-decoration: underline;}",
-        "input,div {border: none;}"
+        "* {border: none;}",
+        ".btn {background: #7f969e;}"
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/70010cfd-9e30-4d83-b2c4-5a545567eeb5.webp",
