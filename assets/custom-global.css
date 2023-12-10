@@ -338,7 +338,7 @@ details[open]>.header__menu-item{
   color: rgb(var(--color-foreground_2));
 }
 .header__submenu {
-      box-shadow: 0 0 4px 1px #9d999985;
+      box-shadow: 0 0 4px 1px #9d999985!important;
 }
 /* FLOATING BUTTON */
 .floating-button {
