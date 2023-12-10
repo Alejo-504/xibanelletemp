@@ -78,7 +78,7 @@
       {
         "type": "image_picker",
         "id": "background_image_reset",
-        "label": "BACKGROUND IMAGE RESET"
+        "label": "BACKGROUND IMAGE RESET PASSWORD"
       }
     ]
   },
