@@ -2,6 +2,9 @@
   "sections": {
     "header": {
       "type": "custom-header-portal",
+      "custom_css": [
+        ".btn:hover span{color:white!;}"
+      ],
       "settings": {
         "enabled_top_bar": false,
         "cta_text": "Call to Action",
@@ -26,7 +29,7 @@
       "custom_css": [
         ".container-fluid {background: white;}",
         "h1,h2,p,input,label,option,select {color: rgb(var(--color-foreground_3));}",
-        ".btn:hover{color: rgb(var(--color-foreground_3));}"
+        ".btn:hover {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "color_scheme": "background-2",
