@@ -892,13 +892,13 @@
       "accent-1": {
         "settings": {
           "custom_gradient": "",
-          "background": "#121212",
-          "background_2": "#070707",
+          "background": "#000000",
+          "background_2": "#ffffff",
           "background_3": "#ffffff",
           "background_4": "#f8f8f8",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#121212",
+          "text_2": "#c0c0c0",
           "text_3": "#121212",
           "button": "#ffffff",
           "button_label": "#121212",
