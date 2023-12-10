@@ -2,6 +2,9 @@
   "sections": {
     "header": {
       "type": "custom-header-portal",
+      "custom_css": [
+        ".btn-primary:hover span{color:rgb(var(--color-foreground));}"
+      ],
       "settings": {
         "enabled_top_bar": false,
         "cta_text": "Call to Action",

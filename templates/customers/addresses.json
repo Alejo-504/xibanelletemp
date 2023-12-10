@@ -3,7 +3,7 @@
     "header": {
       "type": "custom-header-portal",
       "custom_css": [
-        ".btn:hover span{color:white!;}"
+        ".btn:hover span{color:white!important;}"
       ],
       "settings": {
         "enabled_top_bar": false,
