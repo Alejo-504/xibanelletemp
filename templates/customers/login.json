@@ -11,8 +11,9 @@
         "a {transition: all 0.3s ease;}",
         "a:hover {text-decoration: underline;}",
         ".logo img {width: 200px;}",
-        ".btn-primary{background:#7F969E;}",
-        "*{border:none;}"
+        ".btn-primary {background: #7f969e;}",
+        ".btn-primary:hover:after {background: white;}",
+        "* {border: none;}"
       ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Xibanelle_Logo-93.png",
