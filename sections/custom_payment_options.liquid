@@ -19,7 +19,6 @@
         ]
       }
     ],
-    "max_blocks": 4,
     "presets": [
       {
         "name": "Custom Show Payment",
@@ -30,7 +29,7 @@
   {% endschema %}
   <div class="text-center payment_methods py-5 container-fluid">
     <h2 class="pb-5" style="color:rgb(var(--color-foreground_3))">Available payment methods</h2>
-    <div class="row page-width">
+    <div class="row page-width justify-content-center">
       {% for block in section.blocks %}
         <div class="col-md-3">
           <div class="payment-method d-flex flex-column align-items-center">
