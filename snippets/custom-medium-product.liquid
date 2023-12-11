@@ -52,16 +52,71 @@ style="border-radius:1px;width:100%;height:100%;object-fit:cover"
   {{ product.price | money }}
 {% endif %}
 </div>
-<div class="btn-group mt-5">
-<a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
- <span>{% if product.available %}
-  Get Now
-  {% else %}
-View Product
-  {% endif %}
-  </span> 
-</a>
-</div>
+  <div class="btn-group mt-5 d-flex align-items-center">
+       <div class="swym-button swym-add-to-wishlist  me-3 swym-heart"
+          id="swym-button-{{ product.id }}"
+          data-with-epi="true"
+          data-swaction="addToWishlist"
+          data-product-id="{{ product.id }}"
+          data-variant-id="{{ product.variants[0].id }}"
+          data-product-url="{{ shop.url }}{{ product.url }}"
+          data-status="not_added"
+          >
+          <i class="fa fa-heart" style="font-size:20px;"></i>
+        </div>
+      <style>
+        #swym-button-{{ product.id }}[data-status="not_added"] i {
+          color: #a1a1a1;
+        }
+        #swym-button-{{ product.id }}[data-status="adding"] i {
+          color: #d25d5d; 
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+
+          setTimeout(function () {
+            var swymButton = document.getElementById("swym-button-{{ product.id }}");
+         
+
+              let classesInitial = swymButton.classList;
+              console.log(classesInitial);
+              if (classesInitial.contains("swym-added")) {
+                swymButton.setAttribute("data-status", "adding");
+                console.log("added");
+              } else {
+                swymButton.setAttribute("data-status", "not_added");
+                console.log("not added");
+              }
+
+              swymButton.querySelector("i").addEventListener("click", function () {
+                console.log("clicked");
+
+                if (swymButton.getAttribute("data-status") == "not_added") {
+                  swymButton.setAttribute("data-status", "adding");
+                  console.log("adding 2");
+                } else {
+                  swymButton.setAttribute("data-status", "not_added");
+                  console.log("not added 2");
+                }
+              });
+
+
+          }, 5000);
+
+        });
+
+      </script>
+    <a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
+     <span>{% if product.available %}
+      Get Now
+      {% else %}
+        View Product
+      {% endif %}
+      </span> 
+    </a>
+  </div>
 </div>
 
 
