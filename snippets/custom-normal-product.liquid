@@ -71,18 +71,26 @@
         }
       </style>
       <script>
-        document.addEventListener("swym-wishlist-updated", function (e) {
-          var wishlist = e.detail.wishlist;
-          var productId = e.detail.productId;
-          var status = wishlist[productId] ? "added" : "not_added";
-          var button = document.getElementById("swym-button-" + productId);
-          button.setAttribute("data-status", status);
+        document.addEventListener("DOMContentLoaded", function () {
+          var swymButton = document.getElementById("swym-button-{{ product.id }}");
+          let classesInitial = swymButton.classList;
+          if (classesInitial.contains("swym-added")) {
+            swymButton.setAttribute("data-status", "added");
+          } else {
+            swymButton.setAttribute("data-status", "not_added");
+          }
+
+          swymButton.addEventListener("click", function () {
+            if (swymButton.getAttribute("data-status") === "not_added") {
+              swymButton.setAttribute("data-status", "adding");
+              swymButton.classList.add("swym-added");
+            } else {
+              swymButton.setAttribute("data-status", "not_added");
+              swymButton.classList.remove("swym-added");
+            }
+          });
         });
-        document.addEventListener("swym-wishlist-add-started", function (e) {
-          var productId = e.detail.productId;
-          var button = document.getElementById("swym-button-" + productId);
-          button.setAttribute("data-status", "adding");
-        });
+
       </script>
   
       {% if product.available %}
