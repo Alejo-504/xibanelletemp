@@ -383,14 +383,8 @@ details[open]>.header__menu-item{
   transition: all .3s ease-in-out;
   cursor:pointer;
 }
-.swym-heart:hover {
+.swym-heart:hover i {
   color:#e76c6c!important;
   transform:scale(1.1);
 }
-.swym-button i, .swym-button.swym-added.disabled.swym-adding i{
-  color: #c1c1c1!important; 
-}
 
-.swym-button.swym-adding i, .swym-button.swym-added i{
-    color:  #d95757 !important;
-}
