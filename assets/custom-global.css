@@ -390,3 +390,6 @@ details[open]>.header__menu-item{
 .swym-added.swym-add-to-wishlist, .swym-added.swym-add-to-wishlist:after, .swym-added.swym-add-to-wishlist + .swym-fave-count {
     color: #d95757 !important;
 }
+.swym-added.swym-add-to-wishlist, .swym-adding.swym-add-to-wishlist:after, .swym-adding.swym-add-to-wishlist + .swym-fave-count{
+  color: #d95757 !important;
+}
