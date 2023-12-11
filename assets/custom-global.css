@@ -387,9 +387,7 @@ details[open]>.header__menu-item{
   color:#e76c6c!important;
   transform:scale(1.1);
 }
-.swym-added.swym-add-to-wishlist, .swym-added.swym-add-to-wishlist:after, .swym-added.swym-add-to-wishlist + .swym-fave-count {
-    color: #d95757 !important;
-}
+
 .swym-added.swym-add-to-wishlist, .swym-adding.swym-add-to-wishlist:after, .swym-adding.swym-add-to-wishlist + .swym-fave-count{
-  color: #d95757 !important;
+  color: #d95757 !important; 
 }
