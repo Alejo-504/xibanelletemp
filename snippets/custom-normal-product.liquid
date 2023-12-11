@@ -16,7 +16,13 @@
     flex-direction: column;
     justify-content: center;
   ">
-    <div class="uwl-btn"></div>
+    <div class="swym-button swym-add-to-wishlist"
+        data-with-epi="true"
+        data-swaction="addToWishlist"
+        data-product-id="{{ product.id }}"
+        data-variant-id="{{ product.variants[0].id }}"
+        data-product-url="{{ shop.url }}{{ product.url }}">
+      <div>
   <div class="d-flex flex-column align-items-start">
     <div class="title-card">
       <strong>{{ product.title }}</strong>
