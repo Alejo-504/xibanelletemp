@@ -81,17 +81,19 @@
           let classesInitial = swymButton.classList;
           if (classesInitial.contains("swym-added")) {
             swymButton.setAttribute("data-status", "adding");
+        console.log("added");
           } else {
             swymButton.setAttribute("data-status", "not_added");
+            console.log("not added");
           }
 
           swymButton.addEventListener("click", function () {
             if (swymButton.getAttribute("data-status") === "not_added") {
               swymButton.setAttribute("data-status", "adding");
-              swymButton.classList.add("swym-added");
+              console.log("adding 2");
             } else {
               swymButton.setAttribute("data-status", "not_added");
-              swymButton.classList.remove("swym-added");
+              console.log("not added 2");
             }
           });
 
