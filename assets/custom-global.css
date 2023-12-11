@@ -390,8 +390,8 @@ details[open]>.header__menu-item{
 
 
 .swym-button:not(.swym-adding).disabled i, .swym-button.disabled.swym-added{
-    color: #c1c1c1!important;
+    color:  #d95757 !important;
 }
 .swym-button i{
-  color: #d95757 !important; 
+  color: #c1c1c1!important; 
 }
