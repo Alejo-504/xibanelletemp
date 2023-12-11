@@ -51,7 +51,7 @@
         {% endif %}
       </div>
       <div class="cart-card d-flex align-items-center">
-        <button class="swym-button swym-add-to-wishlist  me-3 swym-heart"
+        <div class="swym-button swym-add-to-wishlist  me-3 swym-heart"
           id="swym-button-{{ product.id }}"
           data-with-epi="true"
           data-swaction="addToWishlist"
@@ -59,7 +59,7 @@
           data-variant-id="{{ product.variants[0].id }}"
           data-product-url="{{ shop.url }}{{ product.url }}">
           <i class="fa fa-heart" style="font-size:20px;"></i>
-        </button>
+        </div>
       <style>
         #swym-button-{{ product.id }} i {
           color: #a1a1a1;
