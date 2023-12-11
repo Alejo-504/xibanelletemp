@@ -166,6 +166,9 @@ position: relative;
     margin-right: 5px;
     transition: all .2s linear;
 }
+   .contact-us .container-footer span svg{
+      fill: rgb(var(--color-foreground_3));
+   }
 .contact-us .container-footer span:hover{
   color:rgb(var(--color-background-2));
 }
@@ -315,7 +318,7 @@ position: relative;
                                     </a>
                                             {% endif %}
                                             {% if settings.social_linkedin_link != blank %}
-                                    <a href="{{ settings.social_linkedin_link }}" target="_blank" class="d-flex align-items-center justify-content-center">
+                                    <a href="{{ settings.social_linkedin_link }}" target="_blank" class="d-flex align-items-center justify-content-center"></a>
 
                                     {% endif %}
 
