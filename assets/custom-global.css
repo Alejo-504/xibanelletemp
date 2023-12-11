@@ -389,7 +389,7 @@ details[open]>.header__menu-item{
 }
 
 
-.swym-button:not(.swym-adding) i, .swym-button.disabled.swym-added{
+.swym-button:not(.swym-adding).disabled i, .swym-button.disabled.swym-added{
     color: #c1c1c1!important;
 }
 .swym-button i{
