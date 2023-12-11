@@ -72,10 +72,10 @@
       </style>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
+        
 
           setTimeout(function () {
-             var swymButton = document.getElementById("swym-button-{{ product.id }}");
-
+            var swymButton = document.getElementById("swym-button-{{ product.id }}");
          
 
               let classesInitial = swymButton.classList;
@@ -88,8 +88,10 @@
                 console.log("not added");
               }
 
-              swymButton.addEventListener("click", function () {
-                if (swymButton.getAttribute("data-status") === "not_added") {
+              swymButton.querySelector("i").addEventListener("click", function () {
+                console.log("clicked");
+
+                if (swymButton.getAttribute("data-status") == "not_added") {
                   swymButton.setAttribute("data-status", "adding");
                   console.log("adding 2");
                 } else {
