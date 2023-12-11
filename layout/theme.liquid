@@ -44,30 +44,38 @@
        <script>
         document.addEventListener("DOMContentLoaded", function () {
           setTimeout(function () {
-              var swymButtons = document.querySelectorAll(".swym-button");
-              swymButtons.forEach(function (swymButton) {
-                let classesInitial = swymButton.classList;
-                console.log(classesInitial);
-                if (classesInitial.contains("swym-added")) {
-                  swymButton.setAttribute("data-status", "adding");
-                  console.log("added");
-                } else {
-                  swymButton.setAttribute("data-status", "not_added");
-                  console.log("not added");
-                }
-  
-                swymButton.querySelector("i").addEventListener("click", function () {
-                  console.log("clicked");
-  
-                  if (swymButton.getAttribute("data-status") == "not_added") {
+               var swymButtons = document.querySelectorAll(".swym-button");
+                swymButtons.forEach(function (swymButton) {
+                  let classesInitial = swymButton.classList;
+                  console.log(classesInitial);
+                  if (classesInitial.contains("swym-added")) {
                     swymButton.setAttribute("data-status", "adding");
-                    console.log("adding 2");
+                    console.log("added");
                   } else {
                     swymButton.setAttribute("data-status", "not_added");
-                    console.log("not added 2");
+                    console.log("not added");
                   }
+    
+                  swymButton.querySelector("i").addEventListener("click", function () {
+                    console.log("clicked");
+    
+                    if (swymButton.getAttribute("data-status") == "not_added") {
+                      let id_product = swymButton.getAttribute("data-product-id");
+                      let all_prodycts_now = document.querySelectorAll(".swym-button[data-product-id='" + id_product + "']");
+                      all_prodycts_now.forEach(function (swymButtonNow) {
+                        swymButtonNow.setAttribute("data-status", "adding");
+                      });
+                      console.log("adding 2");
+                    } else {
+                      let id_product = swymButton.getAttribute("data-product-id");
+                      let all_prodycts_now = document.querySelectorAll(".swym-button[data-product-id='" + id_product + "']");
+                      all_prodycts_now.forEach(function (swymButtonNow) {
+                        swymButtonNow.setAttribute("data-status", "not_added");
+                      });
+                      console.log("not added 2");
+                    }
+                  });
                 });
-              });
           }, 5000);
 
         });
