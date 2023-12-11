@@ -388,9 +388,10 @@ details[open]>.header__menu-item{
   transform:scale(1.1);
 }
 
-.swym-button i{
-  color: #d95757 !important; 
-}
+
 .swym-button:not(.swym-adding) i, .swym-button.disabled.swym-added{
     color: #c1c1c1!important;
+}
+.swym-button i{
+  color: #d95757 !important; 
 }
