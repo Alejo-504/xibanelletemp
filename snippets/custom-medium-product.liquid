@@ -75,42 +75,6 @@ style="border-radius:1px;width:100%;height:100%;object-fit:cover"
           color: #d25d5d; 
         }
       </style>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        
-
-          setTimeout(function () {
-            var swymButton = document.getElementById("swym-button-{{ product.id }}-{{ random_value }}");
-         
-
-              let classesInitial = swymButton.classList;
-              console.log(classesInitial);
-              if (classesInitial.contains("swym-added")) {
-                swymButton.setAttribute("data-status", "adding");
-                console.log("added");
-              } else {
-                swymButton.setAttribute("data-status", "not_added");
-                console.log("not added");
-              }
-
-              swymButton.querySelector("i").addEventListener("click", function () {
-                console.log("clicked");
-
-                if (swymButton.getAttribute("data-status") == "not_added") {
-                  swymButton.setAttribute("data-status", "adding");
-                  console.log("adding 2");
-                } else {
-                  swymButton.setAttribute("data-status", "not_added");
-                  console.log("not added 2");
-                }
-              });
-
-
-          }, 5000);
-
-        });
-
-      </script>
     <a class="btn btn-primary" href="{{ product.url }}" style="z-index:2;color:white;">
      <span>{% if product.available %}
       Get Now
