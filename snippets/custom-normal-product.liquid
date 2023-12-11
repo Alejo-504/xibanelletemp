@@ -52,13 +52,24 @@
       </div>
       <div class="cart-card d-flex align-items-center">
         <div class="swym-button swym-add-to-wishlist  me-3 swym-heart"
+        id="swym-button-{{ product.id }}"
         data-with-epi="true"
         data-swaction="addToWishlist"
         data-product-id="{{ product.id }}"
         data-variant-id="{{ product.variants[0].id }}"
         data-product-url="{{ shop.url }}{{ product.url }}">
-        <i class="fa fa-heart" style="color:#a1a1a1;font-size:20px;"></i>
+        <i class="fa fa-heart" style="font-size:20px;"></i>
       </div>
+
+      <style>
+        #swym-button-{{ product.id }} i {
+          color: #a1a1a1;
+        }
+        #swym-button-{{ product.id }}.swym-added i, #swym-button-{{ product.id }}.swym-adding i {
+          color: #d25d5d;
+        }
+
+      </style>
   
       {% if product.available %}
           <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
