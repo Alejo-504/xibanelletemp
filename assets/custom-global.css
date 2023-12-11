@@ -391,6 +391,6 @@ details[open]>.header__menu-item{
 .swym-adding.swym-add-to-wishlist i, .swym-added:not(.disabled) i{
   color: #d95757 !important; 
 }
-.swym-button:not(.swym-adding).swym-add-to-wishlist i, .swym-button.disabled {
+.swym-button:not(.swym-adding).swym-add-to-wishlist i, .swym-button.disabled i {
     color: #c1c1c1!important;
 }
