@@ -176,7 +176,7 @@
         "89497ff8-f1e7-42d5-9f70-57e0b8c9f61c"
       ],
       "custom_css": [
-        "h2,.text-content p {color: rgb(var(--color-foreground_3));}"
+        ".adorno,.text-content p {color: rgb(var(--color-foreground_3));}"
       ],
       "settings": {
         "scheme_selector": "background-1",
