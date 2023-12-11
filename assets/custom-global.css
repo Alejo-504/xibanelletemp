@@ -388,6 +388,7 @@ details[open]>.header__menu-item{
   transform:scale(1.1);
 }
 
-.swym-adding.swym-add-to-wishlist i, .swym-adding.swym-add-to-wishlist:after, .swym-adding.swym-add-to-wishlist + .swym-fave-count{
+.swym-adding.swym-add-to-wishlist i{
   color: #d95757 !important; 
 }
+.swym-added:not(.swym-adding).swym-add-to-wishlist i{
