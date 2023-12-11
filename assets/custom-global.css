@@ -387,3 +387,6 @@ details[open]>.header__menu-item{
   color:red!important;
   transform:scale(1.1);
 }
+.swym-added.swym-add-to-wishlist, .swym-added.swym-add-to-wishlist:after, .swym-added.swym-add-to-wishlist + .swym-fave-count {
+    color: #d95757 !important;
+}
