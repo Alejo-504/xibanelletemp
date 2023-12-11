@@ -175,6 +175,7 @@ p{
 }
 
 
+
 @media (max-width: 768px) {
   :root{
     --font-body-scale: 1.0!important;
@@ -376,4 +377,13 @@ details[open]>.header__menu-item{
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
     background: #f3f3f3!important;
     border: 1px solid #f3f3f3!important;
+}
+/* swym-heart */
+.swym-heart{
+  transition: all .3s ease-in-out;
+  cursor:pointer;
+}
+.swym-heart:hover *{
+  color:red;
+  transform:scale(1.1);
 }
