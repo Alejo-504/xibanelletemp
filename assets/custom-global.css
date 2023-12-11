@@ -393,4 +393,6 @@ details[open]>.header__menu-item{
 .my-icon-filled:not(.swym-added) {
 	display: none;
 }
-
+.swym-powered-by-text {
+  display:none!important;
+}
