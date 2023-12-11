@@ -387,11 +387,10 @@ details[open]>.header__menu-item{
   color:#e76c6c!important;
   transform:scale(1.1);
 }
-
+.swym-button i{
+  color: #c1c1c1!important; 
+}
 
 .swym-button.swym-adding, .swym-button.disabled.swym-added{
     color:  #d95757 !important;
-}
-.swym-button i{
-  color: #c1c1c1!important; 
 }
