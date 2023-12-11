@@ -383,7 +383,7 @@ details[open]>.header__menu-item{
   transition: all .3s ease-in-out;
   cursor:pointer;
 }
-.swym-heart:hover *{
-  color:red;
+.swym-heart:hover {
+  color:red!important;
   transform:scale(1.1);
 }
