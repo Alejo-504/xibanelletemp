@@ -51,11 +51,14 @@
         {% endif %}
       </div>
       <div class="cart-card d-flex align-items-center">
+          {% assign random_value =  "now" | date: "%N" %}
+
        <div class="swym-button swym-add-to-wishlist  me-3 swym-heart"
-          id="swym-button-{{ product.id }}"
+          id="swym-button-{{ product.id }}-{{ random_value }}"
           data-with-epi="true"
           data-swaction="addToWishlist"
           data-product-id="{{ product.id }}"
+
           data-variant-id="{{ product.variants[0].id }}"
           data-product-url="{{ shop.url }}{{ product.url }}"
           data-status="not_added"
@@ -63,10 +66,10 @@
           <i class="fa fa-heart" style="font-size:20px;"></i>
         </div>
       <style>
-        #swym-button-{{ product.id }}[data-status="not_added"] i {
+        #swym-button-{{ product.id }}-{{ random_value }}[data-status="not_added"] i {
           color: #a1a1a1;
         }
-        #swym-button-{{ product.id }}[data-status="adding"] i {
+        #swym-button-{{ product.id }}-{{ random_value }}[data-status="adding"] i {
           color: #d25d5d; 
         }
       </style>
@@ -75,7 +78,7 @@
         
 
           setTimeout(function () {
-            var swymButton = document.getElementById("swym-button-{{ product.id }}");
+            var swymButton = document.getElementById("swym-button-{{ product.id }}-{{ random_value }}");
          
 
               let classesInitial = swymButton.classList;
