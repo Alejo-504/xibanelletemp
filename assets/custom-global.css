@@ -391,6 +391,6 @@ details[open]>.header__menu-item{
   color: #c1c1c1; 
 }
 
-.swym-button.swym-adding, .swym-button.swym-added{
+.swym-button.swym-adding i, .swym-button.swym-added i{
     color:  #d95757 !important;
 }
