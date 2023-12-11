@@ -38,11 +38,17 @@
         "padding_top": 20,
         "padding_bottom": 40
       }
+    },
+    "726ec15b-0963-47cd-91eb-69501c1872ed": {
+      "type": "custom-wishlist",
+      "settings": {
+      }
     }
   },
   "order": [
     "baef2b01-4060-4f69-bfce-904620b50c72",
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "726ec15b-0963-47cd-91eb-69501c1872ed"
   ]
 }
