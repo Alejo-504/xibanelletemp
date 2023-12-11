@@ -215,7 +215,9 @@ p{
     opacity: 1;
   }
 }
-
+.swym-modal{
+  animation:  fade .5s ease-in-out;
+}
 .slide-right {
   animation: slideRight 1s ease-in-out forwards;
 }
