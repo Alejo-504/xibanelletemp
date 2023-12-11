@@ -387,4 +387,10 @@ details[open]>.header__menu-item{
   color:#e76c6c!important;
   transform:scale(1.1);
 }
+.my-icon-unfilled.swym-added {
+	display: none;
+}
+.my-icon-filled:not(.swym-added) {
+	display: none;
+}
 
