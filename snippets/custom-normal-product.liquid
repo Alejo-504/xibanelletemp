@@ -73,9 +73,14 @@
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var swymButton = document.getElementById("swym-button-{{ product.id }}");
+
+          setTimeout(function () {
+            
+         
+
           let classesInitial = swymButton.classList;
           if (classesInitial.contains("swym-added")) {
-            swymButton.setAttribute("data-status", "added");
+            swymButton.setAttribute("data-status", "adding");
           } else {
             swymButton.setAttribute("data-status", "not_added");
           }
@@ -89,6 +94,10 @@
               swymButton.classList.remove("swym-added");
             }
           });
+
+
+          }, 1000);
+
         });
 
       </script>
