@@ -27,6 +27,11 @@
       },
       {
         "type": "image_picker",
+        "id": "tapiz",
+        "label": "tapiz"
+      },
+      {
+        "type": "image_picker",
         "id": "overlay_logo",
         "label": "Logo Backgorund"
       },
@@ -189,6 +194,26 @@
     
     .split-section{
       background:rgb(var(--color-background));
+    }
+    .split-section::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: {{ section.settings.tapiz | img_url: 'master' }};
+      z-index: 0;
+    }
+    .split-section:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(180deg, #00000000 0%, #000000 100%);
+      z-index: 0;
     }
     .text-content{
       position: relative;
