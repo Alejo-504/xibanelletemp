@@ -179,6 +179,9 @@ p{
   :root{
     --font-body-scale: 1.0!important;
   }
+  .header {
+    grid-template-columns: 0.5fr 2fr 1fr;
+}
 }
 @keyframes pulse {
   0% {
