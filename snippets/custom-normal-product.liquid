@@ -17,14 +17,6 @@
     justify-content: center;
   ">
   
-    <div class="swym-button swym-add-to-wishlist position-absolute"
-      data-with-epi="true"
-      data-swaction="addToWishlist"
-      data-product-id="{{ product.id }}"
-      data-variant-id="{{ product.variants[0].id }}"
-      data-product-url="{{ shop.url }}{{ product.url }}">
-      <i class="fa fa-heart" style="color:#a1a1a1;font-size:20px;"></i>
-    </div>
 
 
     
@@ -58,6 +50,16 @@
           {{ product.price | money }}
         {% endif %}
       </div>
+      <div class="cart-card d-flex align-items-center">
+        <div class="swym-button swym-add-to-wishlist position-absolute me-2"
+        data-with-epi="true"
+        data-swaction="addToWishlist"
+        data-product-id="{{ product.id }}"
+        data-variant-id="{{ product.variants[0].id }}"
+        data-product-url="{{ shop.url }}{{ product.url }}">
+        <i class="fa fa-heart" style="color:#a1a1a1;font-size:20px;"></i>
+      </div>
+  
       {% if product.available %}
           <a data-ajax-cart-request-button href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" class="item-cart" style="z-index:2;justify-self: end;"><i class="fa fa-shopping-cart"></i></a>       
       {% else %}
@@ -65,6 +67,8 @@
             <i class="fa fa-shopping-cart"></i>
           </button>
       {%  endif %}
+      
+      </div>
     </div>
   </div>
 </div>
