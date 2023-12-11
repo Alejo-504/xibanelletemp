@@ -388,7 +388,7 @@ details[open]>.header__menu-item{
   transform:scale(1.1);
 }
 
-.swym-adding.swym-add-to-wishlist i, .swym-added:not(.disabled) i{
+.swym-adding.swym-add-to-wishlist i,  .swym-button:not(.disabled) i{
   color: #d95757 !important; 
 }
 .swym-button:not(.swym-adding).swym-add-to-wishlist i, .swym-button.disabled i {
