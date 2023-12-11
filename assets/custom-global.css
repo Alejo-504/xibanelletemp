@@ -379,7 +379,7 @@ details[open]>.header__menu-item{
     border: 1px solid #f3f3f3!important;
 }
 /* swym-heart */
-.swym-heart{
+.swym-heart i{
   transition: all .3s ease-in-out;
   cursor:pointer;
 }
